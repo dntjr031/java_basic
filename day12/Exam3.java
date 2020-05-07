@@ -10,7 +10,7 @@ public class Exam3 {
 		
 		Scanner sc = new Scanner(System.in);
 		while(true) {
-			System.out.println("°Å½º¸§µ·À» ÀÔ·ÂÇÏ¼¼¿ä.<Á¾·á½Ã 0>");
+			System.out.println("ê±°ìŠ¤ë¦„ëˆì„ ì…ë ¥í•˜ì„¸ìš”.<ì¢…ë£Œì‹œ 0>");
 			int money = sc.nextInt();
 			if(money == 0) break;
 			
@@ -18,10 +18,10 @@ public class Exam3 {
 			for (int i = 0; i < coinUnit.length; i++) {
 				 cng = money / coinUnit[i];
 				 money %= coinUnit[i];
-				 System.out.println(coinUnit[i] + "¿ø: " + cng);
+				 System.out.println(coinUnit[i] + "ì›: " + cng);
 			}
 		}
-		System.out.println("Á¾·áµÇ¾ú½À´Ï´Ù.");
+		System.out.println("ì¢…ë£Œë˜ì—ˆìŠµë‹ˆë‹¤.");
 		
 		sc.close();
 

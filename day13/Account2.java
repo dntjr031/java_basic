@@ -5,14 +5,14 @@ public class Account2 {
 	String accId, name;
 	int balance;
 	
-	//2. »ý¼ºÀÚ
-	//=> °´Ã¼¸¦ »ý¼ºÇÏ¸é ÀÚµ¿À¸·Î È£ÃâµÇ¾î °¡Àå ¸ÕÀú ½ÇÇàµÇ´Â ¸Þ¼­µå
-	//=> ¸â¹öº¯¼ö ÃÊ±âÈ­¸¦ ¸ñÀûÀ¸·Î »ç¿ëµÇ´Â ¸Þ¼­µå
-	//Å¬·¡½º¸í°ú µ¿ÀÏÇÏ°í, ¸Å°³º¯¼ö´Â ÀÖÀ» ¼ö ÀÖÀ¸³ª ¹ÝÈ¯Å¸ÀÔÀº ¾ø´Ù
+	//2. ìƒì„±ìž
+	//=> ê°ì²´ë¥¼ ìƒì„±í•˜ë©´ ìžë™ìœ¼ë¡œ í˜¸ì¶œë˜ì–´ ê°€ìž¥ ë¨¼ì € ì‹¤í–‰ë˜ëŠ” ë©”ì„œë“œ
+	//=> ë©¤ë²„ë³€ìˆ˜ ì´ˆê¸°í™”ë¥¼ ëª©ì ìœ¼ë¡œ ì‚¬ìš©ë˜ëŠ” ë©”ì„œë“œ
+	//í´ëž˜ìŠ¤ëª…ê³¼ ë™ì¼í•˜ê³ , ë§¤ê°œë³€ìˆ˜ëŠ” ìžˆì„ ìˆ˜ ìžˆìœ¼ë‚˜ ë°˜í™˜íƒ€ìž…ì€ ì—†ë‹¤
 	
-	//±âº» »ý¼ºÀÚ - ¸Å°³º¯¼ö°¡ ¾ø´Â »ý¼ºÀÚ
-	//º°µµ·Î »ý¼ºÀÚ¸¦ ¸¸µéÁö ¾ÊÀ¸¸é ÄÄÆÄÀÏ·¯°¡ ±âº»»ý¼ºÀÚ¸¦ ÀÚµ¿À¸·Î ¸¸µé¾îÁÜ
-	//ÇÏÁö¸¸ »ý¼ºÀÚ¸¦ ÇÏ³ª¶óµµ ¸¸µé¸é ÄÄÆÄÀÏ·¯´Â ´õ ÀÌ»ó ±âº» »ý¼ºÀÚ¸¦ ¸¸µéÁö ¾ÊÀ½
+	//ê¸°ë³¸ ìƒì„±ìž - ë§¤ê°œë³€ìˆ˜ê°€ ì—†ëŠ” ìƒì„±ìž
+	//ë³„ë„ë¡œ ìƒì„±ìžë¥¼ ë§Œë“¤ì§€ ì•Šìœ¼ë©´ ì»´íŒŒì¼ëŸ¬ê°€ ê¸°ë³¸ìƒì„±ìžë¥¼ ìžë™ìœ¼ë¡œ ë§Œë“¤ì–´ì¤Œ
+	//í•˜ì§€ë§Œ ìƒì„±ìžë¥¼ í•˜ë‚˜ë¼ë„ ë§Œë“¤ë©´ ì»´íŒŒì¼ëŸ¬ëŠ” ë” ì´ìƒ ê¸°ë³¸ ìƒì„±ìžë¥¼ ë§Œë“¤ì§€ ì•ŠìŒ
 	public Account2() {
 		
 	}
@@ -28,16 +28,16 @@ public class Account2 {
 		balance -= money;
 	}
 	
-	//ÀÔ±ÝÇÏ´Â ±â´ÉÀÇ ¸Þ¼­µå
+	//ìž…ê¸ˆí•˜ëŠ” ê¸°ëŠ¥ì˜ ë©”ì„œë“œ
 	public void deposit(int money) {
 		balance += money;
 	}
 	
-	//ÆíÀÇ»ó Ãß°¡µÈ ¸Þ¼­µå - Ãâ·Â±â´É
+	//íŽ¸ì˜ìƒ ì¶”ê°€ëœ ë©”ì„œë“œ - ì¶œë ¥ê¸°ëŠ¥
 	public void showInfo() {
-		System.out.println("°èÁÂ¹øÈ£ : " + accId);
-		System.out.println("ÀÌ¸§ : " + name);
-		System.out.println("ÀÜ¾× : " + balance + "\n");
+		System.out.println("ê³„ì¢Œë²ˆí˜¸ : " + accId);
+		System.out.println("ì´ë¦„ : " + name);
+		System.out.println("ìž”ì•¡ : " + balance + "\n");
 		
 	}
 

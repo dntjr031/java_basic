@@ -3,20 +3,20 @@ package com.day19;
 public class PolymoArgs {
 	/*
 	public static void register(Student st) {
-		System.out.println(st.kind() + "Àº µî·ÏÀ» ÇÕ´Ï´Ù.");
+		System.out.println(st.kind() + "ì€ ë“±ë¡ì„ í•©ë‹ˆë‹¤.");
 	}
 	public static void register(Graduate gr) {
-		System.out.println(gr.kind() + "Àº µî·ÏÀ» ÇÕ´Ï´Ù.");
+		System.out.println(gr.kind() + "ì€ ë“±ë¡ì„ í•©ë‹ˆë‹¤.");
 	}
 	public static void register(Assitant as) {
-		System.out.println(as.kind() + "Àº µî·ÏÀ» ÇÕ´Ï´Ù.");
+		System.out.println(as.kind() + "ì€ ë“±ë¡ì„ í•©ë‹ˆë‹¤.");
 	}
 	*/
 	public static void register(Person p) {
 		if(p instanceof Student || p instanceof Assitant) {
-			System.out.println(p.kind() + "Àº µî·ÏÀ» ÇÕ´Ï´Ù.");
+			System.out.println(p.kind() + "ì€ ë“±ë¡ì„ í•©ë‹ˆë‹¤.");
 		}else{
-			System.out.println("µî·ÏÀ» ÇÒ ¼ö ¾ø½À´Ï´Ù.");
+			System.out.println("ë“±ë¡ì„ í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤.");
 		}
 		
 	}
@@ -38,30 +38,30 @@ public class PolymoArgs {
 
 class Person{
 	public String kind() {
-		return "»ç¶÷";
+		return "ì‚¬ëŒ";
 	}
 }
 
 class Student extends Person{
 	public String kind() {
-		return "ÇĞ»ı";
+		return "í•™ìƒ";
 	}
 }
 
 class Graduate extends Student{
 	public String kind() {
-		return "´ëÇĞ¿ø»ı";
+		return "ëŒ€í•™ì›ìƒ";
 	}
 }
 
 class Assitant extends Person{
 	public String kind() {
-		return "Á¶±³";
+		return "ì¡°êµ";
 	}
 }
 
 class Professor extends Person{
 	public String kind() {
-		return "±³¼ö";
+		return "êµìˆ˜";
 	}
 }

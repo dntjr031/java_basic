@@ -8,12 +8,12 @@ import java.util.Scanner;
 public class DateExam {
 
 	public static void main(String[] args) {
-		SimpleDateFormat sdf = new SimpleDateFormat("¿À´Ã³¯Â¥ : yyyy-MM-dd E¿äÀÏ hh:mm:ss a");
+		SimpleDateFormat sdf = new SimpleDateFormat("ì˜¤ëŠ˜ë‚ ì§œ : yyyy-MM-dd Eìš”ì¼ hh:mm:ss a");
 		Date date = new Date();
 		System.out.println(sdf.format(date));
 		
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Á¤¼ö ÀÔ·Â");
+		System.out.println("ì •ìˆ˜ ì…ë ¥");
 		long n = sc.nextInt();
 		DecimalFormat df = new DecimalFormat("#,###");
 		String st = df.format(n);

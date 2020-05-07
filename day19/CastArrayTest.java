@@ -21,18 +21,18 @@ public class CastArrayTest {
 		c[0] = new FireEngine();
 		c[1] = new Ambulance();
 		c[2] = new FireEngine();
-		//¿À¹ö¶óÀÌµù ¸Ş¼­µå È£Ãâ
+		//ì˜¤ë²„ë¼ì´ë”© ë©”ì„œë“œ í˜¸ì¶œ
 		for (int i = 0; i < c.length; i++) {
 			c[i].drive();
 		}
 		System.out.println();
 		
-		//ÀÚ½Ä¸¸ÀÇ ¸Ş¼­µå È£Ãâ
+		//ìì‹ë§Œì˜ ë©”ì„œë“œ í˜¸ì¶œ
 		for (int i = 0; i < c.length; i++) {
 			find(c[i]);
 		}
 		System.out.println("\n");
-		//È®Àå forÀÌ¿ë
+		//í™•ì¥ forì´ìš©
 		for(Car car : c) {
 			find(car);
 		}

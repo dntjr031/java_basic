@@ -7,27 +7,27 @@ public class EnumTest1 {
 	public static void main(String[] args) {
 		Color c = Color.BLUE;
 		System.out.println("c = " + c);
-		System.out.println(c + "ÀÇ value : " + c.ordinal()+"\n");
+		System.out.println(c + "ì˜ value : " + c.ordinal()+"\n");
 		
 		//Color[] colArr = Color.values();
 		for(Color col : Color.values()) {
-			System.out.println( col + "ÀÇ value = " + col.ordinal());
+			System.out.println( col + "ì˜ value = " + col.ordinal());
 		}
 		
 		/*
-		 ¿­°ÅµÈ ¼ø¼­¿¡ µû¶ó 0ºÎÅÍ ¼ø¼­°ªÀ» °¡Áö¸ç Á¤¼öÇüÀ¸·Î ±³È¯ÇÏ¿© »ç¿ëÇÒ ¼ö ÀÖ´Ù.
+		 ì—´ê±°ëœ ìˆœì„œì— ë”°ë¼ 0ë¶€í„° ìˆœì„œê°’ì„ ê°€ì§€ë©° ì •ìˆ˜í˜•ìœ¼ë¡œ êµí™˜í•˜ì—¬ ì‚¬ìš©í•  ìˆ˜ ìˆë‹¤.
 		 
-		 ¿­°ÅÇüÀ» ´Ù·ç±â À§ÇÑ ±âº»ÀûÀÎ ¸Ş¼Òµå
-		 [1]values() : ¿­°ÅµÈ ¸ğµç ¿ø¼Ò¸¦ ¼ø¼­´ë·Î ¹İÈ¯ÇÏ´Â ¸Ş¼Òµå
-		 [2]ordinal() : ¿ø¼ÒÀÇ ¿­°ÅµÈ ¼ø¼­¸¦ Á¤¼ö °ªÀ¸·Î ¹İÈ¯ÇÏ´Â ¸Ş¼Òµå
-		 [3]valueOf() : ¸Å°³º¯¼ö·Î ÁÖ¾îÁø ½ºÆ®¸µ°ú ¿­°ÅÇü¿¡¼­ ÀÏÄ¡ÇÏ´Â ÀÌ¸§À» °®´Â ¿ø¼Ò¸¦ ¹İÈ¯ÇÏ´Â ¸Ş¼­µå
-		 (¸¸¾à ÁÖ¾îÁø ½ºÆ®¸µ°ú ÀÏÄ¡ÇÏ´Â ¿ø¼Ò°¡ ¾ø´Â °æ¿ì ¿¹¿Ü¹ß»ı)
+		 ì—´ê±°í˜•ì„ ë‹¤ë£¨ê¸° ìœ„í•œ ê¸°ë³¸ì ì¸ ë©”ì†Œë“œ
+		 [1]values() : ì—´ê±°ëœ ëª¨ë“  ì›ì†Œë¥¼ ìˆœì„œëŒ€ë¡œ ë°˜í™˜í•˜ëŠ” ë©”ì†Œë“œ
+		 [2]ordinal() : ì›ì†Œì˜ ì—´ê±°ëœ ìˆœì„œë¥¼ ì •ìˆ˜ ê°’ìœ¼ë¡œ ë°˜í™˜í•˜ëŠ” ë©”ì†Œë“œ
+		 [3]valueOf() : ë§¤ê°œë³€ìˆ˜ë¡œ ì£¼ì–´ì§„ ìŠ¤íŠ¸ë§ê³¼ ì—´ê±°í˜•ì—ì„œ ì¼ì¹˜í•˜ëŠ” ì´ë¦„ì„ ê°–ëŠ” ì›ì†Œë¥¼ ë°˜í™˜í•˜ëŠ” ë©”ì„œë“œ
+		 (ë§Œì•½ ì£¼ì–´ì§„ ìŠ¤íŠ¸ë§ê³¼ ì¼ì¹˜í•˜ëŠ” ì›ì†Œê°€ ì—†ëŠ” ê²½ìš° ì˜ˆì™¸ë°œìƒ)
 		 */
 		
 		Color c2 = Color.valueOf("RED");
 		System.out.println("\n\n" + c2);
 		
-		//Color c3 = c.valueOf("Red"); // ¿¹¿Ü IllegalArgumentException
+		//Color c3 = c.valueOf("Red"); // ì˜ˆì™¸ IllegalArgumentException
 		//System.out.println(c3);
 	}
 

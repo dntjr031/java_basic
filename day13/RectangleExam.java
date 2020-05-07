@@ -29,7 +29,7 @@ public class RectangleExam {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.println("»ç°¢ÇüÀÇ °¡·Î, ¼¼·Î¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+		System.out.println("ì‚¬ê°í˜•ì˜ ê°€ë¡œ, ì„¸ë¡œë¥¼ ì…ë ¥í•˜ì„¸ìš”");
 		int w = sc.nextInt();
 		int d = sc.nextInt();
 		
@@ -37,8 +37,8 @@ public class RectangleExam {
 		
 		int area = re.area();
 		int girth = re.girth();
-		System.out.println("»ç°¢ÇüÀÇ ³ĞÀÌ : " + area);
-		System.out.println("»ç°¢ÇüÀÇ µÑ·¹ : " + girth);
+		System.out.println("ì‚¬ê°í˜•ì˜ ë„“ì´ : " + area);
+		System.out.println("ì‚¬ê°í˜•ì˜ ë‘˜ë ˆ : " + girth);
 		
 		sc.close();
 

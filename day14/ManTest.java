@@ -9,18 +9,18 @@ public class ManTest {
 		m.setAge(20);
 		m.height = 180;
 		
-		System.out.println("³ªÀÌ : " + m.getAge()); //getter ¸¦ ÀÌ¿ëÇØ ¸â¹öº¯¼öÀÇ °ªÀ» ÀĞ¾î¿Â´Ù.
-		System.out.println("Å° : " + m.height);
+		System.out.println("ë‚˜ì´ : " + m.getAge()); //getter ë¥¼ ì´ìš©í•´ ë©¤ë²„ë³€ìˆ˜ì˜ ê°’ì„ ì½ì–´ì˜¨ë‹¤.
+		System.out.println("í‚¤ : " + m.height);
 		
 		System.out.println("=================");
 		
 		Man2 m2 = new Man2();
 		m2.setAge(20);
 		
-		System.out.println("³ªÀÌ´Â : " + m2.getAge());
+		System.out.println("ë‚˜ì´ëŠ” : " + m2.getAge());
 		
 		m2.setAge(-5);
-		System.out.println("³ªÀÌ´Â : " + m2.getAge());
+		System.out.println("ë‚˜ì´ëŠ” : " + m2.getAge());
 	}
 
 }

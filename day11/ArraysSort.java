@@ -6,7 +6,7 @@ public class ArraysSort {
 
 	public static void main(String[] args) {
 		// public static void sort(int[] a)
-		//=> ÇØ´ç ¹è¿­À» ¿À¸§Â÷¼øÀ¸·Î Á¤·ÄÇØÁÖ´Â ¸Ş¼­µå
+		//=> í•´ë‹¹ ë°°ì—´ì„ ì˜¤ë¦„ì°¨ìˆœìœ¼ë¡œ ì •ë ¬í•´ì£¼ëŠ” ë©”ì„œë“œ
 		
 		int[] arr = {79,12,66,100,3,27,10,85};
 		
@@ -14,7 +14,7 @@ public class ArraysSort {
 			System.out.print(n + " ");
 		}
 		
-		System.out.println("\n\n====Á¤·Ä ÈÄ ¹è¿µ ¿ä¼Ò====");
+		System.out.println("\n\n====ì •ë ¬ í›„ ë°°ì˜ ìš”ì†Œ====");
 		
 		Arrays.sort(arr);
 		

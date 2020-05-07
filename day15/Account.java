@@ -17,7 +17,7 @@ public class Account {
 	}
 	
 	public void showInfo() {
-		System.out.println("°èÁÂ¹øÈ£ : " + accid);
-		System.out.println("ÀÜ¾× : " + balance + "\n");
+		System.out.println("ê³„ì¢Œë²ˆí˜¸ : " + accid);
+		System.out.println("ìž”ì•¡ : " + balance + "\n");
 	}
 }

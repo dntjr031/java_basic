@@ -7,12 +7,12 @@ public class IdNumExam {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		try {
-			System.out.println("ÁÖ¹Î¹øÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+			System.out.println("ì£¼ë¯¼ë²ˆí˜¸ë¥¼ ì…ë ¥í•˜ì„¸ìš”");
 			String id = sc.nextLine();
 			if(id.length() != 13) {
-				throw new Exception("ÁÖ¹Î¹øÈ£¸¦ Àß¸ø ÀÔ·ÂÇß½À´Ï´Ù. 13ÀÚ¸®¸¦ ÀÔ·ÂÇÏ¼¼¿ä.");
+				throw new Exception("ì£¼ë¯¼ë²ˆí˜¸ë¥¼ ì˜ëª» ì…ë ¥í–ˆìŠµë‹ˆë‹¤. 13ìë¦¬ë¥¼ ì…ë ¥í•˜ì„¸ìš”.");
 			}
-			System.out.println("\nÁÖ¹Î¹øÈ£ : " + id);
+			System.out.println("\nì£¼ë¯¼ë²ˆí˜¸ : " + id);
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
 			e.printStackTrace();
@@ -20,7 +20,7 @@ public class IdNumExam {
 		}finally {
 			sc.close();
 		}
-		System.out.println("\nÇÁ·Î±×·¥ÀÌ Á¤»óÀûÀ¸·Î Á¾·áµÇ¾ú½À´Ï´Ù!!");
+		System.out.println("\ní”„ë¡œê·¸ë¨ì´ ì •ìƒì ìœ¼ë¡œ ì¢…ë£Œë˜ì—ˆìŠµë‹ˆë‹¤!!");
 		
 	}
 

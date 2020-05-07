@@ -9,26 +9,26 @@ public class HumanTest {
 		Scanner sc = new Scanner(System.in);
 		Teacher t = new Teacher();
 		Programmer p = new Programmer();
-		System.out.println("ÀÌ¸§, ³ªÀÌ, °ú¸ñ ÀÔ·Â");
+		System.out.println("ì´ë¦„, ë‚˜ì´, ê³¼ëª© ì…ë ¥");
 		t.setName(sc.nextLine());
 		t.setAge(sc.nextInt());
 		sc.nextLine();
 		t.setSubject(sc.nextLine());
-		System.out.println("ÀÌ¸§: " + t.getName());
-		System.out.println("³ªÀÌ: " + t.getAge());
-		System.out.println("°ú¸ñ: " + t.getSubject());
+		System.out.println("ì´ë¦„: " + t.getName());
+		System.out.println("ë‚˜ì´: " + t.getAge());
+		System.out.println("ê³¼ëª©: " + t.getSubject());
 		t.work();
 		
 		System.out.println("===================");
 		
-		System.out.println("ÀÌ¸§, ³ªÀÌ, °³¹ß°æ·ÂÀ» ÀÔ·Â");
+		System.out.println("ì´ë¦„, ë‚˜ì´, ê°œë°œê²½ë ¥ì„ ì…ë ¥");
 		p.setName(sc.nextLine());
 		p.setAge(sc.nextInt());
 		sc.nextLine();
 		p.setCareer(sc.nextLine());
-		System.out.println("ÀÌ¸§: " + p.getName());
-		System.out.println("³ªÀÌ: " + p.getAge());
-		System.out.println("°³¹ß°æ·Â: " + p.getCareer());
+		System.out.println("ì´ë¦„: " + p.getName());
+		System.out.println("ë‚˜ì´: " + p.getAge());
+		System.out.println("ê°œë°œê²½ë ¥: " + p.getCareer());
 		p.work();
 		
 		sc.close();

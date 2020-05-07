@@ -1,10 +1,10 @@
 package com.day15;
 
 class AAA{
-	static int[] arr = new int[10]; //¸í½ÃÀû ÃÊ±âÈ­
+	static int[] arr = new int[10]; //ëª…ì‹œì  ì´ˆê¸°í™”
 	
 	/*
-	static ÃÊ±âÈ­ ºí·° - staticº¯¼öÀÇ º¹ÀâÇÑ ÃÊ±âÈ­¿¡ »ç¿ëµÊ
+	static ì´ˆê¸°í™” ë¸”ëŸ­ - staticë³€ìˆ˜ì˜ ë³µì¡í•œ ì´ˆê¸°í™”ì— ì‚¬ìš©ë¨
 	 static{
 	 
 	 }
@@ -15,8 +15,8 @@ class AAA{
 		}// for
 	}
 	/*
-	 ¸í½ÃÀû ÃÊ±â¤ÇÇÏ¸¦ ÅëÇØ ¹è¿­ arrÀ» »ı¼º
-	 static ÃÊ±âÈ­ ºí·°À» ÀÌ¿äÇØ¼­ ¹è¿­ÀÇ °¢ ¿ä¼ÒµéÀ» ÀÓÀÇÀÇ °ªÀ¸·Î Ã¤¿ü´Ù.
+	 ëª…ì‹œì  ì´ˆê¸°ã…—í•˜ë¥¼ í†µí•´ ë°°ì—´ arrì„ ìƒì„±
+	 static ì´ˆê¸°í™” ë¸”ëŸ­ì„ ì´ìš”í•´ì„œ ë°°ì—´ì˜ ê° ìš”ì†Œë“¤ì„ ì„ì˜ì˜ ê°’ìœ¼ë¡œ ì±„ì› ë‹¤.
 	 */
 }//class
 
@@ -25,7 +25,7 @@ public class StaticBlockTest {
 
 	public static void main(String[] args) {
 		
-		System.out.println("===AAA Å¬·¡½ºÀÇ arr¹è¿­ ¿ä¼Ò===");
+		System.out.println("===AAA í´ë˜ìŠ¤ì˜ arrë°°ì—´ ìš”ì†Œ===");
 		
 		for (int i = 0; i < AAA.arr.length; i++) {
 			System.out.print(AAA.arr[i] + " ");

@@ -39,24 +39,24 @@ class PhoneBook{
 	private static Scanner sc;
 
 	public static void showMenu(){
-		System.out.println("¼±ÅÃÇÏ¼¼¿ä...");
-		System.out.println("1. µ¥ÀÌÅÍ ÀÔ·Â");
-		System.out.println("2. ÀüÃ¼ µ¥ÀÌÅÍ Á¶È¸");
-		System.out.println("3. µ¥ÀÌÅÍ °Ë»ö");
-		System.out.println("4. µ¥ÀÌÅÍ »èÁ¦");
-		System.out.println("5. ÇÁ·Î±×·¥ Á¾·á");
-		System.out.print("¼±ÅÃ : ");
+		System.out.println("ì„ íƒí•˜ì„¸ìš”...");
+		System.out.println("1. ë°ì´í„° ì…ë ¥");
+		System.out.println("2. ì „ì²´ ë°ì´í„° ì¡°íšŒ");
+		System.out.println("3. ë°ì´í„° ê²€ìƒ‰");
+		System.out.println("4. ë°ì´í„° ì‚­ì œ");
+		System.out.println("5. í”„ë¡œê·¸ë¨ ì¢…ë£Œ");
+		System.out.print("ì„ íƒ : ");
 	}
 	
 	public static PhoneInfo inputData(){
 		sc = new Scanner(System.in);
 		
-		System.out.println("µ¥ÀÌÅÍ ÀÔ·ÂÀ» ½ÃÀÛÇÕ´Ï´Ù.");
-		System.out.print("ÀÌ¸§: ");
+		System.out.println("ë°ì´í„° ì…ë ¥ì„ ì‹œì‘í•©ë‹ˆë‹¤.");
+		System.out.print("ì´ë¦„: ");
 		String name=sc.nextLine();
-		System.out.print("ÀüÈ­¹øÈ£: ");
+		System.out.print("ì „í™”ë²ˆí˜¸: ");
 		String phone=sc.nextLine();
-		System.out.print("»ı³â¿ùÀÏ: ");
+		System.out.print("ìƒë…„ì›”ì¼: ");
 		String birth=sc.nextLine();
 		
 		PhoneInfo ph=new PhoneInfo(name, phone, birth);
@@ -66,7 +66,7 @@ class PhoneBook{
 	
 	public static int search(PhoneInfo[] ph, int i) {
 		int sum=-1;
-		System.out.print("ÀÌ¸§: ");
+		System.out.print("ì´ë¦„: ");
 		String st = sc.nextLine();
 		for (int j = 0; j < i; j++) {
 			if(ph[j].getName().equals(st)) {

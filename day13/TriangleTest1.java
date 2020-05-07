@@ -5,15 +5,15 @@ import java.util.Scanner;
 public class TriangleTest1 {
 
 	public static void main(String[] args) {
-		//1. ¸ŞÀÎ¿¡¼­ »ï°¢Çü ¸éÀû ±¸ÇÏ±â
+		//1. ë©”ì¸ì—ì„œ ì‚¼ê°í˜• ë©´ì  êµ¬í•˜ê¸°
 		Scanner sc = new Scanner(System.in);
-		System.out.println("»ï°¢ÇüÀÇ ¹Øº¯, ³ôÀÌ¸¦ ÀÔ·Â");
+		System.out.println("ì‚¼ê°í˜•ì˜ ë°‘ë³€, ë†’ì´ë¥¼ ì…ë ¥");
 		int w = sc.nextInt();
 		int h = sc.nextInt();
 		
 		int area = w * h / 2;
 		
-		System.out.println("»ï°¢Çü ¸éÀû : " + area);
+		System.out.println("ì‚¼ê°í˜• ë©´ì  : " + area);
 		
 		sc.close();
 

@@ -11,23 +11,23 @@ public class FinallyTest {
 		 }catch(Exception e){
 		 
 		 }finally{
-		 	¿¹¿Ü ¹ß»ı¿©ºÎ¿Í »ó°ü¾øÀÌ ¹İµå½Ã ½ÇÇàµÇ¾î¾ß ÇÏ´Â ¹®ÀåÀ» ³Ö´Â´Ù
-		 	ÁÖ·Î ÀÚ¿ø ÇØÁ¦½Ã »ç¿ë
+		 	ì˜ˆì™¸ ë°œìƒì—¬ë¶€ì™€ ìƒê´€ì—†ì´ ë°˜ë“œì‹œ ì‹¤í–‰ë˜ì–´ì•¼ í•˜ëŠ” ë¬¸ì¥ì„ ë„£ëŠ”ë‹¤
+		 	ì£¼ë¡œ ìì› í•´ì œì‹œ ì‚¬ìš©
 		 }
 		 */
 		Scanner sc = new Scanner(System.in);
 		try {
-			System.out.println("0ÀÌ³ª 2 ÀÔ·Â!");
+			System.out.println("0ì´ë‚˜ 2 ì…ë ¥!");
 			int num = sc.nextInt();
 			
 			int result = 100/num;
 			System.out.println("100/" + num + "=" + result);
 		}catch(Exception e) {
-			System.out.println("¿¹¿Ü¹ß»ı : " + e.getMessage());
+			System.out.println("ì˜ˆì™¸ë°œìƒ : " + e.getMessage());
 			
 		}finally {
-			//¿¹¿Ü°¡ ¹ß»ıµÇ¾îµµ ½ÇÇàÇÏ°í, ¹ß»ıÇÏÁö ¾Ê¾Æµµ ½ÇÇàÇÔ
-			System.out.println("¹İµå½Ã ½ÇÇàµÇ¾î¾ß ÇÔ");
+			//ì˜ˆì™¸ê°€ ë°œìƒë˜ì–´ë„ ì‹¤í–‰í•˜ê³ , ë°œìƒí•˜ì§€ ì•Šì•„ë„ ì‹¤í–‰í•¨
+			System.out.println("ë°˜ë“œì‹œ ì‹¤í–‰ë˜ì–´ì•¼ í•¨");
 		}
 		System.out.println("\n=====next=====");
 		sc.close();

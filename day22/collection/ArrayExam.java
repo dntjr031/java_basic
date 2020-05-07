@@ -13,7 +13,7 @@ public class ArrayExam {
 			System.out.println(list.get(i));
 		}
 		
-		System.out.println("\n=====2¹ø======");
+		System.out.println("\n=====2ë²ˆ======");
 		ArrayList<String> sList = new ArrayList<String>();
 		
 		for (int i = 0; i < 5; i++) {

@@ -5,27 +5,27 @@ public class ForTest1 {
 	public static void main(String[] args) {
 
 		/*
-		¹İº¹¹® - ¹İº¹ÀûÀÎ ÀÛ¾÷À» ¼öÇàÇÒ ¶§ »ç¿ë
-		1) for - ¹İº¹ È½¼ö°¡ Á¤ÇØÁø °æ¿ì
+		ë°˜ë³µë¬¸ - ë°˜ë³µì ì¸ ì‘ì—…ì„ ìˆ˜í–‰í•  ë•Œ ì‚¬ìš©
+		1) for - ë°˜ë³µ íšŸìˆ˜ê°€ ì •í•´ì§„ ê²½ìš°
 		2) while
 		3) do ~ while
-		4) È®Àå for 
+		4) í™•ì¥ for 
 		
-		   (½ÃÀÛ°ª;ÃÖÁ¾°ª;Áõ°¨½Ä)
-		for(ÃÊ±â½Ä;Á¶°Ç½Ä;Áõ°¨½Ä){
-			¹İº¹ÇÒ ¸í·É;
+		   (ì‹œì‘ê°’;ìµœì¢…ê°’;ì¦ê°ì‹)
+		for(ì´ˆê¸°ì‹;ì¡°ê±´ì‹;ì¦ê°ì‹){
+			ë°˜ë³µí•  ëª…ë ¹;
 		}
 		*/
 		
-		for(int i = 0; i < 3; i++) { // i : 1,2,3 => 3¹ø ¹İº¹
+		for(int i = 0; i < 3; i++) { // i : 1,2,3 => 3ë²ˆ ë°˜ë³µ
 			System.out.println("Hello java!");	
 		}//for
 		
-		for(int i = 0; i < 4; i++) { //4¹ø ¹İº¹
+		for(int i = 0; i < 4; i++) { //4ë²ˆ ë°˜ë³µ
 			System.out.println("i=" + i);
 		} //for
 		
-		for(int i = 3; i > 0; i--) { // i : 3,2,1 => 3¹ø ¹İº¹			
+		for(int i = 3; i > 0; i--) { // i : 3,2,1 => 3ë²ˆ ë°˜ë³µ			
 			System.out.println(i);
 		} //for
 		
@@ -62,8 +62,8 @@ public class ForTest1 {
 		for(int i = 2; i < 10; i += 2) {
 			System.out.println(i + ". jsp");
 		}//end of for
-		// 1¾¿ Áõ°¡ : i++ => i = i + 1 => i += 1
-		// 2¾¿ Áõ°¡ : i = i + 2 => i += 2
+		// 1ì”© ì¦ê°€ : i++ => i = i + 1 => i += 1
+		// 2ì”© ì¦ê°€ : i = i + 2 => i += 2
 		
 		System.out.println("==================");
 		

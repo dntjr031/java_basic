@@ -7,10 +7,10 @@ public class Array2Test2 {
 		System.out.println("=====[1]=====");
 		
 		String[] season = new String[4];
-		season[0] = "º½";
-		season[1] = "¿©¸§";
-		season[2] = "°¡À»";
-		season[3] = "°Ü¿ï";
+		season[0] = "ë´„";
+		season[1] = "ì—¬ë¦„";
+		season[2] = "ê°€ì„";
+		season[3] = "ê²¨ìš¸";
 		
 		for(int i = 0; i < season.length; i++) {
 			System.out.println("season[" + i + "]=" + season[i]);

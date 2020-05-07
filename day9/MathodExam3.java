@@ -23,24 +23,24 @@ public class MathodExam3 {
 
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.println("º¯È¯ÇÏ·Á´Â inch¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+		System.out.println("ë³€í™˜í•˜ë ¤ëŠ” inchë¥¼ ì…ë ¥í•˜ì„¸ìš”");
 		float inch = sc.nextFloat();
 		float result = toCm(inch);
 		System.out.println(inch + "inch => " + result + "cm");
 		
-		System.out.println("º¯È¯ÇÏ·Á´Â cm¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+		System.out.println("ë³€í™˜í•˜ë ¤ëŠ” cmë¥¼ ì…ë ¥í•˜ì„¸ìš”");
 		float cm = sc.nextFloat();
 		result = toInch(cm);
 		System.out.println(cm + "cm => " + result + "inch");
 		
 		System.out.println("\n===================\n");
 		
-		System.out.println("»ï°¢ÇüÀÇ ¹Øº¯ÀÇ ±æÀÌ, ³ôÀÌ¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+		System.out.println("ì‚¼ê°í˜•ì˜ ë°‘ë³€ì˜ ê¸¸ì´, ë†’ì´ë¥¼ ì…ë ¥í•˜ì„¸ìš”");
 		double m = sc.nextDouble();
 		double h = sc.nextDouble();
 		
 		double area = area(m, h);
-		System.out.println("»ï°¢ÇüÀÇ ¸éÀû : " + area);
+		System.out.println("ì‚¼ê°í˜•ì˜ ë©´ì  : " + area);
 		
 		sc.close();
 

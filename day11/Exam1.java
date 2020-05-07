@@ -8,7 +8,7 @@ public class Exam1 {
 
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.println("ÀÓÀÇÀÇ ¹®ÀÚ¿­À» ÀÔ·ÂÇÏ¼¼¿ä");
+		System.out.println("ì„ì˜ì˜ ë¬¸ìì—´ì„ ì…ë ¥í•˜ì„¸ìš”");
 		String str = sc.nextLine();
 		
 		int length = str.length();

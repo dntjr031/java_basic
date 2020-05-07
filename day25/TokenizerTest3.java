@@ -6,19 +6,19 @@ public class TokenizerTest3 {
 
 	public static void main(String[] args) {
 		/*
-		 split()Àº ºó ¹®ÀÚ¿­µµ ÅäÅ«À¸·Î ÀÎ½ÄÇÏ´Â ¹İ¸é
-		 StringTokenizer´Â ºó ¹®ÀÚ¿­À» ÅäÅ«À¸·Î ÀÎ½ÄÇÏÁö ¾Ê±â ¶§¹®¿¡
-		 ÀÎ½ÄÇÏ´Â ÅäÅ«ÀÇ °³¼ö°¡ ¼­·Î ´Ù¸§
+		 split()ì€ ë¹ˆ ë¬¸ìì—´ë„ í† í°ìœ¼ë¡œ ì¸ì‹í•˜ëŠ” ë°˜ë©´
+		 StringTokenizerëŠ” ë¹ˆ ë¬¸ìì—´ì„ í† í°ìœ¼ë¡œ ì¸ì‹í•˜ì§€ ì•Šê¸° ë•Œë¬¸ì—
+		 ì¸ì‹í•˜ëŠ” í† í°ì˜ ê°œìˆ˜ê°€ ì„œë¡œ ë‹¤ë¦„
 		 */
-		System.out.println("====splitÀÌ¿ë====");
+		System.out.println("====splitì´ìš©====");
 		String str = "100,,,200,300,400";
 		String[] s = str.split(",");
-		System.out.println("°³¼ö : " + s.length);
+		System.out.println("ê°œìˆ˜ : " + s.length);
 		for(String st : s) {
 			System.out.print(st +"|");
 		}
 		
-		System.out.println("\n====tokenÀÌ¿ë====");
+		System.out.println("\n====tokenì´ìš©====");
 		StringTokenizer stt = new StringTokenizer(str, ",");
 		
 		int count = 0;
@@ -26,7 +26,7 @@ public class TokenizerTest3 {
 			System.out.print(stt.nextToken() + "|");
 			count++;
 		}
-		System.out.println("\n°³¼ö : " + count);
+		System.out.println("\nê°œìˆ˜ : " + count);
 	}
 
 }

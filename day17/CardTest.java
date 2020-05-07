@@ -6,8 +6,8 @@ public class CardTest {
 		Card c1 = new Card("Heart", 7);
 		c1.display();
 		
-		System.out.println("Ä«µåÀÇ °¡·Î Å©±â : " + Card.WIDTH);
-		System.out.println("Ä«µåÀÇ ¼¼·Î Å©±â : " + Card.HEIGHT);
+		System.out.println("ì¹´ë“œì˜ ê°€ë¡œ í¬ê¸° : " + Card.WIDTH);
+		System.out.println("ì¹´ë“œì˜ ì„¸ë¡œ í¬ê¸° : " + Card.HEIGHT);
 		
 		Card c2 = new Card("Diamond", 3);
 		c2.display();
@@ -19,11 +19,11 @@ public class CardTest {
 }
 
 class Card{
-	//static final º¯¼ö´Â ¸í½ÃÀû ÃÊ±âÈ­¸¸ °¡´É
+	//static final ë³€ìˆ˜ëŠ” ëª…ì‹œì  ì´ˆê¸°í™”ë§Œ ê°€ëŠ¥
 	public static final int WIDTH = 120;
 	public static final int HEIGHT = 200;
-	// final º¯¼ö´Â ¼±¾ğ½Ã ÃÊ±âÈ­ÇÏ´Â ´ë½Å »ı¼ºÀÚ¿¡¼­ ´Ü ÇÑ¹ø ÃÊ±âÈ­ ÇÒ ¼ö ÀÖ´Ù.
-	// => ÀÎ½ºÅÏ½º¸¶´Ù ´Ù¸¥ °ªÀ» °®°Ô ÇÒ ¼ö ÀÖ´Ù.
+	// final ë³€ìˆ˜ëŠ” ì„ ì–¸ì‹œ ì´ˆê¸°í™”í•˜ëŠ” ëŒ€ì‹  ìƒì„±ìì—ì„œ ë‹¨ í•œë²ˆ ì´ˆê¸°í™” í•  ìˆ˜ ìˆë‹¤.
+	// => ì¸ìŠ¤í„´ìŠ¤ë§ˆë‹¤ ë‹¤ë¥¸ ê°’ì„ ê°–ê²Œ í•  ìˆ˜ ìˆë‹¤.
 	final String KIND;
 	final int NUMBER;
 	
@@ -32,7 +32,7 @@ class Card{
 		NUMBER = nUMBER;
 	}
 	public void display() {
-		System.out.println("Ä«µåÁ¾·ù : " + KIND);
-		System.out.println("Ä«µå¼ıÀÚ : " + NUMBER);
+		System.out.println("ì¹´ë“œì¢…ë¥˜ : " + KIND);
+		System.out.println("ì¹´ë“œìˆ«ì : " + NUMBER);
 	}
 }

@@ -9,15 +9,15 @@ class ShapeManager{
 	static Scanner sc = new Scanner(System.in);
 	
 	public void showMenu() {
-		System.out.print("1.¿ø, 2.»ç°¢Çü, 3.º¸±â, 4.Á¾·á ==> ");
+		System.out.print("1.ì›, 2.ì‚¬ê°í˜•, 3.ë³´ê¸°, 4.ì¢…ë£Œ ==> ");
 	}
 	
 	public void inputCircle() {
 		if(i == MAX_COUNT) {
-			System.out.println("´õÀÌ»ó ÀÔ·ÂÇÒ ¼ö ¾ø½À´Ï´Ù.");
+			System.out.println("ë”ì´ìƒ ì…ë ¥í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤.");
 			return;
 		}
-		System.out.print("¹İÁö¸§ : ");
+		System.out.print("ë°˜ì§€ë¦„ : ");
 		int r = sc.nextInt();
 		sh[i] = new Circle2(r);
 		i++;
@@ -25,10 +25,10 @@ class ShapeManager{
 	
 	public void inputRectangle() {
 		if(i == MAX_COUNT) {
-			System.out.println("´õÀÌ»ó ÀÔ·ÂÇÒ ¼ö ¾ø½À´Ï´Ù.");
+			System.out.println("ë”ì´ìƒ ì…ë ¥í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤.");
 			return;
 		}
-		System.out.println("°¡·Î, ¼¼·Î ÀÔ·Â");
+		System.out.println("ê°€ë¡œ, ì„¸ë¡œ ì…ë ¥");
 		int w = sc.nextInt();
 		int h = sc.nextInt();
 		sh[i] = new Rectangle(w, h);
@@ -37,7 +37,7 @@ class ShapeManager{
 	
 	public void printAll() {
 		if(i == 0) {
-			System.out.println("µ¥ÀÌÅÍ°¡ ¾ø½À´Ï´Ù.");
+			System.out.println("ë°ì´í„°ê°€ ì—†ìŠµë‹ˆë‹¤.");
 			return;
 		}
 		for (int j = 0; j < i; j++) {
@@ -68,10 +68,10 @@ public class ShapeTest2 {
 				sh.printAll();
 				continue;
 			}else if(n == 4) {
-				System.out.println("Á¾·áÇÕ´Ï´Ù");
+				System.out.println("ì¢…ë£Œí•©ë‹ˆë‹¤");
 				break;
 			}else {
-				System.out.println("Àß¸øÀÔ·Â!");
+				System.out.println("ì˜ëª»ì…ë ¥!");
 				continue;
 			}
 			

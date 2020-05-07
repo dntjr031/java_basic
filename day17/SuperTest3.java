@@ -2,7 +2,7 @@ package com.day17;
 
 public class SuperTest3 {
 	public static void main(String[] args) {
-		Son s = new Son("È«±æµ¿");
+		Son s = new Son("í™ê¸¸ë™");
 		s.showInfo();
 	}
 }
@@ -15,15 +15,15 @@ class Father{
 	}
 	
 	public void showInfo() {
-		System.out.println("ÀÌ¸§ : " + name);
+		System.out.println("ì´ë¦„ : " + name);
 	}
 
 }
 
 class Son extends Father{
-	//ºÎ¸ğ »ı¼ºÀÚ¿¡ ¸Å°³º¯¼ö°¡ ÀÖÀ¸¹Ç·Î ÀÚ½Ä Å¬·¡½º¿¡´Â ¹İµå½Ã »ı¼ºÀÚ°¡ ÀÖ¾î¾ß ÇÔ
+	//ë¶€ëª¨ ìƒì„±ìì— ë§¤ê°œë³€ìˆ˜ê°€ ìˆìœ¼ë¯€ë¡œ ìì‹ í´ë˜ìŠ¤ì—ëŠ” ë°˜ë“œì‹œ ìƒì„±ìê°€ ìˆì–´ì•¼ í•¨
 	public Son(String name) {
-		super(name); // ºÎ¸ğ »ı¼ºÀÚ¿¡ ¸Å°³º¯¼ö¸¦ ³Ö¾îÁà¾ß ÇÏ¹Ç·Î
+		super(name); // ë¶€ëª¨ ìƒì„±ìì— ë§¤ê°œë³€ìˆ˜ë¥¼ ë„£ì–´ì¤˜ì•¼ í•˜ë¯€ë¡œ
 	}
 	
 }

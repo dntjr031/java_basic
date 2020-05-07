@@ -4,23 +4,23 @@ public class ArrayMax {
 
 	public static void main(String[] args) {
 
-		//¹è¿­ ¿ä¼Ò Áß ÃÖ´ë°ª ±¸ÇÏ±â
+		//ë°°ì—´ ìš”ì†Œ ì¤‘ ìµœëŒ€ê°’ êµ¬í•˜ê¸°
 		int[] arr = {10,57,19,35,77,26};
 		
-		int max = arr[0]; //¿ì¼± 0¹øÂ° ¿ä¼Ò¸¦ ÃÖ´ë°ªÀ¸·Î ÁöÁ¤
+		int max = arr[0]; //ìš°ì„  0ë²ˆì§¸ ìš”ì†Œë¥¼ ìµœëŒ€ê°’ìœ¼ë¡œ ì§€ì •
 		
-		//1¹øÂ° ¿ä¼ÒºÎÅÍ Â÷·Ê´ë·Î max°ª°ú ºñ±³
+		//1ë²ˆì§¸ ìš”ì†Œë¶€í„° ì°¨ë¡€ëŒ€ë¡œ maxê°’ê³¼ ë¹„êµ
 		for(int i = 1; i < arr.length; i++) {
 			if(arr[i] > max) max = arr[i];
 		}//for
 		
-		//¹è¿­ ¿ä¼ÒÀÇ °ª
-		System.out.println("======¹è¿­ ¿ä¼ÒÀÇ °ª=======");
+		//ë°°ì—´ ìš”ì†Œì˜ ê°’
+		System.out.println("======ë°°ì—´ ìš”ì†Œì˜ ê°’=======");
 		for(int i = 0; i < arr.length; i++) {
 			System.out.print(arr[i] + " ");
 		}
 		
-		System.out.println("\n\nÃÖ´ë°ª : " + max);
+		System.out.println("\n\nìµœëŒ€ê°’ : " + max);
 
 	}
 

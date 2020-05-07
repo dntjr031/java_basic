@@ -3,30 +3,30 @@ package com.day12;
 public class CmdArgsTest {
 
 	public static void main(String[] args) {
-		// ¸í·ÉÁÙ ÀÎ¼ö
+		// ëª…ë ¹ì¤„ ì¸ìˆ˜
 		/*
-		 * Ä¿¸Çµå¶óÀÎÀ» ÅëÇØ ÀÔ·Â¹Þ±â
-		 * - ÇÁ·Î±×·¥À» ½ÇÇàÇÒ ¶§ Å¬·¡½º ÀÌ¸§ µÚ¿¡ °ø¹é¹®ÀÚ·Î ±¸ºÐÇÏ¿©
-		 * ¿©·¯ °³ÀÇ ¹®ÀÚ¿­À» ÇÁ·Î±×·¥¿¡ Àü´Þ ÇÒ ¼ö ÀÖÀ½
-		 * ¿¹) d:>java CmdArgsTest hong 123
+		 * ì»¤ë§¨ë“œë¼ì¸ì„ í†µí•´ ìž…ë ¥ë°›ê¸°
+		 * - í”„ë¡œê·¸ëž¨ì„ ì‹¤í–‰í•  ë•Œ í´ëž˜ìŠ¤ ì´ë¦„ ë’¤ì— ê³µë°±ë¬¸ìžë¡œ êµ¬ë¶„í•˜ì—¬
+		 * ì—¬ëŸ¬ ê°œì˜ ë¬¸ìžì—´ì„ í”„ë¡œê·¸ëž¨ì— ì „ë‹¬ í•  ìˆ˜ ìžˆìŒ
+		 * ì˜ˆ) d:>java CmdArgsTest hong 123
 		 * 
-		 * Ä¿¸Çµå¶óÀÎÀ» ÅëÇØ ÀÔ·ÂµÈ µÎ ¹®ÀÚ¿­Àº String¹è¿­¿¡ ´ã°Ü¼­
-		 * main¸Þ¼­µåÀÇ ¸Å°³º¯¼ö(args)¿¡ Àü´ÞµÊ
+		 * ì»¤ë§¨ë“œë¼ì¸ì„ í†µí•´ ìž…ë ¥ëœ ë‘ ë¬¸ìžì—´ì€ Stringë°°ì—´ì— ë‹´ê²¨ì„œ
+		 * mainë©”ì„œë“œì˜ ë§¤ê°œë³€ìˆ˜(args)ì— ì „ë‹¬ë¨
 		 * 
 		 * args[0] => hong
 		 * args[1] => 123
 		 */
 		
 		if(args.length < 2) {
-			System.out.println("¸í·ÉÁÙ ÀÎ¼ö¿¡ ÀÌ¸§, ³ªÀÌ¸¦ ÀÔ·ÂÇÏ¼¼¿ä!!");
+			System.out.println("ëª…ë ¹ì¤„ ì¸ìˆ˜ì— ì´ë¦„, ë‚˜ì´ë¥¼ ìž…ë ¥í•˜ì„¸ìš”!!");
 			return;
 		}
 		
 		String name = args[0];
 		int age = Integer.parseInt(args[1]);
 		
-		System.out.println("ÀÌ¸§ : " + name);
-		System.out.println("³ªÀÌ : " + age);
+		System.out.println("ì´ë¦„ : " + name);
+		System.out.println("ë‚˜ì´ : " + age);
 
 	}
 

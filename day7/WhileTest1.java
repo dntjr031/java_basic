@@ -6,29 +6,29 @@ public class WhileTest1 {
 
 	public static void main(String[] args) {
 
-		//¹İº¹¹® - while
+		//ë°˜ë³µë¬¸ - while
 		/*
-		 *	while(Á¶°Ç½Ä){
-		 * 		¹İº¹ÇÒ ³»¿ë;
+		 *	while(ì¡°ê±´ì‹){
+		 * 		ë°˜ë³µí•  ë‚´ìš©;
 		 * 	}
-		 * => Á¶°Ç½ÄÀÌ ÂüÀÎ µ¿¾È ¹İº¹ÇÒ ³»¿ëÀ» ¹İº¹
+		 * => ì¡°ê±´ì‹ì´ ì°¸ì¸ ë™ì•ˆ ë°˜ë³µí•  ë‚´ìš©ì„ ë°˜ë³µ
 		 */
 		
-		Scanner sc = new Scanner("\n\n°¡³ª´Ù ÇÏ³ª µÑ\n\n¶ó\n\n");
+		Scanner sc = new Scanner("\n\nê°€ë‚˜ë‹¤ í•˜ë‚˜ ë‘˜\n\në¼\n\n");
 		String str = "";
 		
 		//public boolean hasNext()
 		
 		while(sc.hasNext()) {
 			str = sc.nextLine();
-			System.out.println("Ãâ·Â : " + str);
+			System.out.println("ì¶œë ¥ : " + str);
 		}//while
 		
 		str = sc.nextLine();
-		System.out.println("while Å»Ãâ ÈÄ1 : " + str);
+		System.out.println("while íƒˆì¶œ í›„1 : " + str);
 		
-		str = sc.nextLine(); //½ÇÇà¿¡·¯ - No line found 
-		System.out.println("while Å»Ãâ ÈÄ2 : " + str);
+		str = sc.nextLine(); //ì‹¤í–‰ì—ëŸ¬ - No line found 
+		System.out.println("while íƒˆì¶œ í›„2 : " + str);
 		
 		sc.close();
 		

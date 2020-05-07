@@ -5,32 +5,32 @@ import java.util.Scanner;
 public class WhileLoop {
 
 	public static void main(String[] args) {
-		// whileÀ» ÀÌ¿ëÇÑ ¹«ÇÑ·çÇÁ
+		// whileì„ ì´ìš©í•œ ë¬´í•œë£¨í”„
 		/*
 		 * 	while(true_{
-		 * 		¹İº¹ÇÒ ¸í·É;
-		 * 		Æ¯Á¤Á¶°ÇÀÎ °æ¿ì break;
+		 * 		ë°˜ë³µí•  ëª…ë ¹;
+		 * 		íŠ¹ì •ì¡°ê±´ì¸ ê²½ìš° break;
 		 * }
 		 */
 		Scanner sc = new Scanner(System.in);
 		
 		while(true) {
-			System.out.println("Á¤¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä. ³¡³¾¶§´Â 0ÀÔ·Â");
+			System.out.println("ì •ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”. ëë‚¼ë•ŒëŠ” 0ì…ë ¥");
 			int n = sc.nextInt();
 			
 			String result = "";
 			if(n == 0) {
 				break;
 			}else if(n > 0) {
-				result = "¾ç¼öÀÔ´Ï´Ù.";
+				result = "ì–‘ìˆ˜ì…ë‹ˆë‹¤.";
 			}else {
-				result = "À½¼öÀÔ´Ï´Ù.";
+				result = "ìŒìˆ˜ì…ë‹ˆë‹¤.";
 			}
 			System.out.println(result + "\n");
 			
 		}//while
 		
-		System.out.println("Á¾·áµÇ¾ú½À´Ï´Ù.");
+		System.out.println("ì¢…ë£Œë˜ì—ˆìŠµë‹ˆë‹¤.");
 		sc.close();
 
 	}

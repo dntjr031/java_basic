@@ -5,9 +5,9 @@ public class RuntimeExceptionCase {
 	public static void main(String[] args) {
 		try {
 			int[] arr = new int[3];
-			arr[3] = 10; //¿¹¿Ü
+			arr[3] = 10; //ì˜ˆì™¸
 		}catch(ArrayIndexOutOfBoundsException e) {
-			System.out.println("¿¹¿Ü¹ß»ı : " + e);
+			System.out.println("ì˜ˆì™¸ë°œìƒ : " + e);
 		}
 		
 		try {
@@ -15,7 +15,7 @@ public class RuntimeExceptionCase {
 			String s = (String)obj;
 			System.out.println(s);
 		}catch(ClassCastException e) {
-			System.out.println("¿¹¿Ü¹ß»ı : " + e.getMessage());
+			System.out.println("ì˜ˆì™¸ë°œìƒ : " + e.getMessage());
 		}
 		
 		try {

@@ -1,0 +1,15 @@
+JDBC연동 방법.txt
+
+
+C:\oraclexe\app\oracle\product\11.2.0\server\jdbc\lib\ojdbc6.jar
+jdbc 드라이버 경로(ojdbc6.jar)
+
+C:\Program Files\Java\jdk1.8.0_241\jre\lib\ext\ojdbc6.jar
+jdbc 드라이버 넣는 경로(외부 jar파일 넣는 경로)
+
+<환경 변수 셋팅>
+1) classpath에 추가
+- C:\Program Files\Java\jdk1.8.0_241\jre\lib\ext\ojdbc6.jar
+
+2) 이클립스 사용시
+- build path => 라이브러리에 ojdbc6.jar 추가

@@ -7,7 +7,7 @@ public class GradeTest3 {
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);
-		System.out.println("±¹¾î, ¿µ¾î, ¼öÇĞ Á¡¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+		System.out.println("êµ­ì–´, ì˜ì–´, ìˆ˜í•™ ì ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”");
 		int k = sc.nextInt();
 		int e = sc.nextInt();
 		int m = sc.nextInt();
@@ -17,14 +17,14 @@ public class GradeTest3 {
 		int score = g.score();
 		double grade = g.grade();
 		
-		System.out.println("ÃÑÁ¡ : " + score + ", Æò±Õ = " + grade);
+		System.out.println("ì´ì  : " + score + ", í‰ê·  = " + grade);
 		
 		while(true) {
-			System.out.println("\n°è¼ÓÇÏ½Ã°Ú½À´Ï±î? 1.°è¼Ó 2.Á¾·á");
+			System.out.println("\nê³„ì†í•˜ì‹œê² ìŠµë‹ˆê¹Œ? 1.ê³„ì† 2.ì¢…ë£Œ");
 			int a = sc.nextInt();
 			if(a != 1) break;
 			
-			System.out.println("\n±¹¾î, ¿µ¾î, ¼öÇĞ Á¡¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+			System.out.println("\nêµ­ì–´, ì˜ì–´, ìˆ˜í•™ ì ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”");
 			k = sc.nextInt();
 			e = sc.nextInt();
 			m = sc.nextInt();
@@ -36,10 +36,10 @@ public class GradeTest3 {
 			score = g.score();
 			grade = g.grade();
 			
-			System.out.println("ÃÑÁ¡ : " + score + ", Æò±Õ = " + grade);
+			System.out.println("ì´ì  : " + score + ", í‰ê·  = " + grade);
 		}
 		
-		System.out.println("Á¾·áµÇ¾ú½À´Ï´Ù.");
+		System.out.println("ì¢…ë£Œë˜ì—ˆìŠµë‹ˆë‹¤.");
 		sc.close();
 
 	}

@@ -8,7 +8,7 @@ public class FoodSaleTest {
 
 		Scanner sc = new Scanner(System.in);
 		while(true) {
-			System.out.println("¸Ş´º, ¼ö·®, ´Ü°¡¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+			System.out.println("ë©”ë‰´, ìˆ˜ëŸ‰, ë‹¨ê°€ë¥¼ ì…ë ¥í•˜ì„¸ìš”");
 			String menu = sc.nextLine();
 			int quantity = sc.nextInt();
 			int price = sc.nextInt();
@@ -17,15 +17,15 @@ public class FoodSaleTest {
 			fo.findDiscount();
 			fo.findTotal();
 			fo.findTouch();
-			System.out.println("ÆÇ¸Å±İ¾× = " + fo.getTotalPrice() + "¿ø");
-			System.out.println("´©Àû ÆÇ¸Å±İ¾× = " + FoodSale.getTouch() + "¿ø");
+			System.out.println("íŒë§¤ê¸ˆì•¡ = " + fo.getTotalPrice() + "ì›");
+			System.out.println("ëˆ„ì  íŒë§¤ê¸ˆì•¡ = " + FoodSale.getTouch() + "ì›");
 			
-			System.out.println("±×¸¸ÇÏ½Ã°Ú½À´Ï±î? Q");
+			System.out.println("ê·¸ë§Œí•˜ì‹œê² ìŠµë‹ˆê¹Œ? Q");
 			sc.nextLine();
 			String esc = sc.nextLine();
 			if(esc.equalsIgnoreCase("q")) break;
 		}
-		System.out.println("Á¾·áµÇ¾ú½À´Ï´Ù");
+		System.out.println("ì¢…ë£Œë˜ì—ˆìŠµë‹ˆë‹¤");
 		
 		sc.close();
 		

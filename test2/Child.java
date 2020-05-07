@@ -5,15 +5,15 @@ import com.test1.Parent;
 public class Child extends Parent {
 	
 	public Child(){
-		name = "ÀÚ½Ä";
+		name = "ìì‹";
 		age = 20;
-		addr = "¼­ÃÊµ¿";
-		//nickName = "º°¸í"; // private
+		addr = "ì„œì´ˆë™";
+		//nickName = "ë³„ëª…"; // private
 		//number = 1; // default
 	}
 	
 	public void showInfo() {
-		System.out.println("ÀÌ¸§ : " + name + ", ³ªÀÌ : " + age);
-		System.out.println("ÁÖ¼Ò: " + addr + "\n");
+		System.out.println("ì´ë¦„ : " + name + ", ë‚˜ì´ : " + age);
+		System.out.println("ì£¼ì†Œ: " + addr + "\n");
 	}
 }

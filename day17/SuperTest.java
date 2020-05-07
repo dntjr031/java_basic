@@ -22,11 +22,11 @@ class Child extends Parent{
 		System.out.println("this.x=" + this.x);
 		System.out.println("super.x=" + super.x);
 		/*
-		this	- ÀÚ½ÅÀÇ ¸â¹ö¸¦ ÂüÁ¶ÇÏ´Â this
-	 	this()	- ÀÚ½ÅÀÇ »ı¼ºÀÚ¸¦ È£ÃâÇÏ´Â this()
+		this	- ìì‹ ì˜ ë©¤ë²„ë¥¼ ì°¸ì¡°í•˜ëŠ” this
+	 	this()	- ìì‹ ì˜ ìƒì„±ìë¥¼ í˜¸ì¶œí•˜ëŠ” this()
 		 
-		super 	- ºÎ¸ğÀÇ ¸â¹ö¸¦ ÂüÁ¶ÇÏ´Â super
-		super()	- ºÎ¸ğÀÇ »ı¼ºÀÚ¸¦ È£ÃâÇÏ´Â super()
+		super 	- ë¶€ëª¨ì˜ ë©¤ë²„ë¥¼ ì°¸ì¡°í•˜ëŠ” super
+		super()	- ë¶€ëª¨ì˜ ìƒì„±ìë¥¼ í˜¸ì¶œí•˜ëŠ” super()
 		 */
 	}
 }

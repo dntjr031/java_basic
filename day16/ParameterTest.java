@@ -8,7 +8,7 @@ public class ParameterTest {
 
 	public static void main(String[] args) {
 		Data d = new Data();
-		System.out.println("======±âº»Çü ¸Å°³º¯¼ö======");
+		System.out.println("======ê¸°ë³¸í˜• ë§¤ê°œë³€ìˆ˜======");
 		d.x = 10;
 		System.out.println("main() : x = " + d.x);
 		
@@ -16,7 +16,7 @@ public class ParameterTest {
 		System.out.println("After change(d.x)");
 		System.out.println("main() : x = " + d.x);
 	
-		System.out.println("\n======ÂüÁ¶Çü ¸Å°³º¯¼ö======");
+		System.out.println("\n======ì°¸ì¡°í˜• ë§¤ê°œë³€ìˆ˜======");
 		d.x = 20;
 		System.out.println("main() : x = " + d.x);
 		
@@ -24,7 +24,7 @@ public class ParameterTest {
 		System.out.println("After change(d)");
 		System.out.println("main() : x = " + d.x);
 		
-		System.out.println("\n======ÂüÁ¶Çü(¹è¿­) ¸Å°³º¯¼ö======");
+		System.out.println("\n======ì°¸ì¡°í˜•(ë°°ì—´) ë§¤ê°œë³€ìˆ˜======");
 		int[] x = {30};
 		System.out.println("main() : x[0] = " + x[0]);
 		
@@ -35,23 +35,23 @@ public class ParameterTest {
 	}
 	
 	public static void change(int x) { 
-		// ±âº»Çü ¸Å°³º¯¼ö, call by value
-		// - º¯¼öÀÇ °ªÀ» ÀĞ±â¸¸ ÇÒ ¼ö ÀÖ´Ù. (read only)
-		// - ¸Ş¼­µå¿¡¼­ ¸Å°³º¯¼öÀÇ °ªÀ» º¯°æÇØµµ È£ÃâÇÑ °÷¿¡¼­´Â º¯°æÀÇ ¿µÇâÀ» ¹ŞÁö ¾Ê´Â´Ù.
+		// ê¸°ë³¸í˜• ë§¤ê°œë³€ìˆ˜, call by value
+		// - ë³€ìˆ˜ì˜ ê°’ì„ ì½ê¸°ë§Œ í•  ìˆ˜ ìˆë‹¤. (read only)
+		// - ë©”ì„œë“œì—ì„œ ë§¤ê°œë³€ìˆ˜ì˜ ê°’ì„ ë³€ê²½í•´ë„ í˜¸ì¶œí•œ ê³³ì—ì„œëŠ” ë³€ê²½ì˜ ì˜í–¥ì„ ë°›ì§€ ì•ŠëŠ”ë‹¤.
 		x = 1000;
 		System.out.println("change() : x = " + x);
 	}
 	
 	public static void change(Data d) {
-		// ÂüÁ¶Çü ¸Å°³º¯¼ö, call by reference
-		// - º¯¼öÀÇ °ªÀ» ÀĞ°í º¯°æÇÒ ¼ö ÀÖ´Ù.
+		// ì°¸ì¡°í˜• ë§¤ê°œë³€ìˆ˜, call by reference
+		// - ë³€ìˆ˜ì˜ ê°’ì„ ì½ê³  ë³€ê²½í•  ìˆ˜ ìˆë‹¤.
 		d.x = 2000;
 		System.out.println("change() : x = " + d.x);
 	}
 	
 	public static void change(int[] x) {
-		// ÂüÁ¶Çü ¸Å°³º¯¼ö, call by reference
-		// - º¯¼öÀÇ °ªÀ» ÀĞ°í º¯°æÇÒ ¼ö ÀÖ´Ù.
+		// ì°¸ì¡°í˜• ë§¤ê°œë³€ìˆ˜, call by reference
+		// - ë³€ìˆ˜ì˜ ê°’ì„ ì½ê³  ë³€ê²½í•  ìˆ˜ ìˆë‹¤.
 		x[0]= 3000;
 		System.out.println("change() : x[0] = " + x[0]);
 	}

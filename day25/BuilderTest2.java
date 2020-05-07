@@ -3,12 +3,12 @@ package com.day25;
 public class BuilderTest2 {
 
 	public static void main(String[] args) {
-		//1. StringÀ» StringBuilder·Î
+		//1. Stringì„ StringBuilderë¡œ
 		String str = "java";
 		StringBuilder sb = new StringBuilder(str);
 		System.out.println(sb);
 		
-		//2. StringBuilder¸¦ StringÀ¸·Î
+		//2. StringBuilderë¥¼ Stringìœ¼ë¡œ
 		StringBuilder sb2 = new StringBuilder("test");
 		String str2 = sb2.toString();
 		System.out.println(str2);

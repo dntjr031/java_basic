@@ -55,38 +55,38 @@ public class MathodExam {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.println("ÆÇ¸Å¼ö·®À» ÀÔ·ÂÇÏ¼¼¿ä");
+		System.out.println("íŒë§¤ìˆ˜ëŸ‰ì„ ì…ë ¥í•˜ì„¸ìš”");
 		int a = sc.nextInt();
-		System.out.println("ÆÇ¸Å ±İ¾×À» ÀÔ·ÂÇÏ¼¼¿ä");
+		System.out.println("íŒë§¤ ê¸ˆì•¡ì„ ì…ë ¥í•˜ì„¸ìš”");
 		int b = sc.nextInt();
 		
 		double perPay = perPay(a, b);
 		
-		System.out.println("¼ö·® " + a + "ÀÇ ¼º°ú±Ş : " + perPay);
+		System.out.println("ìˆ˜ëŸ‰ " + a + "ì˜ ì„±ê³¼ê¸‰ : " + perPay);
 		
 		System.out.println("\n========================\n");
 		
-		System.out.println("µÎ ¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+		System.out.println("ë‘ ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”");
 		int n1 = sc.nextInt();
 		int n2 = sc.nextInt();
 		
 		int result = addOdd(n1, n2);
 		
-		System.out.println(n1 + "°ú " + n2 + "»çÀÌÀÇ È¦¼öÀÇ ÇÕ = " + result);
+		System.out.println(n1 + "ê³¼ " + n2 + "ì‚¬ì´ì˜ í™€ìˆ˜ì˜ í•© = " + result);
 		
 		System.out.println("\n========================\n");
 		
-		System.out.println("¹®ÀÚ¿­À» ÀÔ·ÂÇÏ¼¼¿ä");
+		System.out.println("ë¬¸ìì—´ì„ ì…ë ¥í•˜ì„¸ìš”");
 		sc.nextLine();
 		String str = sc.nextLine();
 		
 		String answer = "";
 		if(numOrChar(str)) {
-			answer = "¼ıÀÚÀÔ´Ï´Ù.";
+			answer = "ìˆ«ìì…ë‹ˆë‹¤.";
 		}else {
-			answer = "¼ıÀÚ°¡ ¾Æ´Õ´Ï´Ù.";
+			answer = "ìˆ«ìê°€ ì•„ë‹™ë‹ˆë‹¤.";
 		}
-		System.out.println(str + "Àº " + answer);
+		System.out.println(str + "ì€ " + answer);
 		
 		sc.close();
 	}

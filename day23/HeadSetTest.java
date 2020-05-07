@@ -14,9 +14,9 @@ public class HeadSetTest {
 		}
 		
 		System.out.println(tset);
-		System.out.println("50º¸´Ù ÀÛÀº ¿ä¼Ò" + tset.headSet(50));
-		System.out.println("50º¸´Ù Å« ¿ä¼Ò" + tset.tailSet(50));
-		System.out.println("¹üÀ§ °Ë»ö(65 <= x < 95) : " + tset.subSet(65, 95));
+		System.out.println("50ë³´ë‹¤ ì‘ì€ ìš”ì†Œ" + tset.headSet(50));
+		System.out.println("50ë³´ë‹¤ í° ìš”ì†Œ" + tset.tailSet(50));
+		System.out.println("ë²”ìœ„ ê²€ìƒ‰(65 <= x < 95) : " + tset.subSet(65, 95));
 		
 	}
 

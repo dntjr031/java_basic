@@ -18,10 +18,10 @@ public class Exam_94Test {
 					phone.inputData();
 					break;
 				case 2:
-					System.out.println("ÇÁ·Î±×·¥À» Á¾·áÇÕ´Ï´Ù.");
+					System.out.println("í”„ë¡œê·¸ë¨ì„ ì¢…ë£Œí•©ë‹ˆë‹¤.");
 					return;
 				default:
-					System.out.println("Àß¸ø ¼±ÅÃÇÏ¿´½À´Ï´Ù. ´Ù½Ã ¼±ÅÃÇÏ¼¼¿ä\n");
+					System.out.println("ì˜ëª» ì„ íƒí•˜ì˜€ìŠµë‹ˆë‹¤. ë‹¤ì‹œ ì„ íƒí•˜ì„¸ìš”\n");
 					continue;
 			}
 			sc.close();

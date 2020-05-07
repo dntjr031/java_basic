@@ -22,10 +22,10 @@ interface Computer2{
 class IPTV2 implements TV2, Computer2{
 
 	public void onTV() {
-		System.out.println("TV¿µ»ó Ãâ·Â Áß");
+		System.out.println("TVì˜ìƒ ì¶œë ¥ ì¤‘");
 	}
 	public void dataReceive() {
-		System.out.println("¿µ»ó µ¥ÀÌÅÍ ¼ö½Å Áß");
+		System.out.println("ì˜ìƒ ë°ì´í„° ìˆ˜ì‹  ì¤‘");
 	}
 	public void powerOn() {
 		dataReceive();

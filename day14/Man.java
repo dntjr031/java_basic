@@ -6,11 +6,11 @@ public class Man {
 	int height;
 	
 	// getter, setter
-	public int getAge() { //ÀĞ¾î¿À±â
+	public int getAge() { //ì½ì–´ì˜¤ê¸°
 		return age;
 	}
 	
-	public void setAge(int age) { // ¾²±â
+	public void setAge(int age) { // ì“°ê¸°
 		this.age = age;
 	}
 	

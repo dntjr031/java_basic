@@ -6,9 +6,9 @@ public class PersonTest {
 
 	public static void main(String[] args) {
 		Person[] p = new Person[3];
-		p[0] = new Person("È«±æµ¿", 20);
-		p[1] = new Person("±è±æµ¿", 30);
-		p[2] = new Person("¹Ú±æµ¿", 40);
+		p[0] = new Person("í™ê¸¸ë™", 20);
+		p[1] = new Person("ê¹€ê¸¸ë™", 30);
+		p[2] = new Person("ë°•ê¸¸ë™", 40);
 		
 		for (int i = 0; i < p.length; i++) {
 			System.out.println(p[i]);
@@ -16,11 +16,11 @@ public class PersonTest {
 			System.out.println();
 		}
 
-		System.out.println("\n\nArrayList ÀÌ¿ë");
+		System.out.println("\n\nArrayList ì´ìš©");
 		ArrayList<Person> pArr = new ArrayList<Person>();
-		pArr.add(new Person("±èÃ¶¼ö", 15));
-		pArr.add(new Person("ÀÌÃ¶¼ö", 25));
-		pArr.add(new Person("ÃÖÃ¶¼ö", 35));
+		pArr.add(new Person("ê¹€ì² ìˆ˜", 15));
+		pArr.add(new Person("ì´ì² ìˆ˜", 25));
+		pArr.add(new Person("ìµœì² ìˆ˜", 35));
 		
 		for(Person pe : pArr) {
 			System.out.println(pe);

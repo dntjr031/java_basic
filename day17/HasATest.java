@@ -34,7 +34,7 @@ class Point2{
 }
 
 class Circle2{
-	Point2 p; //Æ÷ÇÔ°ü°è ÀÌ¿ë
+	Point2 p; //í¬í•¨ê´€ê³„ ì´ìš©
 	int r;
 	
 	public Circle2(Point2 p, int r) {

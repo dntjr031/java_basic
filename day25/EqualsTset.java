@@ -6,31 +6,31 @@ public class EqualsTset {
 		Test v1 = new Test(10);
 		Test v2 = new Test(10);
 		if(v1.equals(v2)) {
-			System.out.println("v1°ú v2´Â °°´Ù");
+			System.out.println("v1ê³¼ v2ëŠ” ê°™ë‹¤");
 		}else {
-			System.out.println("v1°ú v2´Â ´Ù¸£´Ù");
+			System.out.println("v1ê³¼ v2ëŠ” ë‹¤ë¥´ë‹¤");
 		}
 		
 		if(v1 == v2) {
-			System.out.println("v1°ú v2´Â °°´Ù");
+			System.out.println("v1ê³¼ v2ëŠ” ê°™ë‹¤");
 		}else {
-			System.out.println("v1°ú v2´Â ´Ù¸£´Ù");
+			System.out.println("v1ê³¼ v2ëŠ” ë‹¤ë¥´ë‹¤");
 		}
 		
 		v2 = v1;
 		if(v1.equals(v2)) {
-			System.out.println("v1°ú v2´Â °°´Ù");
+			System.out.println("v1ê³¼ v2ëŠ” ê°™ë‹¤");
 		}else {
-			System.out.println("v1°ú v2´Â ´Ù¸£´Ù");
+			System.out.println("v1ê³¼ v2ëŠ” ë‹¤ë¥´ë‹¤");
 		}
 		/*
-		 ¿¬»êÀÚ ==
-		 [1] ±âº»Çü¿¡¼­ °ª ºñ±³
-		 [2] ÂüÁ¶Çü¿¡¼­ ÁÖ¼Ò ºñ±³
+		 ì—°ì‚°ì ==
+		 [1] ê¸°ë³¸í˜•ì—ì„œ ê°’ ë¹„êµ
+		 [2] ì°¸ì¡°í˜•ì—ì„œ ì£¼ì†Œ ë¹„êµ
 		 
-		 StringÀÇ equals() ¸Ş¼­µå - ¹®ÀÚ¿­ÀÇ °ª ºñ±³
-		 						- ObjectÀÇ equals()¸¦ ¿À¹ö¶óÀÌµù ÇÑ °Í
-		 ObjectÀÇ equals() ¸Ş¼­µå - ÁÖ¼Òºñ±³
+		 Stringì˜ equals() ë©”ì„œë“œ - ë¬¸ìì—´ì˜ ê°’ ë¹„êµ
+		 						- Objectì˜ equals()ë¥¼ ì˜¤ë²„ë¼ì´ë”© í•œ ê²ƒ
+		 Objectì˜ equals() ë©”ì„œë“œ - ì£¼ì†Œë¹„êµ
 		 */
 	}
 

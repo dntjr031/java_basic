@@ -2,26 +2,26 @@ package com.day26;
 
 public class InnerTest {
 	
-	// ÀÎ½ºÅÏ½º Å¬·¡½º
+	// ì¸ìŠ¤í„´ìŠ¤ í´ë˜ìŠ¤
 	class InstanceInner{
 		int iv = 100;
-		//static int cv = 100; //error, staticº¯¼ö¸¦ ¼±¾ğÇÒ ¼ö ¾ø´Ù
-		final static int CONST = 100; // »ó¼öÀÌ¹Ç·Î Çã¿ë
+		//static int cv = 100; //error, staticë³€ìˆ˜ë¥¼ ì„ ì–¸í•  ìˆ˜ ì—†ë‹¤
+		final static int CONST = 100; // ìƒìˆ˜ì´ë¯€ë¡œ í—ˆìš©
 	}
 	
-	//static Å¬·¡½º
+	//static í´ë˜ìŠ¤
 	static class StaticInner{
 		int iv = 200;
-		static int cv = 200; // staticÅ¬·¡½º¸¸ static¸â¹ö¸¦ Á¤ÀÇÇÒ ¼ö ÀÖ´Ù.
+		static int cv = 200; // staticí´ë˜ìŠ¤ë§Œ staticë©¤ë²„ë¥¼ ì •ì˜í•  ìˆ˜ ìˆë‹¤.
 		final static int CONST = 100;
 	}
 	
 	void myMethod() {
-		//Áö¿ª Å¬·¡½º
+		//ì§€ì—­ í´ë˜ìŠ¤
 		/*class LocalInner{
 			int iv = 300;
-			//static int cv = 300; // error, staticº¯¼ö¸¦ ¼±¾ğÇÒ ¼ö ¾ø´Ù
-			final static int CONST = 300; // »ó¼öÀÌ¹Ç·Î Çã¿ë
+			//static int cv = 300; // error, staticë³€ìˆ˜ë¥¼ ì„ ì–¸í•  ìˆ˜ ì—†ë‹¤
+			final static int CONST = 300; // ìƒìˆ˜ì´ë¯€ë¡œ í—ˆìš©
 		}*/
 	}
 	

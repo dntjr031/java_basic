@@ -7,26 +7,26 @@ public class ForLoop {
 	public static void main(String[] args) {
 		
 		/*
-		 * ¹«ÇÑ·çÇÁ - ¹«ÇÑÈ÷ ¹İº¹µÇ´Â ¹«ÇÑ ·çÇÁ
+		 * ë¬´í•œë£¨í”„ - ë¬´í•œíˆ ë°˜ë³µë˜ëŠ” ë¬´í•œ ë£¨í”„
 		 * 
 		 * 	for(;;){
-		 * 		¹İº¹ÇÒ ¸í·É;
-		 * 		if(Á¶°Ç½Ä) break;	
+		 * 		ë°˜ë³µí•  ëª…ë ¹;
+		 * 		if(ì¡°ê±´ì‹) break;	
 		 * 	}
 		 * 
-		 * => ¹«ÇÑ ·çÇÁ¾È¿¡¼­´Â break¸¦ »ç¿ëÇØ¼­ ¹İº¹¹®À» ºüÁ®³ª¿À°Ô ÇØ¾ß ÇÔ
+		 * => ë¬´í•œ ë£¨í”„ì•ˆì—ì„œëŠ” breakë¥¼ ì‚¬ìš©í•´ì„œ ë°˜ë³µë¬¸ì„ ë¹ ì ¸ë‚˜ì˜¤ê²Œ í•´ì•¼ í•¨
 		 */
 
 		Scanner sc = new Scanner(System.in);
 		
 		for(;;) {
-			System.out.println("°ÔÀÓ Áß!!!!");
-			System.out.println("°è¼Ó ÇÏ½Ã°Ú½À´Ï±î?(Y/N)");
+			System.out.println("ê²Œì„ ì¤‘!!!!");
+			System.out.println("ê³„ì† í•˜ì‹œê² ìŠµë‹ˆê¹Œ?(Y/N)");
 			String gameYn = sc.nextLine();
 			
 			if(gameYn.equalsIgnoreCase("y")) break;
 		} //for
-		System.out.println("Á¾·áµÇ¾ú½À´Ï´Ù.");
+		System.out.println("ì¢…ë£Œë˜ì—ˆìŠµë‹ˆë‹¤.");
 		sc.close();
 
 	}

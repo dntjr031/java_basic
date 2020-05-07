@@ -11,17 +11,17 @@ public class CalendarExam {
 		
 		long gap = cal.getTimeInMillis() - my.getTimeInMillis();
 		gap = gap/(24*60*60)/1000;
-		System.out.println("»ıÀÏ(1994-03-03)ÀÌÈÄ °æ°ú ÀÏ¼ö: " + gap);
+		System.out.println("ìƒì¼(1994-03-03)ì´í›„ ê²½ê³¼ ì¼ìˆ˜: " + gap);
 		
 		my.set(2020, 11, 25);
 		gap = my.getTimeInMillis() - cal.getTimeInMillis();
 		gap = gap/(24*60*60)/1000;
-		System.out.println("Å©¸®½º¸¶½º±îÁö ³²Àº ÀÏ¼ö: " + gap);
+		System.out.println("í¬ë¦¬ìŠ¤ë§ˆìŠ¤ê¹Œì§€ ë‚¨ì€ ì¼ìˆ˜: " + gap);
 		
 		cal.add(Calendar.DATE, -50);
 		
-		System.out.println("50ÀÏ Àü: " + cal.get(Calendar.YEAR) + "³â " + (cal.get(Calendar.MONTH)+1) 
-						+ "¿ù " + cal.get(Calendar.DATE) + "ÀÏ");
+		System.out.println("50ì¼ ì „: " + cal.get(Calendar.YEAR) + "ë…„ " + (cal.get(Calendar.MONTH)+1) 
+						+ "ì›” " + cal.get(Calendar.DATE) + "ì¼");
 	}
 
 }

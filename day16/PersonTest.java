@@ -40,16 +40,16 @@ public class PersonTest {
 		Scanner sc = new Scanner(System.in);
 		Student st = new Student();
 		
-		System.out.println("ÀÌ¸§, ³ªÀÌ, Àü°øÀ» ÀÔ·ÂÇÏ¼¼¿ä");
+		System.out.println("ì´ë¦„, ë‚˜ì´, ì „ê³µì„ ì…ë ¥í•˜ì„¸ìš”");
 		st.setName(sc.nextLine());
 		st.setAge(sc.nextInt());
 		sc.nextLine();
 		st.setMajor(sc.nextLine());
 		
 		System.out.println("==================================");
-		System.out.println("ÀÌ¸§:" + st.getName());
-		System.out.println("³ªÀÌ:" + st.getAge());
-		System.out.println("Àü°ø:" + st.getMajor());
+		System.out.println("ì´ë¦„:" + st.getName());
+		System.out.println("ë‚˜ì´:" + st.getAge());
+		System.out.println("ì „ê³µ:" + st.getMajor());
 		
 		sc.close();
 

@@ -25,7 +25,7 @@ public class Time {
 	}
 	
 	public void print() {
-		System.out.println(hour + "½Ã\t" + min + "ºÐ\t" + sec + "ÃÊ");
+		System.out.println(hour + "ì‹œ\t" + min + "ë¶„\t" + sec + "ì´ˆ");
 	}
 	
 	public int toSec() {

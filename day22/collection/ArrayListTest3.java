@@ -6,19 +6,19 @@ import java.util.Scanner;
 public class ArrayListTest3 {
 
 	public static void main(String[] args) {
-		// ±ÔÄ¢ÀÌ ÀÖ´Â °æ¿ì for¹®¿¡¼­ ÃÊ±âÈ­
+		// ê·œì¹™ì´ ìˆëŠ” ê²½ìš° forë¬¸ì—ì„œ ì´ˆê¸°í™”
 		ArrayList<Integer> list = new ArrayList<Integer>(4);
 		
-		//ÀúÀå
+		//ì €ì¥
 		for (int i = 0; i < 3; i++) {
 			list.add((i + 1) * 2);
 		}
-		//ÀĞ¾î¿À±â
+		//ì½ì–´ì˜¤ê¸°
 		for (int i = 0; i < list.size(); i++) {
 			int n = list.get(i);
 			System.out.println(n);
 		}
-		System.out.println("\n=====È®Àå for ÀÌ¿ë=====");
+		System.out.println("\n=====í™•ì¥ for ì´ìš©=====");
 		
 		for(int n : list) {
 			System.out.print(n + "\t");
@@ -30,7 +30,7 @@ public class ArrayListTest3 {
 		ArrayList<String> list2 = new ArrayList<String>(4);
 		
 		for (int i = 0; i < 2; i++) {
-			System.out.println("ÀÌ¸§À» ÀÔ·ÂÇÏ¼¼¿ä");
+			System.out.println("ì´ë¦„ì„ ì…ë ¥í•˜ì„¸ìš”");
 			String name = sc.nextLine();
 			list2.add(name);
 		}

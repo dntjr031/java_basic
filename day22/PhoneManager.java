@@ -11,13 +11,13 @@ public class PhoneManager{
 	private static int i = 0;
 	
 	public int showMenu() throws MenuChoiceException{
-		System.out.println("¼±ÅÃÇÏ¼¼¿ä...");
-		System.out.println("1. µ¥ÀÌÅÍ ÀÔ·Â");
-		System.out.println("2. ÀüÃ¼ µ¥ÀÌÅÍ Á¶È¸");
-		System.out.println("3. µ¥ÀÌÅÍ °Ë»ö");
-		System.out.println("4. µ¥ÀÌÅÍ »èÁ¦");
-		System.out.println("5. ÇÁ·Î±×·¥ Á¾·á");
-		System.out.print("¼±ÅÃ : ");
+		System.out.println("ì„ íƒí•˜ì„¸ìš”...");
+		System.out.println("1. ë°ì´í„° ì…ë ¥");
+		System.out.println("2. ì „ì²´ ë°ì´í„° ì¡°íšŒ");
+		System.out.println("3. ë°ì´í„° ê²€ìƒ‰");
+		System.out.println("4. ë°ì´í„° ì‚­ì œ");
+		System.out.println("5. í”„ë¡œê·¸ë¨ ì¢…ë£Œ");
+		System.out.print("ì„ íƒ : ");
 		int n = sc.nextInt();
 		sc.nextLine();
 		if(!(n>0 && n<6)) {
@@ -28,12 +28,12 @@ public class PhoneManager{
 	
 	public void InputData() throws MenuChoiceException{
 		if(i == MAX) {
-			System.out.println("´õÀÌ»ó µ¥ÀÌÅÍ¸¦ ÀÔ·ÂÇÒ ¼ö ¾ø½À´Ï´Ù.");
+			System.out.println("ë”ì´ìƒ ë°ì´í„°ë¥¼ ì…ë ¥í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤.");
 			return;
 		}
-		System.out.println("\n"+(i+1)+"¹ø µ¥ÀÌÅÍ ÀÔ·ÂÀ» ½ÃÀÛÇÕ´Ï´Ù.");
-		System.out.println("1. ÀÏ¹İ, 2. ´ëÇĞ, 3. È¸»ç");
-		System.out.print("¼±ÅÃ>> ");
+		System.out.println("\n"+(i+1)+"ë²ˆ ë°ì´í„° ì…ë ¥ì„ ì‹œì‘í•©ë‹ˆë‹¤.");
+		System.out.println("1. ì¼ë°˜, 2. ëŒ€í•™, 3. íšŒì‚¬");
+		System.out.print("ì„ íƒ>> ");
 		int choice = sc.nextInt();
 		sc.nextLine();
 		if(choice<=0 || choice>3) {
@@ -49,45 +49,45 @@ public class PhoneManager{
 			case 3:
 				readCompanyFriendInfo();
 				break;
-			default: System.out.println("Àß¸øÀÔ·Â");
+			default: System.out.println("ì˜ëª»ì…ë ¥");
 		}
 		System.out.println();
 	}
 	
 	public void readFriendInfo() {
-		System.out.print("\nÀÌ¸§: ");
+		System.out.print("\nì´ë¦„: ");
 		name=sc.nextLine();
-		System.out.print("ÀüÈ­¹øÈ£: ");
+		System.out.print("ì „í™”ë²ˆí˜¸: ");
 		phone=sc.nextLine();
 		ph[i++] = new PhoneInfo(name, phone);
 	}
 	public void readUnivFriendInfo() {
-		System.out.print("\nÀÌ¸§: ");
+		System.out.print("\nì´ë¦„: ");
 		name=sc.nextLine();
-		System.out.print("ÀüÈ­¹øÈ£: ");
+		System.out.print("ì „í™”ë²ˆí˜¸: ");
 		phone=sc.nextLine();
-		System.out.print("Àü°ø: ");
+		System.out.print("ì „ê³µ: ");
 		major = sc.nextLine();
-		System.out.print("ÇĞ¹ø(¿¬µµ): ");
+		System.out.print("í•™ë²ˆ(ì—°ë„): ");
 		year = sc.nextLine();
 		ph[i++]=new UnivPhone(name, phone, major, year);
 	}
 	public void readCompanyFriendInfo() {
-		System.out.print("\nÀÌ¸§: ");
+		System.out.print("\nì´ë¦„: ");
 		name=sc.nextLine();
-		System.out.print("ÀüÈ­¹øÈ£: ");
+		System.out.print("ì „í™”ë²ˆí˜¸: ");
 		phone=sc.nextLine();
-		System.out.print("È¸»ç: ");
+		System.out.print("íšŒì‚¬: ");
 		work = sc.nextLine();
 		ph[i++] = new WorkPhone(name, phone, work);
 	}
 	
 	public void totalPrint() {
 		if(i == 0) {
-			System.out.println("µ¥ÀÌÅÍ°¡ ¾ø½À´Ï´Ù.\n");
+			System.out.println("ë°ì´í„°ê°€ ì—†ìŠµë‹ˆë‹¤.\n");
 			return;
 		}
-		System.out.println("\n-----------ÀüÃ¼ µ¥ÀÌÅÍ Á¶È¸-------------");
+		System.out.println("\n-----------ì „ì²´ ë°ì´í„° ì¡°íšŒ-------------");
 		for (int i = 0; i < PhoneManager.i; i++) {
 			ph[i].printInfo();
 			if(i < PhoneManager.i) System.out.println();
@@ -97,13 +97,13 @@ public class PhoneManager{
 	
 	public void search() {
 		if(i == 0) {
-			System.out.println("µ¥ÀÌÅÍ°¡ ¾ø½À´Ï´Ù.\n");
+			System.out.println("ë°ì´í„°ê°€ ì—†ìŠµë‹ˆë‹¤.\n");
 			return;
 		}
-		System.out.println("\n--------------µ¥ÀÌÅÍ °Ë»ö--------------");
-		System.out.print("ÀÌ¸§: ");
+		System.out.println("\n--------------ë°ì´í„° ê²€ìƒ‰--------------");
+		System.out.print("ì´ë¦„: ");
 		String st = sc.nextLine();
-		System.out.println(st + "´ÔÀ» °Ë»öÇÕ´Ï´Ù\n");
+		System.out.println(st + "ë‹˜ì„ ê²€ìƒ‰í•©ë‹ˆë‹¤\n");
 		for (int j = 0; j < i; j++) {
 			if(ph[j].getName().equals(st)) {
 				ph[j].printInfo();
@@ -115,11 +115,11 @@ public class PhoneManager{
 	
 	public void delete() {
 		if(i == 0) {
-			System.out.println("µ¥ÀÌÅÍ°¡ ¾ø½À´Ï´Ù.\n");
+			System.out.println("ë°ì´í„°ê°€ ì—†ìŠµë‹ˆë‹¤.\n");
 			return;
 		}
-		System.out.println("\n--------------µ¥ÀÌÅÍ »èÁ¦------------------");
-		System.out.print("ÀÌ¸§: ");
+		System.out.println("\n--------------ë°ì´í„° ì‚­ì œ------------------");
+		System.out.print("ì´ë¦„: ");
 		String st = sc.nextLine();
 		for (int j = 0; j < i; j++) {
 			if(ph[j].getName().equals(st)) {
@@ -128,7 +128,7 @@ public class PhoneManager{
 					ph[k] = ph[k+1];
 				}
 				i--;
-				System.out.println("-----------"+st+"´ÔÀÇ µ¥ÀÌÅÍ »èÁ¦ ¿Ï·á----------\n");
+				System.out.println("-----------"+st+"ë‹˜ì˜ ë°ì´í„° ì‚­ì œ ì™„ë£Œ----------\n");
 				return;
 			}
 		}

@@ -25,11 +25,11 @@ public class AccountExam {
 					break;
 					
 				case 5:
-					System.out.println("ÇÁ·Î±×·¥À» Á¾·áÇÕ´Ï´Ù.");
+					System.out.println("í”„ë¡œê·¸ë¨ì„ ì¢…ë£Œí•©ë‹ˆë‹¤.");
 					return;
 					
 				default:
-					System.out.println("Àß¸øÀÔ·Â\n");
+					System.out.println("ì˜ëª»ì…ë ¥\n");
 					continue;
 			}
 		}

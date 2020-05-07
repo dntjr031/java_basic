@@ -6,7 +6,7 @@ public class ThrowsTest1 {
 		try {
 			method1();
 		} catch (Exception e) {
-			System.out.println("¿¹¿Ü:"+e.getMessage());
+			System.out.println("ì˜ˆì™¸:"+e.getMessage());
 			e.printStackTrace();
 		}
 		
@@ -17,16 +17,16 @@ public class ThrowsTest1 {
 	}
 	
 	public static void method2() throws Exception{
-		throw new Exception("°íÀÇ·Î ¿¹¿Ü¸¦ ¹ß»ýµÊ!!");
+		throw new Exception("ê³ ì˜ë¡œ ì˜ˆì™¸ë¥¼ ë°œìƒë¨!!");
 		
 		/*
-		 ¸Þ¼­µå¿¡¼­ ¿¹¿Ü¸¦ Ã³¸®ÇÏ´Â ¹æ¹ý
-		 [1] try~catch·Î Á÷Á¢ ¿¹¿ÜÃ³¸®		 
-		 [2] throws ·Î ¿¹¿Ü ¶°³Ñ±â±â(¿¹¿Ü Àü´Þ, ¸Þ¼­µå¿¡ ¿¹¿Ü ¼±¾ðÇÏ±â)
+		 ë©”ì„œë“œì—ì„œ ì˜ˆì™¸ë¥¼ ì²˜ë¦¬í•˜ëŠ” ë°©ë²•
+		 [1] try~catchë¡œ ì§ì ‘ ì˜ˆì™¸ì²˜ë¦¬		 
+		 [2] throws ë¡œ ì˜ˆì™¸ ë– ë„˜ê¸°ê¸°(ì˜ˆì™¸ ì „ë‹¬, ë©”ì„œë“œì— ì˜ˆì™¸ ì„ ì–¸í•˜ê¸°)
 		 
-		 RuntimeException °è¿­ÀÇ ¿¹¿ÜµéÀº ¿¹¿ÜÃ³¸® ÇÏÁö ¾Ê¾Æµµ µÊ
-		 ÇÏÁö¸¸ RuntimeException²¾¿­ÀÌ ¾Æ´Ñ Exception µéÀº ¹Ýµå½Ã ¿¹¿ÜÃ³¸® ÇØ¾ßÇÔ
-		 ¿¹¿ÜÃ³¸® ÇÏÁö ¾ÊÀ¸¸é ÄÄÆÄÀÏ ¿¡·¯°¡ ³²
+		 RuntimeException ê³„ì—´ì˜ ì˜ˆì™¸ë“¤ì€ ì˜ˆì™¸ì²˜ë¦¬ í•˜ì§€ ì•Šì•„ë„ ë¨
+		 í•˜ì§€ë§Œ RuntimeExceptionê¼ì—´ì´ ì•„ë‹Œ Exception ë“¤ì€ ë°˜ë“œì‹œ ì˜ˆì™¸ì²˜ë¦¬ í•´ì•¼í•¨
+		 ì˜ˆì™¸ì²˜ë¦¬ í•˜ì§€ ì•Šìœ¼ë©´ ì»´íŒŒì¼ ì—ëŸ¬ê°€ ë‚¨
 		 */
 	}
 }

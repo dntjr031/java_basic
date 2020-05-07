@@ -18,8 +18,8 @@ class Account {
 	} 
 	
 	public void display() { 
-		System.out.println("°èÁÂ¹øÈ£:"+accNo);
-		System.out.println("°èÁÂÀÜ¾×:"+(int)balance); 
+		System.out.println("ê³„ì¢Œë²ˆí˜¸:"+accNo);
+		System.out.println("ê³„ì¢Œìž”ì•¡:"+(int)balance); 
 	}
 }
 
@@ -49,7 +49,7 @@ class ContriAccount extends Account{
 
 	public void display() {
 		super.display();
-		System.out.println("±âºÎ±Ý¾×:" + (int)contribution);
+		System.out.println("ê¸°ë¶€ê¸ˆì•¡:" + (int)contribution);
 	}
 	
 	

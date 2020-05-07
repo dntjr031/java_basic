@@ -10,7 +10,7 @@ public class Exam5 {
 		
 		int[] score = new int[10];
 		for (int i = 0; i < 10; i++) {
-			System.out.println("10¸íÀÇ ¼ö°­»ý Á¡¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+			System.out.println("10ëª…ì˜ ìˆ˜ê°•ìƒ ì ìˆ˜ë¥¼ ìž…ë ¥í•˜ì„¸ìš”");
 			score[i] = sc.nextInt();
 		}
 		
@@ -26,7 +26,7 @@ public class Exam5 {
 			}
 		}
 		
-		System.out.println("AÇÐÁ¡Àº " + score[1] + "Á¡ ÀÌ»óÀÌ µÇ¾î¾ß ÇÕ´Ï´Ù.");
+		System.out.println("Aí•™ì ì€ " + score[1] + "ì  ì´ìƒì´ ë˜ì–´ì•¼ í•©ë‹ˆë‹¤.");
 		
 		sc.close();
 

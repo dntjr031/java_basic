@@ -8,10 +8,10 @@ public class CCC {
 	public int val4;
 	
 	public void showInfo() {
-		System.out.println("cŬ, val1=" + val1);
-		System.out.println("cŬ, val2=" + val2);
-		System.out.println("cŬ, val3=" + val3);
-		System.out.println("cŬ, val4=" + val4);
+		System.out.println("c클, val1=" + val1);
+		System.out.println("c클, val2=" + val2);
+		System.out.println("c클, val3=" + val3);
+		System.out.println("c클, val4=" + val4);
 	}
 	
 }

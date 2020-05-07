@@ -1,11 +1,11 @@
 package com.day15;
 
 class Calculator{
-	//static ¸Ş¼­µå
+	//static ë©”ì„œë“œ
 	public static int add(int a, int b) {
 		return a + b;
 	}
-	//ÀÎ½ºÅÏ½º ¸Ş¼­µå
+	//ì¸ìŠ¤í„´ìŠ¤ ë©”ì„œë“œ
 	public int minus(int a, int b) {
 		return a - b;
 	}
@@ -14,17 +14,17 @@ class Calculator{
 public class CalculatorTest {
 
 	public static void main(String[] args) {
-		//static ¸Ş¼­µå È£Ãâ - Å¬·¡½º¸í.¸Ş¼­µå()
-		//ÀÎ½ºÅÏ½º »ı¼º°ú »ó°ü ¾øÀÌ Å¬·¡½ºÂ÷¿ø¿¡¼­ È£Ãâ °¡´É
+		//static ë©”ì„œë“œ í˜¸ì¶œ - í´ë˜ìŠ¤ëª….ë©”ì„œë“œ()
+		//ì¸ìŠ¤í„´ìŠ¤ ìƒì„±ê³¼ ìƒê´€ ì—†ì´ í´ë˜ìŠ¤ì°¨ì›ì—ì„œ í˜¸ì¶œ ê°€ëŠ¥
 		int result = Calculator.add(10, 20);
-		System.out.println("µÎ ¼öÀÇ ÇÕ : " + result);
+		System.out.println("ë‘ ìˆ˜ì˜ í•© : " + result);
 		
 		//int n = Integer.parseInt("123");
 		
-		//ÀÎ½ºÅÏ½º ¸Ş¼­µå È£Ãâ - °´Ã¼ »ı¼º ÈÄ ÂüÁ¶º¯¼ö.¸Ş¼­µå()
+		//ì¸ìŠ¤í„´ìŠ¤ ë©”ì„œë“œ í˜¸ì¶œ - ê°ì²´ ìƒì„± í›„ ì°¸ì¡°ë³€ìˆ˜.ë©”ì„œë“œ()
 		Calculator cal = new Calculator();
 		result = cal.minus(30, 5);
-		System.out.println("µÎ ¼öÀÇ Â÷ : " + result);
+		System.out.println("ë‘ ìˆ˜ì˜ ì°¨ : " + result);
 		
 		//Scanner sc = new Scanner(System.in);
 		//int k = sc.nextInt();

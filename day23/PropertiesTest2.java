@@ -13,7 +13,7 @@ class PropertiesEx2{
 			//public FileInputStream(String name) throws FileNotFoundException
 			prop.load(new FileInputStream("text/input.txt")); 
 			//public void load(InputStream inStream) throws IOException
-			//=> ÆÄÀÏ·ÎºÎÅÍ µ¥ÀÌÅÍ¸¦ ÀĞ¾î¼­ Properties ÄÃ·º¼Ç¿¡ ÀúÀå
+			//=> íŒŒì¼ë¡œë¶€í„° ë°ì´í„°ë¥¼ ì½ì–´ì„œ Properties ì»¬ë ‰ì…˜ì— ì €ì¥
 			
 			/*
 			pro.setProperty("name", "Hong gil dong ");
@@ -46,10 +46,10 @@ class PropertiesEx2{
 			
 		double avg = (double)sum/data.length;
 		
-		System.out.println("ÀÌ¸§ :" + name); 
-		System.out.println("ÃÖ´ë°ª :" + max); 
-		System.out.println("ÃÖ¼Ò°ª :" + min); 
-		System.out.println("ÇÕ°è :" + sum); 
-		System.out.println("Æò±Õ :" + Math.round(avg*100)/100.0); 
+		System.out.println("ì´ë¦„ :" + name); 
+		System.out.println("ìµœëŒ€ê°’ :" + max); 
+		System.out.println("ìµœì†Œê°’ :" + min); 
+		System.out.println("í•©ê³„ :" + sum); 
+		System.out.println("í‰ê·  :" + Math.round(avg*100)/100.0); 
 	}
 }

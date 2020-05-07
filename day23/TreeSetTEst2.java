@@ -5,13 +5,13 @@ import java.util.TreeSet;
 
 public class TreeSetTEst2 {
 	public static void main(String[] args) {
-		//·Î¶Ç
+		//ë¡œë˜
 		TreeSet<Integer> tset = new TreeSet<Integer>();
 		
 		while(tset.size()<6) {
 			int rnd = (int)(Math.random()*25+1);
 			
-			tset.add(rnd); // Áßº¹µÇÁö ¾Ê°í, Á¤·ÄµÇ¾î µé¾î°¨
+			tset.add(rnd); // ì¤‘ë³µë˜ì§€ ì•Šê³ , ì •ë ¬ë˜ì–´ ë“¤ì–´ê°
 		}
 		
 		Iterator<Integer> ir = tset.iterator();

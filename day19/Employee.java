@@ -42,9 +42,9 @@ class Permanent extends Employee{
 	}
 
 	public void showInfo() {
-		System.out.println("\n°í¿ëÇüÅÂ:ÀÓ½ÃÁ÷");
-		System.out.println("ÀÌ¸§:" + name);
-		System.out.println("±Ş¿©:" + SALARY);
+		System.out.println("\nê³ ìš©í˜•íƒœ:ì„ì‹œì§");
+		System.out.println("ì´ë¦„:" + name);
+		System.out.println("ê¸‰ì—¬:" + SALARY);
 	}
 	
 }
@@ -79,9 +79,9 @@ class Temporary extends Employee{
 	}
 
 	public void showInfo() {
-		System.out.println("\n°í¿ëÇüÅÂ:ÀÓ½ÃÁ÷");
-		System.out.println("ÀÌ¸§:" + name);
-		System.out.println("±Ş¿©:" + findPay());
+		System.out.println("\nê³ ìš©í˜•íƒœ:ì„ì‹œì§");
+		System.out.println("ì´ë¦„:" + name);
+		System.out.println("ê¸‰ì—¬:" + findPay());
 	}
 	
 }
@@ -106,9 +106,9 @@ class SalesPerson extends Permanent{
 		this.earning = earning;
 	}
 	public void showInfo() {
-		System.out.println("\n°í¿ëÇüÅÂ:ÆÇ¸ÅÁ÷");
-		System.out.println("ÀÌ¸§:" + name);
-		System.out.println("±Ş¿©:" + findPay());
+		System.out.println("\nê³ ìš©í˜•íƒœ:íŒë§¤ì§");
+		System.out.println("ì´ë¦„:" + name);
+		System.out.println("ê¸‰ì—¬:" + findPay());
 	}
 	
 }
@@ -117,7 +117,7 @@ class EmployeeManager{
 	static Scanner sc = new Scanner(System.in);
 	
 	public Permanent inputPermanent() {
-		System.out.println("ÀÌ¸§, ±âº»±Ş¿©¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+		System.out.println("ì´ë¦„, ê¸°ë³¸ê¸‰ì—¬ë¥¼ ì…ë ¥í•˜ì„¸ìš”");
 		String name = sc.nextLine();
 		int sALARY = sc.nextInt();
 		sc.nextLine();
@@ -125,7 +125,7 @@ class EmployeeManager{
 		return p;
 	}
 	public Temporary inputTemporary() {
-		System.out.println("ÀÌ¸§, ÀÏÇÑ½Ã°£, ½Ã°£´ç±Ş¿©¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+		System.out.println("ì´ë¦„, ì¼í•œì‹œê°„, ì‹œê°„ë‹¹ê¸‰ì—¬ë¥¼ ì…ë ¥í•˜ì„¸ìš”");
 		String name = sc.nextLine();
 		int time = sc.nextInt();
 		int pay = sc.nextInt();
@@ -134,7 +134,7 @@ class EmployeeManager{
 		return t;
 	}
 	public SalesPerson inputSalesPerson() {
-		System.out.println("ÀÌ¸§, ±âº»±Ş¿©, ÆÇ¸Å¼öÀÍÀ» ÀÔ·ÂÇÏ¼¼¿ä");
+		System.out.println("ì´ë¦„, ê¸°ë³¸ê¸‰ì—¬, íŒë§¤ìˆ˜ìµì„ ì…ë ¥í•˜ì„¸ìš”");
 		String name = sc.nextLine();
 		int sALARY = sc.nextInt();
 		int earning = sc.nextInt();

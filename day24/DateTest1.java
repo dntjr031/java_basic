@@ -6,29 +6,29 @@ public class DateTest1 {
 
 	public static void main(String[] args) {
 		/*
-		 * Date d = new Date(); // ÇöÀçÀÏÀÚ System.out.println("¿À´Ã ³¯Â¥ : " + d);
+		 * Date d = new Date(); // í˜„ì¬ì¼ì System.out.println("ì˜¤ëŠ˜ ë‚ ì§œ : " + d);
 		 * System.out.println(d.toLocaleString());
 		 * 
 		 * int year = d.getYear(); int month = d.getMonth(); int date = d.getDate();
-		 * System.out.println((1900 + year) + "³â" + (month+1) + "¿ù" + date + "ÀÏ");
-		 * System.out.println("¿äÀÏ: " + d.getDay());
+		 * System.out.println((1900 + year) + "ë…„" + (month+1) + "ì›”" + date + "ì¼");
+		 * System.out.println("ìš”ì¼: " + d.getDay());
 		 * 
-		 * System.out.println(d.getHours()+"½Ã " + d.getMinutes() + "ºĞ " +
-		 * d.getSeconds()+ "ÃÊ");
+		 * System.out.println(d.getHours()+"ì‹œ " + d.getMinutes() + "ë¶„ " +
+		 * d.getSeconds()+ "ì´ˆ");
 		 * 
-		 * //1970-01-01 00:00:00ÀÌÈÄ °æ°úµÈ ½Ã°£À» ¹Ğ¸®ÃÊ·Î ¸®ÅÏ long gap = d.getTime()/1000;
-		 * System.out.println("1970-01-01 00:00:00ÀÌÈÄ °æ°úµÈ ½Ã°£ : " + gap + "ÃÊ");
+		 * //1970-01-01 00:00:00ì´í›„ ê²½ê³¼ëœ ì‹œê°„ì„ ë°€ë¦¬ì´ˆë¡œ ë¦¬í„´ long gap = d.getTime()/1000;
+		 * System.out.println("1970-01-01 00:00:00ì´í›„ ê²½ê³¼ëœ ì‹œê°„ : " + gap + "ì´ˆ");
 		 * 
-		 * //ÃÊ¸¦ ½Ã°£À¸·Î È¯»ê gap = gap/(24*60*60); System.out.println("°æ°úµÈ ÀÏ¼ö : " + gap +
-		 * "ÀÏ");
+		 * //ì´ˆë¥¼ ì‹œê°„ìœ¼ë¡œ í™˜ì‚° gap = gap/(24*60*60); System.out.println("ê²½ê³¼ëœ ì¼ìˆ˜ : " + gap +
+		 * "ì¼");
 		 * 
-		 * System.out.println(); //µÎ ³¯Â¥ »çÀÌÀÇ °£°İ ±¸ÇÏ±â //¼ö·áÀÏ±îÁö ¸çÄ¥ ³²¾Ò´ÂÁö °è»ê(¿À´Ã³¯Â¥¿Í ¼ö·áÀÏ »çÀÌÀÇ °£°İ
-		 * //¼ö·áÀÏ Date d2 = new Date(2020-1900,7,19);
+		 * System.out.println(); //ë‘ ë‚ ì§œ ì‚¬ì´ì˜ ê°„ê²© êµ¬í•˜ê¸° //ìˆ˜ë£Œì¼ê¹Œì§€ ë©°ì¹  ë‚¨ì•˜ëŠ”ì§€ ê³„ì‚°(ì˜¤ëŠ˜ë‚ ì§œì™€ ìˆ˜ë£Œì¼ ì‚¬ì´ì˜ ê°„ê²©
+		 * //ìˆ˜ë£Œì¼ Date d2 = new Date(2020-1900,7,19);
 		 * System.out.println(d2.toLocaleString());
 		 * 
 		 * long gap2 = d2.getTime()/1000; gap2 = gap2/(24*60*60);
 		 * 
-		 * long term = gap2 - gap; System.out.println("¼ö·áÀÏ±îÁö : " + term + "ÀÏ ³²À½");
+		 * long term = gap2 - gap; System.out.println("ìˆ˜ë£Œì¼ê¹Œì§€ : " + term + "ì¼ ë‚¨ìŒ");
 		 */
 	}
 

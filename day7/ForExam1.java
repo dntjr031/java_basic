@@ -19,7 +19,7 @@ public class ForExam1 {
 			if(b < 'z') 
 				System.out.print(", ");
 		}
-		System.out.println("\n\n====º¯¼ö¼³Á¤====");
+		System.out.println("\n\n====ë³€ìˆ˜ì„¤ì •====");
 		
 		char lower = 'a';
 		for(int i = 1; i <= 26; i++) {

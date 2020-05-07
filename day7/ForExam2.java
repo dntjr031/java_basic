@@ -7,10 +7,10 @@ public class ForExam2 {
 	public static void main(String[] args) {
 
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Ãâ·ÂÇÒ ±¸±¸´ÜÀÇ ´ÜÀ» ÀÔ·ÂÇÏ¼¼¿ä");
+		System.out.println("ì¶œë ¥í•  êµ¬êµ¬ë‹¨ì˜ ë‹¨ì„ ì…ë ¥í•˜ì„¸ìš”");
 		int dan = sc.nextInt();
 		
-		System.out.println(dan + "´Ü(¿ª¼ø)");
+		System.out.println(dan + "ë‹¨(ì—­ìˆœ)");
 		for(int i = 9; i > 0; i--) {
 			System.out.println(dan + " * " + i + " = " + dan * i);
 		}

@@ -7,21 +7,21 @@ public class Lotto {
 
 	public static void main(String[] args) {
 		
-		//·Î¶Ç ¸¸µé±â
-		//1. 6°³ Á¤¼ö¸¦ °®´Â ¹è¿­ ¸¸µé±â
+		//ë¡œë˜ ë§Œë“¤ê¸°
+		//1. 6ê°œ ì •ìˆ˜ë¥¼ ê°–ëŠ” ë°°ì—´ ë§Œë“¤ê¸°
 
 		int[] lotto = new int[6];
 
 		Scanner sc = new Scanner(System.in);
 		
 		while(true) {
-			//2. for¹®¿¡¼­ 1~45 »çÀÌÀÇ ÀÓÀÇÀÇ Á¤¼ö¸¦ ¹è¿­ ¿ä¼Ò¿¡ ³Ö´Â´Ù
-			//for¹®¿¡¼­ ÃÊ±âÈ­
+			//2. forë¬¸ì—ì„œ 1~45 ì‚¬ì´ì˜ ì„ì˜ì˜ ì •ìˆ˜ë¥¼ ë°°ì—´ ìš”ì†Œì— ë„£ëŠ”ë‹¤
+			//forë¬¸ì—ì„œ ì´ˆê¸°í™”
 			for(int i = 0; i < 6; i++) {
 				
 				lotto[i] = (int)(Math.random()*45+1);
 				
-				//Áßº¹Á¦°Å
+				//ì¤‘ë³µì œê±°
 				for(int n = 0; n < i; n++) {
 					if(lotto[i] == lotto[n]){
 						i--; 
@@ -29,13 +29,13 @@ public class Lotto {
 					}
 				}
 			}
-			//3. ¹è¿­ ¿ä¼Ò Á¤·Ä
+			//3. ë°°ì—´ ìš”ì†Œ ì •ë ¬
 			Arrays.sort(lotto);
-			//4. ¹è¿­ ¿ä¼Ò Ãâ·Â
+			//4. ë°°ì—´ ìš”ì†Œ ì¶œë ¥
 			for(int n : lotto) {
 				System.out.print(n + " ");
 			}
-			System.out.println("\n\n°è¼Ó ÇÏ½Ã°Ú½À´Ï±î? (y/n)");
+			System.out.println("\n\nê³„ì† í•˜ì‹œê² ìŠµë‹ˆê¹Œ? (y/n)");
 			
 			String str = sc.nextLine();
 			if(str.equalsIgnoreCase("n")) break;

@@ -8,7 +8,7 @@ public class ArrayExam2 {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.println("¿øÇÏ´Â ¹è¿­ÀÇ °¹¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+		System.out.println("ì›í•˜ëŠ” ë°°ì—´ì˜ ê°¯ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”");
 		int count = sc.nextInt();
 		
 		int[] arr = new int[count];

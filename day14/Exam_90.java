@@ -10,7 +10,7 @@ public class Exam_90 {
 	}
 	public void setUser1(int user1) {
 		if(user1 >=3 || user1 < 0) {
-			System.out.println("Àß¸øÀÔ·Â");
+			System.out.println("ì˜ëª»ì…ë ¥");
 			return;
 		}
 		this.user1 = user1;
@@ -32,18 +32,18 @@ public class Exam_90 {
 	public void game1() {
 		int a = (user1 - com1 + 3) % 3;
 		switch(a) {
-			case 0: result1 = "ºñ±è"; break;
-			case 1: result1 = "ÀÌ±è"; break;
-			default: result1 = "Áü"; 
+			case 0: result1 = "ë¹„ê¹€"; break;
+			case 1: result1 = "ì´ê¹€"; break;
+			default: result1 = "ì§"; 
 		}
 	}
 	
 	public String change(int a) {
 		String str = "";
 		switch(a) {
-			case 0: str = "°¡À§"; break;
-			case 1: str = "¹ÙÀ§"; break;
-			default: str = "º¸";
+			case 0: str = "ê°€ìœ„"; break;
+			case 1: str = "ë°”ìœ„"; break;
+			default: str = "ë³´";
 		}
 		return str;
 	}
@@ -75,11 +75,11 @@ public class Exam_90 {
 	
 	public void game(int user, int com) {
 		if((user - com + 3) % 3 == 1) {
-			result = "ÀÌ±è";
+			result = "ì´ê¹€";
 		}else if((user - com + 3) % 3 == 2) {
-			result = "Áü";
+			result = "ì§";
 		}else {
-			result = "ºñ±è";
+			result = "ë¹„ê¹€";
 		}
 	}
 	
@@ -87,11 +87,11 @@ public class Exam_90 {
 		
 		String trance = "";
 		if(i == 0) {
-			trance = "°¡À§";
+			trance = "ê°€ìœ„";
 		}else if(i == 1) {
-			trance = "¹ÙÀ§";
+			trance = "ë°”ìœ„";
 		}else {
-			trance = "º¸";
+			trance = "ë³´";
 		}
 		return trance;
 		

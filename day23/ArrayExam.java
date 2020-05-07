@@ -6,7 +6,7 @@ public class ArrayExam {
 
 	public static void main(String[] args) {
 
-		System.out.println("------ArratList ÀÌ¿ë------");
+		System.out.println("------ArratList ì´ìš©------");
 		ArrayList<Double> dArr = new ArrayList<Double>();
 		for (int i = 0; i < 4; i++) {
 			dArr.add(1.5 + i);
@@ -15,7 +15,7 @@ public class ArrayExam {
 			System.out.println(n);
 		}
 		
-		System.out.println("------¹è¿­ ÀÌ¿ë------");
+		System.out.println("------ë°°ì—´ ì´ìš©------");
 		double[] d = new double[4];
 		for (int i = 0; i < d.length; i++) {
 			d[i] = 1.5 + i;
@@ -24,7 +24,7 @@ public class ArrayExam {
 			System.out.println(n);
 		}
 		
-		System.out.println("HashSet iterator<> ÀÌ¿ë");
+		System.out.println("HashSet iterator<> ì´ìš©");
 		HashSet<Double> set = new HashSet<Double>();
 		for (int i = 0; i < 4; i++) {
 			set.add(1.5 + i);
@@ -34,7 +34,7 @@ public class ArrayExam {
 			System.out.println(iter.next());
 		}
 		
-		System.out.println("HashSet foreach ÀÌ¿ë");
+		System.out.println("HashSet foreach ì´ìš©");
 		set.forEach(System.out::println);
 	}
 

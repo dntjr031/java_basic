@@ -76,14 +76,14 @@ public class Exam1 {
 		Scanner sc = new Scanner(System.in);
 		
 		while(true) {
-			System.out.println("´ÜÀ§Çà·ÄÀ» ±¸ÇÒ ¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä<³¡³»·Á¸é 0>");
+			System.out.println("ë‹¨ìœ„í–‰ë ¬ì„ êµ¬í•  ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”<ëë‚´ë ¤ë©´ 0>");
 			int num = sc.nextInt();
 			if(num == 0) break;
 			
 			int[][] matrix = matrix(num);
 			int[][] xmatrix = xMatrix(num);
 			
-			System.out.println(num +"Â÷ ´ÜÀ§Çà·Ä :");
+			System.out.println(num +"ì°¨ ë‹¨ìœ„í–‰ë ¬ :");
 			
 			for (int i = 0; i < matrix.length; i++) {
 				for (int j = 0; j < matrix[i].length; j++) {
@@ -100,7 +100,7 @@ public class Exam1 {
 				System.out.println();
 			}
 		}
-		System.out.println("Á¾·áÇÏ¿´½À´Ï´Ù.");
+		System.out.println("ì¢…ë£Œí•˜ì˜€ìŠµë‹ˆë‹¤.");
 		
 		sc.close();
 

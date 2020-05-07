@@ -10,20 +10,20 @@ public class FinallyTest2 {
 			e.printStackTrace();
 			return false;
 		}finally {
-			System.out.println("finally ºÎºÐ");
+			System.out.println("finally ë¶€ë¶„");
 		}
 	}
 	public static void main(String[] args) {
 		if(divider(10, 2)) {
-			System.out.println("³ª´°¼À ¿¬»ê ¼º°ø!\n");
+			System.out.println("ë‚˜ëˆ—ì…ˆ ì—°ì‚° ì„±ê³µ!\n");
 		}else {
-			System.out.println("³ª´°¼À ¿¬»ê ½ÇÆÐ!\n");
+			System.out.println("ë‚˜ëˆ—ì…ˆ ì—°ì‚° ì‹¤íŒ¨!\n");
 		}
 		
 		if(divider(10, 0)) {
-			System.out.println("³ª´°¼À ¿¬»ê ¼º°ø!\n");
+			System.out.println("ë‚˜ëˆ—ì…ˆ ì—°ì‚° ì„±ê³µ!\n");
 		}else {
-			System.out.println("³ª´°¼À ¿¬»ê ½ÇÆÐ!\n");
+			System.out.println("ë‚˜ëˆ—ì…ˆ ì—°ì‚° ì‹¤íŒ¨!\n");
 		}
 	}
 }

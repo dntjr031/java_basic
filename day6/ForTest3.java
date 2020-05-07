@@ -6,7 +6,7 @@ public class ForTest3 {
 
 	public static void main(String[] args) {
 
-		// 1~3±îÁö ÇÕ ±¸ÇÏ±â
+		// 1~3ê¹Œì§€ í•© êµ¬í•˜ê¸°
 		/*
 		 sum = 0
 		 sum = sum + i
@@ -20,30 +20,30 @@ public class ForTest3 {
 		int sum = 0;
 		for(int i = 1; i <= 3; i++) {
 			sum += i;
-			//System.out.println("i : " + i + ", sum=" + sum); for¹® ¹Û¿¡ Âï¾î¾ß ÇÔ
+			//System.out.println("i : " + i + ", sum=" + sum); forë¬¸ ë°–ì— ì°ì–´ì•¼ í•¨
 		} //for
 		
-		System.out.println("1~3±îÁöÀÇ ÇÕ : " + sum);
+		System.out.println("1~3ê¹Œì§€ì˜ í•© : " + sum);
 
-		//1~50 È¦¼öÀÇ ÇÕ
+		//1~50 í™€ìˆ˜ì˜ í•©
 		
 		sum = 0;
 		 for(int i = 1; i <= 50; i += 2) {
 			 sum += i;
 		 }
-		System.out.println("È¦¼öÀÇ ÇÕ : " + sum);
+		System.out.println("í™€ìˆ˜ì˜ í•© : " + sum);
 		
-		// 1~»ç¿ëÀÚ ÀÔ·Â°ª ±îÁö Â¦¼öÀÇ ÇÕ
+		// 1~ì‚¬ìš©ìž ìž…ë ¥ê°’ ê¹Œì§€ ì§ìˆ˜ì˜ í•©
 		
 		Scanner sc = new Scanner(System.in);
-		System.out.println("1~n ±îÁöÀÇ Â¦¼öÀÇ ÇÕ : n(Á¤¼ö)À» ÀÔ·ÂÇÏ½Ã¿À");
+		System.out.println("1~n ê¹Œì§€ì˜ ì§ìˆ˜ì˜ í•© : n(ì •ìˆ˜)ì„ ìž…ë ¥í•˜ì‹œì˜¤");
 		int count = sc.nextInt();
 		
 		sum = 0;
 		for(int i = 0; i <= count; i += 2) {
 			sum += i;
 		}
-		System.out.println("ÀÔ·ÂÇÑ °ª±îÁöÀÇ Â¦¼ö ÇÕ : " + sum);
+		System.out.println("ìž…ë ¥í•œ ê°’ê¹Œì§€ì˜ ì§ìˆ˜ í•© : " + sum);
 		sc.close();
 	}
 

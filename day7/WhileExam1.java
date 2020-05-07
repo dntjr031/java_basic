@@ -11,7 +11,7 @@ public class WhileExam1 {
 			i += 2;
 			
 		}
-		System.out.println("[while]0~100±îÁö Â¦¼öÀÇ ÇÕ : " + num);
+		System.out.println("[while]0~100ê¹Œì§€ ì§ìˆ˜ì˜ í•© : " + num);
 
 		System.out.println("=====for=====");
 		
@@ -19,7 +19,7 @@ public class WhileExam1 {
 		for(int j = 0; j <= 100; j += 2) {
 			num += j;
 		}
-		System.out.println("[for]0~100±îÁö Â¦¼öÀÇ ÇÕ : " + num);
+		System.out.println("[for]0~100ê¹Œì§€ ì§ìˆ˜ì˜ í•© : " + num);
 	}
 
 }

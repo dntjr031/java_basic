@@ -10,21 +10,21 @@ public class FightTest {
 		
 		new Fighter(30,70,100).attack(f);
 		
-		//ÀÚ½ÄÀº ºÎ¸ğÀÇ ÀÎ½ºÅÏ½ºÀÌ±âµµ ÇÏ´Ù
+		//ìì‹ì€ ë¶€ëª¨ì˜ ì¸ìŠ¤í„´ìŠ¤ì´ê¸°ë„ í•˜ë‹¤
 		if(f instanceof Unit2) {
-			System.out.println("f´Â Unit2ÀÇ ÀÎ½ºÅÏ½ºÀÌ±âµµ ÇÏ´Ù");
+			System.out.println("fëŠ” Unit2ì˜ ì¸ìŠ¤í„´ìŠ¤ì´ê¸°ë„ í•˜ë‹¤");
 		}
 		if(f instanceof Fightable) {
-			System.out.println("f´Â FightableÀÇ ÀÎ½ºÅÏ½ºÀÌ±âµµ ÇÏ´Ù");
+			System.out.println("fëŠ” Fightableì˜ ì¸ìŠ¤í„´ìŠ¤ì´ê¸°ë„ í•˜ë‹¤");
 		}
 		if(f instanceof Attackable) {
-			System.out.println("f´Â AttackableÀÇ ÀÎ½ºÅÏ½ºÀÌ±âµµ ÇÏ´Ù");
+			System.out.println("fëŠ” Attackableì˜ ì¸ìŠ¤í„´ìŠ¤ì´ê¸°ë„ í•˜ë‹¤");
 		}
 		if(f instanceof Movable) {
-			System.out.println("f´Â MovableÀÇ ÀÎ½ºÅÏ½ºÀÌ±âµµ ÇÏ´Ù");
+			System.out.println("fëŠ” Movableì˜ ì¸ìŠ¤í„´ìŠ¤ì´ê¸°ë„ í•˜ë‹¤");
 		}
 		if(f instanceof Object) {
-			System.out.println("f´Â ObjectÀÇ ÀÎ½ºÅÏ½ºÀÌ±âµµ ÇÏ´Ù");
+			System.out.println("fëŠ” Objectì˜ ì¸ìŠ¤í„´ìŠ¤ì´ê¸°ë„ í•˜ë‹¤");
 		}
 	}
 
@@ -37,7 +37,7 @@ interface Attackable{
 interface Movable{
 	void move(int x, int y);
 }
-// ÀÎÅÍÆäÀÌ½º³¢¸®´Â extends Å°¿öµå¸¦ ÀÌ¿ëÇÏ¿© ¼­·Î »ó¼Ó°¡´É(´ÙÁß»ó¼Ó °¡´É)
+// ì¸í„°í˜ì´ìŠ¤ë¼ë¦¬ëŠ” extends í‚¤ì›Œë“œë¥¼ ì´ìš©í•˜ì—¬ ì„œë¡œ ìƒì†ê°€ëŠ¥(ë‹¤ì¤‘ìƒì† ê°€ëŠ¥)
 interface Fightable extends Attackable, Movable{
 	
 }
@@ -59,15 +59,15 @@ class Fighter extends Unit2 implements Fightable{
 	}
 
 	public void kill() {
-		System.out.println("Á×ÀÎ´Ù");
+		System.out.println("ì£½ì¸ë‹¤");
 	}
 	public void move(int x, int y) {
-		System.out.println("x=" + x + ", y=" + y + "ÀÎ À§Ä¡·Î ÀÌµ¿ÇÑ´Ù.");
+		System.out.println("x=" + x + ", y=" + y + "ì¸ ìœ„ì¹˜ë¡œ ì´ë™í•œë‹¤.");
 	}
 
 	public void attack(Unit2 unit2) {
-		System.out.println("x=" + unit2.x + ", y=" + unit2.y + "ÀÎ À§Ä¡ÀÌ ÀÖ°í, Ã¼·ÂÀÌ " 
-						+ unit2.currentHP + "ÀÎ À¯´ÖÀ» °ø°İÇÑ´Ù.");
+		System.out.println("x=" + unit2.x + ", y=" + unit2.y + "ì¸ ìœ„ì¹˜ì´ ìˆê³ , ì²´ë ¥ì´ " 
+						+ unit2.currentHP + "ì¸ ìœ ë‹›ì„ ê³µê²©í•œë‹¤.");
 		
 	}
 	

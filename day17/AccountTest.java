@@ -6,7 +6,7 @@ public class AccountTest {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("°èÁÂ¹øÈ£, ÀÜ¾×, ÀÌÃ¼ÇÑµµ¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+		System.out.println("ê³„ì¢Œë²ˆí˜¸, ì”ì•¡, ì´ì²´í•œë„ë¥¼ ì…ë ¥í•˜ì„¸ìš”");
 		String accId = sc.nextLine();
 		int balance = sc.nextInt();
 		int limit = sc.nextInt();
@@ -44,8 +44,8 @@ class Account{
 	}
 	
 	public void display() {
-		System.out.println("°èÁÂ¹øÈ£ : " + accId);
-		System.out.println("ÀÜ¾× : " + balance);
+		System.out.println("ê³„ì¢Œë²ˆí˜¸ : " + accId);
+		System.out.println("ì”ì•¡ : " + balance);
 	}
 }
 
@@ -68,7 +68,7 @@ class KBAccount extends Account{
 	public void display() {
 		
 		super.display();
-		System.out.println("ÀÌÃ¼ÇÑµµ : " + limit);
+		System.out.println("ì´ì²´í•œë„ : " + limit);
 	}
 	
 	

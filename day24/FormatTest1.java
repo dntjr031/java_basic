@@ -9,7 +9,7 @@ public class FormatTest1 {
 		double d = 1234567.89512;
 		
 		//public final String format(double number)
-		//¼ýÀÚ => Çü½ÄÈ­ÇÑ ¹®ÀÚ¿­
+		//ìˆ«ìž => í˜•ì‹í™”í•œ ë¬¸ìžì—´
 		String s = df.format(d);
 		System.out.println("#,###.## => "+s);
 		

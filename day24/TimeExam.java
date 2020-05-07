@@ -6,7 +6,7 @@ public class TimeExam {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("½Ã°£À» ÀÔ·ÂÇÏ¼¼¿ä(½Ã, ºĞ, ÃÊ)");
+		System.out.println("ì‹œê°„ì„ ì…ë ¥í•˜ì„¸ìš”(ì‹œ, ë¶„, ì´ˆ)");
 		int h = sc.nextInt();
 		int m = sc.nextInt();
 		int s = sc.nextInt();
@@ -36,8 +36,8 @@ class Time{
 	public void setHours(int[] hours) {
 		this.hours = hours;
 	}
-	public void imcrementHour() { //½ÃºĞÃÊ ¸ğµÎ 1Áõ°¡
-		System.out.println("1½Ã°£ 1ºĞ 1ÃÊ ÈÄ");
+	public void imcrementHour() { //ì‹œë¶„ì´ˆ ëª¨ë‘ 1ì¦ê°€
+		System.out.println("1ì‹œê°„ 1ë¶„ 1ì´ˆ í›„");
 		for (int i = 0; i < hours.length; i++) {
 			hours[i] += 1;
 		}

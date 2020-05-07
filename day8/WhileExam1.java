@@ -8,7 +8,7 @@ public class WhileExam1 {
 
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.println("µÎ °³ÀÇ Á¤¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+		System.out.println("ë‘ ê°œì˜ ì •ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”");
 		int a = sc.nextInt();
 		int b = sc.nextInt();
 		
@@ -27,10 +27,10 @@ public class WhileExam1 {
 			sum += a;
 		}
 		
-		System.out.println("\n" + a + "~" + b +"»çÀÌÀÇ Á¤¼öÀÇ ÇÕ : " +sum);
+		System.out.println("\n" + a + "~" + b +"ì‚¬ì´ì˜ ì •ìˆ˜ì˜ í•© : " +sum);
 		
-		//swap - ¼­·Î ¹Ù²Ù´Ù
-		System.out.println("µÎ °³ÀÇ Á¤¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+		//swap - ì„œë¡œ ë°”ê¾¸ë‹¤
+		System.out.println("ë‘ ê°œì˜ ì •ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”");
 		a = sc.nextInt();
 		b = sc.nextInt();
 		
@@ -39,14 +39,14 @@ public class WhileExam1 {
 			temp = a;
 			a = b;
 			b = temp;
-		} // ½º¿Ò
+		} // ìŠ¤ì™‘
 		
 		sum = 0;
 		for(int i = a; i <= b; i++) {
 			sum += i;
 		}//for
 		
-		System.out.println("\n" + a + "~" + b +"»çÀÌÀÇ Á¤¼öÀÇ ÇÕ : " +sum);
+		System.out.println("\n" + a + "~" + b +"ì‚¬ì´ì˜ ì •ìˆ˜ì˜ í•© : " +sum);
 		
 		sc.close();
 

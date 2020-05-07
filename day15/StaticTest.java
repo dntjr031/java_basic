@@ -10,31 +10,31 @@ public class StaticTest {
 	
 	public static int multiply(int a, int b) {
 		//int result = num1 * num2; //error
-		// static ¸Ş¼­µå¿¡¼­´Â static¸¸ Á¢±Ù °¡´É
-		// => ÀÎ½ºÅÏ½º ¸â¹öº¯¼öÀÎ num1Àº Á¢±Ù ºÒ°¡
+		// static ë©”ì„œë“œì—ì„œëŠ” staticë§Œ ì ‘ê·¼ ê°€ëŠ¥
+		// => ì¸ìŠ¤í„´ìŠ¤ ë©¤ë²„ë³€ìˆ˜ì¸ num1ì€ ì ‘ê·¼ ë¶ˆê°€
 		return a * b;
 	}
 	
 	
 	public static void main(String[] args) {
 		int result = StaticTest.multiply(10, 30);
-		// => static ¸Ş¼­µå È£Ãâ : Å¬·¡½º¸í.¸Ş¼­µå();
-		System.out.println("µÎ¼öÀÇ °ö : " + result);
+		// => static ë©”ì„œë“œ í˜¸ì¶œ : í´ë˜ìŠ¤ëª….ë©”ì„œë“œ();
+		System.out.println("ë‘ìˆ˜ì˜ ê³± : " + result);
 		
 		result = multiply(20, 40);
-		// => °°Àº Å¬·¡½º¿¡¼­´Â Å¬·¡½º¸í »ı·«ÇÏ°í ¸Ş¼­µå¸í¸¸ È£Ãâ °¡´É
-		System.out.println("µÎ¼öÀÇ °ö : " + result);
+		// => ê°™ì€ í´ë˜ìŠ¤ì—ì„œëŠ” í´ë˜ìŠ¤ëª… ìƒëµí•˜ê³  ë©”ì„œë“œëª…ë§Œ í˜¸ì¶œ ê°€ëŠ¥
+		System.out.println("ë‘ìˆ˜ì˜ ê³± : " + result);
 		
 		//result = add(); // error
-		//=> static¿¡¼­´Â static¸¸ Á¢±Ù °¡´ÉÇÏ¹Ç·Î
-		// static ¸Ş¼­µåÀÎ main¿¡¼­´Â ÀÎ½ºÅÏ½º ¸Ş¼­µå Á¢±Ù ºÒ°¡
+		//=> staticì—ì„œëŠ” staticë§Œ ì ‘ê·¼ ê°€ëŠ¥í•˜ë¯€ë¡œ
+		// static ë©”ì„œë“œì¸ mainì—ì„œëŠ” ì¸ìŠ¤í„´ìŠ¤ ë©”ì„œë“œ ì ‘ê·¼ ë¶ˆê°€
 		
 		StaticTest.num2 = 7;
 		StaticTest obj = new StaticTest();
 		obj.num1 = 5;
 		
-		result = obj.add(); //°°Àº Å¬·¡½ºÁö¸¸ °´Ã¼ »ı¼º ÈÄ ÀÎ½ºÅÏ½º ¸Ş¼­µå Á¢±Ù
-		System.out.println("µÎ¼öÀÇ ÇÕ : " + result);
+		result = obj.add(); //ê°™ì€ í´ë˜ìŠ¤ì§€ë§Œ ê°ì²´ ìƒì„± í›„ ì¸ìŠ¤í„´ìŠ¤ ë©”ì„œë“œ ì ‘ê·¼
+		System.out.println("ë‘ìˆ˜ì˜ í•© : " + result);
 
 	}
 

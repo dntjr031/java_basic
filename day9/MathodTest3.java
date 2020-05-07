@@ -1,8 +1,8 @@
 package com.day9;
 
 public class MathodTest3 {
-	//1. ¸Ş¼­µå Á¤ÀÇ
-	//ÀÌÀÚ¸¦ °è»êÇØÁÖ´Â ¸Ş¼­µå
+	//1. ë©”ì„œë“œ ì •ì˜
+	//ì´ìë¥¼ ê³„ì‚°í•´ì£¼ëŠ” ë©”ì„œë“œ
 	public static double calcInterest(int money) {
 		double interest = money * 0.016;
 		
@@ -20,24 +20,24 @@ public class MathodTest3 {
 		
 		System.out.println(ch +" "+ a);
 		
-		//2. ¸Ş¼­µå È£Ãâ
+		//2. ë©”ì„œë“œ í˜¸ì¶œ
 		//public static double clacInerest(int money)
 		double interest = MathodTest3.calcInterest(1000000);
-		System.out.println("ÀÌÀÚ : " + interest);
+		System.out.println("ì´ì : " + interest);
 		
 		int m = 100000;
 		double d = calcInterest(m);
-		System.out.println(m + "ÀÇ ÀÌÀÚ : " + d);
+		System.out.println(m + "ì˜ ì´ì : " + d);
 		
 		/*
-		 *[1] static ¸Ş¼­µå È£Ãâ
-		 *	    Å¬·¡½º¸í.¸Ş¼­µå();
+		 *[1] static ë©”ì„œë“œ í˜¸ì¶œ
+		 *	    í´ë˜ìŠ¤ëª….ë©”ì„œë“œ();
 		 *
-		 *	´Ü, µ¿ÀÏÇÑ Å¬·¡½º ³»ÀÇ ¸Ş¼­µå È£Ãâ ½Ã Å¬·¡½º¸í »ı·« °¡´É
-		 *	¸Ş¼­µå();
+		 *	ë‹¨, ë™ì¼í•œ í´ë˜ìŠ¤ ë‚´ì˜ ë©”ì„œë“œ í˜¸ì¶œ ì‹œ í´ë˜ìŠ¤ëª… ìƒëµ ê°€ëŠ¥
+		 *	ë©”ì„œë“œ();
 		 *
-		 *[2] instance ¸Ş¼­µå(staticÀÌ ºÙÁö ¾ÊÀº ¸Ş¼­µå) È£Ãâ
-		 *	   ÂüÁ¶º¯¼ö.¸Ş¼­µå(); 
+		 *[2] instance ë©”ì„œë“œ(staticì´ ë¶™ì§€ ì•Šì€ ë©”ì„œë“œ) í˜¸ì¶œ
+		 *	   ì°¸ì¡°ë³€ìˆ˜.ë©”ì„œë“œ(); 
 		 */
 
 	}

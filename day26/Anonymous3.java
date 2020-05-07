@@ -12,15 +12,15 @@ public class Anonymous3 extends Frame{
 	Button btExit;
 	
 	Anonymous3(){
-		super("ÇÁ·¹ÀÓ ¿¬½À");
+		super("í”„ë ˆì„ ì—°ìŠµ");
 		
-		btExit = new Button("Á¾·á");
+		btExit = new Button("ì¢…ë£Œ");
 		this.add(btExit, "South");
 		
 		btExit.addActionListener(new EventHandler());
 	}
 	
-	//³»ºÎ Å¬·¡½º ÀÌ¿ë
+	//ë‚´ë¶€ í´ë˜ìŠ¤ ì´ìš©
 	class EventHandler implements ActionListener{
 		public void actionPerformed(ActionEvent e) {
 			System.exit(0);

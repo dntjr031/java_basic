@@ -7,15 +7,15 @@ public class EqualsTset3 {
 		Test2 v2 = new Test2(10);
 		
 		if(v1.equals(v2)) {
-			System.out.println("v1°ú v2´Â °°´Ù");
+			System.out.println("v1ê³¼ v2ëŠ” ê°™ë‹¤");
 		}else {
-			System.out.println("v1°ú v2´Â ´Ù¸£´Ù");
+			System.out.println("v1ê³¼ v2ëŠ” ë‹¤ë¥´ë‹¤");
 		}
 		
 		if(v1 == v2) {
-			System.out.println("v1°ú v2´Â °°´Ù");
+			System.out.println("v1ê³¼ v2ëŠ” ê°™ë‹¤");
 		}else {
-			System.out.println("v1°ú v2´Â ´Ù¸£´Ù");
+			System.out.println("v1ê³¼ v2ëŠ” ë‹¤ë¥´ë‹¤");
 		}
 		
 	}

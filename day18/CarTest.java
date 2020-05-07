@@ -6,7 +6,7 @@ public class CarTest {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Â÷Á¾À» ¼±ÅÃÇÏ¼¼¿ä(1. ¿¡Äí½º, 2. º¥Ã÷)");
+		System.out.println("ì°¨ì¢…ì„ ì„ íƒí•˜ì„¸ìš”(1. ì—ì¿ ìŠ¤, 2. ë²¤ì¸ )");
 		int num = sc.nextInt();
 		Car c = null;
 		if(num == 1) {
@@ -14,7 +14,7 @@ public class CarTest {
 		}else if(num == 2) {
 			c = new Benz();
 		}else {
-			System.out.println("Àß¸øÀÔ·Â");
+			System.out.println("ì˜ëª»ì…ë ¥");
 		}
 		
 		if(c != null) {

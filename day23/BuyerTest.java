@@ -9,29 +9,29 @@ public class BuyerTest {
 	public static void main(String[] args) {
 
 		Buyer b = new Buyer(1000);
-		//ÃÑ ±¸¸Å°¡°İ°ú ¸ñ·Ï Ãâ·Â summary
+		//ì´ êµ¬ë§¤ê°€ê²©ê³¼ ëª©ë¡ ì¶œë ¥ summary
 		b.summary();
-		//170¸¸¿ø ÄÄ ±¸¸Å
+		//170ë§Œì› ì»´ êµ¬ë§¤
 		Product p = new Computer(170);
 		b.buy(p);
-		//300¸¸¿ø Æ¼ºñ ±¸¸Å
+		//300ë§Œì› í‹°ë¹„ êµ¬ë§¤
 		b.buy(new Tv(300));
-		//250¸¸¿ø ÄÄ ±¸¸Å
+		//250ë§Œì› ì»´ êµ¬ë§¤
 		b.buy(new Computer(250));
-		//ÃÑ ±¸¸Å°¡°İ°ú ¸ñ·Ï Ãâ·Â summary
+		//ì´ êµ¬ë§¤ê°€ê²©ê³¼ ëª©ë¡ ì¶œë ¥ summary
 		b.summary();
-		//showInfo È£Ãâ
+		//showInfo í˜¸ì¶œ
 		b.showInfo();
-		//170¸¸¿ø ÄÄ ¹İÇ°
+		//170ë§Œì› ì»´ ë°˜í’ˆ
 		b.refund(p);
-		//ÃÖÁ¾ showInfo, summaryÈ£Ãâ
+		//ìµœì¢… showInfo, summaryí˜¸ì¶œ
 		b.showInfo();
 		b.summary();
 		
 		
 		/*
 		while(true) {
-			System.out.println("1. »óÇ° ±¸¸Å 2. ±¸¸Å³»¿ª Á¶È¸ 3. ¹İÇ° 4. Á¾·á");
+			System.out.println("1. ìƒí’ˆ êµ¬ë§¤ 2. êµ¬ë§¤ë‚´ì—­ ì¡°íšŒ 3. ë°˜í’ˆ 4. ì¢…ë£Œ");
 			int num = sc.nextInt();
 			sc.nextLine();
 			switch(num) {
@@ -47,10 +47,10 @@ public class BuyerTest {
 					b.refund(p);
 					break;
 				case 4:	
-					System.out.println("Á¾·áÇÕ´Ï´Ù.");
+					System.out.println("ì¢…ë£Œí•©ë‹ˆë‹¤.");
 					return;
 				default:
-					System.out.println("Àß¸øÀÔ·Â");
+					System.out.println("ì˜ëª»ì…ë ¥");
 					continue;
 			}
 		}
@@ -60,8 +60,8 @@ public class BuyerTest {
 }
 
 abstract class Product{
-	protected int price, bonusPoint; //»óÇ°°¡°İ, Æ÷ÀÎÆ® Á¡¼ö
-	protected final double POINT_RATE=0.02; // Æ÷ÀÎÆ® Á¡¼ö´Â »óÇ°ÀÇ 2%
+	protected int price, bonusPoint; //ìƒí’ˆê°€ê²©, í¬ì¸íŠ¸ ì ìˆ˜
+	protected final double POINT_RATE=0.02; // í¬ì¸íŠ¸ ì ìˆ˜ëŠ” ìƒí’ˆì˜ 2%
 	
 	public Product(int price) {
 		this.price = price;
@@ -109,7 +109,7 @@ class Computer extends Product{
 class Buyer{
 	private int myMoney;
 	private int Point;
-	//±¸¸ÅÀÚ°¡ ±¸¸ÅÇÑ »óÇ°µéÀ» ÀúÀåÇÒ ¹è¿­
+	//êµ¬ë§¤ìê°€ êµ¬ë§¤í•œ ìƒí’ˆë“¤ì„ ì €ì¥í•  ë°°ì—´
 	private ArrayList<Product> pArr = new ArrayList<Product>();
 	
 	
@@ -119,11 +119,11 @@ class Buyer{
 	
 	public void buy(Product p) {
 		if(pArr.size() == 10) {
-			System.out.println("´õÀÌ»ó »óÇ°À» ±¸¸ÅÇÒ ¼ö ¾ø½À´Ï´Ù.");
+			System.out.println("ë”ì´ìƒ ìƒí’ˆì„ êµ¬ë§¤í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤.");
 			return;
 		}
 		if(myMoney < p.getPrice()) {
-			System.out.println("ÀÜ¾×ÀÌ ºÎÁ·ÇÏ¿© ¹°°ÇÀ» ±¸¸ÅÇÒ ¼ö ¾ø½À´Ï´Ù.\n");
+			System.out.println("ì”ì•¡ì´ ë¶€ì¡±í•˜ì—¬ ë¬¼ê±´ì„ êµ¬ë§¤í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤.\n");
 			return;
 		}
 		
@@ -132,12 +132,12 @@ class Buyer{
 		
 		pArr.add(p);
 		
-		System.out.println(p + "À»(¸¦) ±¸¸ÅÇÏ¿´½À´Ï´Ù.\n");
+		System.out.println(p + "ì„(ë¥¼) êµ¬ë§¤í•˜ì˜€ìŠµë‹ˆë‹¤.\n");
 	}
 	
 	public void showInfo() {
-		System.out.println("ÇöÀç ÀÜ°í : " + myMoney);
-		System.out.println("º¸³Ê½º Æ÷ÀÎÆ® : " + Point + "\n");
+		System.out.println("í˜„ì¬ ì”ê³  : " + myMoney);
+		System.out.println("ë³´ë„ˆìŠ¤ í¬ì¸íŠ¸ : " + Point + "\n");
 	}
 	
 	public void summary() {
@@ -145,7 +145,7 @@ class Buyer{
 		String itemList = "";
 		
 		if(pArr.isEmpty()) {
-			System.out.println("±¸ÀÔÇÏ½Å Á¦Ç°ÀÌ ¾ø½À´Ï´Ù.");
+			System.out.println("êµ¬ì…í•˜ì‹  ì œí’ˆì´ ì—†ìŠµë‹ˆë‹¤.");
 			return;
 		}
 		
@@ -157,18 +157,18 @@ class Buyer{
 				itemList += ", ";
 			}
 		}
-		System.out.println("\n±¸¸ÅÀÚ°¡ ±¸¸ÅÇÑ »ïÇ°µéÀÇ ÃÑ °¡°İ : " + sum);
-		System.out.println("±¸ÀÔÇÏ½Å Á¦Ç°Àº : " + itemList + "ÀÔ´Ï´Ù.");
-		System.out.println("º¸³Ê½º Æ÷ÀÎÆ® : " + Point + "\n");
+		System.out.println("\nêµ¬ë§¤ìê°€ êµ¬ë§¤í•œ ì‚¼í’ˆë“¤ì˜ ì´ ê°€ê²© : " + sum);
+		System.out.println("êµ¬ì…í•˜ì‹  ì œí’ˆì€ : " + itemList + "ì…ë‹ˆë‹¤.");
+		System.out.println("ë³´ë„ˆìŠ¤ í¬ì¸íŠ¸ : " + Point + "\n");
 	}
 	
 	public void refund(Product p) {
 		if(pArr.remove(p)) {
 			myMoney += p.getPrice();
 			Point -= p.getBonusPoint();
-			System.out.println(p + "¸¦ ¹İÇ°ÇÏ¼Ì½À´Ï´Ù.");
+			System.out.println(p + "ë¥¼ ë°˜í’ˆí•˜ì…¨ìŠµë‹ˆë‹¤.");
 		}else {
-			System.out.println("ÇØ´ç Á¦Ç°ÀÌ ¾ø½À´Ï´Ù.");
+			System.out.println("í•´ë‹¹ ì œí’ˆì´ ì—†ìŠµë‹ˆë‹¤.");
 		}
 		
 	}
@@ -178,10 +178,10 @@ class ProductManager{
 	static Scanner sc = new Scanner(System.in);
 	
 	public static void buyInput(Buyer b) {
-		System.out.println("±¸ÀÔÇÒ »óÇ°À» ¼±ÅÃÇÏ¼¼¿ä (1. TV 2. Computer)");
+		System.out.println("êµ¬ì…í•  ìƒí’ˆì„ ì„ íƒí•˜ì„¸ìš” (1. TV 2. Computer)");
 		int choice = sc.nextInt();
 		if( choice == 1 || choice == 2) {
-			System.out.println("»óÇ°°¡°İÀ» ÀÔ·ÂÇÏ¼¼¿ä");
+			System.out.println("ìƒí’ˆê°€ê²©ì„ ì…ë ¥í•˜ì„¸ìš”");
 			int price = sc.nextInt();
 			sc.nextLine();
 			
@@ -195,18 +195,18 @@ class ProductManager{
 			default:
 			}	
 		}else {
-			System.out.println("Àß¸øÀÔ·Â");
+			System.out.println("ì˜ëª»ì…ë ¥");
 				return;
 		}		
 	}
 	
 	public static Product refund() {
 		Product p = null;
-		System.out.println("¹İÇ° ÇÒ »óÇ°À» ¼±ÅÃÇÏ¼¼¿ä (1. TV 2. Computer)");
+		System.out.println("ë°˜í’ˆ í•  ìƒí’ˆì„ ì„ íƒí•˜ì„¸ìš” (1. TV 2. Computer)");
 		int choice = sc.nextInt();
 		if( choice == 1 || choice == 2) {
 			
-			System.out.println("¹İÇ° ÇÒ »óÇ°ÀÇ °¡°İÀ» ÀÔ·ÂÇÏ¼¼¿ä");
+			System.out.println("ë°˜í’ˆ í•  ìƒí’ˆì˜ ê°€ê²©ì„ ì…ë ¥í•˜ì„¸ìš”");
 			int price = sc.nextInt();
 			sc.nextLine();
 			
@@ -221,7 +221,7 @@ class ProductManager{
 			}	
 			return p;
 		}else {
-			System.out.println("Àß¸øÀÔ·Â");
+			System.out.println("ì˜ëª»ì…ë ¥");
 				return p;
 		}		
 	}

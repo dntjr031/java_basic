@@ -38,7 +38,7 @@ public class Programmer {
 	}
 	
 	public void work() {
-		System.out.println("ÇÁ·Î±×·¡¹ÖÀ» ÇÕ´Ï´Ù.");
+		System.out.println("í”„ë¡œê·¸ë˜ë°ì„ í•©ë‹ˆë‹¤.");
 	}
 	
 	

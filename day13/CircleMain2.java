@@ -4,17 +4,17 @@ package com.day13;
 public class CircleMain2 {
 
 	public static void main(String[] args) {
-		//°´Ã¼ »ı¼º ÈÄ ÂüÁ¶º¯¼ö.¸Ş¼­µå()·Î ¸Ş¼­µå È£Ãâ
-		Circle2 cc = new Circle2(10); // °´Ã¼ »ı¼º½Ã »ı¼ºÀÚ È£ÃâºÎºĞ¿¡¼­ ¸Å°³º¯¼ö¸¦ ¹İµå½Ã ³Ñ°Ü¾ß ÇÔ
-		//new ¿À¸¥ÂÊ ºÎºĞÀÌ »ı¼ºÀÚ¸¦ È£ÃâÇÏ´Â ºÎºĞ
+		//ê°ì²´ ìƒì„± í›„ ì°¸ì¡°ë³€ìˆ˜.ë©”ì„œë“œ()ë¡œ ë©”ì„œë“œ í˜¸ì¶œ
+		Circle2 cc = new Circle2(10); // ê°ì²´ ìƒì„±ì‹œ ìƒì„±ì í˜¸ì¶œë¶€ë¶„ì—ì„œ ë§¤ê°œë³€ìˆ˜ë¥¼ ë°˜ë“œì‹œ ë„˜ê²¨ì•¼ í•¨
+		//new ì˜¤ë¥¸ìª½ ë¶€ë¶„ì´ ìƒì„±ìë¥¼ í˜¸ì¶œí•˜ëŠ” ë¶€ë¶„
 		double area = cc.findArea();
 		
 		
-		System.out.println("¿øÀÇ ¸éÀû : " + area);
+		System.out.println("ì›ì˜ ë©´ì  : " + area);
 
 		
 		double girth = cc.findGirth();	
-		System.out.println("¿øÀÇ µÑ·¹ : " + girth);
+		System.out.println("ì›ì˜ ë‘˜ë ˆ : " + girth);
 		
 	}
 

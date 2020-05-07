@@ -10,13 +10,13 @@ public class Exam_90Test {
 		// [1]
 		
 		while(true) {
-			System.out.println("°¡À§<0>, ¹ÙÀ§<1>, º¸<2>, Q<Quit>¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä");
+			System.out.println("ê°€ìœ„<0>, ë°”ìœ„<1>, ë³´<2>, Q<Quit>ë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš”");
 			String user = sc.nextLine();
 			
 			if(user.equalsIgnoreCase("q")) break;
 			
 			if(!(Integer.parseInt(user) >=0 && Integer.parseInt(user) < 3)) {
-				System.out.println("Àß¸øÀÔ·Â!");
+				System.out.println("ì˜ëª»ì…ë ¥!");
 				break;
 			}
 			
@@ -29,22 +29,22 @@ public class Exam_90Test {
 			ex.setCom1(com);
 			ex.game1();
 			
-			System.out.println("»ç¿ëÀÚ = " + ex.change(Integer.parseInt(user)));
-			System.out.println("ÄÄÇ»ÅÍ = " + ex.change(com));
-			System.out.println("°á°ú= »ç¿ëÀÚ°¡ " + ex.getResult1());
+			System.out.println("ì‚¬ìš©ì = " + ex.change(Integer.parseInt(user)));
+			System.out.println("ì»´í“¨í„° = " + ex.change(com));
+			System.out.println("ê²°ê³¼= ì‚¬ìš©ìê°€ " + ex.getResult1());
 			
 		}
 		
 		
 		Exam_90 ex = new Exam_90();
 		while(true) {
-			System.out.println("°¡À§<0>, ¹ÙÀ§<1>, º¸<2>, Q<Quit>¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä");
+			System.out.println("ê°€ìœ„<0>, ë°”ìœ„<1>, ë³´<2>, Q<Quit>ë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš”");
 			String user = sc.nextLine();
 			
 			if(user.equalsIgnoreCase("q")) break;
 			
 			if(!(Integer.parseInt(user) >=0 && Integer.parseInt(user) < 3)) {
-				System.out.println("Àß¸øÀÔ·Â!");
+				System.out.println("ì˜ëª»ì…ë ¥!");
 				break;
 			}
 			
@@ -53,13 +53,13 @@ public class Exam_90Test {
 			ex.setUser(Integer.parseInt(user));
 			ex.setCom(com);
 			
-			System.out.println("»ç¿ëÀÚ = " + ex.getUser());
-			System.out.println("ÄÄÇ»ÅÍ = " + ex.getCom());
-			System.out.println("°á°ú= »ç¿ëÀÚ°¡ " + ex.getResult());
+			System.out.println("ì‚¬ìš©ì = " + ex.getUser());
+			System.out.println("ì»´í“¨í„° = " + ex.getCom());
+			System.out.println("ê²°ê³¼= ì‚¬ìš©ìê°€ " + ex.getResult());
 			
 		}
 		
-		System.out.println("Á¾·áµÇ¾ú½À´Ï´Ù.");
+		System.out.println("ì¢…ë£Œë˜ì—ˆìŠµë‹ˆë‹¤.");
 		
 		sc.close();
 		

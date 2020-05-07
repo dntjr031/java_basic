@@ -1,9 +1,9 @@
 package com.day25;
 
 /*
- static import ¹® »ç¿ë
- - static ¸â¹ö¸¦ È£ÃâÇÒ ¶§ Å¬·¡½º¸íÀ» »ı·«ÇÒ ¼ö ÀÖÀ½
- - JDK 5.0¿¡ Ãß°¡µÊ
+ static import ë¬¸ ì‚¬ìš©
+ - static ë©¤ë²„ë¥¼ í˜¸ì¶œí•  ë•Œ í´ë˜ìŠ¤ëª…ì„ ìƒëµí•  ìˆ˜ ìˆìŒ
+ - JDK 5.0ì— ì¶”ê°€ë¨
  */
 import static java.lang.System.out;
 import static java.lang.Math.random;

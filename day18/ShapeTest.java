@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 class Shape2{
 	public void findArea() {
-		System.out.println("µµÇüÀÇ ¸éÀûÀ» ±¸ÇÑ´Ù.");
+		System.out.println("ë„í˜•ì˜ ë©´ì ì„ êµ¬í•œë‹¤.");
 	}
 }
 
@@ -18,7 +18,7 @@ class Circle2 extends Shape2{
 	}
 
 	public void findArea() {
-		System.out.println("¿øÀÇ ¸éÀû : " + r * r * PI);
+		System.out.println("ì›ì˜ ë©´ì  : " + r * r * PI);
 	}
 	
 }
@@ -48,7 +48,7 @@ class Rectangle extends Shape2{
 	}
 
 	public void findArea() {
-		System.out.println("»ç°¢ÇüÀÇ ¸éÀû : " + w * d); 
+		System.out.println("ì‚¬ê°í˜•ì˜ ë©´ì  : " + w * d); 
 	}
 	
 }
@@ -60,15 +60,15 @@ public class ShapeTest {
 	static Scanner sc = new Scanner(System.in);
 	
 	public static void showMenu() {
-		System.out.print("1.¿ø, 2.»ç°¢Çü, 3.º¸±â, 4.Á¾·á ==> ");
+		System.out.print("1.ì›, 2.ì‚¬ê°í˜•, 3.ë³´ê¸°, 4.ì¢…ë£Œ ==> ");
 	}
 	
 	public static void inputCircle() {
 		if(i == MAX_COUNT) {
-			System.out.println("´õÀÌ»ó ÀÔ·ÂÇÒ ¼ö ¾ø½À´Ï´Ù.");
+			System.out.println("ë”ì´ìƒ ì…ë ¥í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤.");
 			return;
 		}
-		System.out.print("¹İÁö¸§ : ");
+		System.out.print("ë°˜ì§€ë¦„ : ");
 		int r = sc.nextInt();
 		sh[i] = new Circle2(r);
 		i++;
@@ -76,10 +76,10 @@ public class ShapeTest {
 	
 	public static void inputRectangle() {
 		if(i == MAX_COUNT) {
-			System.out.println("´õÀÌ»ó ÀÔ·ÂÇÒ ¼ö ¾ø½À´Ï´Ù.");
+			System.out.println("ë”ì´ìƒ ì…ë ¥í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤.");
 			return;
 		}
-		System.out.println("°¡·Î, ¼¼·Î ÀÔ·Â");
+		System.out.println("ê°€ë¡œ, ì„¸ë¡œ ì…ë ¥");
 		int w = sc.nextInt();
 		int h = sc.nextInt();
 		sh[i] = new Rectangle(w, h);
@@ -88,7 +88,7 @@ public class ShapeTest {
 	
 	public static void printAll() {
 		if(i == 0) {
-			System.out.println("µ¥ÀÌÅÍ°¡ ¾ø½À´Ï´Ù.");
+			System.out.println("ë°ì´í„°ê°€ ì—†ìŠµë‹ˆë‹¤.");
 			return;
 		}
 		for (int j = 0; j < i; j++) {
@@ -101,8 +101,8 @@ public class ShapeTest {
 		
 		while(true) {
 			if(i >= MAX_COUNT) {
-				System.out.println("\n´õÀÌ»ó µ¥ÀÌÅÍ¸¦ ÀÔ·ÂÇÒ ¼ö ¾ø½À´Ï´Ù.");
-				System.out.println("<µ¥ÀÌÅÍ º¸±â¸¸ °¡´É>");
+				System.out.println("\në”ì´ìƒ ë°ì´í„°ë¥¼ ì…ë ¥í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤.");
+				System.out.println("<ë°ì´í„° ë³´ê¸°ë§Œ ê°€ëŠ¥>");
 			}
 			showMenu();
 			int n = sc.nextInt();
@@ -117,10 +117,10 @@ public class ShapeTest {
 				printAll();
 				continue;
 			}else if(n == 4) {
-				System.out.println("Á¾·áÇÕ´Ï´Ù");
+				System.out.println("ì¢…ë£Œí•©ë‹ˆë‹¤");
 				break;
 			}else {
-				System.out.println("Àß¸øÀÔ·Â!");
+				System.out.println("ì˜ëª»ì…ë ¥!");
 				continue;
 			}
 			

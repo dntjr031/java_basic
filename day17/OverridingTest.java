@@ -1,7 +1,7 @@
 package com.day17;
 
 class Points {
-	//2Â÷¿ø Á¡ÀÇ ÁÂÇ¥
+	//2ì°¨ì› ì ì˜ ì¢Œí‘œ
 	protected int x, y;
 	
 	public Points(int x, int y) {
@@ -16,22 +16,22 @@ class Points {
 }
 
 class Points3D extends Points{
-	//3Â÷¿ø Á¡ÀÇ ÁÂÇ¥
+	//3ì°¨ì› ì ì˜ ì¢Œí‘œ
 	private int z;
 	/*
-	»ı¼ºÀÚ
-	- »ó¼ÓÀ» ¹Ş¾ÒÀ» °æ¿ì ºÎ¸ğÅ¬·¡½ºÀÇ »ı¼ºÀÚ°¡ ¸Å°³º¯¼ö¸¦ °¡Áö°í ÀÖ´Ù¸é
-	 ÀÚ½ÄÀº ºÎ¸ğÀÇ »ı¼ºÀÚ¿¡°Ô ¸Å°³º¯¼ö¸¦ ³Ö¾îÁà¾ß ÇÔ
+	ìƒì„±ì
+	- ìƒì†ì„ ë°›ì•˜ì„ ê²½ìš° ë¶€ëª¨í´ë˜ìŠ¤ì˜ ìƒì„±ìê°€ ë§¤ê°œë³€ìˆ˜ë¥¼ ê°€ì§€ê³  ìˆë‹¤ë©´
+	 ìì‹ì€ ë¶€ëª¨ì˜ ìƒì„±ìì—ê²Œ ë§¤ê°œë³€ìˆ˜ë¥¼ ë„£ì–´ì¤˜ì•¼ í•¨
 	 
-	 »ı¼ºÀÚÀÇ Ã¹ ÁÙ¿¡¼­ this()³ª super()¸¦ ÀÌ¿äÇØ¼­ ´Ù¸¥ »ı¼ºÀÚ¸¦ È£ÃâÇÏÁö ¾ÊÀ¸¸é
-	 ÄÄÆÄÀÏ·¯°¡ ÀÚµ¿À¸·Î super()¸¦ ³Ö¾îÁØ´Ù.
+	 ìƒì„±ìì˜ ì²« ì¤„ì—ì„œ this()ë‚˜ super()ë¥¼ ì´ìš”í•´ì„œ ë‹¤ë¥¸ ìƒì„±ìë¥¼ í˜¸ì¶œí•˜ì§€ ì•Šìœ¼ë©´
+	 ì»´íŒŒì¼ëŸ¬ê°€ ìë™ìœ¼ë¡œ super()ë¥¼ ë„£ì–´ì¤€ë‹¤.
 	*/
 	public Points3D(int x, int y, int z) {
 		super(x, y);
 		this.z = z;
 	}
 	
-	//¿À¹ö¶óÀÌµù ¸Ş¼­µå - ºÎ¸ğ·ÎºÎÅÍ »ó¼Ó¹ŞÀº ¸Ş¼­µåÀÇ ³»¿ëÀ» º¯°æÇÏ´Â °Í, ¸Ş¼­µå ÀçÁ¤ÀÇ
+	//ì˜¤ë²„ë¼ì´ë”© ë©”ì„œë“œ - ë¶€ëª¨ë¡œë¶€í„° ìƒì†ë°›ì€ ë©”ì„œë“œì˜ ë‚´ìš©ì„ ë³€ê²½í•˜ëŠ” ê²ƒ, ë©”ì„œë“œ ì¬ì •ì˜
 	/*
 	public String findLocation() {
 		String result = "x:" + x +", y:" + y + ", z:" + z;
@@ -40,7 +40,7 @@ class Points3D extends Points{
 	*/
 	
 	public String findLocation() {
-		// ºÎ¸ğ ¸Ş¼­µå È£Ãâ => super.¸Ş¼­µåÀÌ¸§()
+		// ë¶€ëª¨ ë©”ì„œë“œ í˜¸ì¶œ => super.ë©”ì„œë“œì´ë¦„()
 		return super.findLocation() + ", z:" + z;
 	}
 }
@@ -51,11 +51,11 @@ public class OverridingTest {
 	public static void main(String[] args) {
 		Points po = new Points(3,5);
 		String str = po.findLocation();
-		System.out.println("2Â÷¿ø ÁÂÇ¥=" + str + "\n");
+		System.out.println("2ì°¨ì› ì¢Œí‘œ=" + str + "\n");
 		
 		Points3D p = new Points3D(2,6,3);
 		String r = p.findLocation();
-		System.out.println("3Â÷¿ø ÁÂÇ¥=" + r);
+		System.out.println("3ì°¨ì› ì¢Œí‘œ=" + r);
 
 	}
 

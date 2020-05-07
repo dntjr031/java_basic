@@ -10,18 +10,18 @@ public class EnumTest2 {
 		c.showInfo();
 		
 		if(c1.kind == c1.num) { // true
-			System.out.println("Card1.CLOVER¿Í Card1.TWO´Â °°´Ù");
+			System.out.println("Card1.CLOVERì™€ Card1.TWOëŠ” ê°™ë‹¤");
 		}
 		
 		//if(c.kind == c.num) { }// error : incomparable types
 		
 		/*
-		 ÀÌÀü ¹æ½ÄÀ¸·Î´Â Å¸ÀÔÀÌ ´Þ¶óµµ °ªÀÌ °°À¸¸é,
-		 Á¶°Ç½Ä °á°ú°¡ true¿´À¸³ª, 
-		 »õ·Î µµÀÔµÈ Å¸ÀÔ¿¡ ¾ÈÀüÇÑ ¿­°ÅÇü¿¡¼­´Â
-		 ½ÇÁ¦ °ªÀÌ °°¾Æµµ Å¸ÀÔÀÌ ´Ù¸£¸é Á¶°Ç½ÄÀÇ °á°ú°¡ false°¡ µÊ
+		 ì´ì „ ë°©ì‹ìœ¼ë¡œëŠ” íƒ€ìž…ì´ ë‹¬ë¼ë„ ê°’ì´ ê°™ìœ¼ë©´,
+		 ì¡°ê±´ì‹ ê²°ê³¼ê°€ trueì˜€ìœ¼ë‚˜, 
+		 ìƒˆë¡œ ë„ìž…ëœ íƒ€ìž…ì— ì•ˆì „í•œ ì—´ê±°í˜•ì—ì„œëŠ”
+		 ì‹¤ì œ ê°’ì´ ê°™ì•„ë„ íƒ€ìž…ì´ ë‹¤ë¥´ë©´ ì¡°ê±´ì‹ì˜ ê²°ê³¼ê°€ falseê°€ ë¨
 		 
-		 °ª »Ó¸¸ ¾Æ´Ï¶ó Å¸ÀÔ±îÁö Ã¼Å©ÇÏ±â ¶§¹®¿¡ Å¸ÀÔ¿¡ ¾ÈÀüÇÑ (typeSafe) ¿­°ÅÇüÀÌ¶ó°í ÇÔ
+		 ê°’ ë¿ë§Œ ì•„ë‹ˆë¼ íƒ€ìž…ê¹Œì§€ ì²´í¬í•˜ê¸° ë•Œë¬¸ì— íƒ€ìž…ì— ì•ˆì „í•œ (typeSafe) ì—´ê±°í˜•ì´ë¼ê³  í•¨
 		 */
 	}
 

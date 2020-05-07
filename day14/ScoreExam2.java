@@ -3,11 +3,11 @@ package com.day14;
 import java.util.Scanner;
 
 class Score2{
-	//1. ¸â¹öº¯¼ö
-	//ÀÔ·Â°ª¿¡ ÇØ´çÇÏ´Â ¸â¹öº¯¼ö
+	//1. ë©¤ë²„ë³€ìˆ˜
+	//ì…ë ¥ê°’ì— í•´ë‹¹í•˜ëŠ” ë©¤ë²„ë³€ìˆ˜
 	private int kor, eng, math;
 	
-	//°á°ú°ª¿¡ ÇØ´çÇÏ´Â ¸â¹öº¯¼ö
+	//ê²°ê³¼ê°’ì— í•´ë‹¹í•˜ëŠ” ë©¤ë²„ë³€ìˆ˜
 	private int sum;
 	private float average;
 
@@ -57,7 +57,7 @@ class Score2{
 		this.average = average;
 	}
 	
-	//ÃÑÁ¡, Æò±ÕÀ» ±¸ÇÏ´Â ¸Ş¼­µå
+	//ì´ì , í‰ê· ì„ êµ¬í•˜ëŠ” ë©”ì„œë“œ
 	public void sum() {
 		sum = kor + eng + math;
 	}
@@ -74,7 +74,7 @@ public class ScoreExam2 {
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);
-		System.out.println("±¹¾î, ¿µ¾î, ¼öÇĞ Á¡¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+		System.out.println("êµ­ì–´, ì˜ì–´, ìˆ˜í•™ ì ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”");
 		int k = sc.nextInt();
 		int e = sc.nextInt();
 		int m = sc.nextInt();
@@ -84,7 +84,7 @@ public class ScoreExam2 {
 		g.score();
 		g.sum();
 		
-		System.out.println("ÃÑÁ¡ : " + g.getSum() + ", Æò±Õ = " + g.getAverage());
+		System.out.println("ì´ì  : " + g.getSum() + ", í‰ê·  = " + g.getAverage());
 		
 		sc.close();
 

@@ -14,8 +14,8 @@ public class TokenizerTest {
 			System.out.println(token);
 		}
 		
-		//split() ÀÌ¿ë
-		System.out.println("split()ÀÌ¿ë");
+		//split() ì´ìš©
+		System.out.println("split()ì´ìš©");
 		String[] sarr = str.split(",");
 		for (int i = 0; i < sarr.length; i++) {
 			System.out.println(sarr[i]);
@@ -25,7 +25,7 @@ public class TokenizerTest {
 		
 		str = "100+(200*300)/2";
 		//public StringTokenizer(String str, String delim, boolean returnDelims)
-		//=> ±¸ºĞÀÚµµ ÅäÅ«À¸·Î °£ÁÖ
+		//=> êµ¬ë¶„ìë„ í† í°ìœ¼ë¡œ ê°„ì£¼
 		StringTokenizer st2 = new StringTokenizer(str, "+-*/=()", true);
 		
 		while(st2.hasMoreTokens()) {
@@ -33,9 +33,9 @@ public class TokenizerTest {
 			System.out.println(token);
 		}
 		/*
-		 StringTokenizer ´Â ´Ü ÇÑ ¹®ÀÚÀÇ ±¸ºĞÀÚ¸¸ »ç¿ëÇÒ ¼ö ÀÖ±â ¶§¹®¿¡,
-		 +-/*=()  ÀüÃ¼°¡ ÇÏ³ªÀÇ ±¸ºĞÀÚ°¡ ¾Æ´Ï¶ó °¢°¢ÀÇ ¹®ÀÚ°¡ ¸ğµÎ ±¸ºĞÀÚÀÓ
-		 µÎ ¹®ÀÚ ÀÌ»óÀÇ ±¸ºĞÀÚ¸¦ »ç¿ëÇØ¾ß ÇÑ´Ù¸é split() ¸Ş¼­µå ÀÌ¿ë
+		 StringTokenizer ëŠ” ë‹¨ í•œ ë¬¸ìì˜ êµ¬ë¶„ìë§Œ ì‚¬ìš©í•  ìˆ˜ ìˆê¸° ë•Œë¬¸ì—,
+		 +-/*=()  ì „ì²´ê°€ í•˜ë‚˜ì˜ êµ¬ë¶„ìê°€ ì•„ë‹ˆë¼ ê°ê°ì˜ ë¬¸ìê°€ ëª¨ë‘ êµ¬ë¶„ìì„
+		 ë‘ ë¬¸ì ì´ìƒì˜ êµ¬ë¶„ìë¥¼ ì‚¬ìš©í•´ì•¼ í•œë‹¤ë©´ split() ë©”ì„œë“œ ì´ìš©
 		 */
 	}
 

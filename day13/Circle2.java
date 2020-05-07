@@ -2,22 +2,22 @@ package com.day13;
 
 public class Circle2 {
 	
-	//1. ¸â¹öº¯¼ö (¼Ó¼º, »óÅÂÁ¤º¸, µ¥ÀÌÅÍ)
-	int radius; //¹İÁö¸§
+	//1. ë©¤ë²„ë³€ìˆ˜ (ì†ì„±, ìƒíƒœì •ë³´, ë°ì´í„°)
+	int radius; //ë°˜ì§€ë¦„
 	
-	//2. »ı¼ºÀÚ
+	//2. ìƒì„±ì
 	Circle2(int p_radius){
 		radius = p_radius;
 	}
 	
 	
-	//3. ¸Ş¼­µå (±â´É, Çàµ¿)
-	//¿øÀÇ ¸éÀû ±¸ÇÏ´Â ±â´É
+	//3. ë©”ì„œë“œ (ê¸°ëŠ¥, í–‰ë™)
+	//ì›ì˜ ë©´ì  êµ¬í•˜ëŠ” ê¸°ëŠ¥
 	public double findArea() {
 		double area = radius*radius*3.14;
 		return area;
 	}
-	//¿øÀÇ µÑ·¹ ±¸ÇÏ´Â ±â´É
+	//ì›ì˜ ë‘˜ë ˆ êµ¬í•˜ëŠ” ê¸°ëŠ¥
 	public double findGirth() {
 		double girth = 3.14*2*radius;
 		return girth;

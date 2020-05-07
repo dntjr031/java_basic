@@ -7,7 +7,7 @@ public class PersonTest2 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		Graduate2 g = new Graduate2();
-		System.out.println("ÀÌ¸§, ³ªÀÌ, ÇĞ¹ø, Àü°øÀ» ÀÔ·ÂÇÏ¼¼¿ä");
+		System.out.println("ì´ë¦„, ë‚˜ì´, í•™ë²ˆ, ì „ê³µì„ ì…ë ¥í•˜ì„¸ìš”");
 		g.setName(sc.nextLine());
 		g.setAge(sc.nextInt());
 		g.setStuNum(sc.nextInt());
@@ -15,10 +15,10 @@ public class PersonTest2 {
 		g.setMajor(sc.nextLine());
 		
 		System.out.println("============================");
-		System.out.println("ÀÌ¸§:" + g.getName());
-		System.out.println("³ªÀÌ:" + g.getAge());
-		System.out.println("ÇĞ¹ø:" + g.getStuNum());
-		System.out.println("Àü°ø:" + g.getMajor());
+		System.out.println("ì´ë¦„:" + g.getName());
+		System.out.println("ë‚˜ì´:" + g.getAge());
+		System.out.println("í•™ë²ˆ:" + g.getStuNum());
+		System.out.println("ì „ê³µ:" + g.getMajor());
 		g.writeThesis();
 		
 		sc.close();

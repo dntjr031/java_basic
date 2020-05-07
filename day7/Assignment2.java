@@ -6,7 +6,7 @@ public class Assignment2 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("4ÀÚ¸® ÀÌ»óÀÇ ¼ıÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+		System.out.println("4ìë¦¬ ì´ìƒì˜ ìˆ«ìë¥¼ ì…ë ¥í•˜ì„¸ìš”");
 		String num = sc.nextLine();
 		
 		int sum = 0;
@@ -22,7 +22,7 @@ public class Assignment2 {
 		
 		System.out.println("\n==============\n");
 		
-		System.out.println("4ÀÚ¸® ÀÌ»óÀÇ ¼ıÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+		System.out.println("4ìë¦¬ ì´ìƒì˜ ìˆ«ìë¥¼ ì…ë ¥í•˜ì„¸ìš”");
 		int num1 = sc.nextInt();
 		
 		sum = 0;

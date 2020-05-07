@@ -10,11 +10,11 @@ public class Exam4 {
 		
 		double[] dArr = new double[5];
 		for(int i = 0; i < dArr.length; i++) {
-			System.out.println("ÀÜ°í¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+			System.out.println("ìž”ê³ ë¥¼ ìž…ë ¥í•˜ì„¸ìš”");
 			dArr[i] = sc.nextDouble();
 		}
 		
-		System.out.println("ÀÌÀÚÀ²À» ÀÔ·ÂÇÏ¼¼¿ä");
+		System.out.println("ì´ìžìœ¨ì„ ìž…ë ¥í•˜ì„¸ìš”");
 		double interest = sc.nextDouble();
 		
 		
@@ -22,7 +22,7 @@ public class Exam4 {
 			dArr[i] *= (1 + interest/100);
 		}
 		for(double n : dArr) {
-			System.out.println("ÀÌÀÚ°¡ ¹Ý¿µµÈ ÀÜ°í Á¶È¸ : " + Math.round(n));
+			System.out.println("ì´ìžê°€ ë°˜ì˜ëœ ìž”ê³  ì¡°íšŒ : " + Math.round(n));
 		}
 		sc.close();
 

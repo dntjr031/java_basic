@@ -3,7 +3,7 @@ package com.day7;
 public class ForExam4 {
 
 	public static void main(String[] args) {
-		System.out.println("\n=====1¹ø======\n");
+		System.out.println("\n=====1ë²ˆ======\n");
 
 		int sum = 0;
 		for(int i = 1; i <=20; i++) {
@@ -13,7 +13,7 @@ public class ForExam4 {
 		}
 		System.out.println(sum);
 		
-		System.out.println("\n=====2¹ø======\n");
+		System.out.println("\n=====2ë²ˆ======\n");
 		
 		int a = 0;
 		sum = 0;
@@ -26,7 +26,7 @@ public class ForExam4 {
 		}
 		System.out.println(a);
 		
-		System.out.println("\n=====3¹ø======\n");
+		System.out.println("\n=====3ë²ˆ======\n");
 		
 		for(int i = 1; i <= 6; i++) {
 			for(int k = 1; k <=6; k++) {

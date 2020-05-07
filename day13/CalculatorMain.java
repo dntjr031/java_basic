@@ -34,7 +34,7 @@ public class CalculatorMain {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.println("µÎ ½Ç¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+		System.out.println("ë‘ ì‹¤ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”");
 		double a = sc.nextDouble();
 		double b = sc.nextDouble();
 		

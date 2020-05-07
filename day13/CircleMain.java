@@ -5,39 +5,39 @@ import java.util.Scanner;
 public class CircleMain {
 
 	public static void main(String[] args) {
-		//¿øÀÇ ¸éÀûÀ» ±¸ÇÏ½Ã¿À 
-		// - findArea()¸Ş¼­µå »ç¿ë
-		// - static ¸Ş¼­µå°¡ ¾Æ´Ï¹Ç·Î °´Ã¼ »ı¼º ÈÄ ÂüÁ¶º¯¼ö.¸Ş¼­µå() ·Î È£Ãâ
+		//ì›ì˜ ë©´ì ì„ êµ¬í•˜ì‹œì˜¤ 
+		// - findArea()ë©”ì„œë“œ ì‚¬ìš©
+		// - static ë©”ì„œë“œê°€ ì•„ë‹ˆë¯€ë¡œ ê°ì²´ ìƒì„± í›„ ì°¸ì¡°ë³€ìˆ˜.ë©”ì„œë“œ() ë¡œ í˜¸ì¶œ
 		
-		//1. °´Ã¼ »ı¼º
+		//1. ê°ì²´ ìƒì„±
 		Circle cc = new Circle();
 		
-		//2. ¸Ş¼­µå È£Ãâ(»ç¿ë)
-		//¸ÕÀú ¸â¹öº¯¼ö¿¡ °ª ÇÒ´ç
+		//2. ë©”ì„œë“œ í˜¸ì¶œ(ì‚¬ìš©)
+		//ë¨¼ì € ë©¤ë²„ë³€ìˆ˜ì— ê°’ í• ë‹¹
 		cc.radius = 5;
-		//¸Ş¼­µå È£Ãâ
+		//ë©”ì„œë“œ í˜¸ì¶œ
 		double area = cc.findArea();
 		
 		
-		System.out.println("¿øÀÇ ¸éÀû : " + area);
+		System.out.println("ì›ì˜ ë©´ì  : " + area);
 
-		//¸â¹öº¯¼öÀÇ °ª º¯°æ
+		//ë©¤ë²„ë³€ìˆ˜ì˜ ê°’ ë³€ê²½
 		cc.radius = 10;
 		area = cc.findArea();
-		System.out.println("º¯°æµÈ ¿øÀÇ ¸éÀû : " + area);
+		System.out.println("ë³€ê²½ëœ ì›ì˜ ë©´ì  : " + area);
 		
-		//»ç¿ëÀÚ·ÎºÎÅÍ ¹İÁö¸§À» ÀÔ·Â¹Ş¾Æ¼­ Ã³¸®
+		//ì‚¬ìš©ìë¡œë¶€í„° ë°˜ì§€ë¦„ì„ ì…ë ¥ë°›ì•„ì„œ ì²˜ë¦¬
 		Scanner sc = new Scanner(System.in);
-		System.out.println("¹İÁö¸§ ÀÔ·Â");
+		System.out.println("ë°˜ì§€ë¦„ ì…ë ¥");
 		int r = sc.nextInt();
 		cc.radius = r;
 		
 		area = cc.findArea();
-		System.out.println("¹İÁö¸§ÀÌ " + r + "ÀÎ ¿øÀÇ ¸éÀû : " + area);
+		System.out.println("ë°˜ì§€ë¦„ì´ " + r + "ì¸ ì›ì˜ ë©´ì  : " + area);
 		
-		//¿øÀÇ µÑ·¹ ±¸ÇÏ±â
+		//ì›ì˜ ë‘˜ë ˆ êµ¬í•˜ê¸°
 		double girth = cc.findGirth();	
-		System.out.println("¿øÀÇ µÑ·¹ : " + girth);
+		System.out.println("ì›ì˜ ë‘˜ë ˆ : " + girth);
 		sc.close();
 	}
 

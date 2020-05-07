@@ -5,7 +5,7 @@ class MenuChoiceException extends Exception{
 	private static final long serialVersionUID = 1L;
 
 	public MenuChoiceException(int n) {
-		super(n + "¿¡ ÇØ´çÇÏ´Â ¼±ÅÃÀº Á¸ÀçÇÏÁö ¾Ê½À´Ï´Ù.\n¸Ş´º ¼±ÅÃÀ» Ã³À½ºÎÅÍ ´Ù½Ã ÁøÇàÇÕ´Ï´Ù.\n");
+		super(n + "ì— í•´ë‹¹í•˜ëŠ” ì„ íƒì€ ì¡´ì¬í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤.\në©”ë‰´ ì„ íƒì„ ì²˜ìŒë¶€í„° ë‹¤ì‹œ ì§„í–‰í•©ë‹ˆë‹¤.\n");
 	}
 	
 }
@@ -42,10 +42,10 @@ public class PhoneExam2 {
 						pm.delete();
 						continue;
 					case 5:
-						System.out.println("Á¾·áÇÕ´Ï´Ù.");
+						System.out.println("ì¢…ë£Œí•©ë‹ˆë‹¤.");
 						break loop1;
 					default:
-						System.out.println("Àß¸ø ÀÔ·ÂÇÏ¿´½À´Ï´Ù.\n");
+						System.out.println("ì˜ëª» ì…ë ¥í•˜ì˜€ìŠµë‹ˆë‹¤.\n");
 						
 				}
 		}

@@ -6,7 +6,7 @@ public class Assignment1 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("±¹¾î, ¿µ¾î, ¼öÇĞ Á¡¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+		System.out.println("êµ­ì–´, ì˜ì–´, ìˆ˜í•™ ì ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”");
 		double k = sc.nextDouble();
 		double e = sc.nextDouble();
 		double m = sc.nextDouble();
@@ -16,12 +16,12 @@ public class Assignment1 {
 		
 		if(average >= 70 ) {
 			if(m >= 50 && e >= 50 && k >= 50) {
-				result = "ÇÕ°İ";
+				result = "í•©ê²©";
 			}else {
-				result = "°ú¶ô";
+				result = "ê³¼ë½";
 			}
 		}else {
-			result = "ºÒÇÕ°İ";
+			result = "ë¶ˆí•©ê²©";
 		}
 		
 		int averageInt = (int)(average/10);
@@ -44,8 +44,8 @@ public class Assignment1 {
 				
 		}
 		
-		System.out.println("Æò±Õ : " + average + ", ÇĞÁ¡ : " + grade);
-		System.out.println("ÇÕ°İ¿©ºÎ : " + result);
+		System.out.println("í‰ê·  : " + average + ", í•™ì  : " + grade);
+		System.out.println("í•©ê²©ì—¬ë¶€ : " + result);
 		sc.close();
 
 	}

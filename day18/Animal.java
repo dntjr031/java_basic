@@ -2,35 +2,35 @@ package com.day18;
 
 public class Animal {
 	public void bark() {
-		System.out.println("¿ï´Ù");
+		System.out.println("ìš¸ë‹¤");
 	}
 	public void parent() {
-		System.out.println("³­ ºÎ¸ğ-µ¿¹°");
+		System.out.println("ë‚œ ë¶€ëª¨-ë™ë¬¼");
 	}
 }
 
 class Cat extends Animal{
 
 	public void bark() {
-		System.out.println("¾ß¿Ë");
+		System.out.println("ì•¼ì˜¹");
 	}
 
 	public void child() {
-		System.out.println("³­ ÀÚ½Ä-°í¾çÀÌ");
+		System.out.println("ë‚œ ìì‹-ê³ ì–‘ì´");
 	}
 	
 }
 
 class Cow extends Animal{
 	public void bark() {
-		System.out.println("À½¸ŞÀ½¸Ş");
+		System.out.println("ìŒë©”ìŒë©”");
 	}
 
 }
 
 class Dog extends Animal{
 	public void bark() {
-		System.out.println("¸Û¸Û");
+		System.out.println("ë©ë©");
 	}
 
 }
@@ -45,7 +45,7 @@ class AnimalModule{
 		}else if(num == 3) {
 			b = new Dog();
 		}else {
-			System.out.println("Àß¸øÀÔ·Â!");
+			System.out.println("ì˜ëª»ì…ë ¥!");
 		}
 		return b;
 	}

@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Exam_94 {
 
-	//[1´Ü°è]
+	//[1ë‹¨ê³„]
 	private String name, tel, birth;
 	
 	public Exam_94(String name, String tel) {
@@ -30,25 +30,25 @@ public class Exam_94 {
 class phone{
 	
 	public static void showMenu(){
-		System.out.println("¼±ÅÃÇÏ¼¼¿ä...");
-		System.out.println("1. µ¥ÀÌÅÍ ÀÔ·Â");
-		System.out.println("2. ÇÁ·Î±×·¥ Á¾·á");
-		System.out.print("¼±ÅÃ: ");
+		System.out.println("ì„ íƒí•˜ì„¸ìš”...");
+		System.out.println("1. ë°ì´í„° ì…ë ¥");
+		System.out.println("2. í”„ë¡œê·¸ë¨ ì¢…ë£Œ");
+		System.out.print("ì„ íƒ: ");
 	}
 	
 	public static void inputData(){
 		Scanner sc=new Scanner(System.in);
 
-		System.out.print("ÀÌ¸§: ");
+		System.out.print("ì´ë¦„: ");
 		String name=sc.nextLine();
-		System.out.print("ÀüÈ­¹øÈ£: ");
+		System.out.print("ì „í™”ë²ˆí˜¸: ");
 		String phone=sc.nextLine();
-		System.out.print("»ı³â¿ùÀÏ: ");
+		System.out.print("ìƒë…„ì›”ì¼: ");
 		String birth=sc.nextLine();
 		
 		Exam_94 info=new Exam_94(name, phone, birth);
 
-		System.out.println("\n=======ÀÔ·ÂµÈ Á¤º¸ Ãâ·Â========");
+		System.out.println("\n=======ì…ë ¥ëœ ì •ë³´ ì¶œë ¥========");
 		info.printInfo();
 		sc.close();
 	}

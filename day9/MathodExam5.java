@@ -23,7 +23,7 @@ public class MathodExam5 {
 
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.println("0~9»çÀÌÀÇ ¼ıÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+		System.out.println("0~9ì‚¬ì´ì˜ ìˆ«ìë¥¼ ì…ë ¥í•˜ì„¸ìš”");
 		char num = (char)System.in.read();
 		
 		int result = convToint(num);
@@ -33,7 +33,7 @@ public class MathodExam5 {
 		
 		System.out.println("\n===================\n");
 		
-		System.out.print("¹İº¹È½¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
+		System.out.print("ë°˜ë³µíšŸìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
 		int count = sc.nextInt();
 		
 		aB(count);

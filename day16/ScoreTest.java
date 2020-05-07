@@ -40,10 +40,10 @@ public class ScoreTest {
 		Score score = new Score(subject);
 		int a = score.calcTotal();
 		double b = score.calcAverage();
-		System.out.println("ÃÑÇÕ : " + a + ", Æò±Õ : " + b);
+		System.out.println("ì´í•© : " + a + ", í‰ê·  : " + b);
 		
 		Scanner sc = new Scanner(System.in);
-		System.out.println("±¹¿µ¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+		System.out.println("êµ­ì˜ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”");
 		for (int i = 0; i < subject.length; i++) {
 			subject[i] = sc.nextInt();
 		}
@@ -51,13 +51,13 @@ public class ScoreTest {
 		a = score.calcTotal();
 		b = score.calcAverage();
 		
-		System.out.println("º¯°æµÈ °ú¸ñ");
+		System.out.println("ë³€ê²½ëœ ê³¼ëª©");
 		int[] subject1 = score.getSubject();
 		for(int n : subject1) {
 			System.out.println(n + "\t");
 		}
 		
-		System.out.println("\n\nÃÑÁ¡ : " + a + ", Æò±Õ : " + b);
+		System.out.println("\n\nì´ì  : " + a + ", í‰ê·  : " + b);
 		
 		sc.close();
 	}

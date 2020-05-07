@@ -1,10 +1,10 @@
 package com.day16;
 
 /*
- this.¸â¹ö => ÀÚ½ÅÀÇ ¸â¹ö¸¦ °¡¸®Å°´Â this
- this() => »ý¼ºÀÚ¸¦ È£ÃâÇÏ´Â this()
- 			ÀÚ½ÅÀÇ »ý¼ºÀÚµé Áß ´Ù¸¥ »ý¼ºÀÚ È£Ãâ
- 			»ý¼ºÀÚÀÇ Ã¹ÁÙ¿¡¼­¸¸ È£Ãâ °¡´É
+ this.ë©¤ë²„ => ìžì‹ ì˜ ë©¤ë²„ë¥¼ ê°€ë¦¬í‚¤ëŠ” this
+ this() => ìƒì„±ìžë¥¼ í˜¸ì¶œí•˜ëŠ” this()
+ 			ìžì‹ ì˜ ìƒì„±ìžë“¤ ì¤‘ ë‹¤ë¥¸ ìƒì„±ìž í˜¸ì¶œ
+ 			ìƒì„±ìžì˜ ì²«ì¤„ì—ì„œë§Œ í˜¸ì¶œ ê°€ëŠ¥
  */
 class Car{
 	private String color, gearType;

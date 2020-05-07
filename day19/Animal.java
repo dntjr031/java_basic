@@ -1,27 +1,27 @@
 package com.day19;
 
-public abstract class Animal { // Ãß»ó Å¬·¡½º
-	public abstract void sound(); // Ãß»ó ¸Þ¼­µå
+public abstract class Animal { // ì¶”ìƒ í´ëž˜ìŠ¤
+	public abstract void sound(); // ì¶”ìƒ ë©”ì„œë“œ
 	/*
-	  Ãß»ó¸Þ¼­µå 
-	  - ¸Þ¼­µåÀÇ ±¸ÇöºÎ°¡ ¾ø´Â °Í, {}ºí·°ÀÌ ¾ø°í ¼±¾ðºÎ¸¸ Á¸Àç
-	  - ÀÚ½Ä Å¬·¡½º¿¡¼­ ¾Ë¸Â°Ô ±¸ÇöÇØ¾ß ÇÔ(¿À¹ö¶óÀÌµù ÇØ¾ßÇÔ)
-	  - public abstract ¹ÝÈ¯Å¸ÀÔ ¸Þ¼Òµå¸í(¸Å°³º¯¼ö);
-	  - ¿À¹ö¶óÀÌµùÀÇ °ü°è¸¦ Çü¼ºÇÏ±â À§ÇØ Á¤ÀÇµÈ ¸Þ¼­µå, 
-	  	ºñ¾îÀÖ´Â ¸Þ¼­µå´Â Ãß»ó ¸Þ¼­µå·Î ¸¸µç´Ù.
+	  ì¶”ìƒë©”ì„œë“œ 
+	  - ë©”ì„œë“œì˜ êµ¬í˜„ë¶€ê°€ ì—†ëŠ” ê²ƒ, {}ë¸”ëŸ­ì´ ì—†ê³  ì„ ì–¸ë¶€ë§Œ ì¡´ìž¬
+	  - ìžì‹ í´ëž˜ìŠ¤ì—ì„œ ì•Œë§žê²Œ êµ¬í˜„í•´ì•¼ í•¨(ì˜¤ë²„ë¼ì´ë”© í•´ì•¼í•¨)
+	  - public abstract ë°˜í™˜íƒ€ìž… ë©”ì†Œë“œëª…(ë§¤ê°œë³€ìˆ˜);
+	  - ì˜¤ë²„ë¼ì´ë”©ì˜ ê´€ê³„ë¥¼ í˜•ì„±í•˜ê¸° ìœ„í•´ ì •ì˜ëœ ë©”ì„œë“œ, 
+	  	ë¹„ì–´ìžˆëŠ” ë©”ì„œë“œëŠ” ì¶”ìƒ ë©”ì„œë“œë¡œ ë§Œë“ ë‹¤.
 	  
-	  Ãß»ó Å¬·¡½º
-	  - ¹Ì¿Ï¼º Å¬·¡½º
-	  - Ãß»ó¸Þ¼­µå¸¦ Æ÷ÇÔÇÏ°í ÀÖÀ¸¸é Ãß»ó Å¬·¡½º°¡ µÊ
-	  - Ãß»ó ¸Þ¼­µå°¡ ¾ø´õ¶óµµ abstract¸¦ ºÙÀÌ¸é Ãß»óÅ¬·¡½º°¡ µÊ
-	  - Ãß»ó Å¬·¡½º´Â ¹Ì¿Ï¼º Å¬·¡½ºÀÌ¹Ç·Î °´Ã¼ »ý¼ºÇÒ ¼ö ¾ø´Ù.
-	  - »ó¼ÓÀÇ °ü°è¸¦ Çü¼ºÇÏ±â À§ÇÑ »óÀ§ Å¬·¡½º·Î ÀÎ½ºÅÏ½ºÈ­½ÃÅ°±â À§ÇØ¼­ 
-	  	Á¤ÀÇÇÑ Å¬·¡½º°¡ ¾Æ´Ñ °æ¿ì Ãß»ó Å¬·¡½º·Î ¸¸µç´Ù.
-	  - abstract class Å¬·¡½º¸í{
-	  		Ãß»ó ¸Þ¼­µå();
+	  ì¶”ìƒ í´ëž˜ìŠ¤
+	  - ë¯¸ì™„ì„± í´ëž˜ìŠ¤
+	  - ì¶”ìƒë©”ì„œë“œë¥¼ í¬í•¨í•˜ê³  ìžˆìœ¼ë©´ ì¶”ìƒ í´ëž˜ìŠ¤ê°€ ë¨
+	  - ì¶”ìƒ ë©”ì„œë“œê°€ ì—†ë”ë¼ë„ abstractë¥¼ ë¶™ì´ë©´ ì¶”ìƒí´ëž˜ìŠ¤ê°€ ë¨
+	  - ì¶”ìƒ í´ëž˜ìŠ¤ëŠ” ë¯¸ì™„ì„± í´ëž˜ìŠ¤ì´ë¯€ë¡œ ê°ì²´ ìƒì„±í•  ìˆ˜ ì—†ë‹¤.
+	  - ìƒì†ì˜ ê´€ê³„ë¥¼ í˜•ì„±í•˜ê¸° ìœ„í•œ ìƒìœ„ í´ëž˜ìŠ¤ë¡œ ì¸ìŠ¤í„´ìŠ¤í™”ì‹œí‚¤ê¸° ìœ„í•´ì„œ 
+	  	ì •ì˜í•œ í´ëž˜ìŠ¤ê°€ ì•„ë‹Œ ê²½ìš° ì¶”ìƒ í´ëž˜ìŠ¤ë¡œ ë§Œë“ ë‹¤.
+	  - abstract class í´ëž˜ìŠ¤ëª…{
+	  		ì¶”ìƒ ë©”ì„œë“œ();
 	  	}
-	  	abstract class Å¬·¡½º¸í{
-	  		ÀÏ¹Ý ¸Þ¼­µå();
+	  	abstract class í´ëž˜ìŠ¤ëª…{
+	  		ì¼ë°˜ ë©”ì„œë“œ();
 	  	}
 	 */
 }
@@ -29,28 +29,28 @@ public abstract class Animal { // Ãß»ó Å¬·¡½º
 class Dog extends Animal{
 	@Override
 	public void sound() {
-		System.out.println("¸Û¸Û");
+		System.out.println("ë©ë©");
 	}
 }
 
 class Cow extends Animal{
 	@Override
 	public void sound() {
-		System.out.println("À½¸Þ");
+		System.out.println("ìŒë©”");
 	}
 }
 
 class Cat extends Mammal{
 	@Override
 	public void sound() {
-		System.out.println("¾ß¿Ë");
+		System.out.println("ì•¼ì˜¹");
 	}
 }
 
 abstract class Mammal extends Animal{ 
-	//Ãß»ó Å¬·¡½º¸¦ »ó¼Ó¹ÞÀº ÀÚ½Ä Å¬·¡½º¿¡¼­ Ãß»ó ¸Þ¼­µå¸¦ ¸ðµÎ ±¸ÇöÇØ¾ß
-	//ÀÏ¹Ý Å¬·¡½º°¡ µÊ ±×·¸Áö ¾ÊÀ¸¸é ÀÚ½Ä Å¬·¡½ºµµ Ãß»ó Å¬·¡½º°¡ µÇ¾î¾ß ÇÔ
+	//ì¶”ìƒ í´ëž˜ìŠ¤ë¥¼ ìƒì†ë°›ì€ ìžì‹ í´ëž˜ìŠ¤ì—ì„œ ì¶”ìƒ ë©”ì„œë“œë¥¼ ëª¨ë‘ êµ¬í˜„í•´ì•¼
+	//ì¼ë°˜ í´ëž˜ìŠ¤ê°€ ë¨ ê·¸ë ‡ì§€ ì•Šìœ¼ë©´ ìžì‹ í´ëž˜ìŠ¤ë„ ì¶”ìƒ í´ëž˜ìŠ¤ê°€ ë˜ì–´ì•¼ í•¨
 	public void breed(int n) {
-		System.out.println(n + "¸¶¸® »õ³¢¸¦ ³º´Â´Ù");
+		System.out.println(n + "ë§ˆë¦¬ ìƒˆë¼ë¥¼ ë‚³ëŠ”ë‹¤");
 	}
 }

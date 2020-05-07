@@ -8,14 +8,14 @@ public class TryExam {
 	
 	public static void main(String[] args) {
 		try {
-			System.out.println("µÎ ¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+			System.out.println("ë‘ ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”");
 			int n1 = sc.nextInt();
 			int n2 = sc.nextInt();
-			System.out.println(n1 + "°ú " + n2 + "¸¦ ³ª´« ³ª¸ÓÁö : " + n1%n2);
+			System.out.println(n1 + "ê³¼ " + n2 + "ë¥¼ ë‚˜ëˆˆ ë‚˜ë¨¸ì§€ : " + n1%n2);
 		}catch(ArithmeticException e) {
 			System.out.println(e.getMessage());
 		}catch(InputMismatchException e) {
-			System.out.println("¿¡·¯ : " + e.getMessage());
+			System.out.println("ì—ëŸ¬ : " + e.getMessage());
 		}catch(Exception e) {
 			e.printStackTrace();
 		}

@@ -9,15 +9,15 @@ public class ListTest {
 
 	public static void main(String[] args) {
 		ArrayList<Member> mArr = new ArrayList<Member>();
-		mArr.add(new Member("È«±æµ¿", 20));
-		mArr.add(new Member("±è±æµ¿", 30));
-		mArr.add(new Member("¹Ú±æµ¿", 40));
+		mArr.add(new Member("í™ê¸¸ë™", 20));
+		mArr.add(new Member("ê¹€ê¸¸ë™", 30));
+		mArr.add(new Member("ë°•ê¸¸ë™", 40));
 		
 		for (int i = 0; i < mArr.size(); i++) {
 			System.out.println(mArr.get(i));
 		}
 		
-		System.out.println("\nIterator ÀÌ¿ë");
+		System.out.println("\nIterator ì´ìš©");
 		Iterator<Member> im = mArr.iterator();
 		while(im.hasNext()) {
 			System.out.println(im.next());
@@ -25,15 +25,15 @@ public class ListTest {
 		
 		System.out.println("\nVector Test");
 		Vector<Member> vArr = new Vector<Member>();
-		vArr.add(new Member("±èÃ¶¼ö", 20));
-		vArr.add(new Member("¹ÚÃ¶¼ö", 25));
-		vArr.add(new Member("ÃÖÃ¶¼ö", 30));
+		vArr.add(new Member("ê¹€ì² ìˆ˜", 20));
+		vArr.add(new Member("ë°•ì² ìˆ˜", 25));
+		vArr.add(new Member("ìµœì² ìˆ˜", 30));
 		
 		for (int i = 0; i < vArr.size(); i++) {
 			vArr.get(i).showInfo();
 		}
 		
-		System.out.println("\nEnumerationÀÌ¿ë");
+		System.out.println("\nEnumerationì´ìš©");
 		Enumeration<Member> en = vArr.elements();
 		while(en.hasMoreElements()) {
 			en.nextElement().showInfo();
@@ -56,7 +56,7 @@ class Member{
 	}
 	
 	public void showInfo() {
-		System.out.println("¾ÆÀÌµğ : " + id);
-		System.out.println("³ªÀÌ : " + age + "\n");
+		System.out.println("ì•„ì´ë”” : " + id);
+		System.out.println("ë‚˜ì´ : " + age + "\n");
 	}
 }

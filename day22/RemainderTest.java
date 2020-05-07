@@ -6,7 +6,7 @@ public class RemainderTest {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("µÎ ¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+		System.out.println("ë‘ ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”");
 		int a = sc.nextInt();
 		int b = sc.nextInt();
 		try {
@@ -23,7 +23,7 @@ public class RemainderTest {
 
 	public static int remainder (int a, int b) throws Exception {
 		if(b == 0) {
-			throw new Exception("Á¦¼ö°¡ 0ÀÌ µÇ¸é ¾ÈµË´Ï´Ù.");
+			throw new Exception("ì œìˆ˜ê°€ 0ì´ ë˜ë©´ ì•ˆë©ë‹ˆë‹¤.");
 		}
 		int d = a%b;
 		return d;

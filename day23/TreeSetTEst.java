@@ -9,13 +9,13 @@ public class TreeSetTEst {
 
 		TreeSet<Integer> tset = new TreeSet<Integer>();
 		
-		tset.add(10); // ÀúÀåµÉ¶§¸¶´Ù µ¥ÀÌÅÍ°¡ Á¤·ÄµÊ
+		tset.add(10); // ì €ì¥ë ë•Œë§ˆë‹¤ ë°ì´í„°ê°€ ì •ë ¬ë¨
 		tset.add(2);
 		tset.add(5);
 		tset.add(99);
 		tset.add(2);
 		
-		System.out.println("¿ä¼ÒÀÇ °³¼ö : " + tset.size());
+		System.out.println("ìš”ì†Œì˜ ê°œìˆ˜ : " + tset.size());
 		
 		Iterator<Integer> ir = tset.iterator();
 		while(ir.hasNext()) {
@@ -24,15 +24,15 @@ public class TreeSetTEst {
 		}
 		
 		TreeSet<String> tset2 = new TreeSet<String>();
-		tset2.add("È«±æµ¿");
-		tset2.add("±è±æµ¿");
-		tset2.add("ÀÌ±æµ¿");
+		tset2.add("í™ê¸¸ë™");
+		tset2.add("ê¹€ê¸¸ë™");
+		tset2.add("ì´ê¸¸ë™");
 		tset2.add("java");
 		tset2.add("abcdef");
 		tset2.add("Oracle");
 		tset2.add("78");
 		
-		System.out.println("¿ä¼ÒÀÇ °³¼ö : " + tset2.size());
+		System.out.println("ìš”ì†Œì˜ ê°œìˆ˜ : " + tset2.size());
 		
 		Iterator<String> ir2 = tset2.iterator();
 		while(ir2.hasNext()) {

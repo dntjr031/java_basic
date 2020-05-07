@@ -14,21 +14,21 @@ public class AccountTest {
 		System.out.println();
 		
 		String[] sArr = new String[4];
-		sArr[0] = "Ã¶¼ö";
-		sArr[1] = "¿µ¼ö";
-		sArr[2] = "¸Í±¸";
-		sArr[3] = "¼öÁö";
+		sArr[0] = "ì² ìˆ˜";
+		sArr[1] = "ì˜ìˆ˜";
+		sArr[2] = "ë§¹êµ¬";
+		sArr[3] = "ìˆ˜ì§€";
 		
 		for(String n : sArr) {
 			System.out.print(n + " ");
 		}
 		System.out.println();
-		//°´Ã¼ÀÎ °æ¿ì
+		//ê°ì²´ì¸ ê²½ìš°
 		Account acc = new Account("100-01-1000", 100000);
 		acc.deposit(50000);
 		acc.showInfo();
 		System.out.println("=====================\n");
-		//¹è¿­ÀÎ °æ¿ì
+		//ë°°ì—´ì¸ ê²½ìš°
 		Account[] accArr = new Account[3];
 		accArr[0] = new Account("100-01-2000", 100000);
 		accArr[1] = new Account("100-01-3000", 200000);

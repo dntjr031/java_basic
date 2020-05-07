@@ -6,23 +6,23 @@ public class ThrowTest {
 	static Scanner sc = new Scanner(System.in);
 	
 	public static void main(String[] args) {
-		//throw¹® - °­Á¦·Î ¿¹¿Ü ¹ß»ı½ÃÅ³ ¶§ »ç¿ë
-		//ÀÚ¹Ù °¡»ó¸Ó½Å¿¡ ÀÇÇØ ÀÎ½ÄµÉ ¼ö ÀÖ´Â ¿¹¿Ü »óÈ²ÀÌ ¾Æ´ÏÁö¸¸,
-		//ÇÁ·Î±×·¥ÀÇ ¼º°İ¿¡ µû¶ó °³¹ßÀÚ°¡ Á¤ÀÇÇÑ ¿¹¿Ü»óÈ²ÀÎ °æ¿ì
-		//(¿¹ : ³ªÀÌ ÀÔ·Â½Ã 0º¸´Ù ÀÛÀº °ªÀÌ ÀÔ·ÂµÇ¾ú´Ù)
-		// throw new Exception("¿¡·¯¸Ş¼¼Áö");
+		//throwë¬¸ - ê°•ì œë¡œ ì˜ˆì™¸ ë°œìƒì‹œí‚¬ ë•Œ ì‚¬ìš©
+		//ìë°” ê°€ìƒë¨¸ì‹ ì— ì˜í•´ ì¸ì‹ë  ìˆ˜ ìˆëŠ” ì˜ˆì™¸ ìƒí™©ì´ ì•„ë‹ˆì§€ë§Œ,
+		//í”„ë¡œê·¸ë¨ì˜ ì„±ê²©ì— ë”°ë¼ ê°œë°œìê°€ ì •ì˜í•œ ì˜ˆì™¸ìƒí™©ì¸ ê²½ìš°
+		//(ì˜ˆ : ë‚˜ì´ ì…ë ¥ì‹œ 0ë³´ë‹¤ ì‘ì€ ê°’ì´ ì…ë ¥ë˜ì—ˆë‹¤)
+		// throw new Exception("ì—ëŸ¬ë©”ì„¸ì§€");
 		
 		try {
-			System.out.println("³ªÀÌ ÀÔ·Â");
+			System.out.println("ë‚˜ì´ ì…ë ¥");
 			int age = sc.nextInt();
 			
 			if(age<0) {
-				throw new Exception("³ªÀÌ´Â ¾ç¼ö¸¸ °¡´ÉÇÕ´Ï´Ù.");
-				//=> Exception(String message) ÀÌ »ı¼ºÀÚ¸¦ »ç¿ëÇÑ °Í
+				throw new Exception("ë‚˜ì´ëŠ” ì–‘ìˆ˜ë§Œ ê°€ëŠ¥í•©ë‹ˆë‹¤.");
+				//=> Exception(String message) ì´ ìƒì„±ìë¥¼ ì‚¬ìš©í•œ ê²ƒ
 			}
-			System.out.println("³ªÀÌ : " + age);
+			System.out.println("ë‚˜ì´ : " + age);
 		}catch(Exception e) {
-			System.out.println("¿¹¿Ü¹ß»ı : " + e.getMessage());
+			System.out.println("ì˜ˆì™¸ë°œìƒ : " + e.getMessage());
 		}
 		
 		System.out.println("\n====next====");

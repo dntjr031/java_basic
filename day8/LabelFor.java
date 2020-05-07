@@ -5,10 +5,10 @@ public class LabelFor {
 	public static void main(String[] args) {
 		
 		/*
-		 * ÀÌ¸§ ºÙÀº ¹Ýº¹¹®
-		 * - ¿©·¯ ¹Ýº¹¹®ÀÌ ÁßÃ¸µÇ¾î ÀÖÀ» ¶§ ¹Ýº¹¹® ¾Õ¿¡ ÀÌ¸§(laber)À» ºÙÀÌ°í
-		 * break ¹®°ú continue ¹®¿¡ ÀÌ¸§(laber)À» ÁöÁ¤ÇØ ÁÜÀ¸·Î½á
-		 * ÇÏ³ª ÀÌ»óÀÇ ¹Ýº¹¹®À» ¹þ¾î³ª°Å³ª ¹Ýº¹À» °Ç³Ê ¶Û ¼ö ÀÖ´Ù.
+		 * ì´ë¦„ ë¶™ì€ ë°˜ë³µë¬¸
+		 * - ì—¬ëŸ¬ ë°˜ë³µë¬¸ì´ ì¤‘ì²©ë˜ì–´ ìžˆì„ ë•Œ ë°˜ë³µë¬¸ ì•žì— ì´ë¦„(laber)ì„ ë¶™ì´ê³ 
+		 * break ë¬¸ê³¼ continue ë¬¸ì— ì´ë¦„(laber)ì„ ì§€ì •í•´ ì¤Œìœ¼ë¡œì¨
+		 * í•˜ë‚˜ ì´ìƒì˜ ë°˜ë³µë¬¸ì„ ë²—ì–´ë‚˜ê±°ë‚˜ ë°˜ë³µì„ ê±´ë„ˆ ë›¸ ìˆ˜ ìžˆë‹¤.
 		 */
 
 		Loop1: for(int i =2; i <= 9; i++) {

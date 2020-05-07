@@ -5,35 +5,35 @@ import java.util.ArrayList;
 public class ArrayListTest2 {
 
 	public static void main(String[] args) {
-		// generic ÄÃ·º¼Ç - ÄÃ·º¼Ç¿¡ ÀúÀåÇÒ °´Ã¼ÀÇ Å¸ÀÔÀ» ÁöÁ¤ÇÏ´Â °Í
+		// generic ì»¬ë ‰ì…˜ - ì»¬ë ‰ì…˜ì— ì €ì¥í•  ê°ì²´ì˜ íƒ€ì…ì„ ì§€ì •í•˜ëŠ” ê²ƒ
 		ArrayList<Integer> list = new ArrayList<Integer>(3);
 		
-		System.out.println("listÀÇ ¿ä¼ÒÀÇ °³¼ö : " + list.size());
+		System.out.println("listì˜ ìš”ì†Œì˜ ê°œìˆ˜ : " + list.size());
 		
-		//1. µ¥ÀÌÅÍ ÀúÀå
+		//1. ë°ì´í„° ì €ì¥
 		list.add(1); // autoBoxing
 		list.add(2);
 		list.add(3);
 		list.add(4);
 		
-		//2. µ¥ÀÌÅÍ ÀĞ±â
+		//2. ë°ì´í„° ì½ê¸°
 		for (int i = 0; i < list.size(); i++) {
-			int n = list.get(i); // Çüº¯È¯ ÇÊ¿ä ¾øÀ½
-			//=> unBoxing : ÀúÀåµÈ °ªÀ» ²¨³¾¶§µµ ±âº»Çü ÇüÅÂÀÇ °ªÀ» ¹Ù·Î ¾ò´Â °Í
+			int n = list.get(i); // í˜•ë³€í™˜ í•„ìš” ì—†ìŒ
+			//=> unBoxing : ì €ì¥ëœ ê°’ì„ êº¼ë‚¼ë•Œë„ ê¸°ë³¸í˜• í˜•íƒœì˜ ê°’ì„ ë°”ë¡œ ì–»ëŠ” ê²ƒ
 			
 			System.out.println(n);
 		}
 		
-		//3. µ¥ÀÌÅÍ »èÁ¦
-		list.remove(1); // index°¡ 1ÀÎ ¿ä¼Ò »èÁ¦
+		//3. ë°ì´í„° ì‚­ì œ
+		list.remove(1); // indexê°€ 1ì¸ ìš”ì†Œ ì‚­ì œ
 		
-		System.out.println("\n=====»èÁ¦ ÈÄ====");
+		System.out.println("\n=====ì‚­ì œ í›„====");
 
 		for (int n : list) {
 			System.out.println(n + "\t");
 		}
 		
-		System.out.println("»èÁ¦ ÈÄ °³¼ö:" + list.size());
+		System.out.println("ì‚­ì œ í›„ ê°œìˆ˜:" + list.size());
 	}
 
 }

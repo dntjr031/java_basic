@@ -6,11 +6,11 @@ public class PrvateTest {
 
 	public static void main(String[] args) {
 		AAA obj = new AAA();
-		obj.name = "È«±æµ¿"; // default´Â µ¿ÀÏ ÆĞÅ°ÁöÀÌ¹Ç·Î Á¢±Ù °¡´É
-		//obj.age = 20; // error, privateÀÎ age´Â ´Ù¸¥ Å¬·¡½ºÀÌ¹Ç·Î Á¢±Ù ºÒ°¡
+		obj.name = "í™ê¸¸ë™"; // defaultëŠ” ë™ì¼ íŒ¨í‚¤ì§€ì´ë¯€ë¡œ ì ‘ê·¼ ê°€ëŠ¥
+		//obj.age = 20; // error, privateì¸ ageëŠ” ë‹¤ë¥¸ í´ë˜ìŠ¤ì´ë¯€ë¡œ ì ‘ê·¼ ë¶ˆê°€
 		// => the field AAA.age is not visible
 		
-		obj.showInfo(); // public ¸Ş¼­µå´Â ¾îµğ¼­µç È£Ãâ °¡´É
+		obj.showInfo(); // public ë©”ì„œë“œëŠ” ì–´ë””ì„œë“  í˜¸ì¶œ ê°€ëŠ¥
 
 		BBB b = new BBB();
 		
@@ -36,25 +36,25 @@ public class PrvateTest {
 }//main class
 
 /*
- Á¢±Ù Á¦ÇÑÀÚ - Å¬·¡½º³ª ¸â¹ö¿¡ »ç¿ëµÇ¾î ¿ÜºÎ·ÎºÎÅÍÀÇ Á¢±ÙÀ» Á¦ÇÑÇÏ´Â ¿ªÇÒ
- public > protected > default(»ı·«Çü) > private
+ ì ‘ê·¼ ì œí•œì - í´ë˜ìŠ¤ë‚˜ ë©¤ë²„ì— ì‚¬ìš©ë˜ì–´ ì™¸ë¶€ë¡œë¶€í„°ì˜ ì ‘ê·¼ì„ ì œí•œí•˜ëŠ” ì—­í• 
+ public > protected > default(ìƒëµí˜•) > private
 
-[1] private - °°Àº Å¬·¡½º¿¡¼­¸¸ Á¢±Ù °¡´É
-[2] default - °°Àº ÆĞÅ°Áö¾È¿¡¼­¸¸ Á¢±Ù °£À¸
-[3] protected - °°Àº ÆĞÅ°Áö´Â ¹°·Ğ ´Ù¸¥ ÆĞÅ°Áö´õ¶óµµ »ó¼Ó°ü°è¿¡¼­´Â Á¢±Ù °¡´É
-[4] public - ¾îµğ¼­³ª Á¢±Ù °¡´É
+[1] private - ê°™ì€ í´ë˜ìŠ¤ì—ì„œë§Œ ì ‘ê·¼ ê°€ëŠ¥
+[2] default - ê°™ì€ íŒ¨í‚¤ì§€ì•ˆì—ì„œë§Œ ì ‘ê·¼ ê°„ìœ¼
+[3] protected - ê°™ì€ íŒ¨í‚¤ì§€ëŠ” ë¬¼ë¡  ë‹¤ë¥¸ íŒ¨í‚¤ì§€ë”ë¼ë„ ìƒì†ê´€ê³„ì—ì„œëŠ” ì ‘ê·¼ ê°€ëŠ¥
+[4] public - ì–´ë””ì„œë‚˜ ì ‘ê·¼ ê°€ëŠ¥
 
-Å¬·¡½º, »ı¼ºÀÚ - public, default
-¸Ş¼­µå, ¸â¹öº¯¼ö - public, default, protected, private
-Áö¿ªº¯¼ö - »ç¿ë ºÒ°¡
+í´ë˜ìŠ¤, ìƒì„±ì - public, default
+ë©”ì„œë“œ, ë©¤ë²„ë³€ìˆ˜ - public, default, protected, private
+ì§€ì—­ë³€ìˆ˜ - ì‚¬ìš© ë¶ˆê°€
  */
-class AAA{ // default Å¬·¡½º
-	private int age; //°°Àº Å¬·¡½º¿¡¼­¸¸ Á¢±Ù °¡´É
-	String name; // °°Àº ÆĞÅ°Áö¿¡¼­¸¸ Á¢±Ù °¡´É (default, »ı·«)
+class AAA{ // default í´ë˜ìŠ¤
+	private int age; //ê°™ì€ í´ë˜ìŠ¤ì—ì„œë§Œ ì ‘ê·¼ ê°€ëŠ¥
+	String name; // ê°™ì€ íŒ¨í‚¤ì§€ì—ì„œë§Œ ì ‘ê·¼ ê°€ëŠ¥ (default, ìƒëµ)
 	
 	public void showInfo() {
-		System.out.println("³ªÀÌ : " + age);
-		System.out.println("ÀÌ¸§  : " + name);
+		System.out.println("ë‚˜ì´ : " + age);
+		System.out.println("ì´ë¦„  : " + name);
 		
 	}
 	

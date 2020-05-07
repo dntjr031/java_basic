@@ -7,7 +7,7 @@ public class GradeTest1 {
 	public static void main(String[] args) {
 
 		Scanner sc = new Scanner(System.in);
-		System.out.println("±¹¾î, ¿µ¾î, ¼öÇĞ Á¡¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+		System.out.println("êµ­ì–´, ì˜ì–´, ìˆ˜í•™ ì ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”");
 		int k = sc.nextInt();
 		int e = sc.nextInt();
 		int m = sc.nextInt();
@@ -15,7 +15,7 @@ public class GradeTest1 {
 		int score = k + e + m;
 		double grade = score/3.0;
 		
-		System.out.println("ÃÑÁ¡ : " + score + ", Æò±Õ = " + grade);
+		System.out.println("ì´ì  : " + score + ", í‰ê·  = " + grade);
 		
 		sc.close();
 

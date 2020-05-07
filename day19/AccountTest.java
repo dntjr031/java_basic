@@ -9,8 +9,8 @@ public class AccountTest {
 		
 		Account ac = null;
 		
-		System.out.println("°³¼³ÇÒ °èÁÂÁ¾·ù - ÀÏ¹İ°èÁÂ(A), ½Å¿ë°èÁÂ(F), ±âºÎ°èÁÂ(C)¿Í");
-		System.out.println("°èÁÂ¹øÈ£, ÀÜ¾×À» ÀÔ·ÂÇÏ¼¼¿ä");
+		System.out.println("ê°œì„¤í•  ê³„ì¢Œì¢…ë¥˜ - ì¼ë°˜ê³„ì¢Œ(A), ì‹ ìš©ê³„ì¢Œ(F), ê¸°ë¶€ê³„ì¢Œ(C)ì™€");
+		System.out.println("ê³„ì¢Œë²ˆí˜¸, ì”ì•¡ì„ ì…ë ¥í•˜ì„¸ìš”");
 		String str = sc.nextLine();
 		String accNo = sc.nextLine();
 		double balance = sc.nextDouble();
@@ -21,16 +21,16 @@ public class AccountTest {
 		}else if(str.equalsIgnoreCase("c")) {
 			ac = new ContriAccount(accNo, balance);
 		}else {
-			System.out.println("Àß¸øÀÔ·Â");
+			System.out.println("ì˜ëª»ì…ë ¥");
 			return;
 		}
 		ac.display();
 		
 		while(true){
-			System.out.println("ÀÔ±İÇÒ ±İ¾×À» ÀÔ·ÂÇÏ¼¼¿ä(Á¾·á½Ã 0)");
+			System.out.println("ì…ê¸ˆí•  ê¸ˆì•¡ì„ ì…ë ¥í•˜ì„¸ìš”(ì¢…ë£Œì‹œ 0)");
 			double money = sc.nextDouble();
 			if(money == 0) {
-				System.out.println("Á¾·áÇÏ¿´½À´Ï´Ù");
+				System.out.println("ì¢…ë£Œí•˜ì˜€ìŠµë‹ˆë‹¤");
 				break;
 			}
 			ac.deposit(money);

@@ -15,7 +15,7 @@ class Circle extends Shape{
 	}
 	
 	public void findGirth() {
-		System.out.println("¿øÀÇ µÑ·¹ = "+ 2 * r * RATE);
+		System.out.println("ì›ì˜ ë‘˜ë ˆ = "+ 2 * r * RATE);
 	}
 	
 	public String toString() {
@@ -33,7 +33,7 @@ class Rect extends Shape{
 	}
 
 	public void findGirth() {
-		System.out.println("»ç°¢ÇüÀÇ µÑ·¹ = "+ (w + d)*2);
+		System.out.println("ì‚¬ê°í˜•ì˜ ë‘˜ë ˆ = "+ (w + d)*2);
 	}
 
 	public String toString() {
@@ -45,28 +45,28 @@ class Rect extends Shape{
 public class ShapeExam {
 	static Scanner sc = new Scanner(System.in);
 	public static void main(String[] args) {
-		System.out.println("1´Ü°è-----------------");
+		System.out.println("1ë‹¨ê³„-----------------");
 		
 		Shape s = null;
-		System.out.println("1. ¿ø, 2. »ç°¢Çü, 3. Á¾·á Áß ¼±ÅÃ");
+		System.out.println("1. ì›, 2. ì‚¬ê°í˜•, 3. ì¢…ë£Œ ì¤‘ ì„ íƒ");
 		int n = sc.nextInt();
 		switch(n) {
 			case 1:
-				System.out.println("¹İÁö¸§À» ÀÔ·ÂÇÏ¼¼¿ä");
+				System.out.println("ë°˜ì§€ë¦„ì„ ì…ë ¥í•˜ì„¸ìš”");
 				double d = sc.nextDouble();
 				s = new Circle(d);
 				break;
 			case 2:
-				System.out.println("°¡·Î, ¼¼·Î¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+				System.out.println("ê°€ë¡œ, ì„¸ë¡œë¥¼ ì…ë ¥í•˜ì„¸ìš”");
 				double w = sc.nextDouble();
 				double d1 = sc.nextDouble();
 				s = new Rect(w, d1);
 				break;
 			case 3:
-				System.out.println("Á¾·á");
+				System.out.println("ì¢…ë£Œ");
 				return;
 			default:
-				System.out.println("Á¾·á");
+				System.out.println("ì¢…ë£Œ");
 				return;
 		}
 		s.toString();

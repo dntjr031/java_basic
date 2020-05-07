@@ -11,7 +11,7 @@ public class WhileExam2 {
 			}
 			
 		}
-		System.out.println("3ÀÇ ¹è¼ö¿Í 5ÀÇ ¹è¼öÀÇ ÇÕ : " + sum);
+		System.out.println("3ì˜ ë°°ìˆ˜ì™€ 5ì˜ ë°°ìˆ˜ì˜ í•© : " + sum);
 
 	}
 

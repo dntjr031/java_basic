@@ -8,12 +8,12 @@ public class FinalTest3 {
 		
 		AAA obj = new AAA();
 		System.out.println("num=" + num + ", obj.PI=" + obj.PI);
-		System.out.println("¹è¼Ûºñ : " + AAA.DELIVERY);
-		System.out.println("ÀÌÀÚÀ² : " + INTEREST_RATE);
+		System.out.println("ë°°ì†¡ë¹„ : " + AAA.DELIVERY);
+		System.out.println("ì´ììœ¨ : " + INTEREST_RATE);
 
 		obj.age = 25;
 		//obj.PI = 3.14; // final double
-		//AAA.DELIVERY = 2500; // »ó¼ö´Â °ª º¯°æ ºÒ°¡, final static int
+		//AAA.DELIVERY = 2500; // ìƒìˆ˜ëŠ” ê°’ ë³€ê²½ ë¶ˆê°€, final static int
 		
 		num = 30;
 		//INTEREST_RATE = 1.8; final double

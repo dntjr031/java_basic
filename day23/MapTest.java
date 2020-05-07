@@ -10,31 +10,31 @@ public class MapTest {
 
 		HashMap<Integer, String> hmap = new HashMap<Integer, String>();
 		
-		hmap.put(3, "È«±æµ¿");
-		hmap.put(7, "±è±æµ¿");
-		hmap.put(12, "ÀÌ±æµ¿");
+		hmap.put(3, "í™ê¸¸ë™");
+		hmap.put(7, "ê¹€ê¸¸ë™");
+		hmap.put(12, "ì´ê¸¸ë™");
 		
 		//public V get(Object key)
-		String name = hmap.get(3); // key°¡ 3ÀÎ µ¥ÀÌÅÍ °¡Á®¿À±â
-		System.out.println("key°¡ 3ÀÎ µ¥ÀÌÅÍ : " + name);
-		System.out.println("7¹ø ÇĞ»ıÀÌ¸§ : " + hmap.get(7));
-		System.out.println("12¹ø ÇĞ»ıÀÌ¸§ : " + hmap.get(12) + "\n");
+		String name = hmap.get(3); // keyê°€ 3ì¸ ë°ì´í„° ê°€ì ¸ì˜¤ê¸°
+		System.out.println("keyê°€ 3ì¸ ë°ì´í„° : " + name);
+		System.out.println("7ë²ˆ í•™ìƒì´ë¦„ : " + hmap.get(7));
+		System.out.println("12ë²ˆ í•™ìƒì´ë¦„ : " + hmap.get(12) + "\n");
 		System.out.println(hmap);
-		//foreach »ç¿ë
+		//foreach ì‚¬ìš©
 		hmap.entrySet().forEach((entry) -> System.out.println("key: " + entry.getKey() + ", value: "
 								+ entry.getValue()));
-		System.out.println("ÇÏ³ªÇÏ³ª");
+		System.out.println("í•˜ë‚˜í•˜ë‚˜");
 		hmap.keySet().forEach(System.out::println);
 		hmap.values().forEach(System.out::println);
 		
 		
 		System.out.println();
 		//public V remove(Object key)
-		hmap.remove(7); //key°¡ 7ÀÎ µ¥ÀÌÅÍ »èÁ¦
-		System.out.println("»èÁ¦ ÈÄ hmapÀÇ ¿ä¼ÒÀÇ °³¼ö : " + hmap.size());
+		hmap.remove(7); //keyê°€ 7ì¸ ë°ì´í„° ì‚­ì œ
+		System.out.println("ì‚­ì œ í›„ hmapì˜ ìš”ì†Œì˜ ê°œìˆ˜ : " + hmap.size());
 		
-		//Iterator ÀÌ¿ë
-		System.out.println("\n===Iterator ÀÌ¿ë===");
+		//Iterator ì´ìš©
+		System.out.println("\n===Iterator ì´ìš©===");
 		//public Set<K> ketSet()
 		
 		Set<Integer> set = hmap.keySet();

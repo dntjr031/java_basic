@@ -23,13 +23,13 @@ public class Exam2 {
 	public static void main(String[] args) {
 
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Æò±ÕÀ» ±¸ÇÒ Çà°ú ¿­ÀÇ °³¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+		System.out.println("í‰ê· ì„ êµ¬í•  í–‰ê³¼ ì—´ì˜ ê°œìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”");
 		int a = sc.nextInt();
 		int b = sc.nextInt();
 		
 		int[][] arr = new int[a][b];
 		
-		System.out.println(a + "Çà, " + b + "¿­ÀÇ Á¤¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+		System.out.println(a + "í–‰, " + b + "ì—´ì˜ ì •ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”");
 		
 		for (int i = 0; i < arr.length; i++) {
 			for (int j = 0; j < arr[0].length; j++) {
@@ -52,8 +52,8 @@ public class Exam2 {
 			System.out.println();
 		}
 		
-		System.out.println("\nÃÑÇÕ : " + add);
-		System.out.println("Æò±Õ : " + avg);
+		System.out.println("\nì´í•© : " + add);
+		System.out.println("í‰ê·  : " + avg);
 		
 		
 		sc.close();

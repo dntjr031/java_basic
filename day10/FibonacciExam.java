@@ -23,7 +23,7 @@ public class FibonacciExam {
 	public static void main(String[] args) {
 
 		Scanner sc = new Scanner(System.in);
-		System.out.println("ÇÇº¸³ªÄ¡ ¼ö¿­À» ±¸ÇÒ ¼ö¸¦ ÀÔ·Â");
+		System.out.println("í”¼ë³´ë‚˜ì¹˜ ìˆ˜ì—´ì„ êµ¬í•  ìˆ˜ë¥¼ ì…ë ¥");
 		int a = sc.nextInt();
 		
 		for(int i = 0; i < a; i++) {

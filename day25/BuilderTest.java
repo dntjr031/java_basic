@@ -3,7 +3,7 @@ package com.day25;
 public class BuilderTest {
 
 	public static void main(String[] args) {
-		//append() - Àü´ŞµÈ °ªÀ» StringBuilderÀÇ ÀÎ½ºÅÏ½º°¡ ÀúÀåÇÏ°í ÀÖ´Â ¹®ÀÚ¿­ µ¥ÀÌÅÍÀÇ ³¡¿¡ ¹®ÀÚÀÇ ÇüÅÂ·Î Ãß°¡ÇÔ
+		//append() - ì „ë‹¬ëœ ê°’ì„ StringBuilderì˜ ì¸ìŠ¤í„´ìŠ¤ê°€ ì €ì¥í•˜ê³  ìˆëŠ” ë¬¸ìì—´ ë°ì´í„°ì˜ ëì— ë¬¸ìì˜ í˜•íƒœë¡œ ì¶”ê°€í•¨
 		//public StringBuffer append(String str)
 		StringBuilder sb = new StringBuilder("ab");
 		sb.append(123);
@@ -13,15 +13,15 @@ public class BuilderTest {
 		System.out.println(sb+"\n");
 		
 		sb.insert(2, false);
-		System.out.println("insertÈÄ : " + sb + "\n");
+		System.out.println("insertí›„ : " + sb + "\n");
 		/*
 		 public StringBuilder insert(int offset, String b)
 		 
-		 insert(2, "°ª") ¸Ş¼­µå
-		 - À§Ä¡(index)°¡ 2ÀÎ ÁöÁ¡¿¡, µÎ¹øÂ° ¸Å°³º¯¼ö¸¦ ¹®ÀÚÇüÅÂ·Î ÀúÀå
+		 insert(2, "ê°’") ë©”ì„œë“œ
+		 - ìœ„ì¹˜(index)ê°€ 2ì¸ ì§€ì ì—, ë‘ë²ˆì§¸ ë§¤ê°œë³€ìˆ˜ë¥¼ ë¬¸ìí˜•íƒœë¡œ ì €ì¥
 		 */
 		sb.insert(sb.length(), "test");
-		System.out.println("ÃÖÁ¾sb = " + sb);
+		System.out.println("ìµœì¢…sb = " + sb);
 	}
 
 }

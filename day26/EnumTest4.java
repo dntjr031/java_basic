@@ -4,10 +4,10 @@ public class EnumTest4 {
 
 	public static void main(String[] args) {
 		OverTimeValues over = OverTimeValues.FIVE_HOUR;
-		System.out.println("5½Ã°£ ¾ß±Ù : " + over+ ", ¾ß±Ù¼ö´ç : " + over.getAmount() + "¿ø");
+		System.out.println("5ì‹œê°„ ì•¼ê·¼ : " + over+ ", ì•¼ê·¼ìˆ˜ë‹¹ : " + over.getAmount() + "ì›");
 		
-		System.out.println("ÈŞÀÏ 8½Ã°£ ±Ù¹« : " + OverTimeValues.WEEKEND_EIGT_HOUR + ", ÈŞÀÏ ±Ù¹« ¼ö´ç : "
-							+ OverTimeValues.WEEKEND_EIGT_HOUR.getAmount() + "¿ø");
+		System.out.println("íœ´ì¼ 8ì‹œê°„ ê·¼ë¬´ : " + OverTimeValues.WEEKEND_EIGT_HOUR + ", íœ´ì¼ ê·¼ë¬´ ìˆ˜ë‹¹ : "
+							+ OverTimeValues.WEEKEND_EIGT_HOUR.getAmount() + "ì›");
 		
 		
 	}

@@ -4,53 +4,53 @@ public class ArrayTest1 {
 
 	public static void main(String[] args) {
 		/*
-		 * º¯¼ö - µ¥ÀÌÅÍ ÇÑ°³¸¦ ÀúÀåÇÏ±â À§ÇØ ÇÒ´çÇÑ ÀúÀå¼Ò
-		 * ¹è¿­ - µ¿ÀÏÇÑ Å¸ÀÔÀÇ µ¥ÀÌÅÍ ¿©·¯ °³¸¦ ÀúÀåÇÏ±â À§ÇØ ÇÒ´çÇÑ ÀúÀå¼Ò
-		 * 		ÂüÁ¶Çü(new Å°¿öµå·Î ¸Þ¸ð¸®¿¡ ÇÒ´çÇØ¾ß ÇÔ)
-		 * 		default°ªÀ¸·Î ÃÊ±âÈ­µÊ
-		 * 		¹è¿­ ÀÌ¸§¿¡´Â ÂüÁ¶°ª(ÁÖ¼Ò°ª)ÀÌ µé¾î°¨
-		 * 		°¢ ¿ä¼ÒµéÀº ÀÎµ¦½º(index, Ã·ÀÚ)·Î Á¢±Ù °¡´É
+		 * ë³€ìˆ˜ - ë°ì´í„° í•œê°œë¥¼ ì €ìž¥í•˜ê¸° ìœ„í•´ í• ë‹¹í•œ ì €ìž¥ì†Œ
+		 * ë°°ì—´ - ë™ì¼í•œ íƒ€ìž…ì˜ ë°ì´í„° ì—¬ëŸ¬ ê°œë¥¼ ì €ìž¥í•˜ê¸° ìœ„í•´ í• ë‹¹í•œ ì €ìž¥ì†Œ
+		 * 		ì°¸ì¡°í˜•(new í‚¤ì›Œë“œë¡œ ë©”ëª¨ë¦¬ì— í• ë‹¹í•´ì•¼ í•¨)
+		 * 		defaultê°’ìœ¼ë¡œ ì´ˆê¸°í™”ë¨
+		 * 		ë°°ì—´ ì´ë¦„ì—ëŠ” ì°¸ì¡°ê°’(ì£¼ì†Œê°’)ì´ ë“¤ì–´ê°
+		 * 		ê° ìš”ì†Œë“¤ì€ ì¸ë±ìŠ¤(index, ì²¨ìž)ë¡œ ì ‘ê·¼ ê°€ëŠ¥
 		 */
 		
-		//[1] ¹è¿­¼±¾ð°ú ¸Þ¸ð¸® ÇÒ´çÀ» µû·Î
-		//1. ¹è¿­ ¼±¾ð
+		//[1] ë°°ì—´ì„ ì–¸ê³¼ ë©”ëª¨ë¦¬ í• ë‹¹ì„ ë”°ë¡œ
+		//1. ë°°ì—´ ì„ ì–¸
 		int[] arr;
-		//2. ¸Þ¸ð¸® ÇÒ´ç
-		arr = new int[3]; //Á¤¼ö 3°³¸¦ ÀúÀåÇÒ ¼ö ÀÖ´Â ¹è¿­
-		//3. ÃÊ±âÈ­
+		//2. ë©”ëª¨ë¦¬ í• ë‹¹
+		arr = new int[3]; //ì •ìˆ˜ 3ê°œë¥¼ ì €ìž¥í•  ìˆ˜ ìžˆëŠ” ë°°ì—´
+		//3. ì´ˆê¸°í™”
 		arr[0] = 10;
 		arr[1] = 20;
 		arr[2] = 30;
-		//4. Ãâ·Â // ¸ðµç»óÈ²¿¡¼­ for¹®À¸·Î Ãâ·Â
+		//4. ì¶œë ¥ // ëª¨ë“ ìƒí™©ì—ì„œ forë¬¸ìœ¼ë¡œ ì¶œë ¥
 		for(int i=0; i<3;i++) {
 			System.out.println(arr[i]);
 		}
 		
-		//[2] ¹è¿­¼±¾ð°ú ¸Þ¸ð¸® ÇÒ´çÀ» µ¿½Ã¿¡
+		//[2] ë°°ì—´ì„ ì–¸ê³¼ ë©”ëª¨ë¦¬ í• ë‹¹ì„ ë™ì‹œì—
 		int[] arr2 = new int[2];
-		// ÃÊ±âÈ­
+		// ì´ˆê¸°í™”
 		arr2[0] = 4;
 		arr2[1] = 7;
 		//arr2[2] = 8; // error: ArrayIndexOutOfBoundsException
 		
-		//[3] ¹è¿­¼±¾ð, ¸Þ¸ð¸® ÇÒ´ç, ÃÊ±âÈ­ ¸ðµÎ µ¿½Ã¿¡
+		//[3] ë°°ì—´ì„ ì–¸, ë©”ëª¨ë¦¬ í• ë‹¹, ì´ˆê¸°í™” ëª¨ë‘ ë™ì‹œì—
 		int[] arr3 = {15,30,21,77,95};
 		
 		for(int i = 0; i < arr3.length; i++) {
 			System.out.println(arr3[i] + " ");
 		}
 		
-		System.out.println("\n\narr¹è¿­ÀÇ Å©±â : " + arr.length);
+		System.out.println("\n\narrë°°ì—´ì˜ í¬ê¸° : " + arr.length);
 		
 		//
-		int arr4[]; //°¡´É, ±×·¯³ª ÀÚÁÖ ¾²ÀÌÁö ¾ÊÀ½ 
-		arr4 = new int[4]; //default °ªÀ¸·Î ÃÊ±âÈ­
+		int arr4[]; //ê°€ëŠ¥, ê·¸ëŸ¬ë‚˜ ìžì£¼ ì“°ì´ì§€ ì•ŠìŒ 
+		arr4 = new int[4]; //default ê°’ìœ¼ë¡œ ì´ˆê¸°í™”
 		
 		for(int i = 0; i < arr4.length; i++) {
 			System.out.println(arr4[i]);
 		}
 		//
-		//int[] arr5 = new int[] {4,9,7,3}; // new int[] »ý·«ÇØ¼­ ¸¹ÀÌ ¾²ÀÓ
+		//int[] arr5 = new int[] {4,9,7,3}; // new int[] ìƒëžµí•´ì„œ ë§Žì´ ì“°ìž„
 		
 		//
 		//int[] arr6 = new int[4];

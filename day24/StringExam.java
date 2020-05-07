@@ -10,10 +10,10 @@ public class StringExam {
 		String s1 = "test.txt";
 		String sub1 = s1.substring(0, s1.lastIndexOf('.'));
 		String sub2 = s1.substring(s1.lastIndexOf('.'));
-		System.out.println("ÆÄÀÏ¸í:" + sub1 + "È®ÀåÀÚ:" + sub2);
+		System.out.println("íŒŒì¼ëª…:" + sub1 + "í™•ì¥ì:" + sub2);
 		
 		System.out.println();
-		String s2 = "¾È³çÇÏ¼¼¿ä\n\n Àú´Â È«±æµ¿ÀÔ´Ï´Ù.";
+		String s2 = "ì•ˆë…•í•˜ì„¸ìš”\n\n ì €ëŠ” í™ê¸¸ë™ì…ë‹ˆë‹¤.";
 		String reS = s2.replace("\n\n", "<br>");
 		System.out.println(reS);
 		
@@ -22,43 +22,43 @@ public class StringExam {
 		String sub3 = s3.substring(s3.lastIndexOf("\\") + 1, s3.lastIndexOf("."));
 		String sub4 = s3.substring(s3.lastIndexOf(".") + 1);
 		String sub5 = s3.substring(0,s3.lastIndexOf("\\"));
-		System.out.println("Æú´õ:" + sub5);
-		System.out.println("ÆÄÀÏ¸í:" + sub3);
-		System.out.println("È®ÀåÀÚ:" + sub4);
+		System.out.println("í´ë”:" + sub5);
+		System.out.println("íŒŒì¼ëª…:" + sub3);
+		System.out.println("í™•ì¥ì:" + sub4);
 		
 		System.out.println();
 		Scanner sc = new Scanner(System.in);
-		System.out.println("URLÁÖ¼Ò¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+		System.out.println("URLì£¼ì†Œë¥¼ ì…ë ¥í•˜ì„¸ìš”");
 		String add = sc.nextLine();
 		if(add.indexOf("http://www.mall.com") != -1) {
-			System.out.println("ÇØ´ç url ÁÖ¼Ò:" + add);
+			System.out.println("í•´ë‹¹ url ì£¼ì†Œ:" + add);
 		}else{
-			System.out.println("url ÁÖ¼Ò°¡ ÀûÇÕÇÏÁö ¾Ê½À´Ï´Ù.");
+			System.out.println("url ì£¼ì†Œê°€ ì í•©í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤.");
 		}
 		
 		System.out.println();
-		System.out.println("ÁÖ¹Îµî·Ï¹øÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä(ÇÏÀÌÇÂ ¾øÀÌ)");
+		System.out.println("ì£¼ë¯¼ë“±ë¡ë²ˆí˜¸ë¥¼ ì…ë ¥í•˜ì„¸ìš”(í•˜ì´í”ˆ ì—†ì´)");
 		String id = sc.nextLine();
 		String gender = "";
 		
 		if(id.substring(6,7) == "1" || id.substring(6,7) == "3") {
-			gender = "³²";
+			gender = "ë‚¨";
 		}else if(id.substring(6,7) == "2" || id.substring(6,7) == "4"){
-			gender = "¿©";
+			gender = "ì—¬";
 		}
 		
 		String year;
-		if(id.substring(6,7) == "3" || id.substring(6,7) == "4") { // equals»ç¿ëµµ °¡´É
+		if(id.substring(6,7) == "3" || id.substring(6,7) == "4") { // equalsì‚¬ìš©ë„ ê°€ëŠ¥
 			year = "20" + id.substring(0,2);
 		}else if(id.substring(6,7) == "1" || id.substring(6,7) == "2"){
 			year = "19" + id.substring(0,2);
 		}else {
-			year = "Àß¸øÀÔ·Â";
+			year = "ì˜ëª»ì…ë ¥";
 		}
 		
 		String month = id.substring(2, 4);
 		String day = id.substring(4,6);
-		System.out.println(year + "³â " + month + "¿ù " + day + "ÀÏ " + ", " + gender);
+		System.out.println(year + "ë…„ " + month + "ì›” " + day + "ì¼ " + ", " + gender);
 		
 		sc.close();
 	}

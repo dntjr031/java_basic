@@ -9,9 +9,9 @@ public class AnimalTest {
 		Animal a = new Cat();
 		a.bark();
 		
-		// »ç¿ëÀÚ ÀÔ·Â
+		// ì‚¬ìš©ì ì…ë ¥
 		Scanner sc = new Scanner(System.in);
-		System.out.println("\n1. °í¾çÀÌ, 2. ¼Û¾ÆÁö, 3. °­¾ÆÁö Áß ÅÃ1");
+		System.out.println("\n1. ê³ ì–‘ì´, 2. ì†¡ì•„ì§€, 3. ê°•ì•„ì§€ ì¤‘ íƒ1");
 		int num = sc.nextInt();
 		Animal b = null;
 		if(num == 1) {
@@ -21,15 +21,15 @@ public class AnimalTest {
 		}else if(num == 3) {
 			b = new Dog();
 		}else {
-			System.out.println("Àß¸øÀÔ·Â!");
+			System.out.println("ì˜ëª»ì…ë ¥!");
 		}
 		
 		if(b != null) {
 			b.bark();
 		}
 		
-		//¸ğµâÈ­
-		System.out.println("\n1. °í¾çÀÌ, 2. ¼Û¾ÆÁö, 3. °­¾ÆÁö Áß ÅÃ1");
+		//ëª¨ë“ˆí™”
+		System.out.println("\n1. ê³ ì–‘ì´, 2. ì†¡ì•„ì§€, 3. ê°•ì•„ì§€ ì¤‘ íƒ1");
 		num = sc.nextInt();
 		b = AnimalModule.findAnimal(num);
 		if(b != null) {

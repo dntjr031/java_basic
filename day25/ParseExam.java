@@ -9,12 +9,12 @@ public class ParseExam {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("³¯Â¥¸¦ ÀÔ·ÂÇÏ¼¼¿ä(2013/09/30)");
+		System.out.println("ë‚ ì§œë¥¼ ì…ë ¥í•˜ì„¸ìš”(2013/09/30)");
 		String s = sc.nextLine();
 		
 		
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd");
-		SimpleDateFormat sdf2 = new SimpleDateFormat("yyyy³â MM¿ù ddÀÏ E");
+		SimpleDateFormat sdf2 = new SimpleDateFormat("yyyyë…„ MMì›” ddì¼ E");
 		
 		try {
 			Date date = sdf.parse(s);

@@ -42,11 +42,11 @@ public class GetSetTest {
 		Info in = new Info();
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.print("¿Ã∏ß : ");
+		System.out.print("Ïù¥Î¶Ñ : ");
 		in.setName(sc.nextLine());
-		System.out.print("≥™¿Ã : ");
+		System.out.print("ÎÇòÏù¥ : ");
 		int age = sc.nextInt();
-		System.out.print("º∫∫∞ : ");
+		System.out.print("ÏÑ±Î≥Ñ : ");
 		sc.nextLine();
 		String gender = sc.nextLine();
 		

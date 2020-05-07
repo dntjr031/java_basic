@@ -5,9 +5,9 @@ import java.util.Scanner;
 public class WhileExam4 {
 
 	public static void main(String[] args) {
-		// µÎ¼ö ÀÔ·Â, µÎ ¼ö »çÀÌÀÇ È¦¼ö ÇÕ
+		// ë‘ìˆ˜ ì…ë ¥, ë‘ ìˆ˜ ì‚¬ì´ì˜ í™€ìˆ˜ í•©
 		Scanner sc = new Scanner(System.in);
-		System.out.println("µÎ¼ö ÀÔ·Â");
+		System.out.println("ë‘ìˆ˜ ì…ë ¥");
 		int a = sc.nextInt();
 		int b = sc.nextInt();
 		
@@ -27,15 +27,15 @@ public class WhileExam4 {
 		}
 		
 		
-		System.out.println(a + "~" + b + " È¦¼öÀÇ ÇÕ = " + sum);
+		System.out.println(a + "~" + b + " í™€ìˆ˜ì˜ í•© = " + sum);
 
 		System.out.println("================================");
-		// µÎ¼ö ÀÔ·Â, Â¦¼ö? È¦¼ö?ÀÇ ÇÕ °í¸£°í ÇÕ°è ±¸ÇÏ±â
-		// µÎ¼ö ÀÔ·Â, 1. È¦¼öÀÇ ÇÕ, 2. Â¦¼öÀÇ ÇÕ ¼±ÅÃ
-		System.out.println("µÎ¼ö ÀÔ·Â");
+		// ë‘ìˆ˜ ì…ë ¥, ì§ìˆ˜? í™€ìˆ˜?ì˜ í•© ê³ ë¥´ê³  í•©ê³„ êµ¬í•˜ê¸°
+		// ë‘ìˆ˜ ì…ë ¥, 1. í™€ìˆ˜ì˜ í•©, 2. ì§ìˆ˜ì˜ í•© ì„ íƒ
+		System.out.println("ë‘ìˆ˜ ì…ë ¥");
 		a = sc.nextInt();
 		b = sc.nextInt();
-		System.out.println(" È¦¼öÀÇ ÇÕ?(0) Â¦¼öÀÇ ÇÕ?(1)");
+		System.out.println(" í™€ìˆ˜ì˜ í•©?(0) ì§ìˆ˜ì˜ í•©?(1)");
 		int choice = sc.nextInt();
 		
 		cng = 0;
@@ -45,7 +45,7 @@ public class WhileExam4 {
 			a = cng;
 		}
 		
-		String sType = (choice == 0?"È¦¼ö":"Â¦¼ö");
+		String sType = (choice == 0?"í™€ìˆ˜":"ì§ìˆ˜");
 		
 		sum = 0;
 		if(a % 2 == 1) {
@@ -58,7 +58,7 @@ public class WhileExam4 {
 			}
 		}
 		
-		System.out.println(sType + "ÀÇ ÇÕ = " + sum);
+		System.out.println(sType + "ì˜ í•© = " + sum);
 		sc.close();
 	}
 

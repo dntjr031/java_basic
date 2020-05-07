@@ -5,36 +5,36 @@ import java.util.GregorianCalendar;
 
 public class CalendarTest2 {
 	public static void main(String[] args) {
-		String[] week = {"","ÀÏ","¿ù","È­","¼ö","¸ñ","±İ","Åä"};
+		String[] week = {"","ì¼","ì›”","í™”","ìˆ˜","ëª©","ê¸ˆ","í† "};
 		
 		Calendar date1 = Calendar.getInstance(); // public static Calendar getInstance()
-		date1.set(2020, 5, 1); // 2020-06-01 ¿ù
+		date1.set(2020, 5, 1); // 2020-06-01 ì›”
 		
 		int day = date1.get(Calendar.DAY_OF_WEEK);
 		
-		System.out.println("¿äÀÏ : " + day);
-		System.out.println("¿äÀÏ : " + week[day]);
+		System.out.println("ìš”ì¼ : " + day);
+		System.out.println("ìš”ì¼ : " + week[day]);
 		
-		//¸çÄ¥ ÈÄ, ¸î °³¿ù Àü, ¸î ³â ÈÄ °è»ê
+		//ë©°ì¹  í›„, ëª‡ ê°œì›” ì „, ëª‡ ë…„ í›„ ê³„ì‚°
 		Calendar date2 = new GregorianCalendar(2020,5,1); // 2020.06.01
 		System.out.println("\n" + showDate(date2));
 		
-		//100ÀÏÈÄ
+		//100ì¼í›„
 		date2.add(Calendar.DATE, 100);
-		System.out.println("100ÀÏ ÈÄ : " + showDate(date2));
+		System.out.println("100ì¼ í›„ : " + showDate(date2));
 		
-		//2020.09.09 ±âÁØ 5°³¿ù Àü
+		//2020.09.09 ê¸°ì¤€ 5ê°œì›” ì „
 		date2.add(Calendar.MONTH, -5);
-		System.out.println("5°³¿ù Àü : " + showDate(date2));
+		System.out.println("5ê°œì›” ì „ : " + showDate(date2));
 		
-		//2020.04.09 ±âÁØ 2³â ÈÄ
+		//2020.04.09 ê¸°ì¤€ 2ë…„ í›„
 		date2.add(Calendar.YEAR, 2);
-		System.out.println("2³â ÈÄ : " + showDate(date2));
+		System.out.println("2ë…„ í›„ : " + showDate(date2));
 		System.out.println();
 	}
 	
 	public static String showDate(Calendar c) {
-		return (c.get(Calendar.YEAR) + "³â " + (c.get(Calendar.MONTH)+1) + "¿ù " + c.get(Calendar.DATE) 
-				+ "ÀÏ");
+		return (c.get(Calendar.YEAR) + "ë…„ " + (c.get(Calendar.MONTH)+1) + "ì›” " + c.get(Calendar.DATE) 
+				+ "ì¼");
 	}
 }

@@ -7,21 +7,21 @@ public class PdBuyerTest {
 		Buyer b = new Buyer(1000);
 		Product p = null;
 		
-		//200¸¸¿øÀÎ tv ±¸¸Å
+		//200ë§Œì›ì¸ tv êµ¬ë§¤
 		p = new Tv(200);
 		b.buy(p);
-		//150¸¸¿øÀÎ computer±¸¸Å
+		//150ë§Œì›ì¸ computerêµ¬ë§¤
 		p = new Computer(150);
 		b.buy(p);
-		//±¸¸ÅÀÚÀÇ ÇöÀç »óÅÂ Ãâ·Â
+		//êµ¬ë§¤ìì˜ í˜„ì¬ ìƒíƒœ ì¶œë ¥
 		b.showInfo();
 	}
 
 }
 
 abstract class Product{
-	protected int price, bonusPoint; //»óÇ°°¡°İ, Æ÷ÀÎÆ® Á¡¼ö
-	protected final double POINT_RATE=0.02; // Æ÷ÀÎÆ® Á¡¼ö´Â »óÇ°ÀÇ 2%
+	protected int price, bonusPoint; //ìƒí’ˆê°€ê²©, í¬ì¸íŠ¸ ì ìˆ˜
+	protected final double POINT_RATE=0.02; // í¬ì¸íŠ¸ ì ìˆ˜ëŠ” ìƒí’ˆì˜ 2%
 	
 	public Product(int price) {
 		this.price = price;
@@ -73,18 +73,18 @@ class Buyer{
 	
 	public void buy(Product p) {
 		if(myMoney < p.getPrice()) {
-			System.out.println("ÀÜ¾×ÀÌ ºÎÁ·ÇÏ¿© ¹°°ÇÀ» ±¸¸ÅÇÒ ¼ö ¾ø½À´Ï´Ù.");
+			System.out.println("ì”ì•¡ì´ ë¶€ì¡±í•˜ì—¬ ë¬¼ê±´ì„ êµ¬ë§¤í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤.");
 			return;
 		}
 		
 		this.myMoney -= p.getPrice();
 		this.Point += p.getBonusPoint();
 		
-		System.out.println(p.findInfo() + "À»(¸¦) ±¸¸ÅÇÏ¿´½À´Ï´Ù.");
+		System.out.println(p.findInfo() + "ì„(ë¥¼) êµ¬ë§¤í•˜ì˜€ìŠµë‹ˆë‹¤.");
 	}
 	
 	public void showInfo() {
-		System.out.println("ÇöÀç ÀÜ°í : " + myMoney);
-		System.out.println("º¸³Ê½º Æ÷ÀÎÆ® : " + Point + "\n");
+		System.out.println("í˜„ì¬ ì”ê³  : " + myMoney);
+		System.out.println("ë³´ë„ˆìŠ¤ í¬ì¸íŠ¸ : " + Point + "\n");
 	}
 }

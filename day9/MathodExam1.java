@@ -33,15 +33,15 @@ public class MathodExam1 {
 		exam1();
 		
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Ãâ·ÂÇÒ °³¼ö ÀÔ·Â");
+		System.out.println("ì¶œë ¥í•  ê°œìˆ˜ ì…ë ¥");
 		int count = sc.nextInt();
 		
 		exam2(count);
 		
 		int result = exam3();
-		System.out.println("1~100±îÁö È¦¼öÀÇ ÇÕ : " + result);
+		System.out.println("1~100ê¹Œì§€ í™€ìˆ˜ì˜ í•© : " + result);
 
-		System.out.println("°öÇÒ µÎ ½Ç¼ö ÀÔ·Â");
+		System.out.println("ê³±í•  ë‘ ì‹¤ìˆ˜ ì…ë ¥");
 		double a = sc.nextDouble();
 		double b = sc.nextDouble();
 		

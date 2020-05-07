@@ -6,26 +6,26 @@ public class InnerTest5 {
 	static class StaticInner{}
 	
 	InstanceInner iv = new InstanceInner();
-	static StaticInner cv = new StaticInner(); // ¼­·Î Á÷Á¢ Á¢±ÙÀÌ °¡´É
+	static StaticInner cv = new StaticInner(); // ì„œë¡œ ì§ì ‘ ì ‘ê·¼ì´ ê°€ëŠ¥
 	
 	static void staticMethod() {
-		//InstanceInner obj1 = new InstanceInner(); static ¸â¹ö´Â ÀÎ½ºÅÏ½º¸â¹ö¿¡ Á÷Á¢ Á¢±ÙÇÒ ¼ö ¾ø´Ù.
+		//InstanceInner obj1 = new InstanceInner(); static ë©¤ë²„ëŠ” ì¸ìŠ¤í„´ìŠ¤ë©¤ë²„ì— ì§ì ‘ ì ‘ê·¼í•  ìˆ˜ ì—†ë‹¤.
 		StaticInner obj2 = new StaticInner();
 		obj2.toString();
-		//±»ÀÌ Á¢±ÙÇÏ·Á¸é °´Ã¼¸¦ »ı¼ºÇØ¾ß ÇÑ´Ù.
+		//êµ³ì´ ì ‘ê·¼í•˜ë ¤ë©´ ê°ì²´ë¥¼ ìƒì„±í•´ì•¼ í•œë‹¤.
 		InnerTest5 it = new InnerTest5();
 		InstanceInner obj1 = it.new InstanceInner();
 		obj1.toString();
 	}
 	
 	void instanceMethod() {
-		//ÀÎ½ºÅÏ½º ¸Ş¼­µå¿¡¼­´Â ¸ğµÎ Á¢±Ù °¡´É
+		//ì¸ìŠ¤í„´ìŠ¤ ë©”ì„œë“œì—ì„œëŠ” ëª¨ë‘ ì ‘ê·¼ ê°€ëŠ¥
 		InstanceInner obj1 = new InstanceInner();
 		obj1.toString();
 		StaticInner obj2 = new StaticInner();
 		obj2.toString();
 		
-		//LocalInner lv = new LocalInner(); // ¸Ş¼­µå ³»¿¡ Áö¿ªÀûÀ¸·Î ¼±¾ğµÈ ³»ºÎ Å¬·¡½º´Â ¿ÜºÎ¿¡¼­ Á¢±Ù ºÒ°¡
+		//LocalInner lv = new LocalInner(); // ë©”ì„œë“œ ë‚´ì— ì§€ì—­ì ìœ¼ë¡œ ì„ ì–¸ëœ ë‚´ë¶€ í´ë˜ìŠ¤ëŠ” ì™¸ë¶€ì—ì„œ ì ‘ê·¼ ë¶ˆê°€
 	}
 	
 	void myMethod() {

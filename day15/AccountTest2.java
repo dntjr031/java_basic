@@ -11,7 +11,7 @@ public class AccountTest2 {
 		Scanner sc = new Scanner(System.in);
 		
 		for (int i = 0; i < accArr.length; i++) {
-			System.out.println("°èÁÂ¹øÈ£, ÀÜ¾×, Ãâ±Ý¾×À» ÀÔ·ÂÇÏ¼¼¿ä");
+			System.out.println("ê³„ì¢Œë²ˆí˜¸, ìž”ì•¡, ì¶œê¸ˆì•¡ì„ ìž…ë ¥í•˜ì„¸ìš”");
 			String accId = sc.nextLine();
 			int bal = sc.nextInt();
 			int money = sc.nextInt();
@@ -21,7 +21,7 @@ public class AccountTest2 {
 			accArr[i].withdraw(money);
 		}
 		
-		System.out.println("\n======ÀºÇà °í°´ ¸®½ºÆ®======");
+		System.out.println("\n======ì€í–‰ ê³ ê° ë¦¬ìŠ¤íŠ¸======");
 		for (int i = 0; i < accArr.length; i++) {
 			accArr[i].showInfo();
 		}

@@ -5,7 +5,7 @@ import java.util.*;
 public class ArphaExam {
 
 	public static void main(String[] args) {
-		System.out.println("-----ArrayList ÀÌ¿ë-----");
+		System.out.println("-----ArrayList ì´ìš©-----");
 		ArrayList<Character> carr = new ArrayList<Character>();
 		for (int i = 0; i < 26; i++) {
 			carr.add((char) ('A' + i));
@@ -15,7 +15,7 @@ public class ArphaExam {
 		}
 		
 		
-		System.out.println("\n\n-----HashMap ÀÌ¿ë-----");
+		System.out.println("\n\n-----HashMap ì´ìš©-----");
 		HashMap<Integer, Character> marr = new HashMap<Integer, Character>();
 		for (int i = 0; i < 26; i++) {
 			marr.put(i, (char)('A' + i));
@@ -29,7 +29,7 @@ public class ArphaExam {
 		}
 		
 		
-		System.out.println("\n\n-----HashSet ÀÌ¿ë-----");
+		System.out.println("\n\n-----HashSet ì´ìš©-----");
 		HashSet<Character> sarr = new HashSet<Character>();
 		for (int i = 0; i < 26; i++) {
 			sarr.add((char)('A' + i));

@@ -1,12 +1,12 @@
 package com.day14;
 
 public class Time {
-	// 1. ¸â¹öº¯¼ö
+	// 1. ë©¤ë²„ë³€ìˆ˜
 	private int hour;
 	private int min;
 	private int sec;
 	
-	// 2.  »ı¼ºÀÚ - ¸â¹öº¯¼ö ÃÊ±âÈ­
+	// 2.  ìƒì„±ì - ë©¤ë²„ë³€ìˆ˜ ì´ˆê¸°í™”
 	public Time(int hour, int min, int sec) {
 		this.hour = hour;
 		this.min = min;
@@ -35,7 +35,7 @@ public class Time {
 		this.sec = sec;
 	}
 	
-	//4. ¸Ş¼­µå
+	//4. ë©”ì„œë“œ
 	public int toSec() {
 		return hour * 60 *60 + min * 60 + sec;
 	}

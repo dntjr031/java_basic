@@ -7,43 +7,43 @@ public class StringTest {
 		String str = "Hello java, Hi java!";
 
 		char c = str.charAt(4);
-		System.out.println("index°¡ 4¿¡ ÇØ´çÇÏ´Â ¹®ÀÚ => " + c); // 'o'
+		System.out.println("indexê°€ 4ì— í•´ë‹¹í•˜ëŠ” ë¬¸ì => " + c); // 'o'
 
-		// indexOf : Æ¯Á¤ ¹®ÀÚ¿­ÀÇ À§Ä¡¸¦ ±¸ÇÒ ¶§ »ç¿ë
-		// ÇØ´ç ¹®ÀÚ¿­ÀÌ Á¸ÀçÇÏÁö ¾ÊÀ¸¸é -1À» ¸®ÅÏ
+		// indexOf : íŠ¹ì • ë¬¸ìì—´ì˜ ìœ„ì¹˜ë¥¼ êµ¬í•  ë•Œ ì‚¬ìš©
+		// í•´ë‹¹ ë¬¸ìì—´ì´ ì¡´ì¬í•˜ì§€ ì•Šìœ¼ë©´ -1ì„ ë¦¬í„´
 		int i = str.indexOf("java");
-		System.out.println("javaÀÇ À§Ä¡ : " + i); // 6
+		System.out.println("javaì˜ ìœ„ì¹˜ : " + i); // 6
 
 		i = str.lastIndexOf("java");
-		System.out.println("µÚ¿¡¼­ Ã£ÀºjavaÀÇ À§Ä¡" + i); // 15
+		System.out.println("ë’¤ì—ì„œ ì°¾ì€javaì˜ ìœ„ì¹˜" + i); // 15
 
-		// substring(begin, end) : Æ¯Á¤ ¹®ÀÚ¿­À» ÃßÃâÇÒ ¶§ »ç¿ë
-		// begin <= x < end »çÀÌÀÇ ¹®ÀÚ¿­ ÃßÃâ
+		// substring(begin, end) : íŠ¹ì • ë¬¸ìì—´ì„ ì¶”ì¶œí•  ë•Œ ì‚¬ìš©
+		// begin <= x < end ì‚¬ì´ì˜ ë¬¸ìì—´ ì¶”ì¶œ
 		String s = str.substring(6, 10);
-		System.out.println("6 <= x < 10 »çÀÌÀÇ ¹®ÀÚ¿­ : " + s); // java
+		System.out.println("6 <= x < 10 ì‚¬ì´ì˜ ë¬¸ìì—´ : " + s); // java
 
 		s = str.substring(12);
-		System.out.println("12 ºÎÅÍ ³¡±îÁöÀÇ ¹®ÀÚ¿­ : " + s); // Hi java!
+		System.out.println("12 ë¶€í„° ëê¹Œì§€ì˜ ë¬¸ìì—´ : " + s); // Hi java!
 
 		String url = "www.naver.com";
 		if (url.startsWith("www")) {
-			System.out.println("urlÀÌ www·Î ½ÃÀÛµÊ"); //
+			System.out.println("urlì´ wwwë¡œ ì‹œì‘ë¨"); //
 		} else {
-			System.out.println("urlÀÌ www·Î ½ÃÀÛ¾ÈµÊ");
+			System.out.println("urlì´ wwwë¡œ ì‹œì‘ì•ˆë¨");
 		}
 
 		if (url.endsWith("com")) {
-			System.out.println("urlÀÌ comÀ¸·Î ³¡³²"); //
+			System.out.println("urlì´ comìœ¼ë¡œ ëë‚¨"); //
 		}else {
-			System.out.println("urlÀÌ comÀ¸·Î ³¡³ªÁö ¾ÊÀ½");
+			System.out.println("urlì´ comìœ¼ë¡œ ëë‚˜ì§€ ì•ŠìŒ");
 		}
 		
 		//				0123456789012
 		String email = "hong@nate.com";
 		if(email.indexOf("@") != -1 && email.indexOf(".") != -1){
-			System.out.println("ÀÌ¸ŞÀÏ ±ÔÄ¢¿¡ ¸Â½À´Ï´Ù.");
+			System.out.println("ì´ë©”ì¼ ê·œì¹™ì— ë§ìŠµë‹ˆë‹¤.");
 		}else {
-			System.out.println("ÀÌ¸ŞÀÏ ±ÔÄ¢¿¡ ¸ÂÁö ¾Ê½À´Ï´Ù.");
+			System.out.println("ì´ë©”ì¼ ê·œì¹™ì— ë§ì§€ ì•ŠìŠµë‹ˆë‹¤.");
 		}
 				
 		System.out.println();
@@ -59,24 +59,24 @@ public class StringTest {
 		em2 = email.substring(at+1,dot);
 		em3 = email.substring(dot+1);
 		
-		System.out.println("@Àü => " + em1);
+		System.out.println("@ì „ => " + em1);
 		System.out.println("@~. => " + em2);
-		System.out.println(". ÀÌÈÄ => " + em3);
+		System.out.println(". ì´í›„ => " + em3);
 		
 		String s2 = "  java, python!  ";
 		System.out.println("[" + s2 + "]");
-		System.out.println("¹®ÀÚ¿­ ±æÀÌ : " + s2.length());
+		System.out.println("ë¬¸ìì—´ ê¸¸ì´ : " + s2.length());
 		
 		String s3 = s2.trim();
-		System.out.println("trim ÈÄ [" + s3 + "]");
-		System.out.println("trim ÈÄ ±æÀÌ : " + s3.length());
+		System.out.println("trim í›„ [" + s3 + "]");
+		System.out.println("trim í›„ ê¸¸ì´ : " + s3.length());
 		
 		int n = 10;
 		
 		String s4 = Integer.toString(n);
-		System.out.println("int¸¦ ¹®ÀÚ¿­·Î º¯È¯ - toString():" + s4);
+		System.out.println("intë¥¼ ë¬¸ìì—´ë¡œ ë³€í™˜ - toString():" + s4);
 		s4 = String.valueOf(n);
-		System.out.println("int¸¦ ¹®ÀÚ¿­·Î º¯È¯ - valueOf():" + s4);
+		System.out.println("intë¥¼ ë¬¸ìì—´ë¡œ ë³€í™˜ - valueOf():" + s4);
 		
 	}
 

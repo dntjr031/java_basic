@@ -3,9 +3,9 @@ package com.day12;
 public class CmdArgsTest2 {
 
 	public static void main(String[] args) {
-		//±¹,¿µ,¼ö Á¡¼ö ÀÔ·Â¹Ş¾Æ ÃÑÁ¡°ú Æò±Õ ±¸ÇÏ±â
+		//êµ­,ì˜,ìˆ˜ ì ìˆ˜ ì…ë ¥ë°›ì•„ ì´ì ê³¼ í‰ê·  êµ¬í•˜ê¸°
 		if (args.length < 3) {
-			System.out.println("¸í·ÉÁÙ ÀÎ¼ö·Î ±¹,¿µ,¼ö Á¡¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+			System.out.println("ëª…ë ¹ì¤„ ì¸ìˆ˜ë¡œ êµ­,ì˜,ìˆ˜ ì ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”");
 			return;
 		}
 		
@@ -16,8 +16,8 @@ public class CmdArgsTest2 {
 		int sum = kor + eng + math;
 		double avg = (double)sum / args.length;
 		
-		System.out.println("ÃÑÁ¡ : " + sum);
-		System.out.println("Æò±Õ : " + avg);
+		System.out.println("ì´ì  : " + sum);
+		System.out.println("í‰ê·  : " + avg);
 		
 		sum = 0;
 		for (int i = 0; i < args.length; i++) {
@@ -25,8 +25,8 @@ public class CmdArgsTest2 {
 		}
 		avg = (double)sum / args.length;
 		
-		System.out.println("ÃÑÁ¡ : " + sum);
-		System.out.println("Æò±Õ : " + avg);
+		System.out.println("ì´ì  : " + sum);
+		System.out.println("í‰ê·  : " + avg);
 
 	}
 

@@ -19,7 +19,7 @@ public class OverloadingExam {
 
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.println("°¡·Î, ¼¼·Î, ¹İÁö¸§À» ÀÔ·ÂÇÏ¼¼¿ä");
+		System.out.println("ê°€ë¡œ, ì„¸ë¡œ, ë°˜ì§€ë¦„ì„ ì…ë ¥í•˜ì„¸ìš”");
 		int a = sc.nextInt();
 		int b = sc.nextInt();
 		int c = sc.nextInt();
@@ -27,8 +27,8 @@ public class OverloadingExam {
 		int square = area(a, b);
 		double circle = area(c);
 		
-		System.out.println("°¡·Î" + a + ", ¼¼·Î" + b + " »ç°¢ÇüÀÇ ¸éÀû : " + square);
-		System.out.println("¹İÁö¸§" + c + "ÀÎ ¿øÀÇ ¸éÀû : " + circle);
+		System.out.println("ê°€ë¡œ" + a + ", ì„¸ë¡œ" + b + " ì‚¬ê°í˜•ì˜ ë©´ì  : " + square);
+		System.out.println("ë°˜ì§€ë¦„" + c + "ì¸ ì›ì˜ ë©´ì  : " + circle);
 		
 		sc.close();
 

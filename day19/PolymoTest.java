@@ -8,9 +8,9 @@ public class PolymoTest {
 		ch.method();
 		System.out.println("ch.x=" + ch.x); // 200
 		
-		Parent p = new Child(); // ´ÙÇü¼º
-		p.method(); // ÀÚ½ÄÀÇ ¿À¹ö¶óÀÌµù ¸Ş¼­µå
-		System.out.println("p.x=" + p.x); //ºÎ¸ğ ÂüÁ¶º¯¼ö·Î´Â ºÎ¸ğÀÇ ¸â¹ö¸¸ Á¢±Ù °¡´É => 100
+		Parent p = new Child(); // ë‹¤í˜•ì„±
+		p.method(); // ìì‹ì˜ ì˜¤ë²„ë¼ì´ë”© ë©”ì„œë“œ
+		System.out.println("p.x=" + p.x); //ë¶€ëª¨ ì°¸ì¡°ë³€ìˆ˜ë¡œëŠ” ë¶€ëª¨ì˜ ë©¤ë²„ë§Œ ì ‘ê·¼ ê°€ëŠ¥ => 100
 		
 
 	}
@@ -21,7 +21,7 @@ class Parent{
 	protected int x = 100;
 	
 	public void method() {
-		System.out.println("ParentÀÇ ¸Ş¼­µå");
+		System.out.println("Parentì˜ ë©”ì„œë“œ");
 	}
 }
 
@@ -29,6 +29,6 @@ class Child extends Parent{
 	int x = 200;
 	
 	public void method() {
-		System.out.println("ChildÀÇ ¸Ş¼­µå");
+		System.out.println("Childì˜ ë©”ì„œë“œ");
 	}
 }

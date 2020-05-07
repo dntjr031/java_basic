@@ -2,9 +2,9 @@ package com.day10;
 
 public class OverloadingTest {
 	/*
-	 * ¿À¹ö·Îµù ¸Ş¼­µå
-	 * - ÇÏ³ªÀÇ Å¬·¡½º¿¡¼­ µ¿ÀÏÇÑ ÀÌ¸§À» °¡Áø ¿©·¯ °³ÀÇ ¸Ş¼­µå¸¦ ¿À¹ö·Îµù ¸Ş¼­µå¶ó°í ÇÔ
-	 * ´Ü, ¸Å°³º¯¼öÀÇ °³¼ö³ª ÀÚ·áÇüÀÌ ´Ş¶ó¾ß ÇÔ
+	 * ì˜¤ë²„ë¡œë”© ë©”ì„œë“œ
+	 * - í•˜ë‚˜ì˜ í´ë˜ìŠ¤ì—ì„œ ë™ì¼í•œ ì´ë¦„ì„ ê°€ì§„ ì—¬ëŸ¬ ê°œì˜ ë©”ì„œë“œë¥¼ ì˜¤ë²„ë¡œë”© ë©”ì„œë“œë¼ê³  í•¨
+	 * ë‹¨, ë§¤ê°œë³€ìˆ˜ì˜ ê°œìˆ˜ë‚˜ ìë£Œí˜•ì´ ë‹¬ë¼ì•¼ í•¨
 	 */
 	
 	public static int add(int a, int b) {
@@ -23,8 +23,8 @@ public class OverloadingTest {
 	public static double add(int a, int b) {
 		return a + b;
 	}
-	=> ¹İÈ¯Å¸ÀÔÀÌ ´Ù¸¥°ÍÀº ¿À¹ö·Îµù ¸Ş¼­µå°¡ ¾Æ´Ô
-	¸Å°³º¯¼ö°¡ °°À¸¹Ç·Î ¿¡·¯!
+	=> ë°˜í™˜íƒ€ì…ì´ ë‹¤ë¥¸ê²ƒì€ ì˜¤ë²„ë¡œë”© ë©”ì„œë“œê°€ ì•„ë‹˜
+	ë§¤ê°œë³€ìˆ˜ê°€ ê°™ìœ¼ë¯€ë¡œ ì—ëŸ¬!
 	*/
 	
 	public static String add(String a, String b) {
@@ -37,8 +37,8 @@ public class OverloadingTest {
 		float f = add(3f, 5f);
 		float f2 = add(3f, 5f, 7f);
 		String str = add("Hello", "Java");
-		System.out.println("int ÇÕ : " + i + ", float ÇÕ : " + f + ", float 3°³ ÇÕ : " + f2);
-		System.out.println("Strint ÇÕ : " + str);
+		System.out.println("int í•© : " + i + ", float í•© : " + f + ", float 3ê°œ í•© : " + f2);
+		System.out.println("Strint í•© : " + str);
 
 	}
 

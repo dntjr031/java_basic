@@ -13,10 +13,10 @@ public class NameCard {
 	}
 	
 	public void print() {
-		System.out.println("ÀÌ¸§ : " + name);
-		System.out.println("ÁÖ¼Ò : " + add);
-		System.out.println("Á÷±Ş : " + rank);
-		System.out.println("ÀüÈ­¹øÈ£ : " + celNum);
+		System.out.println("ì´ë¦„ : " + name);
+		System.out.println("ì£¼ì†Œ : " + add);
+		System.out.println("ì§ê¸‰ : " + rank);
+		System.out.println("ì „í™”ë²ˆí˜¸ : " + celNum);
 		
 	}
 

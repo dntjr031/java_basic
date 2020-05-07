@@ -7,9 +7,9 @@ public class EnglishTest {
 
 	public static void main(String[] args) {
 		HashMap<String, String> map = new HashMap<String, String>();
-		map.put("boy", "¼Ò³â");
-		map.put("girl", "¼Ò³à");
-		map.put("school", "ÇĞ±³");
+		map.put("boy", "ì†Œë…„");
+		map.put("girl", "ì†Œë…€");
+		map.put("school", "í•™êµ");
 		
 		Set<String> set = map.keySet();
 		Iterator<String> it = set.iterator();
@@ -19,7 +19,7 @@ public class EnglishTest {
 			System.out.println(key + " => " + value);
 		}
 		
-		System.out.println("\nforEach »ç¿ë");
+		System.out.println("\nforEach ì‚¬ìš©");
 		map.forEach((key, value) -> System.out.println(key + " => " + value));
 	}
 

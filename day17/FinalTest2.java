@@ -22,5 +22,5 @@ class Child4 extends Parent4{
 	public void func() {
 		super.func();
 	}
-	//public void finalFunc() {} // error => final method, ¿À¹ö¶óÀÌµùÇÒ ¼ö ¾ø´Ù
+	//public void finalFunc() {} // error => final method, ì˜¤ë²„ë¼ì´ë”©í•  ìˆ˜ ì—†ë‹¤
 }

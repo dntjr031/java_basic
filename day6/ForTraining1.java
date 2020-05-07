@@ -7,11 +7,11 @@ public class ForTraining1 {
 	public static void main(String[] args) {
 
 		Scanner sc = new Scanner(System.in);
-		System.out.println("¹İº¹ÇÏ°í ½ÍÀº È½¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+		System.out.println("ë°˜ë³µí•˜ê³  ì‹¶ì€ íšŸìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”");
 		int count = sc.nextInt();
 		
 		for(int i = 0; i < count; i++) {
-			System.out.println("Àç¹ÌÀÖ´Â java!");
+			System.out.println("ì¬ë¯¸ìˆëŠ” java!");
 		}
 		System.out.println("===============");
 		
@@ -25,7 +25,7 @@ public class ForTraining1 {
 			sum += i;
 			System.out.println("i=" + i + ", sum=" + sum);
 		}
-		System.out.println("0ºÎÅÍ n±îÁöÀÇ ÇÕ=" + sum);
+		System.out.println("0ë¶€í„° nê¹Œì§€ì˜ í•©=" + sum);
 		sc.close();
 
 	}

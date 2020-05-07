@@ -7,27 +7,27 @@ public class ProgrammerTest {
 	public static void main(String[] args) {
 
 		Scanner sc = new Scanner(System.in);
-		System.out.println("ÀÌ¸§, °³¹ß¾ğ¾î, °³¹ß°æ·ÂÀ» ÀÔ·ÂÇÏ¼¼¿ä");
+		System.out.println("ì´ë¦„, ê°œë°œì–¸ì–´, ê°œë°œê²½ë ¥ì„ ì…ë ¥í•˜ì„¸ìš”");
 		String name = sc.nextLine();
 		String language = sc.nextLine();
 		int career = sc.nextInt();
 		
 		Programmer pr = new Programmer(name, language, career);
 		
-		System.out.println("ÀÌ¸§ : " + pr.getName());
-		System.out.println("°³¹ß¾ğ¾î : " + pr.getLanguage());
-		System.out.println("°³¹ß°æ·Â : " + pr.getCareer() + "³â");
+		System.out.println("ì´ë¦„ : " + pr.getName());
+		System.out.println("ê°œë°œì–¸ì–´ : " + pr.getLanguage());
+		System.out.println("ê°œë°œê²½ë ¥ : " + pr.getCareer() + "ë…„");
 		pr.work();
 		
-		System.out.println("\n============°ª º¯°æ=============\n");
+		System.out.println("\n============ê°’ ë³€ê²½=============\n");
 		
-		pr.setName("±è¿ì¼®");
+		pr.setName("ê¹€ìš°ì„");
 		pr.setLanguage("java");
 		pr.setCareer(1);
 		
-		System.out.println("ÀÌ¸§ : " + pr.getName());
-		System.out.println("°³¹ß¾ğ¾î : " + pr.getLanguage());
-		System.out.println("°³¹ß°æ·Â : " + pr.getCareer() + "³â");
+		System.out.println("ì´ë¦„ : " + pr.getName());
+		System.out.println("ê°œë°œì–¸ì–´ : " + pr.getLanguage());
+		System.out.println("ê°œë°œê²½ë ¥ : " + pr.getCareer() + "ë…„");
 		pr.work();
 		
 		sc.close();

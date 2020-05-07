@@ -6,24 +6,24 @@ public class TriangleTest {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("»ï°¢ÇüÀÇ ¹Øº¯, ³ôÀÌ ÀÔ·Â!");
+		System.out.println("ì‚¼ê°í˜•ì˜ ë°‘ë³€, ë†’ì´ ì…ë ¥!");
 		int w = sc.nextInt();
 		int h = sc.nextInt();
 		
 		Triangle tr = new Triangle(w, h);
 		int area = tr.area();
 		
-		System.out.println("»ï°¢Çü ¸éÀû : " + area);
+		System.out.println("ì‚¼ê°í˜• ë©´ì  : " + area);
 		
-		//getter, setter·Î ¸â¹öº¯¼öÀÇ °ª º¯°æ
+		//getter, setterë¡œ ë©¤ë²„ë³€ìˆ˜ì˜ ê°’ ë³€ê²½
 		tr.setHight(30);
 		tr.setWidth(40);
 		
 		area = tr.area();
 		
-		System.out.println("\nº¯°æµÈ ¹Øº¯ : " + tr.getWidth());
-		System.out.println("³ôÀÌ : " + tr.getHight());
-		System.out.println("¸éÀû : " + area);
+		System.out.println("\në³€ê²½ëœ ë°‘ë³€ : " + tr.getWidth());
+		System.out.println("ë†’ì´ : " + tr.getHight());
+		System.out.println("ë©´ì  : " + area);
 		
 		sc.close();
 

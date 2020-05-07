@@ -7,18 +7,18 @@ public class MarbleExam {
 		Child c1 = new Child(15);
 		Child c2 = new Child(9);
 		
-		System.out.println("°ÔÀÓ Àü ±¸½½ÀÇ º¸À¯ °³¼ö");
-		System.out.println("===¾î¸°ÀÌ1===");
+		System.out.println("ê²Œì„ ì „ êµ¬ìŠ¬ì˜ ë³´ìœ  ê°œìˆ˜");
+		System.out.println("===ì–´ë¦°ì´1===");
 		c1.showProperty();
-		System.out.println("===¾î¸°ÀÌ2===");
+		System.out.println("===ì–´ë¦°ì´2===");
 		c2.showProperty();
 		
 		c1.obtainBead(c2, 2);
 		c2.obtainBead(c1, 7);
-		System.out.println("\n°ÔÀÓ ÈÄ ±¸½½ÀÇ º¸À¯ °³¼ö");
-		System.out.println("===¾î¸°ÀÌ1===");
+		System.out.println("\nê²Œì„ í›„ êµ¬ìŠ¬ì˜ ë³´ìœ  ê°œìˆ˜");
+		System.out.println("===ì–´ë¦°ì´1===");
 		c1.showProperty();
-		System.out.println("===¾î¸°ÀÌ2===");
+		System.out.println("===ì–´ë¦°ì´2===");
 		c2.showProperty();
 	}
 
@@ -41,6 +41,6 @@ class Child{
 	}
 	
 	public void showProperty() {
-		System.out.println("º¸À¯ ±¸½½ÀÇ °³¼ö: " + marble);
+		System.out.println("ë³´ìœ  êµ¬ìŠ¬ì˜ ê°œìˆ˜: " + marble);
 	}
 }

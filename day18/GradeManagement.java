@@ -23,10 +23,10 @@ public class GradeManagement {
 			}else if(n == 5) {
 				Module.modified(g, i);
 			}else if(n == 6) {
-				System.out.println("Á¾·áµÇ¾ú½À´Ï´Ù.");
+				System.out.println("ì¢…ë£Œë˜ì—ˆìŠµë‹ˆë‹¤.");
 				break;
 			}else {
-				System.out.println("Àß¸øÀÔ·ÂÇÏ¿´½À´Ï´Ù.");
+				System.out.println("ì˜ëª»ì…ë ¥í•˜ì˜€ìŠµë‹ˆë‹¤.");
 				continue;
 			}
 		}// while

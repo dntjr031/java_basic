@@ -5,7 +5,7 @@ import java.util.*;
 public class CalendarTest3 {
 
 	public static void main(String[] args) {
-		//1. Calendar¸¦ Date·Î º¯È¯ÇÏ±â
+		//1. Calendarë¥¼ Dateë¡œ ë³€í™˜í•˜ê¸°
 		Calendar cal = Calendar.getInstance();
 		cal.set(2020, 0, 1); // 2020.01.01
 		
@@ -13,7 +13,7 @@ public class CalendarTest3 {
 		//Date d = cal.getTime();
 		//System.out.println(d.toLocaleString());
 		
-		//2. Date¸¦ Calendar·Î º¯È¯ÇÏ±â
+		//2. Dateë¥¼ Calendarë¡œ ë³€í™˜í•˜ê¸°
 		//Date date = new Date(2019-1900,1,1); //2019.02.01
 		
 		Calendar cal2 = new GregorianCalendar();

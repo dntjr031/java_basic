@@ -5,15 +5,15 @@ public class ContinueTest1 {
 	public static void main(String[] args) {
 
 		/*
-		 * break - switch³ª ¹İº¹¹®¿¡¼­¸¸ »ç¿ë °¡´É
-		 * 			ÇØ´ç ºí·°À» ¹ş¾î³¯ ¶§ »ç¿ë
-		 * continue - ¹İº¹¹®¿¡¼­¸¸ »ç¿ë °¡´É
-		 * 		            ´ÙÀ½ ¹İº¹ À§Ä¡·Î ÀÌµ¿
-		 * 			    ÇÑ ¹ø °Ç³Ê¶Û¶§ »ç¿ë
-		 * return - ¸Ş¼­µå¿¡¼­ »ç¿ë °¡´É
-		 * 			¸Ş¼­µåÀÇ ½ÇÇàÀ» Á¾·áÇÏ°í È£Ãâ¿øÀ¸·Î º¹±Í
+		 * break - switchë‚˜ ë°˜ë³µë¬¸ì—ì„œë§Œ ì‚¬ìš© ê°€ëŠ¥
+		 * 			í•´ë‹¹ ë¸”ëŸ­ì„ ë²—ì–´ë‚  ë•Œ ì‚¬ìš©
+		 * continue - ë°˜ë³µë¬¸ì—ì„œë§Œ ì‚¬ìš© ê°€ëŠ¥
+		 * 		            ë‹¤ìŒ ë°˜ë³µ ìœ„ì¹˜ë¡œ ì´ë™
+		 * 			    í•œ ë²ˆ ê±´ë„ˆë›¸ë•Œ ì‚¬ìš©
+		 * return - ë©”ì„œë“œì—ì„œ ì‚¬ìš© ê°€ëŠ¥
+		 * 			ë©”ì„œë“œì˜ ì‹¤í–‰ì„ ì¢…ë£Œí•˜ê³  í˜¸ì¶œì›ìœ¼ë¡œ ë³µê·€
 		 */
-		System.out.println("\n======break ÀÌ¿ë========");
+		System.out.println("\n======break ì´ìš©========");
 		
 		for(int i = 0; i <10; i++) {
 			if(i == 5) break;
@@ -22,7 +22,7 @@ public class ContinueTest1 {
 			
 		}
 		
-		System.out.println("\n======continue ÀÌ¿ë========");
+		System.out.println("\n======continue ì´ìš©========");
 		
 		for(int i = 0; i <10; i++) {
 			if(i == 5) continue;

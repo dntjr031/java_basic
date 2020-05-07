@@ -7,7 +7,7 @@ public class SwitchTest4 {
 	public static void main(String[] args) {
 
 		Scanner sc = new Scanner(System.in);
-		System.out.println("ÇĞÁ¡À» ÀÔ·ÂÇÏ¼¼¿ä");
+		System.out.println("í•™ì ì„ ì…ë ¥í•˜ì„¸ìš”");
 		double avr = sc.nextDouble();
 		
 		
@@ -33,7 +33,7 @@ public class SwitchTest4 {
 			
 		}
 		
-		System.out.println("ÇĞÁ¡ : " + grade);
+		System.out.println("í•™ì  : " + grade);
 		
 		sc.close();
 

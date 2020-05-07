@@ -9,12 +9,12 @@ public class FinalTest1 {
 
 }
 /*
- final - ¸¶Áö¸·ÀÇ, º¯°æÇÒ ¼ö ¾ø´Â
+ final - ë§ˆì§€ë§‰ì˜, ë³€ê²½í•  ìˆ˜ ì—†ëŠ”
  
- 1) final Å¬·¡½º - ºÎ¸ğ Å¬·¡½º°¡ µÉ ¼ö ¾ø´Ù
- 2) final ¸Ş¼­µå - ¿À¹ö¶óÀÌµùÇÒ ¼ö ¾ø´Ù
- 3) final ¸â¹öº¯¼ö - °ªÀ» º¯°æÇÒ ¼ö ¾ø´Ù
- 	final Áö¿ªº¯¼ö - °ªÀ» º¯°æÇÒ ¼ö ¾ø´Ù
+ 1) final í´ë˜ìŠ¤ - ë¶€ëª¨ í´ë˜ìŠ¤ê°€ ë  ìˆ˜ ì—†ë‹¤
+ 2) final ë©”ì„œë“œ - ì˜¤ë²„ë¼ì´ë”©í•  ìˆ˜ ì—†ë‹¤
+ 3) final ë©¤ë²„ë³€ìˆ˜ - ê°’ì„ ë³€ê²½í•  ìˆ˜ ì—†ë‹¤
+ 	final ì§€ì—­ë³€ìˆ˜ - ê°’ì„ ë³€ê²½í•  ìˆ˜ ì—†ë‹¤
  */
 final class Parent3{
 	public void func() {
@@ -22,5 +22,5 @@ final class Parent3{
 	}
 }
 
-//class Child extends Parent3{} // error => Parent°¡ final class, ºÎ¸ğÅ¬·¡½º°¡ µÉ ¼ö ¾ø´Ù.
+//class Child extends Parent3{} // error => Parentê°€ final class, ë¶€ëª¨í´ë˜ìŠ¤ê°€ ë  ìˆ˜ ì—†ë‹¤.
 	

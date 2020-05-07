@@ -6,10 +6,10 @@ public class Triangle {
 
 	/*
 	 this
-	  - ÀÎ½ºÅÏ½º ÀÚ½ÅÀ» °¡¸®Å°´Â ÂüÁ¶º¯¼ö
-	  - ÀÚ±â ÀÚ½ÅÀ» °¡¸®Å°´Â this
-	  - ÀÚ½ÅÀÇ ¸â¹ö¸¦ °¡¸®Å°´Â this(this.¸â¹öº¯¼ö)
-	  - ÀÎ½ºÅÏ½ºÀÇ ÁÖ¼Ò°¡ ÀúÀåµÇ¾î ÀÖÀ½ 
+	  - ì¸ìŠ¤í„´ìŠ¤ ìžì‹ ì„ ê°€ë¦¬í‚¤ëŠ” ì°¸ì¡°ë³€ìˆ˜
+	  - ìžê¸° ìžì‹ ì„ ê°€ë¦¬í‚¤ëŠ” this
+	  - ìžì‹ ì˜ ë©¤ë²„ë¥¼ ê°€ë¦¬í‚¤ëŠ” this(this.ë©¤ë²„ë³€ìˆ˜)
+	  - ì¸ìŠ¤í„´ìŠ¤ì˜ ì£¼ì†Œê°€ ì €ìž¥ë˜ì–´ ìžˆìŒ 
 	 */
 	
 	public int getWidth() {

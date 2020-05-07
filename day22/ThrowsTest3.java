@@ -7,14 +7,14 @@ public class ThrowsTest3 {
 	public static void main(String[] args) {
 		// public abstract int read() throws IOException
 		
-		System.out.println("³²(M), ¿©(F) ¼±ÅÃ!");
+		System.out.println("ë‚¨(M), ì—¬(F) ì„ íƒ!");
 		try {
 			char ch = (char)System.in.read();
 			String str = "";
 			switch(Character.toUpperCase(ch)){
-				case 'M': str = "³²ÀÚ½Ã±º¿ä"; break;
-				case 'F': str = "¿©ÀÚ½Ã±º¿ä"; break;
-				default: str = "Àß¸ø ÀÔ·Â!";
+				case 'M': str = "ë‚¨ìì‹œêµ°ìš”"; break;
+				case 'F': str = "ì—¬ìì‹œêµ°ìš”"; break;
+				default: str = "ì˜ëª» ì…ë ¥!";
 			}
 			System.out.println(str);
 		} catch (IOException e) {

@@ -2,19 +2,19 @@ package com.day16;
 
 class Human4{
 	public void work() {
-		System.out.println("ÇÏ´Â ÀÏÀ» ±â¼úÇÑ´Ù.");
+		System.out.println("í•˜ëŠ” ì¼ì„ ê¸°ìˆ í•œë‹¤.");
 	}
 }
 
 class Teacher4 extends Human4{
 	public void work() {
-		System.out.println("°¡¸£Ä£´Ù");
+		System.out.println("ê°€ë¥´ì¹œë‹¤");
 	}
 }
 
 class Programmer4 extends Human4{
 	public void work() {
-		System.out.println("ÇÁ·Î±×·¡¹Ö ÇÑ´Ù");
+		System.out.println("í”„ë¡œê·¸ë˜ë° í•œë‹¤");
 	}
 }
 

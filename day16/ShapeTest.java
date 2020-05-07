@@ -55,7 +55,7 @@ public class ShapeTest {
 		Scanner sc = new Scanner(System.in);
 		Circle c = new Circle();
 		Rectangle re = new Rectangle();
-		System.out.println("¹İÁö¸§°ú °¡·Î, ¼¼·Î¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+		System.out.println("ë°˜ì§€ë¦„ê³¼ ê°€ë¡œ, ì„¸ë¡œë¥¼ ì…ë ¥í•˜ì„¸ìš”");
 		c.setR(sc.nextDouble());
 		re.setD(sc.nextDouble());
 		re.setW(sc.nextDouble());
@@ -63,8 +63,8 @@ public class ShapeTest {
 		double d = c.findArea();
 		double d2 = re.findArea();
 		
-		System.out.println("¿øÀÇ ¸éÀû : " + d);
-		System.out.println("»ç°¢ÇüÀÇ ¸éÀû : " + d2);
+		System.out.println("ì›ì˜ ë©´ì  : " + d);
+		System.out.println("ì‚¬ê°í˜•ì˜ ë©´ì  : " + d2);
 		
 		sc.close();
 

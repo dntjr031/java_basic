@@ -3,7 +3,7 @@ package com.day7;
 public class ForDup2 {
 
 	public static void main(String[] args) {
-		System.out.println("====¼¼·Î±¸±¸´Ü====");
+		System.out.println("====ì„¸ë¡œêµ¬êµ¬ë‹¨====");
 
 		for(int dan = 2; dan < 10; dan++) {
 			
@@ -14,7 +14,7 @@ public class ForDup2 {
 			System.out.println();
 		}
 		
-		System.out.println("====°¡·Î±¸±¸´Ü====");
+		System.out.println("====ê°€ë¡œêµ¬êµ¬ë‹¨====");
 		
 		for(int i = 1; i < 10; i++) {
 			for(int j = 2; j < 10; j++) {

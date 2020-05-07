@@ -12,7 +12,7 @@ public class EmployeeTest {
 		
 		Employee em = null;
 		while(true) {
-			System.out.println("°í¿ëÇüÅÂ - °í¿ëÁ÷(P), ÀÓ½ÃÁ÷(T), ÆÇ¸ÅÁ÷(S)À» ¼±ÅÃÇÏ¼¼¿ä<Á¾·á½Ã Q>");
+			System.out.println("ê³ ìš©í˜•íƒœ - ê³ ìš©ì§(P), ì„ì‹œì§(T), íŒë§¤ì§(S)ì„ ì„ íƒí•˜ì„¸ìš”<ì¢…ë£Œì‹œ Q>");
 			String str = sc.nextLine();
 			
 			System.out.println();
@@ -24,10 +24,10 @@ public class EmployeeTest {
 			}else if(str.equalsIgnoreCase("s")) {
 				em = emm.inputSalesPerson();
 			}else if(str.equalsIgnoreCase("q")){
-				System.out.println("Á¾·áÇÕ´Ï´Ù.");
+				System.out.println("ì¢…ë£Œí•©ë‹ˆë‹¤.");
 				break;
 			}else {
-				System.out.println("Àß¸øÀÔ·Â!");
+				System.out.println("ì˜ëª»ì…ë ¥!");
 				continue;
 			}
 			

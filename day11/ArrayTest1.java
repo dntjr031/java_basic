@@ -5,8 +5,8 @@ import java.util.Scanner;
 public class ArrayTest1 {
 
 	public static void main(String[] args) {
-		//for ¹® ¾È¿¡¼­ ¹è¿­ ÃÊ±âÈ­ÇÏ±â
-		//[1] ÀÏÁ¤ÇÑ ±ÔÄ¢ÀÌ ÀÖ´Â °ªÀ¸·Î ÃÊ±âÈ­ÇÏ´Â °æ¿ì
+		//for ë¬¸ ì•ˆì—ì„œ ë°°ì—´ ì´ˆê¸°í™”í•˜ê¸°
+		//[1] ì¼ì •í•œ ê·œì¹™ì´ ìˆëŠ” ê°’ìœ¼ë¡œ ì´ˆê¸°í™”í•˜ëŠ” ê²½ìš°
 		//5,10,15,20,25
 		int[] arr1;
 		arr1 = new int[5];
@@ -25,11 +25,11 @@ public class ArrayTest1 {
 			System.out.println("arr1[" + i + "] = " + arr1[i]);
 		}
 		
-		//[2] »ç¿ëÀÚ·Î ºÎÅÍ ÀÔ·Â ¹ŞÀº 4°³ÀÇ °ª(double)À¸·Î ÃÊ±âÈ­ÇÏ´Â °æ¿ì
+		//[2] ì‚¬ìš©ìë¡œ ë¶€í„° ì…ë ¥ ë°›ì€ 4ê°œì˜ ê°’(double)ìœ¼ë¡œ ì´ˆê¸°í™”í•˜ëŠ” ê²½ìš°
 		Scanner sc = new Scanner(System.in);
 		
 		double[] arr2 = new double[4];
-		System.out.println("\n4°³ÀÇ Á¤¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+		System.out.println("\n4ê°œì˜ ì •ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”");
 		arr2[0] = sc.nextDouble();
 		arr2[1] = sc.nextDouble();
 		arr2[2] = sc.nextDouble();
@@ -41,7 +41,7 @@ public class ArrayTest1 {
 		
 		double[] arr3 = new double[4];
 		
-		System.out.println("\n4°³ÀÇ Á¤¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+		System.out.println("\n4ê°œì˜ ì •ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”");
 		for(int i = 0; i < arr2.length; i++) {
 			arr3[i] = sc.nextDouble();
 		}

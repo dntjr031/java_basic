@@ -8,7 +8,7 @@ public class SwitchTest5 {
 
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.println("¿ùÀ» ÀÔ·ÂÇÏ¼¼¿ä");
+		System.out.println("ì›”ì„ ì…ë ¥í•˜ì„¸ìš”");
 		int day = sc.nextInt();
 		
 		String result = "";
@@ -18,28 +18,28 @@ public class SwitchTest5 {
 			case 1:
 			case 2:
 			case 3:
-				result = "1»çºĞ±â";
+				result = "1ì‚¬ë¶„ê¸°";
 				break;
 			case 4:
 			case 5:
 			case 6:
-				result = "2»çºĞ±â";
+				result = "2ì‚¬ë¶„ê¸°";
 				break;
 			case 7:
 			case 8:
 			case 9:
-				result = "3»çºĞ±â";
+				result = "3ì‚¬ë¶„ê¸°";
 				break;
 			case 10:
 			case 11:
 			case 12:
-				result = "4»çºĞ±â";
+				result = "4ì‚¬ë¶„ê¸°";
 				break;
 			default:
-				result = "Àß¸ø ¼±ÅÃÇß¾î¿ä";
+				result = "ì˜ëª» ì„ íƒí–ˆì–´ìš”";
 		}
 		
-		System.out.println(day + "¿ùÀº " + result + "ÀÔ´Ï´Ù.");
+		System.out.println(day + "ì›”ì€ " + result + "ì…ë‹ˆë‹¤.");
 		
 		
 		sc.close();

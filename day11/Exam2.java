@@ -9,12 +9,12 @@ public class Exam2 {
 		Scanner sc = new Scanner(System.in);
 		
 		int[] a = new int[5];
-		System.out.println("5°³ÀÇ ¼ıÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+		System.out.println("5ê°œì˜ ìˆ«ìë¥¼ ì…ë ¥í•˜ì„¸ìš”");
 		for(int i = 0; i < 5; i++) {
 			a[i] = sc.nextInt();
 		}
 		
-		System.out.println("===³»¸²Â÷¼øÀ¸·Î Á¤·Ä===");
+		System.out.println("===ë‚´ë¦¼ì°¨ìˆœìœ¼ë¡œ ì •ë ¬===");
 		int num = 0;
 		for(int i = 0; i < a.length; i++) {
 			for(int j = 0; j < i; j++) {
@@ -30,10 +30,10 @@ public class Exam2 {
 				System.out.print(n + " ");
 		}
 		
-		System.out.println("\n\n===³»¸²Â÷¼øÀ¸·Î Á¤·Ä(¸Ş¼­µå ÀÌ¿ë)===");
+		System.out.println("\n\n===ë‚´ë¦¼ì°¨ìˆœìœ¼ë¡œ ì •ë ¬(ë©”ì„œë“œ ì´ìš©)===");
 		
 		Integer[] a2 = new Integer[5];
-		System.out.println("5°³ÀÇ ¼ıÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+		System.out.println("5ê°œì˜ ìˆ«ìë¥¼ ì…ë ¥í•˜ì„¸ìš”");
 		for(int i = 0; i < 5; i++) {
 			a2[i] = sc.nextInt();
 		}

@@ -6,14 +6,14 @@ public class Man2 {
 	
 	
 	// getter, setter
-	public int getAge() { //ÀĞ¾î¿À±â
+	public int getAge() { //ì½ì–´ì˜¤ê¸°
 		return age;
 	}
 	
-	public void setAge(int age) { // ¾²±â
-		if(age < 0 || age >= 200) { //Àß¸øµé¾î¿Â °ªÀ» ¸·À» ¼ö ÀÖ´Ù.
+	public void setAge(int age) { // ì“°ê¸°
+		if(age < 0 || age >= 200) { //ì˜ëª»ë“¤ì–´ì˜¨ ê°’ì„ ë§‰ì„ ìˆ˜ ìˆë‹¤.
 			this.age = 0;
-			System.out.println("\nÀ¯È¿ÇÏÁö ¾ÊÀº ³ªÀÌÀÔ´Ï´Ù!");
+			System.out.println("\nìœ íš¨í•˜ì§€ ì•Šì€ ë‚˜ì´ì…ë‹ˆë‹¤!");
 			return;
 		}
 		

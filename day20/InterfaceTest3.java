@@ -1,11 +1,11 @@
 package com.day20;
 
 /*
- AA¿Í BB Å¬·¡½º´Â °£Á¢ÀûÀÎ °ü°è
+ AAì™€ BB í´ëž˜ìŠ¤ëŠ” ê°„ì ‘ì ì¸ ê´€ê³„
  
- Å¬·¡½º A°¡ Å¬·¡½º B¸¦ Á÷Á¢ È£ÃâÇÏÁö ¾Ê°í ÀÎÅÍÆäÀÌ½º¸¦ ¸Å°³Ã¼·Î ÇÏ´Â °æ¿ì
-  - Å¬·¡½º A´Â ÀÎÅÍÆäÀÌ½º I ÇÏ°í¸¸  Á÷Á¢ÀûÀÎ °ü°è°¡ ÀÖ±â¶§¹®¿¡
-   	Å¬·¡½º BÀÇ º¯°æ¿¡ ¿µÇâÀ» ¹ÞÁö ¾ÊÀ½
+ í´ëž˜ìŠ¤ Aê°€ í´ëž˜ìŠ¤ Bë¥¼ ì§ì ‘ í˜¸ì¶œí•˜ì§€ ì•Šê³  ì¸í„°íŽ˜ì´ìŠ¤ë¥¼ ë§¤ê°œì²´ë¡œ í•˜ëŠ” ê²½ìš°
+  - í´ëž˜ìŠ¤ AëŠ” ì¸í„°íŽ˜ì´ìŠ¤ I í•˜ê³ ë§Œ  ì§ì ‘ì ì¸ ê´€ê³„ê°€ ìžˆê¸°ë•Œë¬¸ì—
+   	í´ëž˜ìŠ¤ Bì˜ ë³€ê²½ì— ì˜í–¥ì„ ë°›ì§€ ì•ŠìŒ
  */
 class AA{
 	public void methodA(II i) {

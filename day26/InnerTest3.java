@@ -3,17 +3,17 @@ package com.day26;
 public class InnerTest3 {
 
 	public static void main(String[] args) {
-		//ÀÎ½ºÅÏ½ºÅ¬·¡½ºÀÇ ÀÎ½ºÅÏ½º¸¦ »ı¼ºÇÏ·Á¸é
-		//¿ÜºÎ Å¬·¡½ºÀÇ ÀÎ½ºÅÏ½º¸¦ ¸ÕÀú »ı¼ºÇØ¾ßÇÑ´Ù.
-		System.out.println(Outer.InstanceInner.cv); // static º¯¼ö´Â Å¬·¡½º¸íÀ¸·Î ¹Ù·Î Á¢±Ù °¡´É
+		//ì¸ìŠ¤í„´ìŠ¤í´ë˜ìŠ¤ì˜ ì¸ìŠ¤í„´ìŠ¤ë¥¼ ìƒì„±í•˜ë ¤ë©´
+		//ì™¸ë¶€ í´ë˜ìŠ¤ì˜ ì¸ìŠ¤í„´ìŠ¤ë¥¼ ë¨¼ì € ìƒì„±í•´ì•¼í•œë‹¤.
+		System.out.println(Outer.InstanceInner.cv); // static ë³€ìˆ˜ëŠ” í´ë˜ìŠ¤ëª…ìœ¼ë¡œ ë°”ë¡œ ì ‘ê·¼ ê°€ëŠ¥
 		Outer o = new Outer();
 		Outer.InstanceInner ii = o.new InstanceInner();
 		
 		System.out.println("ii.iv : " + ii.iv);
 		System.out.println("Outer.StaticInner.cv : " + Outer.StaticInner.cv);
 		
-		//½ºÅÂÆ½ ³»ºÎ Å¬·¡½ºÀÇ ÀÎ½ºÅÏ½º´Â ¿ÜºÎ Å¬·¡½º¸¦ ¸ÕÀú »ı¼ºÇÏÁö ¾Ê¾Æµµ µÈ´Ù.
-		System.out.println(Outer.StaticInner.cv); // ½ºÅÂÆ½ ³»ºÎ Å¬·¡½ºÀÇ ½ºÅÃÆ½º¯¼ö´Â °´Ã¼»ı¼ºÇÏÁö ¾Ê¾Æµµ µÈ´Ù.
+		//ìŠ¤íƒœí‹± ë‚´ë¶€ í´ë˜ìŠ¤ì˜ ì¸ìŠ¤í„´ìŠ¤ëŠ” ì™¸ë¶€ í´ë˜ìŠ¤ë¥¼ ë¨¼ì € ìƒì„±í•˜ì§€ ì•Šì•„ë„ ëœë‹¤.
+		System.out.println(Outer.StaticInner.cv); // ìŠ¤íƒœí‹± ë‚´ë¶€ í´ë˜ìŠ¤ì˜ ìŠ¤íƒí‹±ë³€ìˆ˜ëŠ” ê°ì²´ìƒì„±í•˜ì§€ ì•Šì•„ë„ ëœë‹¤.
 		Outer.StaticInner si = new Outer.StaticInner();
 		System.out.println("si.iv : " + si.iv);
 	}
@@ -31,7 +31,7 @@ class Outer{
 	}
 	
 	void myMethod() {
-		/*class LocalInner{ // ¸Ş¼­µå ³»¿¡ ÀÖ´Â Áö¿ªÅ¬·¡½º´Â ¿ÜºÎ¿¡¼­ Á¢±Ù ÇÒ ¼ö ¾ø´Ù.
+		/*class LocalInner{ // ë©”ì„œë“œ ë‚´ì— ìˆëŠ” ì§€ì—­í´ë˜ìŠ¤ëŠ” ì™¸ë¶€ì—ì„œ ì ‘ê·¼ í•  ìˆ˜ ì—†ë‹¤.
 			int iv = 400;
 		}*/
 	}

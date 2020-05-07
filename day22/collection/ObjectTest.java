@@ -5,12 +5,12 @@ public class ObjectTest {
 	public static void main(String[] args) {
 		AAA obj = new AAA();
 		
-		System.out.println("dbj °´Ã¼¸¦ Ç¥ÇöÇÏ´Â ±âº» ¹®ÀÚ¿­ : " + obj.toString());
-		System.out.println("dbj °´Ã¼¸¦ Ç¥ÇöÇÏ´Â ±âº» ¹®ÀÚ¿­ ¾à½Ä : " + obj);
+		System.out.println("dbj ê°ì²´ë¥¼ í‘œí˜„í•˜ëŠ” ê¸°ë³¸ ë¬¸ìì—´ : " + obj.toString());
+		System.out.println("dbj ê°ì²´ë¥¼ í‘œí˜„í•˜ëŠ” ê¸°ë³¸ ë¬¸ìì—´ ì•½ì‹ : " + obj);
 		System.out.println(obj);
 		obj.display();
 
-		//toString()¸Ş¼­µåÀÇ °á°ú : Å¬·¡½º¸í@16Áø¼ö ÇØ½ÃÄÚµå
+		//toString()ë©”ì„œë“œì˜ ê²°ê³¼ : í´ë˜ìŠ¤ëª…@16ì§„ìˆ˜ í•´ì‹œì½”ë“œ
 	}
 
 }

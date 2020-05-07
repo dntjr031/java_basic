@@ -7,7 +7,7 @@ public class Assignment3 {
 	public static void main(String[] args) {
 
 		Scanner sc = new Scanner(System.in);
-		System.out.println("3ÀÇ ¹è¼öÀÇ °³¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+		System.out.println("3ì˜ ë°°ìˆ˜ì˜ ê°œìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”");
 		int count = sc.nextInt();
 		
 		for(int i = 1; i <= count; i++) {
@@ -16,14 +16,14 @@ public class Assignment3 {
 		
 		System.out.println("\n=====================");
 		
-		System.out.println("nÀÇ °è½Â ±¸ÇÏ±â : nÀ» ÀÔ·ÂÇÏ¼¼¿ä");
+		System.out.println("nì˜ ê³„ìŠ¹ êµ¬í•˜ê¸° : nì„ ì…ë ¥í•˜ì„¸ìš”");
 		int facto = sc.nextInt();
 		
 		long num = 1l;
 		for(int i = 1; i <= facto; i++) {
 			num *= i;
 		}
-		System.out.println("1~n±îÁöÀÇ °ö : " + num);
+		System.out.println("1~nê¹Œì§€ì˜ ê³± : " + num);
 		
 		sc.close();
 	}

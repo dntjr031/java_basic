@@ -30,7 +30,7 @@ class Student2 extends Person2{
 	}
 	
 	public void study() {
-		System.out.println("°øºÎÇÑ´Ù");
+		System.out.println("ê³µë¶€í•œë‹¤");
 	}
 }
 
@@ -46,6 +46,6 @@ class Graduate2 extends Student2{
 	}
 	
 	public void writeThesis() {
-		System.out.println("³í¹®À» ¾´´Ù");
+		System.out.println("ë…¼ë¬¸ì„ ì“´ë‹¤");
 	}
 }

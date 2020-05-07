@@ -7,7 +7,7 @@ public class PersonTest {
 	public static void main(String[] args) {
 
 		Scanner sc = new Scanner(System.in);
-		System.out.println("ÀÌ¸§, ³ªÀÌ, ÀüÈ­¹øÈ£ ÀÔ·Â!");
+		System.out.println("ì´ë¦„, ë‚˜ì´, ì „í™”ë²ˆí˜¸ ì…ë ¥!");
 		String name = sc.nextLine();
 		int age = sc.nextInt();
 		sc.nextLine();
@@ -16,15 +16,15 @@ public class PersonTest {
 		Person p = new Person(name, tel, age);
 		p.showInfo();
 		
-		// getter/ setter ¿¬½À
+		// getter/ setter ì—°ìŠµ
 		
-		p.setName("È«±æµ¿");
+		p.setName("í™ê¸¸ë™");
 		p.setAge(25);
 		p.setPhone("010-100-3000");
 		
-		System.out.println("\nº¯°æµÈ ÀÌ¸§ : " + p.getName());
-		System.out.println("³ªÀÌ : " + p.getAge());
-		System.out.println("ÀüÈ­¹øÈ£ : " + p.getPhone());
+		System.out.println("\në³€ê²½ëœ ì´ë¦„ : " + p.getName());
+		System.out.println("ë‚˜ì´ : " + p.getAge());
+		System.out.println("ì „í™”ë²ˆí˜¸ : " + p.getPhone());
 		
 
 		sc.close();

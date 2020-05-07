@@ -7,51 +7,51 @@ public class SwitchTest3 {
 	public static void main(String[] args) throws IOException{
 		/*
 		  public abstract int read() throws IOException
-		  - Å°º¸µå·Î ºÎÅÍ1¹ÙÀÌÆ®¸¦ ÀĞ¾î¿À´Â ¸Ş¼­µå
-		  - ÀÔ·ÂÇÑ °ªÀÇ ¾Æ½ºÅ°ÄÚµå °ªÀ» ¸®ÅÏÇØÁÜ
-		  - char °ªÀ» ÀĞ¾î¿Ã ¶§ »ç¿ë
-		  ¿¹) ABCÀÔ·Â => Ã³À½ 1¹ÙÀÌÆ®ÀÎ A¸¸ ÀĞ¾î¿À¸ç, ÇØ´ç ¾Æ½ºÅ°ÄÚµå°ªÀÎ 65¸¦ ¸®ÅÏ 
+		  - í‚¤ë³´ë“œë¡œ ë¶€í„°1ë°”ì´íŠ¸ë¥¼ ì½ì–´ì˜¤ëŠ” ë©”ì„œë“œ
+		  - ì…ë ¥í•œ ê°’ì˜ ì•„ìŠ¤í‚¤ì½”ë“œ ê°’ì„ ë¦¬í„´í•´ì¤Œ
+		  - char ê°’ì„ ì½ì–´ì˜¬ ë•Œ ì‚¬ìš©
+		  ì˜ˆ) ABCì…ë ¥ => ì²˜ìŒ 1ë°”ì´íŠ¸ì¸ Aë§Œ ì½ì–´ì˜¤ë©°, í•´ë‹¹ ì•„ìŠ¤í‚¤ì½”ë“œê°’ì¸ 65ë¥¼ ë¦¬í„´ 
 		*/
 		
-		System.out.println("¼ºº°À» ÀÔ·ÂÇÏ¼¼¿ä(M/F)");
+		System.out.println("ì„±ë³„ì„ ì…ë ¥í•˜ì„¸ìš”(M/F)");
 		int code = System.in.read();
 		char gender = (char)code;
 		
-		System.out.println("ÄÚµå°ª : " + code + ", ÇØ´ç¹®ÀÚ : " + gender);
+		System.out.println("ì½”ë“œê°’ : " + code + ", í•´ë‹¹ë¬¸ì : " + gender);
 		
 		String result = "";
 		switch(gender) {
 		
 			case 'M':
-				result = "³²ÀÚ";
+				result = "ë‚¨ì";
 				break;
 			case 'F':
-				result = "¿©ÀÚ";
+				result = "ì—¬ì";
 				break;
 			default:
-				result = "Àß¸øÀÔ·Â!";
+				result = "ì˜ëª»ì…ë ¥!";
 				break;
 		}
 		
 		System.out.println(gender + " => " + result);
 		
-		//¼Ò¹®ÀÚ mÀÌ³ª fµµ Ã³¸®µÇµµ·Ï
+		//ì†Œë¬¸ì mì´ë‚˜ fë„ ì²˜ë¦¬ë˜ë„ë¡
 		switch(gender) {
 		
 			case 'M':
-			case 'm':		//orÀÇ ±â´ÉÀ» ÇÒ ¼ö ÀÖ´Ù.(´ë¹®ÀÚM ÀÌ°Å³ª ¼Ò¹®ÀÚmÀÌ¸é ³²ÀÚ)
-				result = "³²ÀÚ";
+			case 'm':		//orì˜ ê¸°ëŠ¥ì„ í•  ìˆ˜ ìˆë‹¤.(ëŒ€ë¬¸ìM ì´ê±°ë‚˜ ì†Œë¬¸ìmì´ë©´ ë‚¨ì)
+				result = "ë‚¨ì";
 				break;
 			case 'F':
 			case 'f':
-				result = "¿©ÀÚ";
+				result = "ì—¬ì";
 				break;
 			default:
-				result = "Àß¸øÀÔ·Â!";
+				result = "ì˜ëª»ì…ë ¥!";
 				break;
 		}
 		
-		System.out.println(gender + "(orÃ³¸®) => " + result);
+		System.out.println(gender + "(orì²˜ë¦¬) => " + result);
 		
 		//public static char toUpperCase(char ch)
 		char upperGender = Character.toUpperCase(gender);
@@ -59,13 +59,13 @@ public class SwitchTest3 {
 		switch(upperGender) {
 		
 			case 'M':
-				result = "³²ÀÚ";
+				result = "ë‚¨ì";
 				break;
 			case 'F':
-				result = "¿©ÀÚ";
+				result = "ì—¬ì";
 				break;
 			default:
-				result = "Àß¸øÀÔ·Â!";
+				result = "ì˜ëª»ì…ë ¥!";
 				break;
 		}
 		

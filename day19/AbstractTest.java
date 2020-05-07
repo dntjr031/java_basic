@@ -6,8 +6,8 @@ public class AbstractTest {
 
 		Animal a;
 		//a = new Animal(); => error, Unresolved compilation problem
-		a= new Dog(); // ÀÚ½ÄÀÌ Ãß»ó ¸Ş¼­µå¸¦ ¿À¹ö¶óÀÌµùÇÏ¸é 
-					  //ÀÚ½ÄÀº ¿ÏÀüÇÑ Å¬·¡½º°¡ µÇ¾î °´Ã¼ »ı¼º °¡´É
+		a= new Dog(); // ìì‹ì´ ì¶”ìƒ ë©”ì„œë“œë¥¼ ì˜¤ë²„ë¼ì´ë”©í•˜ë©´ 
+					  //ìì‹ì€ ì™„ì „í•œ í´ë˜ìŠ¤ê°€ ë˜ì–´ ê°ì²´ ìƒì„± ê°€ëŠ¥
 		a.sound();
 		
 		a = new Cow();
@@ -16,7 +16,7 @@ public class AbstractTest {
 		a = new Cat();
 		a.sound();
 		
-		//Mammal m = new Mammal(); => ÀÚ½Äµµ Ãß»óÅ¬·¡½ºÀÌ¹Ç·Î °´Ã¼»ı¼º ºÒ°¡
+		//Mammal m = new Mammal(); => ìì‹ë„ ì¶”ìƒí´ë˜ìŠ¤ì´ë¯€ë¡œ ê°ì²´ìƒì„± ë¶ˆê°€
 		Mammal c = new Cat();
 		c.breed(3);
 		c.sound();

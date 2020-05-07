@@ -2,31 +2,31 @@ package com.day16;
 
 class GrandFather{
 	GrandFather() {
-		System.out.println("GrandFather »ý¼ºÀÚ!");
+		System.out.println("GrandFather ìƒì„±ìž!");
 	}
 	
 	public void showGrandFather() {
-		System.out.println("GrandFather Å¬·¡½ºÀÇ ¸Þ¼­µå È£Ãâ!");
+		System.out.println("GrandFather í´ëž˜ìŠ¤ì˜ ë©”ì„œë“œ í˜¸ì¶œ!");
 	}
 }
 
 class Father extends GrandFather{
 	Father() {
-		System.out.println("Father »ý¼ºÀÚ!");
+		System.out.println("Father ìƒì„±ìž!");
 	}
 	
 	public void showFather() {
-		System.out.println("Father Å¬·¡½ºÀÇ ¸Þ¼­µå È£Ãâ!");
+		System.out.println("Father í´ëž˜ìŠ¤ì˜ ë©”ì„œë“œ í˜¸ì¶œ!");
 	}
 }
 
 class Child2 extends Father{
 	Child2() {
-		System.out.println("Child2 »ý¼ºÀÚ!");
+		System.out.println("Child2 ìƒì„±ìž!");
 	}
 	
 	public void showChild2() {
-		System.out.println("Child2 Å¬·¡½ºÀÇ ¸Þ¼­µå È£Ãâ!");
+		System.out.println("Child2 í´ëž˜ìŠ¤ì˜ ë©”ì„œë“œ í˜¸ì¶œ!");
 	}
 }
 
@@ -35,7 +35,7 @@ public class Inheritance2 {
 	public static void main(String[] args) {
 		Child2 ch = new Child2();
 		/*
-		 ºÎ¸ð »ý¼ºÀÚºÎÅÍ ¼øÂ÷ÀûÀ¸·Î ½ÇÇàµÊ
+		 ë¶€ëª¨ ìƒì„±ìžë¶€í„° ìˆœì°¨ì ìœ¼ë¡œ ì‹¤í–‰ë¨
 		 GrandFather() => Father() => Child2()
 		 */
 		System.out.println("\n\n");

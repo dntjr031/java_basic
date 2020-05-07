@@ -8,30 +8,30 @@ public class StringTest {
 		String str3 = "java";
 		
 		if(str1 == str2) {
-			System.out.println("str1, str2´Â µ¿ÀÏ ÀÎ½ºÅÏ½º ÂüÁ¶");
+			System.out.println("str1, str2ëŠ” ë™ì¼ ì¸ìŠ¤í„´ìŠ¤ ì°¸ì¡°");
 		}else {
-			System.out.println("str1, str2´Â ´Ù¸¥ ÀÎ½ºÅÏ½º ÂüÁ¶");
+			System.out.println("str1, str2ëŠ” ë‹¤ë¥¸ ì¸ìŠ¤í„´ìŠ¤ ì°¸ì¡°");
 		}
 		
 		if(str2 == str3) {
-			System.out.println("str3, str2´Â µ¿ÀÏ ÀÎ½ºÅÏ½º ÂüÁ¶");
+			System.out.println("str3, str2ëŠ” ë™ì¼ ì¸ìŠ¤í„´ìŠ¤ ì°¸ì¡°");
 		}else {
-			System.out.println("str3, str2´Â ´Ù¸¥ ÀÎ½ºÅÏ½º ÂüÁ¶");
+			System.out.println("str3, str2ëŠ” ë‹¤ë¥¸ ì¸ìŠ¤í„´ìŠ¤ ì°¸ì¡°");
 		}
 		
 		String str4 = new String("Hello");
 		String str5 = new String("Hello");
 		
 		if(str4 == str5) {
-			System.out.println("str4, str5´Â µ¿ÀÏ ÀÎ½ºÅÏ½º ÂüÁ¶");
+			System.out.println("str4, str5ëŠ” ë™ì¼ ì¸ìŠ¤í„´ìŠ¤ ì°¸ì¡°");
 		}else {
-			System.out.println("str4, str5´Â ´Ù¸¥ ÀÎ½ºÅÏ½º ÂüÁ¶");
+			System.out.println("str4, str5ëŠ” ë‹¤ë¥¸ ì¸ìŠ¤í„´ìŠ¤ ì°¸ì¡°");
 		}
 		
 		if(str1 == str4) {
-			System.out.println("str1, str4´Â µ¿ÀÏ ÀÎ½ºÅÏ½º ÂüÁ¶");
+			System.out.println("str1, str4ëŠ” ë™ì¼ ì¸ìŠ¤í„´ìŠ¤ ì°¸ì¡°");
 		}else {
-			System.out.println("str1, str4´Â ´Ù¸¥ ÀÎ½ºÅÏ½º ÂüÁ¶");
+			System.out.println("str1, str4ëŠ” ë‹¤ë¥¸ ì¸ìŠ¤í„´ìŠ¤ ì°¸ì¡°");
 		}
 	}
 

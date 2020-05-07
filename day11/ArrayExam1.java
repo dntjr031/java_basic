@@ -7,7 +7,7 @@ public class ArrayExam1 {
 	public static void main(String[] args) {
 
 		Scanner sc = new Scanner(System.in);
-		System.out.println("È½¼ö");
+		System.out.println("íšŸìˆ˜");
 		int count = sc.nextInt();
 		int[] arr = new int[count];
 		

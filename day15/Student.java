@@ -11,8 +11,8 @@ public class Student {
 	}
 	
 	public void info() {
-		System.out.println("ÀÌ¸§:" + name);
-		System.out.println("ÇĞ¹ø:" + idNo);
+		System.out.println("ì´ë¦„:" + name);
+		System.out.println("í•™ë²ˆ:" + idNo);
 		System.out.println("----------------\n");
 	}
 }

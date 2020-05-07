@@ -6,7 +6,7 @@ public class SuperTest5 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("ÀÌ¸§, ³ªÀÌ, ÇĞ¹ø, Àü°øÀ» ÀÔ·ÂÇÏ¼¼¿ä");
+		System.out.println("ì´ë¦„, ë‚˜ì´, í•™ë²ˆ, ì „ê³µì„ ì…ë ¥í•˜ì„¸ìš”");
 		String name = sc.nextLine();
 		int age = sc.nextInt();
 		sc.nextLine();
@@ -16,14 +16,14 @@ public class SuperTest5 {
 		Graduate st = new Graduate(name, age, sNo, major);
 		st.showInfo();
 		
-		//¸â¹öº¯¼ö °ª º¯°æ
-		st.setName("±è±æµ¿");
+		//ë©¤ë²„ë³€ìˆ˜ ê°’ ë³€ê²½
+		st.setName("ê¹€ê¸¸ë™");
 		st.setAge(20);
 		st.setSNo("20110231");
-		// getter ÀÌ¿ë
-		System.out.println("\nÀÌ¸§ : " + st.getName());
-		System.out.println("³ªÀÌ : " + st.getAge());
-		System.out.println("ÇĞ¹ø : " + st.getSNo());
+		// getter ì´ìš©
+		System.out.println("\nì´ë¦„ : " + st.getName());
+		System.out.println("ë‚˜ì´ : " + st.getAge());
+		System.out.println("í•™ë²ˆ : " + st.getSNo());
 		
 		sc.close();
 
@@ -55,8 +55,8 @@ class Person2{
 	}
 	
 	public void showInfo() {
-		System.out.println("ÀÌ¸§ : " + getName());
-		System.out.println("³ªÀÌ : " + getAge());
+		System.out.println("ì´ë¦„ : " + getName());
+		System.out.println("ë‚˜ì´ : " + getAge());
 	}
 	
 }
@@ -79,7 +79,7 @@ class Student2 extends Person2{
 
 	public void showInfo() {
 		super.showInfo();
-		System.out.println("ÇĞ¹ø : " + getSNo());
+		System.out.println("í•™ë²ˆ : " + getSNo());
 	}
 	
 }
@@ -102,8 +102,8 @@ class Graduate extends Student2{
 
 	public void showInfo() {
 		super.showInfo();
-		System.out.println("Àü°ø : " + major);
-		System.out.println("³í¹®À» ¾¹´Ï´Ù!");
+		System.out.println("ì „ê³µ : " + major);
+		System.out.println("ë…¼ë¬¸ì„ ì”ë‹ˆë‹¤!");
 	}
 	
 	

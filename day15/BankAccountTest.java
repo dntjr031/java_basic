@@ -6,14 +6,14 @@ public class BankAccountTest {
 
 		BankAccount ba1 = new BankAccount(100000);
 		ba1.calcTotalBalance();
-		System.out.println("Ã¹¹øÂ° °èÁÂÀÇ ¿ø±İ : " + ba1.getBalance());
-		System.out.println("ÀÌÀÚÀ² : " + BankAccount.interest);
-		System.out.println("°èÁÂµéÀÇ ¿ø±İÀÇ ÇÕ°è : " + BankAccount.getTotalBalance());
+		System.out.println("ì²«ë²ˆì§¸ ê³„ì¢Œì˜ ì›ê¸ˆ : " + ba1.getBalance());
+		System.out.println("ì´ììœ¨ : " + BankAccount.interest);
+		System.out.println("ê³„ì¢Œë“¤ì˜ ì›ê¸ˆì˜ í•©ê³„ : " + BankAccount.getTotalBalance());
 		
 		BankAccount ba2 = new BankAccount(200000);
 		ba2.calcTotalBalance();
-		System.out.println("\nµÎ¹øÂ° °èÁÂÀÇ ¿ø±İ : " + ba2.getBalance());
-		System.out.println("¿ø±İ ÇÕ°è : " + BankAccount.getTotalBalance());
+		System.out.println("\në‘ë²ˆì§¸ ê³„ì¢Œì˜ ì›ê¸ˆ : " + ba2.getBalance());
+		System.out.println("ì›ê¸ˆ í•©ê³„ : " + BankAccount.getTotalBalance());
 
 	}
 

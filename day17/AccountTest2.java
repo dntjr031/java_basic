@@ -6,13 +6,13 @@ public class AccountTest2 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("ÀÔ±İÇÒ ±İ¾×À» ÀÔ·ÂÇÏ¼¼¿ä");
+		System.out.println("ì…ê¸ˆí•  ê¸ˆì•¡ì„ ì…ë ¥í•˜ì„¸ìš”");
 		int money = sc.nextInt();
 		int interest = Account2.carcRate(money);
 		
 		System.out.println("=======================");
-		System.out.println("¿ø±İ : " + money + "¿ø, ÀÌÀÚÀ² : " + 
-						Account2.INTEREST_RATE + ", ÀÌÀÚ : " + interest + "¿ø");
+		System.out.println("ì›ê¸ˆ : " + money + "ì›, ì´ììœ¨ : " + 
+						Account2.INTEREST_RATE + ", ì´ì : " + interest + "ì›");
 
 		sc.close();
 	}

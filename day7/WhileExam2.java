@@ -10,27 +10,27 @@ public class WhileExam2 {
 		
 		int sum = 0;
 		while(true) {
-			System.out.println("¼ıÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä(³¡³»·Á¸é 0 ÀÔ·Â)");
+			System.out.println("ìˆ«ìë¥¼ ì…ë ¥í•˜ì„¸ìš”(ëë‚´ë ¤ë©´ 0 ì…ë ¥)");
 			int num = sc.nextInt();
 			
 			if(num == 0) break;
 			
 			sum += num;
 		}
-		System.out.println("ÀÔ·ÂµÈ ¼ıÀÚÀÇ ÇÕ : " + sum);
+		System.out.println("ì…ë ¥ëœ ìˆ«ìì˜ í•© : " + sum);
 		
 		
-		System.out.println("\n=======ÀüÃ¼ Æò±Õ========\n");
+		System.out.println("\n=======ì „ì²´ í‰ê· ========\n");
 		
 		
-		System.out.println("ÀÔ·ÂÇÒ Á¤¼öÀÇ °³¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+		System.out.println("ì…ë ¥í•  ì •ìˆ˜ì˜ ê°œìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”");
 		int count = sc.nextInt();
 		
 		sum = 0;
 		double cnt = 0;
 		while(true) {
 			
-			System.out.println("Á¤¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+			System.out.println("ì •ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”");
 			int i = sc.nextInt();
 			
 			sum += i;
@@ -42,7 +42,7 @@ public class WhileExam2 {
 		long rnd = Math.round(sum / cnt * 100);
 		
 	
-		System.out.println("ÀÔ·ÂµÈ Á¤¼öÀÇ ÀüÃ¼ Æò±Õ : " + rnd / 100.0);
+		System.out.println("ì…ë ¥ëœ ì •ìˆ˜ì˜ ì „ì²´ í‰ê·  : " + rnd / 100.0);
 		
 		sc.close();
 			

@@ -10,15 +10,15 @@ public class TriangleTest2 {
 	}
 	
 	public static void main(String[] args) {
-		// 2. ¸ŞÀÎÅ¬·¡½º¿¡¼­ »ï°¢Çü ¸éÀû ±¸ÇÏ´Â ¸Ş¼­µå ¸¸µé¾î¼­ Ã³¸®
+		// 2. ë©”ì¸í´ë˜ìŠ¤ì—ì„œ ì‚¼ê°í˜• ë©´ì  êµ¬í•˜ëŠ” ë©”ì„œë“œ ë§Œë“¤ì–´ì„œ ì²˜ë¦¬
 		
 		Scanner sc = new Scanner(System.in);
-		System.out.println("»ï°¢ÇüÀÇ ¹Øº¯, ³ôÀÌ¸¦ ÀÔ·Â");
+		System.out.println("ì‚¼ê°í˜•ì˜ ë°‘ë³€, ë†’ì´ë¥¼ ì…ë ¥");
 		int w = sc.nextInt();
 		int h = sc.nextInt();
 		
 		int area = area(w, h);
-		System.out.println("³ĞÀÌ : " + area);
+		System.out.println("ë„“ì´ : " + area);
 		
 		sc.close();
 

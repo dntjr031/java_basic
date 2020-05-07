@@ -30,8 +30,8 @@ class KBAccount extends Account{
 	}
 	
 	public void printInfo() {
-		System.out.println("°èÁÂ¹øÈ£:" + accNum);
-		System.out.println("°èÁÂÀÜ¾×:" + balance);
-		System.out.println("ÀÌÃ¼ÇÑµµ:" + transferLimit);
+		System.out.println("ê³„ì¢Œë²ˆí˜¸:" + accNum);
+		System.out.println("ê³„ì¢Œì”ì•¡:" + balance);
+		System.out.println("ì´ì²´í•œë„:" + transferLimit);
 	}
 }

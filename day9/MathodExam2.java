@@ -22,36 +22,36 @@ public class MathodExam2 {
 	public static void main(String[] args) {
 		//[1]
 		int n = big(1, 5);
-		System.out.println("[1]\n1, 5Áß ´õ Å«¼ö : " + n + "\n");
+		System.out.println("[1]\n1, 5ì¤‘ ë” í°ìˆ˜ : " + n + "\n");
 		
 		//[2]
 		int num1 = 6, num2 = 4;
 		n = big(num1, num2);
-		System.out.println("[2]\n" + num1 + ", " + num2 + "Áß ´õ Å«¼ö : " + n + "\n");
+		System.out.println("[2]\n" + num1 + ", " + num2 + "ì¤‘ ë” í°ìˆ˜ : " + n + "\n");
 		
 		//[3]
 		Scanner sc = new Scanner(System.in);
-		System.out.println("[3]\n´õ Å«¼ö¸¦ ±¸ÇÒ µÎ ¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+		System.out.println("[3]\në” í°ìˆ˜ë¥¼ êµ¬í•  ë‘ ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”");
 		int a = sc.nextInt();
 		int b = sc.nextInt();
 		
 		n = big(a, b);
-		System.out.println(a + ", " + b + "Áß ´õ Å«¼ö : " + n);
+		System.out.println(a + ", " + b + "ì¤‘ ë” í°ìˆ˜ : " + n);
 		
 		System.out.println("=============================");
 		
 		while(true) {
-			System.out.println("³ª¸ÓÁö ¿¬»êÀ» ÇÒ µÎ ¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+			System.out.println("ë‚˜ë¨¸ì§€ ì—°ì‚°ì„ í•  ë‘ ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”");
 			a = sc.nextInt();
 			b = sc.nextInt();
 			
 			if(a == 0 || b == 0) break;
 			
 			int remainder = remainder(a, b);
-			System.out.println("³ª¸ÓÁö ¿¬»ê °á°ú : " + a + "%" + b + " = " + remainder);
+			System.out.println("ë‚˜ë¨¸ì§€ ì—°ì‚° ê²°ê³¼ : " + a + "%" + b + " = " + remainder);
 			
 		}
-		System.out.println("Á¾·áµÇ¾ú½À´Ï´Ù.");
+		System.out.println("ì¢…ë£Œë˜ì—ˆìŠµë‹ˆë‹¤.");
 		sc.close();
 
 	}

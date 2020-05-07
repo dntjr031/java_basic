@@ -6,7 +6,7 @@ public class SwitchTraining {
 
 	public static void main(String[] args) throws IOException {
 		
-		System.out.println("ÁÖ¹Î¹øÈ£ µŞÀÚ¸® Ã¹¹øÂ° ¼ıÀÚ¸¦ ÀÔ·ÂÇÏ½Ã¿À<1,2,3,4>");
+		System.out.println("ì£¼ë¯¼ë²ˆí˜¸ ë’·ìë¦¬ ì²«ë²ˆì§¸ ìˆ«ìë¥¼ ì…ë ¥í•˜ì‹œì˜¤<1,2,3,4>");
 		int num = System.in.read();
 		
 		char gender = (char)num;
@@ -14,13 +14,13 @@ public class SwitchTraining {
 		String result = "";
 		switch(gender) {
 			case '1': case '3':
-				result = "³²ÀÚ";
+				result = "ë‚¨ì";
 				break;
 			case '2': case '4':
-				result = "¿©ÀÚ";
+				result = "ì—¬ì";
 				break;
 			default:
-				result = "Àß¸øÀÔ·Â!";
+				result = "ì˜ëª»ì…ë ¥!";
 			
 		}
 		System.out.println(result);

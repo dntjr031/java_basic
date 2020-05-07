@@ -4,17 +4,17 @@ public class ScopeTest1 {
 
 	public static void main(String[] args) {
 
-		// º¯¼öÀÇ ¹üÀ§(Scope)
-		int a = 10; // main ¸Þ¼­µå¿¡¼­ ¼±¾ðµÈ Áö¿ªº¯¼ö - mainÀ» ¹þ¾î³ª¸é ¼Ò¸ê
-					// main³»¿¡¼­ »ç¿ë °¡´É
-		//for(int a = 0; a < 3; a++) {} // Áßº¹ error
+		// ë³€ìˆ˜ì˜ ë²”ìœ„(Scope)
+		int a = 10; // main ë©”ì„œë“œì—ì„œ ì„ ì–¸ëœ ì§€ì—­ë³€ìˆ˜ - mainì„ ë²—ì–´ë‚˜ë©´ ì†Œë©¸
+					// mainë‚´ì—ì„œ ì‚¬ìš© ê°€ëŠ¥
+		//for(int a = 0; a < 3; a++) {} // ì¤‘ë³µ error
 		
-		for(int i = 0; i < 3; i++) { // for ºí·°¾È¿¡¼­ ¼±¾ðµÈ i´Â for¸¦ ¹þ¾î³ª¸é ¼Ò¸ê
+		for(int i = 0; i < 3; i++) { // for ë¸”ëŸ­ì•ˆì—ì„œ ì„ ì–¸ëœ iëŠ” forë¥¼ ë²—ì–´ë‚˜ë©´ ì†Œë©¸
 			System.out.println("i=" + i);
 		}
 			
 		for(int i = 0; i < 2; i++) {
-			int n = 20; // for¸¦ ¹þ¾î³ª¸é nÀº ¼Ò¸ê
+			int n = 20; // forë¥¼ ë²—ì–´ë‚˜ë©´ nì€ ì†Œë©¸
 			System.out.println("n=" + n);
 			System.out.println("i=" + i);
 		}

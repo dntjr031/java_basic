@@ -5,12 +5,12 @@ public class InnerTest2 {
 	static int outerCv = 0;
 	
 	class InstanceInner{
-		int iiv = outerIv; // ¿ÜºÎ Å¬·¡½ºÀÇ private¸â¹öµµ Á¢±Ù °¡´É
+		int iiv = outerIv; // ì™¸ë¶€ í´ë˜ìŠ¤ì˜ privateë©¤ë²„ë„ ì ‘ê·¼ ê°€ëŠ¥
 		int iiv2 = outerCv;
 	}
 	
 	static class StaticInner{
-		//int siv = outerIv; // static Å¬·¡½º´Â ¿ÜºÎ Å¬·¡½ºÀÇ static ¸â¹ö¸¸ Á¢±Ù °¡´É
+		//int siv = outerIv; // static í´ë˜ìŠ¤ëŠ” ì™¸ë¶€ í´ë˜ìŠ¤ì˜ static ë©¤ë²„ë§Œ ì ‘ê·¼ ê°€ëŠ¥
 		static int scv = outerCv;
 	}
 	
@@ -21,7 +21,7 @@ public class InnerTest2 {
 		class LocalInner{
 			int liv = outerIv;
 			int liv2 = outerCv;
-			int liv3 = lv; // ¿ÜºÎÅ¬·¡½ºÀÇ Áö¿ªº¯¼ö´Â finalÀÌ ºÙÀº »ó¼ö¸¸ Á¢±Ù°¡´ÉÇßÁö¸¸ JDK8.0ºÎÅÍ ¸ğµÎ °¡´É
+			int liv3 = lv; // ì™¸ë¶€í´ë˜ìŠ¤ì˜ ì§€ì—­ë³€ìˆ˜ëŠ” finalì´ ë¶™ì€ ìƒìˆ˜ë§Œ ì ‘ê·¼ê°€ëŠ¥í–ˆì§€ë§Œ JDK8.0ë¶€í„° ëª¨ë‘ ê°€ëŠ¥
 			int liv4 = LV;
 		}*/
 	}

@@ -2,27 +2,27 @@ package com.day18;
 
 public class Car {
 	public void engine() {
-		System.out.println("¿£Áø");
+		System.out.println("ì—”ì§„");
 	}
 	public void carKinds() {
-		System.out.println("Â÷Á¾");
+		System.out.println("ì°¨ì¢…");
 	}
 }
 
 class Equus extends Car{
 	public void engine() {
-		System.out.println("¿¡Äí½º ¿£Áø");
+		System.out.println("ì—ì¿ ìŠ¤ ì—”ì§„");
 	}
 	public void carKinds() {
-		System.out.println("¿¡Äí½º");
+		System.out.println("ì—ì¿ ìŠ¤");
 	}
 }
 
 class Benz extends Car{
 	public void engine() {
-		System.out.println("º¥Ã÷ ¿£Áø");
+		System.out.println("ë²¤ì¸  ì—”ì§„");
 	}
 	public void carKinds() {
-		System.out.println("º¥Ã÷");
+		System.out.println("ë²¤ì¸ ");
 	}
 }

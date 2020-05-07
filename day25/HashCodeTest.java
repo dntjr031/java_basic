@@ -13,32 +13,32 @@ public class HashCodeTest {
 		System.out.println(s3.hashCode());
 		System.out.println(s4.hashCode());
 		/*
-		 String Å¬·¡½º´Â ¹®ÀÚ¿­ÀÇ ³»¿ëÀÌ °°À¸¸é,
-		 µ¿ÀÏÇÑ ÇØ½ÃÄÚµå¸¦ ¹İÈ¯ÇÏµµ·Ï hashCode ¸Ş¼­µå¸¦ ¿À¹ö¶óÀÌµù ÇÏ¿´´Ù.
+		 String í´ë˜ìŠ¤ëŠ” ë¬¸ìì—´ì˜ ë‚´ìš©ì´ ê°™ìœ¼ë©´,
+		 ë™ì¼í•œ í•´ì‹œì½”ë“œë¥¼ ë°˜í™˜í•˜ë„ë¡ hashCode ë©”ì„œë“œë¥¼ ì˜¤ë²„ë¼ì´ë”© í•˜ì˜€ë‹¤.
 		 
 		 System.identityHashCode(Object x)
-		 - Object Å¬·¡½ºÀÇ hashCode ¸Ş¼­µåÃ³·³ °´Ã¼ÀÇ ÁÖ¼Ò°ªÀ¸·Î ÇØ½ÃÄÚµå¸¦ »ı¼º
-		 => ¸ğµç °´Ã¼¿¡ ´ëÇØ Ç×»ó ´Ù¸¥ ÇØ½ÃÄÚµå°ªÀ» ¹İÈ¯ÇÔ
+		 - Object í´ë˜ìŠ¤ì˜ hashCode ë©”ì„œë“œì²˜ëŸ¼ ê°ì²´ì˜ ì£¼ì†Œê°’ìœ¼ë¡œ í•´ì‹œì½”ë“œë¥¼ ìƒì„±
+		 => ëª¨ë“  ê°ì²´ì— ëŒ€í•´ í•­ìƒ ë‹¤ë¥¸ í•´ì‹œì½”ë“œê°’ì„ ë°˜í™˜í•¨
 		 */
 		
 		int hcode = System.identityHashCode(s1);
-		System.out.println("s1 ÁÖ¼Ò°ª" + hcode);
-		System.out.println("s2 ÁÖ¼Ò°ª" +System.identityHashCode(s2));
-		System.out.println("s3 ÁÖ¼Ò°ª" +System.identityHashCode(s3));
-		System.out.println("s4 ÁÖ¼Ò°ª" +System.identityHashCode(s4));
+		System.out.println("s1 ì£¼ì†Œê°’" + hcode);
+		System.out.println("s2 ì£¼ì†Œê°’" +System.identityHashCode(s2));
+		System.out.println("s3 ì£¼ì†Œê°’" +System.identityHashCode(s3));
+		System.out.println("s4 ì£¼ì†Œê°’" +System.identityHashCode(s4));
 		
 		Integer n1 = 123, n2 = 300;
-		System.out.println("n1 ÇØ½ÃÄÚµå : " + n1.hashCode());
-		System.out.println("n2 ÇØ½ÃÄÚµå : " + n2.hashCode());
-		System.out.println("n1 ÁÖ¼Ò°ª : " + System.identityHashCode(n1));
-		System.out.println("n2 ÁÖ¼Ò°ª : " + System.identityHashCode(n2));
+		System.out.println("n1 í•´ì‹œì½”ë“œ : " + n1.hashCode());
+		System.out.println("n2 í•´ì‹œì½”ë“œ : " + n2.hashCode());
+		System.out.println("n1 ì£¼ì†Œê°’ : " + System.identityHashCode(n1));
+		System.out.println("n2 ì£¼ì†Œê°’ : " + System.identityHashCode(n2));
 		
 		Person3 p1 = new Person3();
 		Person3 p2 = new Person3();
-		System.out.println("p1 ÇØ½ÃÄÚµå : " + p1.hashCode());
-		System.out.println("p2 ÇØ½ÃÄÚµå : " + p2.hashCode());
-		System.out.println("p1 ÁÖ¼Ò°ª : " + System.identityHashCode(p1));
-		System.out.println("p2 ÁÖ¼Ò°ª : " + System.identityHashCode(p2));
+		System.out.println("p1 í•´ì‹œì½”ë“œ : " + p1.hashCode());
+		System.out.println("p2 í•´ì‹œì½”ë“œ : " + p2.hashCode());
+		System.out.println("p1 ì£¼ì†Œê°’ : " + System.identityHashCode(p1));
+		System.out.println("p2 ì£¼ì†Œê°’ : " + System.identityHashCode(p2));
 	}
 
 }

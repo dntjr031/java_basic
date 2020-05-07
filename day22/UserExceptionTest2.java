@@ -2,14 +2,14 @@ package com.day22;
 
 import java.util.Scanner;
 
-//»ç¿ëÀÚ Á¤ÀÇ ¿¹¿Ü Å¬·¡½º ¸¸µé±â
-//ExceptionÀ» »ó¼Ó¹Ş°í, Exception(String message) »ı¼ºÀÚ¿¡ ¸Å°³º¯¼ö¸¦ ³Ö¾îÁÖ¸é µÊ
+//ì‚¬ìš©ì ì •ì˜ ì˜ˆì™¸ í´ë˜ìŠ¤ ë§Œë“¤ê¸°
+//Exceptionì„ ìƒì†ë°›ê³ , Exception(String message) ìƒì„±ìì— ë§¤ê°œë³€ìˆ˜ë¥¼ ë„£ì–´ì£¼ë©´ ë¨
 class AgeException2 extends Exception{
 
 	private static final long serialVersionUID = 1L;
 
 	public AgeException2() {
-		super("³ªÀÌ´Â ¾ç¼ö¸¸ °¡´ÉÇÕ´Ï´Ù"); //public Exception(String message)¿¡ message¸¦ ³Ñ±â´Â °Í
+		super("ë‚˜ì´ëŠ” ì–‘ìˆ˜ë§Œ ê°€ëŠ¥í•©ë‹ˆë‹¤"); //public Exception(String message)ì— messageë¥¼ ë„˜ê¸°ëŠ” ê²ƒ
 	}
 	
 }
@@ -19,15 +19,15 @@ public class UserExceptionTest2 {
 	public static void main(String[] args) {
 		
 		try {
-			System.out.println("³ªÀÌ ÀÔ·Â");
+			System.out.println("ë‚˜ì´ ì…ë ¥");
 			int age = sc.nextInt();
 			if(age<0) {
 				throw new AgeException2();
 			}
 			
-			System.out.println("³ªÀÌ : " + age);
+			System.out.println("ë‚˜ì´ : " + age);
 		}catch(AgeException2 e) {
-			System.out.println("¿¹¿Ü¹ß»ı : " + e.getMessage());
+			System.out.println("ì˜ˆì™¸ë°œìƒ : " + e.getMessage());
 		}
 		
 		System.out.println("\n====next====");

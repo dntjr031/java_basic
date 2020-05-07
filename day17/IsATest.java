@@ -10,22 +10,22 @@ public class IsATest {
 
 }
 /*
- ¡ØÅ¬·¡½º¸¦ Àç»ç¿ë ÇÏ´Â ¹æ¹ý
- [1] »ó¼Ó°ü°è ÀÌ¿ë
- is a °ü°è°¡ ¼º¸³ÇÏ¸é »ó¼ÓÀ» ÀÌ¿ë
- ~´Â ÀÏÁ¾ÀÇ ~ÀÌ´Ù.
+ â€»í´ëž˜ìŠ¤ë¥¼ ìž¬ì‚¬ìš© í•˜ëŠ” ë°©ë²•
+ [1] ìƒì†ê´€ê³„ ì´ìš©
+ is a ê´€ê³„ê°€ ì„±ë¦½í•˜ë©´ ìƒì†ì„ ì´ìš©
+ ~ëŠ” ì¼ì¢…ì˜ ~ì´ë‹¤.
  
- ¿¹) SportsCar ´Â ÀÏÁ¾ÀÇ CarÀÌ´Ù
+ ì˜ˆ) SportsCar ëŠ” ì¼ì¢…ì˜ Carì´ë‹¤
  	SportsCar is a Car.
  	
- [2] Æ÷ÇÔ°ü°è ÀÌ¿ë
- has a °ü°è°¡ ¼º¸³ÇÏ¸é Æ÷ÇÔ°ü°è ÀÌ¿ë
- ~´Â ~À» °¡Áö°í ÀÖ´Ù
+ [2] í¬í•¨ê´€ê³„ ì´ìš©
+ has a ê´€ê³„ê°€ ì„±ë¦½í•˜ë©´ í¬í•¨ê´€ê³„ ì´ìš©
+ ~ëŠ” ~ì„ ê°€ì§€ê³  ìžˆë‹¤
  
-  ¿¹) CircleÀº Point¸¦ °¡Áö°íÀÖ´Ù
+  ì˜ˆ) Circleì€ Pointë¥¼ ê°€ì§€ê³ ìžˆë‹¤
   	Circle has a Point.
  */
-//»ó¼Ó°ü°è ÀÌ¿ë
+//ìƒì†ê´€ê³„ ì´ìš©
 class Point{
 	protected int x, y;
 

@@ -1,10 +1,10 @@
 package com.day15;
 
 public class BankAccount {
-	//¸â¹öº¯¼ö
-	//[1] ÀÎ½ºÅÏ½º º¯¼ö
+	//ë©¤ë²„ë³€ìˆ˜
+	//[1] ì¸ìŠ¤í„´ìŠ¤ ë³€ìˆ˜
 	private int balance;
-	//[2] static º¯¼ö
+	//[2] static ë³€ìˆ˜
 	public static final double interest = 1.7;
 	private static int totalBalance;
 	
@@ -20,16 +20,16 @@ public class BankAccount {
 		return totalBalance;
 	}
 	public static void setTotalBalance(int totalBalance) {
-		//static¿¡¼­´Â this »ç¿ë ºÒ°¡
+		//staticì—ì„œëŠ” this ì‚¬ìš© ë¶ˆê°€
 		BankAccount.totalBalance = totalBalance;
 	}
 	
-	//»ı¼ºÀÚ
+	//ìƒì„±ì
 	public BankAccount(int balance) {
 		this.balance = balance;
 	}
 	
-	//¸Ş¼­µå
+	//ë©”ì„œë“œ
 	public void calcTotalBalance() {
 		totalBalance += balance;
 	}

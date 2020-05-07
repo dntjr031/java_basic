@@ -5,25 +5,25 @@ import java.util.Scanner;
 public class TriangleTest4 {
 
 	public static void main(String[] args) {
-		// 4. º°µµÀÇ Å¬·¡½º¿¡¼­ »ï°¢Çü ¸éÀû ±¸ÇÏ´Â ¸Ş¼­µå ¸¸µé¾î¼­ Ã³¸®
-		//(¸â¹öº¯¼ö°¡ ÀÖ´Â Å¬·¡½º)
+		// 4. ë³„ë„ì˜ í´ë˜ìŠ¤ì—ì„œ ì‚¼ê°í˜• ë©´ì  êµ¬í•˜ëŠ” ë©”ì„œë“œ ë§Œë“¤ì–´ì„œ ì²˜ë¦¬
+		//(ë©¤ë²„ë³€ìˆ˜ê°€ ìˆëŠ” í´ë˜ìŠ¤)
 		Scanner sc = new Scanner(System.in);
-		System.out.println("»ï°¢ÇüÀÇ ¹Øº¯, ³ôÀÌ¸¦ ÀÔ·Â");
+		System.out.println("ì‚¼ê°í˜•ì˜ ë°‘ë³€, ë†’ì´ë¥¼ ì…ë ¥");
 		int w = sc.nextInt();
 		int h = sc.nextInt();
 		
-		// °´Ã¼ »ı¼ºÈÄ ÂüÁ¶º¯¼ö.¸Ş¼­µå() È£Ãâ
+		// ê°ì²´ ìƒì„±í›„ ì°¸ì¡°ë³€ìˆ˜.ë©”ì„œë“œ() í˜¸ì¶œ
 		Triangle2 tri = new Triangle2(w, h);
 		
 		int area = tri.area();
-		System.out.println("³ĞÀÌ : " + area);
+		System.out.println("ë„“ì´ : " + area);
 		
-		//¸â¹öº¯¼öÀÇ °ª º¯°æ
+		//ë©¤ë²„ë³€ìˆ˜ì˜ ê°’ ë³€ê²½
 		tri.h = 100;
 		tri.w = 200;
 		
 		area = tri.area();
-		System.out.println("º¯°æµÈ ¸éÀû : " + area);
+		System.out.println("ë³€ê²½ëœ ë©´ì  : " + area);
 		
 		sc.close();
 

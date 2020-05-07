@@ -4,21 +4,21 @@ public class MathTest {
 
 	public static void main(String[] args) {
 		double n = Math.abs(-27.6);
-		System.out.println("Àı´ë°ª : " + n);
+		System.out.println("ì ˆëŒ€ê°’ : " + n);
 		
-		System.out.println("27.3 ¿Ã¸² : " + Math.ceil(27.3)); // 28
-		System.out.println("-27.3 ¿Ã¸² : " + Math.ceil(-27.3)); // -27
+		System.out.println("27.3 ì˜¬ë¦¼ : " + Math.ceil(27.3)); // 28
+		System.out.println("-27.3 ì˜¬ë¦¼ : " + Math.ceil(-27.3)); // -27
 		
-		System.out.println("27.6³»¸² : " + Math.floor(27.6)); // 27
-		System.out.println("-27.6³»¸² : " + Math.floor(-27.6)); // -28
+		System.out.println("27.6ë‚´ë¦¼ : " + Math.floor(27.6)); // 27
+		System.out.println("-27.6ë‚´ë¦¼ : " + Math.floor(-27.6)); // -28
 		//-29	-27	-27.6	-27.3	-27	-26 ...	0	26	27	27.3	27.6	28
 		
 		
-		System.out.println("27.6 ¹İ¿Ã¸² : " + Math.round(27.6)); // 28
+		System.out.println("27.6 ë°˜ì˜¬ë¦¼ : " + Math.round(27.6)); // 28
 		
-		System.out.println("random°ª : " + Math.random());
+		System.out.println("randomê°’ : " + Math.random());
 		
-		System.out.println("ÀÚ¿¬·Î±×ÀÇ ¹Ø" + Math.E);
+		System.out.println("ìì—°ë¡œê·¸ì˜ ë°‘" + Math.E);
 		System.out.println("PI : " + Math.PI);
 	}
 

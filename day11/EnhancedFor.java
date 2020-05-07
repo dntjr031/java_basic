@@ -4,12 +4,12 @@ public class EnhancedFor {
 
 	public static void main(String[] args) {
 
-		//È®Àå for¹® (Enhanced for¹®)
+		//í™•ì¥ forë¬¸ (Enhanced forë¬¸)
 		/*
-		 * - ¹è¿­ÀÌ³ª ÄÃ·º¼ÇÀÇ ¿ä¼ÒµéÀ» ¹İº¹Ã³¸®ÇÒ ¶§ »ç¿ë
+		 * - ë°°ì—´ì´ë‚˜ ì»¬ë ‰ì…˜ì˜ ìš”ì†Œë“¤ì„ ë°˜ë³µì²˜ë¦¬í•  ë•Œ ì‚¬ìš©
 		 * 
-		 * for(ÀÚ·áÇü º¯¼ö : ¹è¿­){
-		 * 			¹İº¹¹®;
+		 * for(ìë£Œí˜• ë³€ìˆ˜ : ë°°ì—´){
+		 * 			ë°˜ë³µë¬¸;
 		 * }
 		 * 
 		 */
@@ -17,12 +17,12 @@ public class EnhancedFor {
 		
 		int[] arr = {10,50,78,99,63};
 		
-		System.out.println("====È®Àå for ÀÌ¿ë====");
+		System.out.println("====í™•ì¥ for ì´ìš©====");
 		for(int n : arr) {
 			System.out.print(n + " ");
 		}
 		
-		System.out.println("\n\n===for ÀÌ¿ë===");
+		System.out.println("\n\n===for ì´ìš©===");
 		
 		for(int i = 0 ; i < arr.length; i++) {
 			System.out.print(arr[i] + " ");
@@ -30,7 +30,7 @@ public class EnhancedFor {
 		
 		String[] sArr = {"java","oracle", "jsp"};
 		
-		System.out.println("\n\n====È®Àå for====");
+		System.out.println("\n\n====í™•ì¥ for====");
 		for(String s : sArr) {
 			System.out.print(s + "\t");
 		}

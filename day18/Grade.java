@@ -87,20 +87,20 @@ class Module{
 	private static Scanner sc = new Scanner(System.in);
 	
 	public static int findMenu(){
-		System.out.println("1. ¼ºÀû ÀÔ·Â");
-		System.out.println("2. ÀüÃ¼ÇĞ»ıÀÇ ¼ºÀû °Ë»ö");
-		System.out.println("3. ÇĞ»ıº° ¼ºÀû Á¶È¸");
-		System.out.println("4. Å¬·¡½º(¹İ)º° ¼ºÀû Á¶È¸");
-		System.out.println("5. ÇĞ»ı ¼ºÀû ¼öÁ¤");
-		System.out.println("6. Á¾·á");
-		System.out.print("¼±ÅÃÇÏ¼¼¿ä : ");
+		System.out.println("1. ì„±ì  ì…ë ¥");
+		System.out.println("2. ì „ì²´í•™ìƒì˜ ì„±ì  ê²€ìƒ‰");
+		System.out.println("3. í•™ìƒë³„ ì„±ì  ì¡°íšŒ");
+		System.out.println("4. í´ë˜ìŠ¤(ë°˜)ë³„ ì„±ì  ì¡°íšŒ");
+		System.out.println("5. í•™ìƒ ì„±ì  ìˆ˜ì •");
+		System.out.println("6. ì¢…ë£Œ");
+		System.out.print("ì„ íƒí•˜ì„¸ìš” : ");
 		int num = sc.nextInt();
 		sc.nextLine();
 		return num;
 	}
 	
 	public static Grade inputData() {
-		System.out.println("ÇĞ»ıÀÌ¸§, ¹İ, java, oracle, jsp Á¡¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+		System.out.println("í•™ìƒì´ë¦„, ë°˜, java, oracle, jsp ì ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”");
 		String name = sc.nextLine();
 		String className = sc.nextLine();
 		int java = sc.nextInt();
@@ -113,8 +113,8 @@ class Module{
 	}
 	
 	public static void findTotalSearch(Grade[] g, int j) {
-		System.out.println("=========================ÀüÃ¼ ÇĞ»ı ¼ºÀû Á¶È¸ °á°ú=========================");
-		System.out.println("ÇĞ»ıÀÌ¸§		Å¬·¡½º	java	oracle	jsp	ÃÑÁ¡	Æò±Õ	ÇĞÁ¡");
+		System.out.println("=========================ì „ì²´ í•™ìƒ ì„±ì  ì¡°íšŒ ê²°ê³¼=========================");
+		System.out.println("í•™ìƒì´ë¦„		í´ë˜ìŠ¤	java	oracle	jsp	ì´ì 	í‰ê· 	í•™ì ");
 		System.out.println("===================================================================");
 		for (int i = 0; i < j; i++) {
 			g[i].showInfo();
@@ -123,10 +123,10 @@ class Module{
 	}
 	
 	public static void findNameSearch(Grade[] g, int j) {
-		System.out.println("°Ë»öÇÏ·Á´Â ÇĞ»ıÀÌ¸§À» ÀÔ·ÂÇÏ¼¼¿ä");
+		System.out.println("ê²€ìƒ‰í•˜ë ¤ëŠ” í•™ìƒì´ë¦„ì„ ì…ë ¥í•˜ì„¸ìš”");
 		String name = sc.nextLine();
-		System.out.println("========================="+name+" ÇĞ»ı ¼ºÀû Á¶È¸ °á°ú=========================");
-		System.out.println("ÇĞ»ıÀÌ¸§		Å¬·¡½º	java	oracle	jsp	ÃÑÁ¡	Æò±Õ	ÇĞÁ¡");
+		System.out.println("========================="+name+" í•™ìƒ ì„±ì  ì¡°íšŒ ê²°ê³¼=========================");
+		System.out.println("í•™ìƒì´ë¦„		í´ë˜ìŠ¤	java	oracle	jsp	ì´ì 	í‰ê· 	í•™ì ");
 		System.out.println("========================================================================");
 		for (int i = 0; i < j; i++) {
 			if(g[i].getName().equals(name)) {
@@ -137,10 +137,10 @@ class Module{
 	}
 	
 	public static void findClassSearch(Grade[] g, int j) {
-		System.out.println("°Ë»öÇÏ·Á´Â Å¬·¡½º(¹İ)À» ÀÔ·ÂÇÏ¼¼¿ä");
+		System.out.println("ê²€ìƒ‰í•˜ë ¤ëŠ” í´ë˜ìŠ¤(ë°˜)ì„ ì…ë ¥í•˜ì„¸ìš”");
 		String className = sc.nextLine();
-		System.out.println("========================="+className+" ÇĞ»ı ¼ºÀû Á¶È¸ °á°ú=========================");
-		System.out.println("ÇĞ»ıÀÌ¸§		Å¬·¡½º	java	oracle	jsp	ÃÑÁ¡	Æò±Õ	ÇĞÁ¡");
+		System.out.println("========================="+className+" í•™ìƒ ì„±ì  ì¡°íšŒ ê²°ê³¼=========================");
+		System.out.println("í•™ìƒì´ë¦„		í´ë˜ìŠ¤	java	oracle	jsp	ì´ì 	í‰ê· 	í•™ì ");
 		System.out.println("==============================================================================");
 		for (int i = 0; i < j; i++) {
 			if(g[i].getClassName().equals(className)) {
@@ -151,10 +151,10 @@ class Module{
 	}
 	
 	public static void modified(Grade[] g, int j) {
-		System.out.println("Å¬·¡½º(¹İ)¿Í ÇĞ»ıÀÌ¸§À» ÀÔ·ÂÇÏ¼¼¿ä");
+		System.out.println("í´ë˜ìŠ¤(ë°˜)ì™€ í•™ìƒì´ë¦„ì„ ì…ë ¥í•˜ì„¸ìš”");
 		String className = sc.nextLine();
 		String name = sc.nextLine();
-		System.out.println("\n¼öÁ¤ÇÏ·Á´Â Á¡¼ö¸¦ java, oracle, jsp°ú¸ñ ¼øÀ¸·Î ÀÔ·ÂÇÏ¼¼¿ä");
+		System.out.println("\nìˆ˜ì •í•˜ë ¤ëŠ” ì ìˆ˜ë¥¼ java, oracle, jspê³¼ëª© ìˆœìœ¼ë¡œ ì…ë ¥í•˜ì„¸ìš”");
 		int java = sc.nextInt();
 		int oracle = sc.nextInt();
 		int jsp = sc.nextInt();
@@ -168,6 +168,6 @@ class Module{
 				break;
 			}
 		}
-		System.out.println("¼öÁ¤ÀÌ ¿Ï·áµÇ¾ú½À´Ï´Ù.");
+		System.out.println("ìˆ˜ì •ì´ ì™„ë£Œë˜ì—ˆìŠµë‹ˆë‹¤.");
 	}
 }

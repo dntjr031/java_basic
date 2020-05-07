@@ -15,11 +15,11 @@ abstract class Shape {
 		this.p = p;
 	}
 
-	public abstract double calcArea();  // µµÇüÀÇ ¸éÀûÀ» °è»êÇØ¼­ ¹İÈ¯ÇÏ´Â ¸Ş¼­µå
+	public abstract double calcArea();  // ë„í˜•ì˜ ë©´ì ì„ ê³„ì‚°í•´ì„œ ë°˜í™˜í•˜ëŠ” ë©”ì„œë“œ
 
 	public void showInfo(){ 
-		 // µµÇüÀÇ ¿øÁ¡ x, y¸¦ Ãâ·ÂÇÏ½Ã¿À.
-		System.out.println("µµÇüÀÇ ¿øÁ¡ : " + p.findInfo());
+		 // ë„í˜•ì˜ ì›ì  x, yë¥¼ ì¶œë ¥í•˜ì‹œì˜¤.
+		System.out.println("ë„í˜•ì˜ ì›ì  : " + p.findInfo());
 	}
 }//class
 
@@ -68,9 +68,9 @@ class Rect extends Shape{
 	}
 
 	public void showInfo() {
-		System.out.println("¸éÀû : " + calcArea());
+		System.out.println("ë©´ì  : " + calcArea());
 		super.showInfo();
-		System.out.println("Æø : " + width + "³ôÀÌ : " + height);
+		System.out.println("í­ : " + width + "ë†’ì´ : " + height);
 	}
 	
 	public boolean isSquare() {
@@ -93,16 +93,16 @@ class Circle extends Shape{
 	}
 
 	public void showInfo() {
-		System.out.println("¸éÀû : " + calcArea());
+		System.out.println("ë©´ì  : " + calcArea());
 		super.showInfo();
-		System.out.println("¹İÁö¸§ : " + r);
+		System.out.println("ë°˜ì§€ë¦„ : " + r);
 	}
 	
 }
 
 public class Exercise{
 
-	// sumArea ¸Ş¼­µå¸¦ ÀÛ¼ºÇÏ½Ã¿À
+	// sumArea ë©”ì„œë“œë¥¼ ì‘ì„±í•˜ì‹œì˜¤
 	public static double sumArea(Shape[] arr) {
 		double sum = 0;
 		for (int i = 0; i < arr.length; i++) {
@@ -118,6 +118,6 @@ public class Exercise{
 		arr[1] = new Rect(new Point(10,20), 3, 4);
 		arr[2] = new Circle(new Point(30,40), 1);
 
-		System.out.println("¸éÀûÀÇ ÇÕ:"+sumArea(arr));
+		System.out.println("ë©´ì ì˜ í•©:"+sumArea(arr));
 	}
 }

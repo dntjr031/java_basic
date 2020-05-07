@@ -7,7 +7,7 @@ public class AccountTest {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		KBAccount acc = new KBAccount();
-		System.out.println("°èÁÂ¹øÈ£, ÀÜ¾×, ÀÌÃ¼ÇÑµµ¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+		System.out.println("ê³„ì¢Œë²ˆí˜¸, ì”ì•¡, ì´ì²´í•œë„ë¥¼ ì…ë ¥í•˜ì„¸ìš”");
 		acc.setAccNum(sc.nextLine());
 		acc.setBalance(sc.nextInt());
 		acc.setTransferLimit(sc.nextInt());

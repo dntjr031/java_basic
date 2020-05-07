@@ -5,28 +5,28 @@ import java.util.Scanner;
 public class IfTest {
 
 	public static void main(String[] args) {
-		//¾ç¼ö, À½¼ö, 0
+		//ì–‘ìˆ˜, ìŒìˆ˜, 0
 		//=> if
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Á¤¼ö ÀÔ·Â!");
+		System.out.println("ì •ìˆ˜ ìž…ë ¥!");
 		int n = sc.nextInt();
 		
 		String result = "";
 		
 		if(n > 0) {
-			result = "¾ç¼ö";
+			result = "ì–‘ìˆ˜";
 		}else if(n < 0) {
 			
-			result = "À½¼ö";
+			result = "ìŒìˆ˜";
 		}else {
 			result = "0";
 		}
-		System.out.println("°á°ú : " + result);
+		System.out.println("ê²°ê³¼ : " + result);
 		
 		
-		//=> »ïÇ×¿¬»êÀÚ
-		result = (n > 0) ? "¾ç¼ö" : (n < 0)? "À½¼ö" : "0";
-		System.out.println("»ïÇ×¿¬»êÀÚ ÀÌ¿ë : " + result);
+		//=> ì‚¼í•­ì—°ì‚°ìž
+		result = (n > 0) ? "ì–‘ìˆ˜" : (n < 0)? "ìŒìˆ˜" : "0";
+		System.out.println("ì‚¼í•­ì—°ì‚°ìž ì´ìš© : " + result);
 		
 		sc.close();
 

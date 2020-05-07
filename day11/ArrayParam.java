@@ -3,14 +3,14 @@ package com.day11;
 import java.util.Scanner;
 
 public class ArrayParam {
-	//±¹, ¿µ, ¼ö Á¡¼ö°¡ µé¾î°£ ¹è¿­À» ¸Å°³º¯¼ö·Î ¹Ş¾Æ Æò±ÕÀ» ¸®ÅÏÇÏ´Â ¸Ş¼­µå
-	//¹è¿­ÀÌ ¸Å°³º¯¼öÀÎ °æ¿ì
+	//êµ­, ì˜, ìˆ˜ ì ìˆ˜ê°€ ë“¤ì–´ê°„ ë°°ì—´ì„ ë§¤ê°œë³€ìˆ˜ë¡œ ë°›ì•„ í‰ê· ì„ ë¦¬í„´í•˜ëŠ” ë©”ì„œë“œ
+	//ë°°ì—´ì´ ë§¤ê°œë³€ìˆ˜ì¸ ê²½ìš°
 	
 	
 	public static double findTotal(int[] score) {
-		//call by reference : ¸Å°³º¯¼ö¿¡ ÁÖ¼Ò°¡ ³Ñ¾î°¨
-		//=> ¸Ş¼­µå¿¡¼­ ¸Å°³º¯¼öÀÇ °ªÀ» º¯°æÇÏ¸é ÇØ´Ü ¸Ş¼­µå¸¦ È£ÃâÇÑ °÷(main)¿¡¼­µµ
-		// º¯°æÀÇ ¿µÇâÀ» ¹Ş´Â´Ù(°ªÀÌ º¯°æµµ´Ï´Ù)
+		//call by reference : ë§¤ê°œë³€ìˆ˜ì— ì£¼ì†Œê°€ ë„˜ì–´ê°
+		//=> ë©”ì„œë“œì—ì„œ ë§¤ê°œë³€ìˆ˜ì˜ ê°’ì„ ë³€ê²½í•˜ë©´ í•´ë‹¨ ë©”ì„œë“œë¥¼ í˜¸ì¶œí•œ ê³³(main)ì—ì„œë„
+		// ë³€ê²½ì˜ ì˜í–¥ì„ ë°›ëŠ”ë‹¤(ê°’ì´ ë³€ê²½ë„ë‹ˆë‹¤)
 		
 		int sum = 0;
 		for(int i = 0; i < score.length; i++) {
@@ -18,15 +18,15 @@ public class ArrayParam {
 		}
 		
 		double avg = (double)sum/score.length;
-		score[0]++; // °ª Áõ°¡  76 => 77
+		score[0]++; // ê°’ ì¦ê°€  76 => 77
 		
 		return Math.round(avg*100)/100.0;
 	}
 	
 	public static int add(int a, int b) {
-		//call by value : ¸Å°³º¯¼ö¿¡ °ªÀÌ ³Ñ¾î°¨
-		//=> ¸Ş¼­µå¿¡¼­ ¸Å°³º¯¼öÀÇ °ªÀ» º¯°æÇØµµ ÇØ´ç ¸Ş¼Òµå¸¦ È£ÃâÇÑ °÷(main)¿¡¼­´Â
-		//¿µÇâ¹ŞÁö ¾Ê´Â´Ù
+		//call by value : ë§¤ê°œë³€ìˆ˜ì— ê°’ì´ ë„˜ì–´ê°
+		//=> ë©”ì„œë“œì—ì„œ ë§¤ê°œë³€ìˆ˜ì˜ ê°’ì„ ë³€ê²½í•´ë„ í•´ë‹¹ ë©”ì†Œë“œë¥¼ í˜¸ì¶œí•œ ê³³(main)ì—ì„œëŠ”
+		//ì˜í–¥ë°›ì§€ ì•ŠëŠ”ë‹¤
 		
 		int c = a + b;
 		a++;
@@ -38,25 +38,25 @@ public class ArrayParam {
 		
 		int a = 5, b = 7;
 		int result1 = add(a, b); //call by value
-		System.out.println(result1 + ", a = " + a); //º¯°æ x
+		System.out.println(result1 + ", a = " + a); //ë³€ê²½ x
 		
 		
 		int[] avg = {76,70,84};
 		double result = findTotal(avg); //call by reference
 		
-		System.out.println("Æò±Õ : " + result + ", avg[0] = " + avg[0]); // °ª º¯°æ µÊ 76 => 77
+		System.out.println("í‰ê·  : " + result + ", avg[0] = " + avg[0]); // ê°’ ë³€ê²½ ë¨ 76 => 77
 
 		
 		int[] score = new int[3];
 		Scanner sc = new Scanner(System.in);
-		System.out.println("±¹¾î, ¿µ¾î, ¼öÇĞ Á¡¼ö¸¦ ÀÔ·Â");
+		System.out.println("êµ­ì–´, ì˜ì–´, ìˆ˜í•™ ì ìˆ˜ë¥¼ ì…ë ¥");
 		for(int i = 0; i < score.length; i++) {
 			score[i] = sc.nextInt();
 		}
 		
 		double total = findTotal(score);
 		
-		System.out.println("Æò±Õ : " + total);
+		System.out.println("í‰ê·  : " + total);
 		
 		sc.close();
 

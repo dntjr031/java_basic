@@ -4,24 +4,24 @@ public class ForDup1 {
 
 	public static void main(String[] args) {
 
-		//ÁßÃ¸for
+		//ì¤‘ì²©for
 		/*
-		 * - for¹® ¾È¿¡ for¹®ÀÌ µé¾î°£  °Í
+		 * - forë¬¸ ì•ˆì— forë¬¸ì´ ë“¤ì–´ê°„  ê²ƒ
 		 * 
-		 * 	for(ÃÊ±â½Ä;Á¶°Ç½Ä;Áõ°¨½Ä){
-		 * 		for(ÃÊ±â½Ä;Á¶°Ç½Ä;Áõ°¨½Ä){
-		 * 			Ã³¸®ÇÒ ¹®Àå
-		 * 		}// ¾ÈÂÊ for
-		 * }// ¹Ù±ù for
+		 * 	for(ì´ˆê¸°ì‹;ì¡°ê±´ì‹;ì¦ê°ì‹){
+		 * 		for(ì´ˆê¸°ì‹;ì¡°ê±´ì‹;ì¦ê°ì‹){
+		 * 			ì²˜ë¦¬í•  ë¬¸ìž¥
+		 * 		}// ì•ˆìª½ for
+		 * }// ë°”ê¹¥ for
 		 * 
-		 * => ¹Ù»Û for°¡ ¾ÈÂÊfor
+		 * => ë°”ìœ forê°€ ì•ˆìª½for
 		 */
 		
 		for(int i =0; i < 3; i ++) {
-			System.out.println("==========ÇöÀç i : " + i);
+			System.out.println("==========í˜„ìž¬ i : " + i);
 			
 			for(int j = 0; j < 2; j++) {
-				System.out.println("ÇöÀç f : " + j);
+				System.out.println("í˜„ìž¬ f : " + j);
 			}// end of inside for
 			
 			System.out.println();

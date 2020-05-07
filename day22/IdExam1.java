@@ -8,13 +8,13 @@ public class IdExam1 {
 		
 			Scanner sc = new Scanner(System.in);
 			try {
-				System.out.println("ÁÖ¹Î¹øÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä(\"-\" Æ÷ÇÔ 14ÀÚ¸®)");
+				System.out.println("ì£¼ë¯¼ë²ˆí˜¸ë¥¼ ì…ë ¥í•˜ì„¸ìš”(\"-\" í¬í•¨ 14ìë¦¬)");
 				String id = sc.nextLine();
 				if(id.length() != 14) {
 					throw new IdNumException();
 				}
 				
-				System.out.println("\nÁÖ¹Î¹øÈ£ : " + id);
+				System.out.println("\nì£¼ë¯¼ë²ˆí˜¸ : " + id);
 				
 			} catch (IdNumException e) {
 				System.out.println(e.getMessage());
@@ -22,7 +22,7 @@ public class IdExam1 {
 			}finally {
 				sc.close();
 			}
-			System.out.println("\nÇÁ·Î±×·¥ÀÌ Á¤»óÀûÀ¸·Î Á¾·áµÇ¾ú½À´Ï´Ù!!");
+			System.out.println("\ní”„ë¡œê·¸ë¨ì´ ì •ìƒì ìœ¼ë¡œ ì¢…ë£Œë˜ì—ˆìŠµë‹ˆë‹¤!!");
 
 	}
 
@@ -33,7 +33,7 @@ class IdNumException extends Exception{
 	private static final long serialVersionUID = 1L;
 	
 	public IdNumException() {
-		super("ÁÖ¹Î¹øÈ£¸¦ Àß¸ø ÀÔ·ÂÇß½À´Ï´Ù.");
+		super("ì£¼ë¯¼ë²ˆí˜¸ë¥¼ ì˜ëª» ì…ë ¥í–ˆìŠµë‹ˆë‹¤.");
 	}
 
 }

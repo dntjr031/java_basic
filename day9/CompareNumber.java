@@ -17,32 +17,32 @@ public class CompareNumber {
 	public static void main(String[] args) {
 		
 		//public static double random()
-		/*=> 0.0~1.0 »çÀÌÀÇ ÀÓÀÇÀÇ ½Ç¼ö¸¦ ¸®ÅÏ(0.0 <= ¤¼ < 1.0)
+		/*=> 0.0~1.0 ì‚¬ì´ì˜ ìž„ì˜ì˜ ì‹¤ìˆ˜ë¥¼ ë¦¬í„´(0.0 <= ã…Œ < 1.0)
 		 * 
-		 * 1) ¹ß»ý½ÃÅ°·Á´Â ¼öÀÇ °³¼ö¸¦ °¢ º¯¿¡ °öÇÑ´Ù
-		 * 2)½ÃÀÛ°ªÀ» ´õÇÑ´Ù
-		 * 3) int·Î Çüº¯È¯ ÇÑ´Ù.
+		 * 1) ë°œìƒì‹œí‚¤ë ¤ëŠ” ìˆ˜ì˜ ê°œìˆ˜ë¥¼ ê° ë³€ì— ê³±í•œë‹¤
+		 * 2)ì‹œìž‘ê°’ì„ ë”í•œë‹¤
+		 * 3) intë¡œ í˜•ë³€í™˜ í•œë‹¤.
 		 * 
-		 * ¿¹1) 1~100 »çÀÌÀÇ ÀÓÀÇÀÇ Á¤¼ö
+		 * ì˜ˆ1) 1~100 ì‚¬ì´ì˜ ìž„ì˜ì˜ ì •ìˆ˜
 		 * 0.0 <= Math.random() * 100 < 100.0
 		 * 1.0 <= Math.random() * 100 + 1 < 101.0
 		 * 1 <= (int)(Math.random() * 100 + 1) < 101
 		 * 
-		 * ¿¹2) 0~100 »çÀÌÀÇ ÀÓÀÇÀÇ Á¤¼ö
+		 * ì˜ˆ2) 0~100 ì‚¬ì´ì˜ ìž„ì˜ì˜ ì •ìˆ˜
 		 * 0.0 <= Math.random() * 101 < 101.0
 		 * 0 <= (int)(Math.random() * 101) < 101
 		 * 
-		 * ¿¹3) A ~ Z »çÀÌÀÇ ÀÓÀÇÀÇ ´ë¹®ÀÚ
+		 * ì˜ˆ3) A ~ Z ì‚¬ì´ì˜ ìž„ì˜ì˜ ëŒ€ë¬¸ìž
 		 * A(65) <= Math.random() * 26 + 65('A') < 91.0
 		 * 65 <= (int)(Math.random() * 26 + 65) < 91
 		 * 
-		 * ¿¹4) d~g »çÀÌÀÇ ÀÓÀÇÀÇ ¼Ò¹®ÀÚ
+		 * ì˜ˆ4) d~g ì‚¬ì´ì˜ ìž„ì˜ì˜ ì†Œë¬¸ìž
 		 * 100 <= Math.random() * 4 + 'd' < 104
 		 * 100 <= (int)(Math.random() * 4 + 'd') < 104
 		 */
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.println("Á¤´äÀ» ¸ÂÃâ ½ÃÀÛ°ú ³¡À» ÀÔ·ÂÇÏ¼¼¿ä");
+		System.out.println("ì •ë‹µì„ ë§žì¶œ ì‹œìž‘ê³¼ ëì„ ìž…ë ¥í•˜ì„¸ìš”");
 		int start = sc.nextInt();
 		int end = sc.nextInt();
 		
@@ -50,24 +50,24 @@ public class CompareNumber {
 		
 		String result = "";
 		for(int i = 0; i < 4 ; i++) {
-			System.out.println("¹øÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+			System.out.println("ë²ˆí˜¸ë¥¼ ìž…ë ¥í•˜ì„¸ìš”");
 			int num = sc.nextInt();
 			
 			if(answer == num) {
-				System.out.println("Á¤´äÀÔ´Ï´Ù!!");
+				System.out.println("ì •ë‹µìž…ë‹ˆë‹¤!!");
 				
 				break;
 			} 
 			
 			if(i == 3) {
-				result = "½ÇÆÐ! ´ÙÀ½±âÈ¸¿¡ Á¤´ä : " + answer;
+				result = "ì‹¤íŒ¨! ë‹¤ìŒê¸°íšŒì— ì •ë‹µ : " + answer;
 			}else {
 				
 				if(answer > num) {
-					result = "Á» ´õ Å« ¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä";
+					result = "ì¢€ ë” í° ìˆ˜ë¥¼ ìž…ë ¥í•˜ì„¸ìš”";
 				
 				}else {
-					result = "Á» ´õ ÀÛÀº ¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä";
+					result = "ì¢€ ë” ìž‘ì€ ìˆ˜ë¥¼ ìž…ë ¥í•˜ì„¸ìš”";
 				}
 				
 			}

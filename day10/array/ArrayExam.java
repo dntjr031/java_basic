@@ -31,7 +31,7 @@ public class ArrayExam {
 		Scanner sc = new Scanner(System.in);
 		
 		double[] d = new double[4];
-		System.out.println("½Ç¼ö 4°³ÀÔ·Â");
+		System.out.println("ì‹¤ìˆ˜ 4ê°œìž…ë ¥");
 		for(int i = 0; i < d.length; i++) {
 			d[i] = sc.nextDouble();
 		}
@@ -43,7 +43,7 @@ public class ArrayExam {
 		
 		double anerage = total /4;
 		
-		System.out.println("ÃÑÁ¡: " + total + ", Æò±Õ: " + anerage);
+		System.out.println("ì´ì : " + total + ", í‰ê· : " + anerage);
 		
 		sc.close();
 	}

@@ -4,7 +4,7 @@ public class ContinueTest2 {
 
 	public static void main(String[] args) {
 		
-		System.out.println("\n======break ÀÌ¿ë========");
+		System.out.println("\n======break ì´ìš©========");
 		
 		for(int i = 0; i <3; i++) {
 			for(int j =0; j < 3; j++) {
@@ -14,7 +14,7 @@ public class ContinueTest2 {
 			}
 		}
 		
-		System.out.println("\n======continue ÀÌ¿ë========");
+		System.out.println("\n======continue ì´ìš©========");
 		
 		for(int i = 0; i <3; i++) {
 			for(int j =0; j < 3; j++) {

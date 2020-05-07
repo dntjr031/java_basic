@@ -6,10 +6,10 @@ public class Test51p {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("°í¿ëÇüÅÂ - °í¿ëÁ÷(P), ÀÓ½ÃÁ÷(T)À» ÀÔ·ÂÇÏ¼¼¿ä");
+		System.out.println("ê³ ìš©í˜•íƒœ - ê³ ìš©ì§(P), ì„ì‹œì§(T)ì„ ì…ë ¥í•˜ì„¸ìš”");
 		String str = sc.nextLine();
 		if(str.equalsIgnoreCase("P")) {
-			System.out.println("ÀÌ¸§, ±âº»±Ş¿©, º¸³Ê½º¸¦ ÀÔ·ÂÇÏ¼¼¿ä.");
+			System.out.println("ì´ë¦„, ê¸°ë³¸ê¸‰ì—¬, ë³´ë„ˆìŠ¤ë¥¼ ì…ë ¥í•˜ì„¸ìš”.");
 			String name = sc.nextLine();
 			int sALARY = sc.nextInt();
 			int bonus = sc.nextInt();
@@ -17,12 +17,12 @@ public class Test51p {
 			
 			Permanent p = new Permanent(name, sALARY, bonus);
 			System.out.println("-----------------------------------");
-			System.out.println("°í¿ëÇüÅÂ:°í¿ëÁ÷");
-			System.out.println("ÀÌ¸§:" + p.getName());
-			System.out.println("±Ş¿©:" + p.findPay());
+			System.out.println("ê³ ìš©í˜•íƒœ:ê³ ìš©ì§");
+			System.out.println("ì´ë¦„:" + p.getName());
+			System.out.println("ê¸‰ì—¬:" + p.findPay());
 			
 		}else if(str.equalsIgnoreCase("T")) {
-			System.out.println("ÀÌ¸§, ÀÏÇÑ½Ã°£, ½Ã°£´ç±Ş¿©¸¦ ÀÔ·ÂÇÏ¼¼¿ä.");
+			System.out.println("ì´ë¦„, ì¼í•œì‹œê°„, ì‹œê°„ë‹¹ê¸‰ì—¬ë¥¼ ì…ë ¥í•˜ì„¸ìš”.");
 			String name = sc.nextLine();
 			int time = sc.nextInt();
 			int pay = sc.nextInt();
@@ -30,11 +30,11 @@ public class Test51p {
 			
 			Temporary t = new Temporary(name, time, pay);
 			System.out.println("-----------------------------------");
-			System.out.println("°í¿ëÇüÅÂ:ÀÓ½ÃÁ÷");
-			System.out.println("ÀÌ¸§:" + t.getName());
-			System.out.println("±Ş¿©:" + t.findPay());
+			System.out.println("ê³ ìš©í˜•íƒœ:ì„ì‹œì§");
+			System.out.println("ì´ë¦„:" + t.getName());
+			System.out.println("ê¸‰ì—¬:" + t.findPay());
 		}else {
-			System.out.println("Àß¸øÀÔ·ÂÇÏ¿´½À´Ï´Ù.");
+			System.out.println("ì˜ëª»ì…ë ¥í•˜ì˜€ìŠµë‹ˆë‹¤.");
 		}
 		sc.close();
 		

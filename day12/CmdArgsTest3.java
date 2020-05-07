@@ -12,7 +12,7 @@ public class CmdArgsTest3 {
 	public static void main(String[] args) {
 
 		if(args.length < 2) {
-			System.out.println("µÎ ¼ö ÀÔ·Â");
+			System.out.println("ë‘ ìˆ˜ ìž…ë ¥");
 			return;
 		}
 		
@@ -22,7 +22,7 @@ public class CmdArgsTest3 {
 		
 		int result = more(a, b);
 		
-		System.out.println("´õÅ«¼ö => " + result);
+		System.out.println("ë”í°ìˆ˜ => " + result);
 
 	}
 

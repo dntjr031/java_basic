@@ -8,11 +8,11 @@ public class InterfaceTest {
 	public static void main(String[] args) {
 
 		IAnimal[] iarr = new IAnimal[3];
-		//iarr[0] = new IAnimal(); => error, ÀÎÅÍÆäÀÌ½º´Â °´Ã¼ »ı¼º ºÒ°¡
-		iarr[0] = new Dog(); // ´ÙÇü¼º ÀÌ¿ë °¡´É
+		//iarr[0] = new IAnimal(); => error, ì¸í„°í˜ì´ìŠ¤ëŠ” ê°ì²´ ìƒì„± ë¶ˆê°€
+		iarr[0] = new Dog(); // ë‹¤í˜•ì„± ì´ìš© ê°€ëŠ¥
 		iarr[1] = new Cow();
 		iarr[2] = new Cat();
-		//iarr[2] = new Mammal(); => error, Ãß»óÅ¬·¡½º °´Ã¼ »ı¼º ºÒ°¡
+		//iarr[2] = new Mammal(); => error, ì¶”ìƒí´ë˜ìŠ¤ ê°ì²´ ìƒì„± ë¶ˆê°€
 		
 		iarr[0].sound();
 		iarr[0].display();
@@ -21,8 +21,8 @@ public class InterfaceTest {
 		iarr[2].sound();
 		iarr[2].display();
 		
-		//»ç¿ëÀÚ ÀÔ·Â ¹Ş¾Æ¼­ Ã³¸®
-		System.out.println("1. °­¾ÆÁö, 2. °í¾çÀÌ, 3.¼Ò ¼±ÅÃ!");
+		//ì‚¬ìš©ì ì…ë ¥ ë°›ì•„ì„œ ì²˜ë¦¬
+		System.out.println("1. ê°•ì•„ì§€, 2. ê³ ì–‘ì´, 3.ì†Œ ì„ íƒ!");
 		int type = sc.nextInt();
 		
 		IAnimal iAni = null; 
@@ -33,7 +33,7 @@ public class InterfaceTest {
 		}else if(type == 3) {
 			iAni = new Cow();
 		}else {
-			System.out.println("Àß¸ø ÀÔ·Â!");
+			System.out.println("ì˜ëª» ì…ë ¥!");
 			return;
 		}
 		iAni.display();
@@ -43,21 +43,21 @@ public class InterfaceTest {
 
 }
 /*
- ÀÎÅÍÆäÀÌ½º
- - ÀÏÁ¾ÀÇ Ãß»ó Å¬·¡½º
- - Ãß»ó ¸Ş¼­µå¿Í »ó¼ö¸¸À» ¸â¹ö·Î °¡Áú ¼ö ÀÖ´Ù.
- - ¸Ş¼­µå ¸ñ·Ï¸¸ ³ª¿­ÇÑ °Í
- - ¹Ø±×¸²¸¸ ±×·ÁÁ® ÀÖ´Â ±âº» ¼³°èµµ
- - Ç¥ÁØÀ» Á¦½ÃÇÏ´Â ¿ëµµ·Î »ç¿ë
- - ÀÏÁ¾ÀÇ ¾à¼Ó, ÃÖ¼ÒÇÑÀÇ °è¾à»çÇ× ¸í½Ã
+ ì¸í„°í˜ì´ìŠ¤
+ - ì¼ì¢…ì˜ ì¶”ìƒ í´ë˜ìŠ¤
+ - ì¶”ìƒ ë©”ì„œë“œì™€ ìƒìˆ˜ë§Œì„ ë©¤ë²„ë¡œ ê°€ì§ˆ ìˆ˜ ìˆë‹¤.
+ - ë©”ì„œë“œ ëª©ë¡ë§Œ ë‚˜ì—´í•œ ê²ƒ
+ - ë°‘ê·¸ë¦¼ë§Œ ê·¸ë ¤ì ¸ ìˆëŠ” ê¸°ë³¸ ì„¤ê³„ë„
+ - í‘œì¤€ì„ ì œì‹œí•˜ëŠ” ìš©ë„ë¡œ ì‚¬ìš©
+ - ì¼ì¢…ì˜ ì•½ì†, ìµœì†Œí•œì˜ ê³„ì•½ì‚¬í•­ ëª…ì‹œ
  
- interface ÀÎÅÍÆäÀÌ½º¸í{
- 	(public static final)(»ı·«°¡´É) »ó¼ö;
- 	(public abstract)(»ı·«°¡´É) Ãß»ó¸Ş¼­µå;
+ interface ì¸í„°í˜ì´ìŠ¤ëª…{
+ 	(public static final)(ìƒëµê°€ëŠ¥) ìƒìˆ˜;
+ 	(public abstract)(ìƒëµê°€ëŠ¥) ì¶”ìƒë©”ì„œë“œ;
  }
  	
- ÀÚ½Ä Å¬·¡½º¿¡¼­ ±¸ÇöÇÒ ¶§ implements Å°¿öµå »ç¿ë
- class ÀÚ½Ä Å¬·¡½º implements ÀÎÅÍÆäÀÌ½º{
+ ìì‹ í´ë˜ìŠ¤ì—ì„œ êµ¬í˜„í•  ë•Œ implements í‚¤ì›Œë“œ ì‚¬ìš©
+ class ìì‹ í´ë˜ìŠ¤ implements ì¸í„°í˜ì´ìŠ¤{
  
  }
  
@@ -65,12 +65,12 @@ public class InterfaceTest {
 
 interface IAnimal{
 	public abstract void sound(); 
-	void display(); //public abstract »ı·«°¡´É 
+	void display(); //public abstract ìƒëµê°€ëŠ¥ 
 }
 
 class Dog implements IAnimal{
 	public void sound() {
-		System.out.println("¸Û¸Û");
+		System.out.println("ë©ë©");
 	}
 	public void display() {
 		System.out.println("Dog's Method");
@@ -79,26 +79,26 @@ class Dog implements IAnimal{
 
 abstract class Mammal implements IAnimal{
 	public void display() {
-		System.out.println("Æ÷À¯·ùÀÇ ¸Ş¼­µå");
+		System.out.println("í¬ìœ ë¥˜ì˜ ë©”ì„œë“œ");
 	}
-	// sound()´Â ±¸Çö ºÒ°¡
-	//=> Ãß»ó ¸Ş¼­µå°¡ ³²¾ÆÀÖÀ¸¹Ç·Î Ãß»ó Å¬·¡½º°¡ µÊ
+	// sound()ëŠ” êµ¬í˜„ ë¶ˆê°€
+	//=> ì¶”ìƒ ë©”ì„œë“œê°€ ë‚¨ì•„ìˆìœ¼ë¯€ë¡œ ì¶”ìƒ í´ë˜ìŠ¤ê°€ ë¨
 }
 
 class Cow extends Mammal{
 	public void sound() {
-		System.out.println("À½¸Ş~"); // Mammal¿¡¼­ ±¸Çö ¸øÇÑ sound()¸¦ ±¸ÇöÇÏ¹Ç·Î½á ¿ÏÀüÇÑ Å¬·¡½º°¡ µÊ
+		System.out.println("ìŒë©”~"); // Mammalì—ì„œ êµ¬í˜„ ëª»í•œ sound()ë¥¼ êµ¬í˜„í•˜ë¯€ë¡œì¨ ì™„ì „í•œ í´ë˜ìŠ¤ê°€ ë¨
 	}
 }
 
 class Cat implements IAnimal{
 	/*
 	void sound() {
-		System.out.println("¾ß¿Ë"); // interfaceÀÇ ¸Ş¼­µå´Â public ±×·¯¹Ç·Î default°¡ µÇ¸é ¾ÈµÈ´Ù.
+		System.out.println("ì•¼ì˜¹"); // interfaceì˜ ë©”ì„œë“œëŠ” public ê·¸ëŸ¬ë¯€ë¡œ defaultê°€ ë˜ë©´ ì•ˆëœë‹¤.
 	}
 	*/
 	public void sound() {
-		System.out.println("¾ß¿Ë");
+		System.out.println("ì•¼ì˜¹");
 	}
 
 	public void display() {

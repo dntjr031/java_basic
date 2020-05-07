@@ -4,7 +4,7 @@ public class Account2Main {
 
 	public static void main(String[] args) {
 
-		Account2 acc = new Account2("100.02.123", "ȫ�浿", 100000);
+		Account2 acc = new Account2("100.02.123", "홍길동", 100000);
 		
 		acc.showInfo();
 		

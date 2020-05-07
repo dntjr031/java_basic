@@ -17,7 +17,7 @@ public class IPTVTest {
 
 class TV{
 	public void onTV(){
-		System.out.println("TV ¿µ»ó Ãâ·Â Áß");
+		System.out.println("TV ì˜ìƒ ì¶œë ¥ ì¤‘");
 	}
 }
 
@@ -28,7 +28,7 @@ interface Computer{
 class IPTV extends TV implements Computer{
 
 	public void dataReceive() {
-		System.out.println("¿µ»ó µ¥ÀÌÅÍ ¼ö½Å Áß");
+		System.out.println("ì˜ìƒ ë°ì´í„° ìˆ˜ì‹  ì¤‘");
 	}
 	public void powerOn() {
 		dataReceive();

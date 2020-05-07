@@ -4,15 +4,15 @@ public class ArrayTest3 {
 
 	public static void main(String[] args) {
 
-		System.out.println("=======º¯°æ Àü=======");
+		System.out.println("=======ë³€ê²½ ì „=======");
 		int[] score = {83,99,76,95,67,70,88,100,96,73};
 		
 		for(int i = 0; i < score.length; i++) {
 			System.out.println(score[i]);
 		}
 		
-		//5Á¡ °¡»ê
-		System.out.println("=======º¯°æ ÈÄ=======");
+		//5ì  ê°€ì‚°
+		System.out.println("=======ë³€ê²½ í›„=======");
 		
 		for(int i = 0; i < score.length; i++) {
 			

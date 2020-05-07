@@ -7,9 +7,9 @@ public class ComparableTest {
 
 	public static void main(String[] args) {
 		TreeSet<Person> tset = new TreeSet<Person>();
-		tset.add(new Person("È«±æµ¿", 20));// ClassCastException => Person cannot be cast to java.lang.Comparable
-		tset.add(new Person("±è¿¬¾Æ", 17));// Person¿¡ ComparableÀ» ±¸Çö½ÃÄÑ¾ß ÇÔ
-		tset.add(new Person("¼Õ¿¬Àç", 31));// compareTo()¸¦ ¿À¹ö¶óÀÌµù ÇÔÀ¸·Î½á ³ªÀÌ ±âÁØÀ¸·Î Á¤·Ä
+		tset.add(new Person("í™ê¸¸ë™", 20));// ClassCastException => Person cannot be cast to java.lang.Comparable
+		tset.add(new Person("ê¹€ì—°ì•„", 17));// Personì— Comparableì„ êµ¬í˜„ì‹œì¼œì•¼ í•¨
+		tset.add(new Person("ì†ì—°ì¬", 31));// compareTo()ë¥¼ ì˜¤ë²„ë¼ì´ë”© í•¨ìœ¼ë¡œì¨ ë‚˜ì´ ê¸°ì¤€ìœ¼ë¡œ ì •ë ¬
 		
 		Iterator<Person> ir = tset.iterator();
 		while(ir.hasNext()) {
@@ -18,12 +18,12 @@ public class ComparableTest {
 		}
 
 		/*
-		 Person ÀÎ½ºÅÏ½ºÀÇ Å©°í ÀÛÀ½À» ºñ±³ÇÒ ¼ö ÀÖ°Ô µÊ
-		 TreeSet<E>´Â PersonÀÎ½ºÅÏ½º°¡ ÀúÀåµÉ ¶§¸¶´Ù
-		 ±âÁ¸¿¡ ÀúÀåµÈ ÀÎ½ºÅÏ½º¿ÍÀÇ ºñ±³¸¦ À§ÇØ¼­ compareTo()¸Ş¼­µå¸¦ ºó¹øÈ÷ È£ÃâÇÏ¿©,
-		 ÀÌ¶§ ¹İÈ¯µÇ´Â °ªÀ» ±â¹İÀ¸·Î Á¤·ÄÀ» ÁøÇàÇÑ´Ù.
+		 Person ì¸ìŠ¤í„´ìŠ¤ì˜ í¬ê³  ì‘ìŒì„ ë¹„êµí•  ìˆ˜ ìˆê²Œ ë¨
+		 TreeSet<E>ëŠ” Personì¸ìŠ¤í„´ìŠ¤ê°€ ì €ì¥ë  ë•Œë§ˆë‹¤
+		 ê¸°ì¡´ì— ì €ì¥ëœ ì¸ìŠ¤í„´ìŠ¤ì™€ì˜ ë¹„êµë¥¼ ìœ„í•´ì„œ compareTo()ë©”ì„œë“œë¥¼ ë¹ˆë²ˆíˆ í˜¸ì¶œí•˜ì—¬,
+		 ì´ë•Œ ë°˜í™˜ë˜ëŠ” ê°’ì„ ê¸°ë°˜ìœ¼ë¡œ ì •ë ¬ì„ ì§„í–‰í•œë‹¤.
 		 
-		 TreSet<E>¿¡ ÀúÀåµÇ´Â ÀÎ½ºÅÏ½º´Â ¹İµå½Ã Comparable<T>ÀÎÅÍÆäÀÌ½º¸¦ ±¸ÇöÇÏ°í ÀÖ¾î¾ß ÇÔ
+		 TreSet<E>ì— ì €ì¥ë˜ëŠ” ì¸ìŠ¤í„´ìŠ¤ëŠ” ë°˜ë“œì‹œ Comparable<T>ì¸í„°í˜ì´ìŠ¤ë¥¼ êµ¬í˜„í•˜ê³  ìˆì–´ì•¼ í•¨
 		 */
 	}
 

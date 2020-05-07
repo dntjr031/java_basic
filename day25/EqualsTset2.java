@@ -8,20 +8,20 @@ public class EqualsTset2 {
 		Person2 p3 = new Person2(9801971235564l);
 		
 		if(p1 == p2) {
-			System.out.println("p1°ú p2´Â °°Àº ÁÖ¼ÒÀÔ´Ï´Ù");
+			System.out.println("p1ê³¼ p2ëŠ” ê°™ì€ ì£¼ì†Œì…ë‹ˆë‹¤");
 		}else {
-			System.out.println("p1°ú p2´Â ´Ù¸¥ ÁÖ¼ÒÀÔ´Ï´Ù");//
+			System.out.println("p1ê³¼ p2ëŠ” ë‹¤ë¥¸ ì£¼ì†Œì…ë‹ˆë‹¤");//
 		}
-		if(p1.equals(p2)) { //¿À¹ö¶óÀÌµù ¸Ş¼­µå È£Ãâ
-			System.out.println("p1°ú p2´Â °°Àº »ç¶÷ÀÔ´Ï´Ù");//
+		if(p1.equals(p2)) { //ì˜¤ë²„ë¼ì´ë”© ë©”ì„œë“œ í˜¸ì¶œ
+			System.out.println("p1ê³¼ p2ëŠ” ê°™ì€ ì‚¬ëŒì…ë‹ˆë‹¤");//
 		}else {
-			System.out.println("p1°ú p2´Â ´Ù¸¥ »ç¶÷ÀÔ´Ï´Ù");	
+			System.out.println("p1ê³¼ p2ëŠ” ë‹¤ë¥¸ ì‚¬ëŒì…ë‹ˆë‹¤");	
 		}
 		
 		if(p1.equals(p3)) {
-			System.out.println("p1°ú p2´Â °°Àº »ç¶÷ÀÔ´Ï´Ù");	
+			System.out.println("p1ê³¼ p2ëŠ” ê°™ì€ ì‚¬ëŒì…ë‹ˆë‹¤");	
 		}else {
-			System.out.println("p1°ú p2´Â ´Ù¸¥ »ç¶÷ÀÔ´Ï´Ù");//
+			System.out.println("p1ê³¼ p2ëŠ” ë‹¤ë¥¸ ì‚¬ëŒì…ë‹ˆë‹¤");//
 		}
 		
 	}

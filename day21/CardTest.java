@@ -8,7 +8,7 @@ public class CardTest {
 		Card c = d.pick(0);
 		System.out.println(c.findInfo());
 		
-		System.out.println("\nÄ«µå ÇÑ ¹ú");
+		System.out.println("\nì¹´ë“œ í•œ ë²Œ");
 		Card[] cArr = d.getCard();
 		for(Card card : cArr) {
 			System.out.println(card.findInfo());

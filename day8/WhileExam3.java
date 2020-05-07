@@ -8,19 +8,19 @@ public class WhileExam3 {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.println("°ªÀ» ÀÔ·ÂÇÏ¼¼¿ä");
+		System.out.println("ê°’ì„ ì…ë ¥í•˜ì„¸ìš”");
 		String str = sc.nextLine();
 		
 		String result = "";
 		for(int i = 0; i < str.length(); i++) {
 			if(str.charAt(i) <= '9' && str.charAt(i) >= '0') {
-				result = "¼ıÀÚÀÔ´Ï´Ù.";
+				result = "ìˆ«ìì…ë‹ˆë‹¤.";
 			}else {
-				result = "¼ıÀÚ°¡ ¾Æ´Õ´Ï´Ù.";
+				result = "ìˆ«ìê°€ ì•„ë‹™ë‹ˆë‹¤.";
 				break;
 			}
 		}
-		System.out.println(str + "Àº " +result);
+		System.out.println(str + "ì€ " +result);
 		
 		System.out.println("===========================");
 		
@@ -36,9 +36,9 @@ public class WhileExam3 {
 		}
 		
 		if(isNumber) {
-			System.out.println(str + "´Â ¼ıÀÚÀÔ´Ï´Ù.");
+			System.out.println(str + "ëŠ” ìˆ«ìì…ë‹ˆë‹¤.");
 		}else {
-			System.out.println(str + "´Â ¼ıÀÚ°¡ ¾Æ´Õ´Ï´Ù.");
+			System.out.println(str + "ëŠ” ìˆ«ìê°€ ì•„ë‹™ë‹ˆë‹¤.");
 		}
 		sc.close();
 	}

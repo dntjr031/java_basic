@@ -41,9 +41,9 @@ public class Account {
 	}
 	
 	public void showInfo() {
-		System.out.println("°èÁÂID: " + accId);
-		System.out.println("ÀÌ    ¸§: " + accName);
-		System.out.println("ÀÜ    ¾×: " + balance);
+		System.out.println("ê³„ì¢ŒID: " + accId);
+		System.out.println("ì´    ë¦„: " + accName);
+		System.out.println("ì”    ì•¡: " + balance);
 	}
 }
 
@@ -61,7 +61,7 @@ class NormalAccount extends Account{
 
 	public void showInfo() {
 		super.showInfo();
-		System.out.println("ÀÌÀÚÀ²: " + INTERAST_RATE + "%");
+		System.out.println("ì´ììœ¨: " + INTERAST_RATE + "%");
 	}
 	
 }
@@ -88,7 +88,7 @@ class HighCreditAccount extends NormalAccount implements HighCredit{
 
 	public void showInfo() {
 		super.showInfo();
-		System.out.println("Æ¯º°ÀÌÀÚÀ²: " + HIGH_INTERAST_RATE + "%");
+		System.out.println("íŠ¹ë³„ì´ììœ¨: " + HIGH_INTERAST_RATE + "%");
 	}
 	
 }

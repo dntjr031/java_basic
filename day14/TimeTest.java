@@ -7,7 +7,7 @@ public class TimeTest {
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);
-		System.out.println("½Ã, ºĞ, ÃÊ ÀÔ·Â!");
+		System.out.println("ì‹œ, ë¶„, ì´ˆ ì…ë ¥!");
 		int hour = sc.nextInt();
 		int min = sc.nextInt();
 		int sec = sc.nextInt();
@@ -16,17 +16,17 @@ public class TimeTest {
 		
 		int toSec = t.toSec();
 		
-		System.out.println("ÃÊ·Î È¯»ê ÇÏ¸é => " + toSec + "ÃÊ");
+		System.out.println("ì´ˆë¡œ í™˜ì‚° í•˜ë©´ => " + toSec + "ì´ˆ");
 		
-		//setter¸¦ ÀÌ¿ëÇØ¼­ ¸â¹öº¯¼öÀÇ °ª º¯°æ
+		//setterë¥¼ ì´ìš©í•´ì„œ ë©¤ë²„ë³€ìˆ˜ì˜ ê°’ ë³€ê²½
 		t.setHour(12);
 		t.setMin(13);
 		t.setSec(50);
 		
-		//getter¸¦ ÀÌ¿ëÇØ¼­ ¸â¹öº¯¼öÀÇ °ª ÀĞ¾î¿À±â
-		System.out.println("\n\n------º¯°æµÈ ½Ã°£------");
-		System.out.println(t.getHour() + "½Ã " + t.getMin() + "ºĞ " + t.getSec() + "ÃÊ");
-		System.out.println("ÃÊ·Î È¯»ê : " + t.toSec() + "ÃÊ");
+		//getterë¥¼ ì´ìš©í•´ì„œ ë©¤ë²„ë³€ìˆ˜ì˜ ê°’ ì½ì–´ì˜¤ê¸°
+		System.out.println("\n\n------ë³€ê²½ëœ ì‹œê°„------");
+		System.out.println(t.getHour() + "ì‹œ " + t.getMin() + "ë¶„ " + t.getSec() + "ì´ˆ");
+		System.out.println("ì´ˆë¡œ í™˜ì‚° : " + t.toSec() + "ì´ˆ");
 		
 		sc.close();
 

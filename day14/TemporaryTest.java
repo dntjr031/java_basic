@@ -7,16 +7,16 @@ public class TemporaryTest {
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);
-		System.out.println("ÀÌ¸§, ÀÏÇÑ½Ã°£, ½Ã°£´ç ±Ş¿©¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+		System.out.println("ì´ë¦„, ì¼í•œì‹œê°„, ì‹œê°„ë‹¹ ê¸‰ì—¬ë¥¼ ì…ë ¥í•˜ì„¸ìš”");
 		String name = sc.nextLine();
 		int time = sc.nextInt();
 		int pay = sc.nextInt();
 		
 		Temporary tem = new Temporary(name, time, pay);
 		int total = tem.totalPay();
-		System.out.println("°í¿ëÇüÅÂ : ÀÓ½ÃÁ÷");
-		System.out.println("ÀÌ¸§ : " + tem.getName());
-		System.out.println("±Ş¿© : " + total);
+		System.out.println("ê³ ìš©í˜•íƒœ : ì„ì‹œì§");
+		System.out.println("ì´ë¦„ : " + tem.getName());
+		System.out.println("ê¸‰ì—¬ : " + total);
 		
 		sc.close();
 		

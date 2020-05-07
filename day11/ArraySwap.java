@@ -4,17 +4,17 @@ public class ArraySwap {
 
 	public static void main(String[] args) {
 		
-		//¹è¿­º¯¼öÀÇ º¹»ç¸¦ ÀÌ¿ëÇØ¼­ µÎ ¹è¿­À» ¸Â¹Ù²Û´Ù - swap
+		//ë°°ì—´ë³€ìˆ˜ì˜ ë³µì‚¬ë¥¼ ì´ìš©í•´ì„œ ë‘ ë°°ì—´ì„ ë§ë°”ê¾¼ë‹¤ - swap
 		
 		int[] arr = {1,2,3};
 		int[] oddArr = {1,3,5,7,9};
 		
-		System.out.println("==Ã³À½ »óÅÂÀÇ arr ¹è¿­ ¿ä¼Ò==");
+		System.out.println("==ì²˜ìŒ ìƒíƒœì˜ arr ë°°ì—´ ìš”ì†Œ==");
 		for(int i = 0; i < arr.length; i++) {
 			System.out.print(arr[i] + " ");
 		}
 		
-		System.out.println("\n\n==oddArr ¹è¿­ ¿ä¼Ò==");
+		System.out.println("\n\n==oddArr ë°°ì—´ ìš”ì†Œ==");
 		for(int i = 0; i < oddArr.length; i++) {
 			System.out.print(oddArr[i] + " ");
 		}
@@ -26,12 +26,12 @@ public class ArraySwap {
 		arr = oddArr;
 		oddArr = temp;
 		
-		System.out.println("\n\n====swap ÈÄ arr ¿ä¼Ò====");
+		System.out.println("\n\n====swap í›„ arr ìš”ì†Œ====");
 		for(int i = 0; i < arr.length; i++) {
 			System.out.print(arr[i] + " ");
 		}
 		
-		System.out.println("\n\n====swap ÈÄ oddArr ¿ä¼Ò====");
+		System.out.println("\n\n====swap í›„ oddArr ìš”ì†Œ====");
 		for(int i = 0; i < oddArr.length; i++) {
 			System.out.print(oddArr[i] + " ");
 		}

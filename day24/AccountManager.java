@@ -9,12 +9,12 @@ public class AccountManager {
 	
 	public int input() {
 		System.out.println("-----Menu-----");
-		System.out.println("1. °èÁÂ°³¼³");
-		System.out.println("2. ÀÔ      ±İ");
-		System.out.println("3. Ãâ      ±İ");
-		System.out.println("4. ÀüÃ¼Ãâ·Â");
-		System.out.println("5. Á¾      ·á");
-		System.out.print("¼±ÅÃ : ");
+		System.out.println("1. ê³„ì¢Œê°œì„¤");
+		System.out.println("2. ì…      ê¸ˆ");
+		System.out.println("3. ì¶œ      ê¸ˆ");
+		System.out.println("4. ì „ì²´ì¶œë ¥");
+		System.out.println("5. ì¢…      ë£Œ");
+		System.out.print("ì„ íƒ : ");
 		int n = sc.nextInt();
 		sc.nextLine();
 		return n;
@@ -22,10 +22,10 @@ public class AccountManager {
 	}
 	
 	public void accountInput() {
-		System.out.println("\n[°èÁÂÁ¾·ù¼±ÅÃ]");
-		System.out.println("1. º¸Åë¿¹±İ°èÁÂ");
-		System.out.println("2. ½Å¿ë½Å·Ú°èÁÂ");
-		System.out.print("¼±ÅÃ: ");
+		System.out.println("\n[ê³„ì¢Œì¢…ë¥˜ì„ íƒ]");
+		System.out.println("1. ë³´í†µì˜ˆê¸ˆê³„ì¢Œ");
+		System.out.println("2. ì‹ ìš©ì‹ ë¢°ê³„ì¢Œ");
+		System.out.print("ì„ íƒ: ");
 		int n = sc.nextInt();
 		sc.nextLine();
 		if(n == 1) {
@@ -33,22 +33,22 @@ public class AccountManager {
 		}else if(n == 2) {
 			arr.add(HighCreditAccountInput());
 		}else {
-			System.out.println("Àß¸øÀÔ·Â\n");
+			System.out.println("ì˜ëª»ì…ë ¥\n");
 			return;
 		}
-		System.out.println("°³¼³ ¿Ï·á!\n");
+		System.out.println("ê°œì„¤ ì™„ë£Œ!\n");
 	}
 	
 	private Account NormalAccountInput() {
-		System.out.println("\n[º¸Åë¿¹±İ°èÁÂ °³¼³]");
-		System.out.print("°èÁÂID: ");
+		System.out.println("\n[ë³´í†µì˜ˆê¸ˆê³„ì¢Œ ê°œì„¤]");
+		System.out.print("ê³„ì¢ŒID: ");
 		String accId = sc.nextLine();
-		System.out.print("ÀÌ¸§: ");
+		System.out.print("ì´ë¦„: ");
 		String accName = sc.nextLine();
-		System.out.print("ÀÔ±İ¾×: ");
+		System.out.print("ì…ê¸ˆì•¡: ");
 		int balance = sc.nextInt();
 		sc.nextLine();
-		System.out.print("ÀÌÀÚÀ²: ");
+		System.out.print("ì´ììœ¨: ");
 		int iNTERAST_RATE = sc.nextInt();
 		sc.nextLine();
 		
@@ -57,18 +57,18 @@ public class AccountManager {
 	}
 	
 	private Account HighCreditAccountInput() {
-		System.out.println("\n[º¸Åë¿¹±İ°èÁÂ °³¼³]");
-		System.out.print("°èÁÂID: ");
+		System.out.println("\n[ë³´í†µì˜ˆê¸ˆê³„ì¢Œ ê°œì„¤]");
+		System.out.print("ê³„ì¢ŒID: ");
 		String accId = sc.nextLine();
-		System.out.print("ÀÌ¸§: ");
+		System.out.print("ì´ë¦„: ");
 		String accName = sc.nextLine();
-		System.out.print("ÀÔ±İ¾×: ");
+		System.out.print("ì…ê¸ˆì•¡: ");
 		int balance = sc.nextInt();
 		sc.nextLine();
-		System.out.print("ÀÌÀÚÀ²: ");
+		System.out.print("ì´ììœ¨: ");
 		int iNTERAST_RATE = sc.nextInt();
 		sc.nextLine();
-		System.out.print("\n½Å¿ëµî±Ş(A, B, C): ");
+		System.out.print("\nì‹ ìš©ë“±ê¸‰(A, B, C): ");
 		String grade = sc.nextLine();
 		
 		Account acc = new HighCreditAccount(accId, accName, balance, iNTERAST_RATE, grade);
@@ -77,10 +77,10 @@ public class AccountManager {
 	
 	public void totalInfo() {
 		if(arr.isEmpty()) {
-			System.out.println("°³¼³µÈ °èÁÂ°¡ ¾ø½À´Ï´Ù.\n");
+			System.out.println("ê°œì„¤ëœ ê³„ì¢Œê°€ ì—†ìŠµë‹ˆë‹¤.\n");
 			return;
 		}
-		System.out.println("\n======ÀüÃ¼ °í°´ °èÁÂ======");
+		System.out.println("\n======ì „ì²´ ê³ ê° ê³„ì¢Œ======");
 		for (int i = 0; i < arr.size(); i++) {
 			arr.get(i).showInfo();
 			System.out.println();
@@ -90,47 +90,47 @@ public class AccountManager {
 	
 	public void arrIn() {
 		if(arr.isEmpty()) {
-			System.out.println("°³¼³µÈ °èÁÂ°¡ ¾ø½À´Ï´Ù.\n");
+			System.out.println("ê°œì„¤ëœ ê³„ì¢Œê°€ ì—†ìŠµë‹ˆë‹¤.\n");
 			return;
 		}
-		System.out.println("\n[ÀÔ      ±İ]");
-		System.out.print("°èÁÂID: ");
+		System.out.println("\n[ì…      ê¸ˆ]");
+		System.out.print("ê³„ì¢ŒID: ");
 		String accId = sc.nextLine();
-		System.out.print("ÀÔ±İ¾×: ");
+		System.out.print("ì…ê¸ˆì•¡: ");
 		int money = sc.nextInt();
 		sc.nextLine();
 		for (int i = 0; i < arr.size(); i++) {
 			if((arr.get(i).getAccId()).equals(accId)) {
 				arr.get(i).accIn(money);
-				System.out.println("ÀÔ±İ¿Ï·á\n");
+				System.out.println("ì…ê¸ˆì™„ë£Œ\n");
 				return;
 			}
 		}
-		System.out.println("À¯È¿ÇÏÁö ¾ÊÀº IDÀÔ´Ï´Ù.\n");
+		System.out.println("ìœ íš¨í•˜ì§€ ì•Šì€ IDì…ë‹ˆë‹¤.\n");
 	}
 	
 	public void arrout() {
 		if(arr.isEmpty()) {
-			System.out.println("°³¼³µÈ °èÁÂ°¡ ¾ø½À´Ï´Ù.\n");
+			System.out.println("ê°œì„¤ëœ ê³„ì¢Œê°€ ì—†ìŠµë‹ˆë‹¤.\n");
 			return;
 		}
-		System.out.println("\n[Ãâ      ±İ]");
-		System.out.print("°èÁÂID: ");
+		System.out.println("\n[ì¶œ      ê¸ˆ]");
+		System.out.print("ê³„ì¢ŒID: ");
 		String accId = sc.nextLine();
-		System.out.print("Ãâ±İ¾×: ");
+		System.out.print("ì¶œê¸ˆì•¡: ");
 		int money = sc.nextInt();
 		sc.nextLine();
 		for (int i = 0; i < arr.size(); i++) {
 			if((arr.get(i).getAccId()).equals(accId)) {
 				int n = arr.get(i).accOut(money);
 				if(n == 0) {
-					System.out.println("ÀÜ¾×ºÎÁ·\n");
+					System.out.println("ì”ì•¡ë¶€ì¡±\n");
 				}else {
-					System.out.println("Ãâ±İ¿Ï·á\n");
+					System.out.println("ì¶œê¸ˆì™„ë£Œ\n");
 				}
 				return;
 			}
 		}
-		System.out.println("À¯È¿ÇÏÁö ¾ÊÀº IDÀÔ´Ï´Ù.\n");
+		System.out.println("ìœ íš¨í•˜ì§€ ì•Šì€ IDì…ë‹ˆë‹¤.\n");
 	}
 }

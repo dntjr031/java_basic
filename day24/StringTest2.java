@@ -3,19 +3,19 @@ package com.day24;
 public class StringTest2 {
 	public static void main(String[] args) {
 		String str = "12345678";
-		String s = str.replace('7', 'Ä¥');
-		System.out.println("7À» Ä¥·Î Ä¡È¯ : " + s);;
+		String s = str.replace('7', 'ì¹ ');
+		System.out.println("7ì„ ì¹ ë¡œ ì¹˜í™˜ : " + s);;
 		
-		System.out.println("45¸¦ four,five·Î Ä¡È¯ : " + str.replace("45", "four,five"));
+		System.out.println("45ë¥¼ four,fiveë¡œ ì¹˜í™˜ : " + str.replace("45", "four,five"));
 		
-		System.out.println("\n===,À» ±¸ºĞÀÚ·Î ³ª´« °á°ú");
+		System.out.println("\n===,ì„ êµ¬ë¶„ìë¡œ ë‚˜ëˆˆ ê²°ê³¼");
 		str = "java,oracle,html,css";
-		String[] arr = str.split(","); // , ¸¦ ±¸ºĞÀÚ·Î ¿©·¯°³·Î ºĞ¸®
+		String[] arr = str.split(","); // , ë¥¼ êµ¬ë¶„ìë¡œ ì—¬ëŸ¬ê°œë¡œ ë¶„ë¦¬
 		for(String st : arr) {
 			System.out.println(st);
 		}
 		
-		System.out.println("\n===.À» ±¸ºĞÀÚ·Î ³ª´« °á°ú");
+		System.out.println("\n===.ì„ êµ¬ë¶„ìë¡œ ë‚˜ëˆˆ ê²°ê³¼");
 		str = "jsp.spring.mybatis.python";
 		//public String[] split(String regex, int limit)
 		String[] arr2 = str.split("\\.", 3);

@@ -3,10 +3,10 @@ package com.day12;
 public class JaggedArray {
 
 	public static void main(String[] args) {
-		//°¡º¯ ¹è¿­(Jagged Array) - µ¿Àû¹è¿­, µéÂß³¯Âß ¹è¿­
-		//¹è¿­ÀÇ Çà ¸¶´Ù Å©±â¸¦ ´Ù¸£°Ô ÁöÁ¤ÇÒ ¼ö ÀÖ´Ù.
+		//ê°€ë³€ ë°°ì—´(Jagged Array) - ë™ì ë°°ì—´, ë“¤ì­‰ë‚ ì­‰ ë°°ì—´
+		//ë°°ì—´ì˜ í–‰ ë§ˆë‹¤ í¬ê¸°ë¥¼ ë‹¤ë¥´ê²Œ ì§€ì •í•  ìˆ˜ ìˆë‹¤.
 		
-		// 2Â÷¿ø ¹è¿­
+		// 2ì°¨ì› ë°°ì—´
 		int[][] arr = new int[2][3];
 		arr[0][0] = 10;
 		arr[0][1] = 20;
@@ -24,7 +24,7 @@ public class JaggedArray {
 			System.out.println();
 		}
 		
-		// °¡º¯¹è¿­
+		// ê°€ë³€ë°°ì—´
 		int[][] arr3 = new int[3][];
 		
 		arr3[0] = new int[4];
@@ -41,7 +41,7 @@ public class JaggedArray {
 		arr3[2][1] = 8;
 		arr3[2][2] = 9;
 		
-		System.out.println("\n\n====°¡º¯ ¹è¿­====");
+		System.out.println("\n\n====ê°€ë³€ ë°°ì—´====");
 		for (int i = 0; i < arr3.length; i++) {
 			for (int j = 0; j < arr3[i].length; j++) {
 				System.out.print(arr3[i][j] + " ");

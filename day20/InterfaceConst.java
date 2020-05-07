@@ -6,33 +6,33 @@ public class InterfaceConst {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("¿äÀÏ ÀÔ·Â!");
-		System.out.println("1.¿ù 2.È­ 3.¼ö 4.¸ñ 5.±İ 6.Åä 7.ÀÏ");
+		System.out.println("ìš”ì¼ ì…ë ¥!");
+		System.out.println("1.ì›” 2.í™” 3.ìˆ˜ 4.ëª© 5.ê¸ˆ 6.í†  7.ì¼");
 		int type = sc.nextInt();
 		switch(type) {
 			case Week.MON:
-				System.out.println("ÁÖ°£ È¸ÀÇ°¡ ÀÖ´Â³¯");
+				System.out.println("ì£¼ê°„ íšŒì˜ê°€ ìˆëŠ”ë‚ ");
 				break;
 			case Week.THU:
-				System.out.println("ÇÁ·ÎÁ§Æ® ±âÈ¹ È¸ÀÇ°¡ ÀÖ´Â³¯");
+				System.out.println("í”„ë¡œì íŠ¸ ê¸°íš íšŒì˜ê°€ ìˆëŠ”ë‚ ");
 				break;
 			case Week.WED:
-				System.out.println("ÁøÇà»çÇ× º¸°íÇÏ´Â ³¯");
+				System.out.println("ì§„í–‰ì‚¬í•­ ë³´ê³ í•˜ëŠ” ë‚ ");
 				break;
 			case Week.TUE:
-				System.out.println("Ãà±¸½ÃÇÕ ÇÏ´Â ³¯");
+				System.out.println("ì¶•êµ¬ì‹œí•© í•˜ëŠ” ë‚ ");
 				break;
 			case Week.FRI:
-				System.out.println("ÇÁ·ÎÁ§Æ® ¸¶°¨ÀÏ");
+				System.out.println("í”„ë¡œì íŠ¸ ë§ˆê°ì¼");
 				break;
 			case Week.SAT:
-				System.out.println("°¡Á·°ú ÇÔ²² Áñ°Å¿î ½Ã°£ º¸³»¼¼¿ä");
+				System.out.println("ê°€ì¡±ê³¼ í•¨ê»˜ ì¦ê±°ìš´ ì‹œê°„ ë³´ë‚´ì„¸ìš”");
 				break;
 			case Week.SUN:
-				System.out.println("¿À´ÃÀº ÈŞÀÏ");
+				System.out.println("ì˜¤ëŠ˜ì€ íœ´ì¼");
 				break;
 			default:
-					System.out.println("Àß¸øÀÔ·Â!");
+					System.out.println("ì˜ëª»ì…ë ¥!");
 		}
 		sc.close();
 	}

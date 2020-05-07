@@ -34,7 +34,7 @@ public static int[] lotto() {
 			for(int n : arr) {
 				System.out.print(n + " ");
 			}
-			System.out.println("\n\n°è¼Ó ÇÏ½Ã°Ú½À´Ï±î? (y/n)");
+			System.out.println("\n\nê³„ì† í•˜ì‹œê² ìŠµë‹ˆê¹Œ? (y/n)");
 			
 			String str = sc.nextLine();
 			if(str.equalsIgnoreCase("n")) break;

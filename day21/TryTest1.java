@@ -5,15 +5,15 @@ import java.util.Scanner;
 public class TryTest1 {
 
 	public static void main(String[] args) {
-		System.out.println("====¿¹¿Ü Ã³¸®ÇÏÁö ¾ÊÀº °æ¿ì====");
+		System.out.println("====ì˜ˆì™¸ ì²˜ë¦¬í•˜ì§€ ì•Šì€ ê²½ìš°====");
 		Scanner sc = new Scanner(System.in);
-		System.out.println("µÎ Á¤¼ö ÀÔ·Â!");
+		System.out.println("ë‘ ì •ìˆ˜ ì…ë ¥!");
 		int n1 = sc.nextInt();
 		int n2 = sc.nextInt();
 		
-		int result = n1/n2; //n2 °¡ 0ÀÎ °æ¿ì ArithmeticException / by zero
-							// ¿¹¿Ü°¡ ¹ß»ıÇÏ¸é ºñÁ¤»ó Á¾·á
-		System.out.println("³ª´°¼À °á°ú : " + result);
+		int result = n1/n2; //n2 ê°€ 0ì¸ ê²½ìš° ArithmeticException / by zero
+							// ì˜ˆì™¸ê°€ ë°œìƒí•˜ë©´ ë¹„ì •ìƒ ì¢…ë£Œ
+		System.out.println("ë‚˜ëˆ—ì…ˆ ê²°ê³¼ : " + result);
 		
 		sc.close();
 		

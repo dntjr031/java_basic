@@ -12,25 +12,25 @@ public class ObjectTest {
 		Person p = new Person();
 		Person p2 = new Person();
 		
-		System.out.println("p¿Í p2ÀÇ ÁÖ¼Ò°¡ °°Àº°¡?" + p.equals(p2));
+		System.out.println("pì™€ p2ì˜ ì£¼ì†Œê°€ ê°™ì€ê°€?" + p.equals(p2));
 		System.out.println("p.getClass() : "+p.getClass());
-		System.out.println("pÀÇ ÇØ½ÃÄÚµå °ª : "+p.hashCode());
+		System.out.println("pì˜ í•´ì‹œì½”ë“œ ê°’ : "+p.hashCode());
 		System.out.println("p.toString(); : "+p.toString());
 		System.out.println("p = "+p);
-		System.out.println("p Å¬·¡½ºÀÇ ÀÌ¸§ = "+p.getClass().getName());
+		System.out.println("p í´ë˜ìŠ¤ì˜ ì´ë¦„ = "+p.getClass().getName());
 		System.out.println(Integer.toHexString(p.hashCode()));
 		
 		p.display();
 		
 		p = p2;
 		if(p.equals(p2)) {
-			System.out.println("p¿Í p2ÀÇ ÁÖ¼Ò°¡ °°´Ù");
+			System.out.println("pì™€ p2ì˜ ì£¼ì†Œê°€ ê°™ë‹¤");
 		}else {
-			System.out.println("p¿Í p2ÀÇ ÁÖ¼Ò°¡ °°´Ù");
+			System.out.println("pì™€ p2ì˜ ì£¼ì†Œê°€ ê°™ë‹¤");
 		}
 		
 		/*
-		 toString() ¸Ş¼­µåÀÇ °á°ú : Å¬·¡½º¸í@16Áø¼ö ÇØ½ÃÄÚµå
+		 toString() ë©”ì„œë“œì˜ ê²°ê³¼ : í´ë˜ìŠ¤ëª…@16ì§„ìˆ˜ í•´ì‹œì½”ë“œ
 		 getClass().getName() + '@' + Integer.toHexString(hashCode())
 		 */
 	}

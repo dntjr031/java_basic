@@ -13,7 +13,7 @@ public class BaseballExam {
 		for(int i = 0; i < 10; i++) {
 			u.setBall(0);
 			u.setStrike(0);
-			System.out.println("´Ù¸¥ ¼¼ ¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä(0~9)");
+			System.out.println("ë‹¤ë¥¸ ì„¸ ìˆ˜ë¥¼ ìž…ë ¥í•˜ì„¸ìš”(0~9)");
 			int a1 = sc.nextInt();
 			int a2 = sc.nextInt();
 			int a3 = sc.nextInt();
@@ -25,7 +25,7 @@ public class BaseballExam {
 			if(u.getStrike() == 3) {
 				System.out.println("You Win in " + (i+1));
 				p.showAnswel();
-				System.out.println("\n°è¼ÓÇÏ½Ã°Ú½À´Ï±î?(Y/N)");
+				System.out.println("\nê³„ì†í•˜ì‹œê² ìŠµë‹ˆê¹Œ?(Y/N)");
 				String str = sc.nextLine();
 				
 				if(str.equalsIgnoreCase("Y")) {
@@ -35,15 +35,15 @@ public class BaseballExam {
 					p.inputAnswel();
 					continue;
 				}else if(str.equalsIgnoreCase("N")) {
-					System.out.println("Á¾·áµÇ¾ú½À´Ï´Ù.");
+					System.out.println("ì¢…ë£Œë˜ì—ˆìŠµë‹ˆë‹¤.");
 					return;
 				}else {
-					System.out.println("Àß¸øÀÔ·Â! ÇÁ·Î±×·¥À» Á¾·áÇÕ´Ï´Ù");
+					System.out.println("ìž˜ëª»ìž…ë ¥! í”„ë¡œê·¸ëž¨ì„ ì¢…ë£Œí•©ë‹ˆë‹¤");
 					return;
 				}
 				
 			}
-			System.out.println("¹Ýº¹È¸¼ö:" + (i+1) + ", " + u.getStrike() + " Strike!! "
+			System.out.println("ë°˜ë³µíšŒìˆ˜:" + (i+1) + ", " + u.getStrike() + " Strike!! "
 								+ u.getBall() + " Ball!!");
 		}
 		System.out.println("You Lose, Pitcher is");

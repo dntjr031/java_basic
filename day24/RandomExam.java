@@ -9,7 +9,7 @@ public class RandomExam {
 	public static void main(String[] args) {
 		
 		while(true) {
-			System.out.println("Â¦¼ö ÀÔ·Â");
+			System.out.println("ì§ìˆ˜ ì…ë ¥");
 			int n = sc.nextInt();
 			int[] arr = new int[n];
 			sc.nextLine();
@@ -43,7 +43,7 @@ public class RandomExam {
 			if(choice.equalsIgnoreCase("y")) {
 				continue;
 			}else {
-				System.out.println("Á¾·á");
+				System.out.println("ì¢…ë£Œ");
 				return;
 			}
 		}

@@ -12,16 +12,16 @@ public class Anonymous2 extends Frame{
 	Button btExit;
 	
 	Anonymous2(){
-		super("ÇÁ·¹ÀÓ ¿¬½À");
+		super("í”„ë ˆì„ ì—°ìŠµ");
 		
-		btExit = new Button("Á¾·á");
+		btExit = new Button("ì¢…ë£Œ");
 		this.add(btExit, "South");
 		
-		//ÀÍ¸í Å¬·¡½º ÀÌ¿ë
+		//ìµëª… í´ë˜ìŠ¤ ì´ìš©
 		btExit.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				System.exit(0); // ÇÁ·Î±×·¥ Á¾·á
+				System.exit(0); // í”„ë¡œê·¸ë¨ ì¢…ë£Œ
 			}
 		});
 	}

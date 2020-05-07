@@ -7,25 +7,25 @@ public class MultiCatchTest {
 	static Scanner sc = new Scanner(System.in);
 	public static void main(String[] args) {
 		/*
-		 ´ÙÁß catch¹®
-		 - ¿¹¿Ü Á¾·ù¿¡ µû¶ó °¢°¢ ´Ù¸¥ Ã³¸®¸¦ ÇÒ ¼ö ÀÖ´Ù.
-		 - ÀÚ½ÄºÎÅÍ ºÎ¸ğ¼øÀ¸·Î ¿Í¾ß ÇÔ
+		 ë‹¤ì¤‘ catchë¬¸
+		 - ì˜ˆì™¸ ì¢…ë¥˜ì— ë”°ë¼ ê°ê° ë‹¤ë¥¸ ì²˜ë¦¬ë¥¼ í•  ìˆ˜ ìˆë‹¤.
+		 - ìì‹ë¶€í„° ë¶€ëª¨ìˆœìœ¼ë¡œ ì™€ì•¼ í•¨
 		 */
 		
 		try {
 			
-			System.out.println("µÎ Á¤¼ö ÀÔ·Â!");
+			System.out.println("ë‘ ì •ìˆ˜ ì…ë ¥!");
 			int n1 = sc.nextInt();
 			int n2 = sc.nextInt();
 			
 			int res = n1/n2;
-			System.out.println("³ª´©±â °á°ú: " + res);
+			System.out.println("ë‚˜ëˆ„ê¸° ê²°ê³¼: " + res);
 		}catch(ArithmeticException e) {
-			System.out.println("¿¹¿Ü : 0À¸·Î ³ª´©¸é ¾ÈµÊ!! " + e.getMessage());
+			System.out.println("ì˜ˆì™¸ : 0ìœ¼ë¡œ ë‚˜ëˆ„ë©´ ì•ˆë¨!! " + e.getMessage());
 		}catch(InputMismatchException e) {
-			System.out.println("¿¹¿Ü : ÀÔ·Â°ªÀÌ Àß¸øµÊ!! " + e.getMessage());
+			System.out.println("ì˜ˆì™¸ : ì…ë ¥ê°’ì´ ì˜ëª»ë¨!! " + e.getMessage());
 		}catch(Exception e) {
-			System.out.println("¿¹¿Ü¹ß»ı : " + e.getMessage());
+			System.out.println("ì˜ˆì™¸ë°œìƒ : " + e.getMessage());
 		}
 		System.out.println("\n====next====");
 		

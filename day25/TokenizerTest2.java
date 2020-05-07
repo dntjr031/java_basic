@@ -5,7 +5,7 @@ import java.util.StringTokenizer;
 public class TokenizerTest2 {
 
 	public static void main(String[] args) {
-		String str = "1,È«±æµ¿,100,95,88|2,±è±æµ¿,85,77,66|3,ÀÌ±æµ¿,91,79,99";
+		String str = "1,í™ê¸¸ë™,100,95,88|2,ê¹€ê¸¸ë™,85,77,66|3,ì´ê¸¸ë™,91,79,99";
 		
 		StringTokenizer st = new StringTokenizer(str, "|");
 		while(st.hasMoreTokens()) {
@@ -20,15 +20,15 @@ public class TokenizerTest2 {
 		}
 		
 		/*
-		 ¹®ÀÚ¿­¿¡ Æ÷ÇÔµÈ µ¥ÀÌÅÍ°¡ µÎ °¡Áö Á¾·ùÀÇ ±¸ºĞÀÚ·Î ³ª´µ¾îÁ® ÀÖÀ» ¶§
-		 µÎ °³ÀÇ StringTokedizer¿Í ÀÌÁß ¹İº¹¹®À» »ç¿ëÇØ¼­ Ã³¸®
+		 ë¬¸ìì—´ì— í¬í•¨ëœ ë°ì´í„°ê°€ ë‘ ê°€ì§€ ì¢…ë¥˜ì˜ êµ¬ë¶„ìë¡œ ë‚˜ë‰˜ì–´ì ¸ ìˆì„ ë•Œ
+		 ë‘ ê°œì˜ StringTokedizerì™€ ì´ì¤‘ ë°˜ë³µë¬¸ì„ ì‚¬ìš©í•´ì„œ ì²˜ë¦¬
 		 
-		 ÇÑ ÇĞ»ıÀÇ Á¤º¸¸¦ ±¸ºĞÇÏ±â À§ÇØ "|"¸¦ »ç¿ë
-		 ÇĞ»ıÀÇ ÀÌ¸§°ú Á¡¼ö µîÀ» ±¸ºĞÇÏ±â À§ÇØ ","fmf tkdyd
+		 í•œ í•™ìƒì˜ ì •ë³´ë¥¼ êµ¬ë¶„í•˜ê¸° ìœ„í•´ "|"ë¥¼ ì‚¬ìš©
+		 í•™ìƒì˜ ì´ë¦„ê³¼ ì ìˆ˜ ë“±ì„ êµ¬ë¶„í•˜ê¸° ìœ„í•´ ","fmf tkdyd
 		 */
 		
-		//split()ÀÌ¿ë
-		System.out.println("\n====split() ÀÌ¿ë====");
+		//split()ì´ìš©
+		System.out.println("\n====split() ì´ìš©====");
 		
 		String[] s = str.split("\\|");
 		for (int i = 0; i < s.length; i++) {

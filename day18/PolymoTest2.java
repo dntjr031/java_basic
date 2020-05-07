@@ -7,7 +7,7 @@ public class PolymoTest2 {
 	private static Scanner sc = new Scanner(System.in);
 	
 	public static void main(String[] args) {
-		// ±âº»ÀûÀÎ »ç¿ë
+		// ê¸°ë³¸ì ì¸ ì‚¬ìš©
 		Circle c = new Circle();
 		c.draw();
 		c.delete();
@@ -15,12 +15,12 @@ public class PolymoTest2 {
 		c.display();
 		
 		System.out.println("-----Upcasting-----");
-		//´ÙÇü¼º ÀÌ¿ë
+		//ë‹¤í˜•ì„± ì´ìš©
 		Shape s = new Circle();
-		s.draw(); // ÀÚ½ÄÀÇ ¿À¹ö¶óÀÌµù ¸Ş¼­µå È£Ãâ
+		s.draw(); // ìì‹ì˜ ì˜¤ë²„ë¼ì´ë”© ë©”ì„œë“œ í˜¸ì¶œ
 		s.delete();
-		s.display(); //ºÎ¸ğ ¸Ş¼­µå
-		//s.sayCircle(); => error, ÀÚ½Ä¸¸ÀÇ ¸Ş¼­µå »ç¿ë ºÒ°¡
+		s.display(); //ë¶€ëª¨ ë©”ì„œë“œ
+		//s.sayCircle(); => error, ìì‹ë§Œì˜ ë©”ì„œë“œ ì‚¬ìš© ë¶ˆê°€
 		
 		Shape s2 = new Triangle();
 		s2.draw();
@@ -28,9 +28,9 @@ public class PolymoTest2 {
 		s2.display();
 		
 		
-		System.out.println("\n\n1. ¿ø, 2. »ï°¢Çü ¼±ÅÃ");
+		System.out.println("\n\n1. ì›, 2. ì‚¼ê°í˜• ì„ íƒ");
 		int choice = sc.nextInt();
-		//±âÁ¸¹æ½Ä
+		//ê¸°ì¡´ë°©ì‹
 		if(choice == 1) {
 			Circle sh = new Circle();
 			sh.draw();
@@ -40,12 +40,12 @@ public class PolymoTest2 {
 			sh.draw();
 			sh.delete();
 		}else {
-			System.out.println("Àß¸øÀÔ·Â(1, 2 ÀÔ·Â)");
+			System.out.println("ì˜ëª»ì…ë ¥(1, 2 ì…ë ¥)");
 			return;
 		}
 		
-		//´ÙÇü¼º
-		System.out.println("\n´ÙÇü¼º ÀÌ¿ë");
+		//ë‹¤í˜•ì„±
+		System.out.println("\në‹¤í˜•ì„± ì´ìš©");
 		Shape sh = Shape.find(choice);
 		if(sh != null) {
 			sh.draw();
@@ -57,13 +57,13 @@ public class PolymoTest2 {
 
 class Shape{
 	protected void draw() {
-		System.out.println("¸ğ¾çÀ» ±×¸³´Ï´Ù");
+		System.out.println("ëª¨ì–‘ì„ ê·¸ë¦½ë‹ˆë‹¤");
 	}
 	protected void delete() {
-		System.out.println("¸ğ¾çÀ» Áö¿ó´Ï´Ù");
+		System.out.println("ëª¨ì–‘ì„ ì§€ì›ë‹ˆë‹¤");
 	}
 	protected void display() {
-		System.out.println("ºÎ¸ğ - Shape");
+		System.out.println("ë¶€ëª¨ - Shape");
 	}
 	
 	public static Shape find(int choice) {
@@ -80,29 +80,29 @@ class Shape{
 class Circle extends Shape{
 
 	protected void draw() {
-		System.out.println("¿øÀ» ±×¸³´Ï´Ù");
+		System.out.println("ì›ì„ ê·¸ë¦½ë‹ˆë‹¤");
 	}
 
 	protected void delete() {
-		System.out.println("¿øÀ» Áö¿ó´Ï´Ù");
+		System.out.println("ì›ì„ ì§€ì›ë‹ˆë‹¤");
 	}
 	
 	public void sayCircle() {
-		System.out.println("¾È³çÇÏ¼¼¿ä ¿øÀÔ´Ï´Ù");
+		System.out.println("ì•ˆë…•í•˜ì„¸ìš” ì›ì…ë‹ˆë‹¤");
 	}
 }
 
 class Triangle extends Shape{
 
 	protected void draw() {
-		System.out.println("»ï°¢ÇüÀ» ±×¸³´Ï´Ù");
+		System.out.println("ì‚¼ê°í˜•ì„ ê·¸ë¦½ë‹ˆë‹¤");
 	}
 
 	protected void delete() {
-		System.out.println("»ï°¢ÇüÀ» Áö¿ó´Ï´Ù");
+		System.out.println("ì‚¼ê°í˜•ì„ ì§€ì›ë‹ˆë‹¤");
 	}
 	
 	public void sayTriangle() {
-		System.out.println("¾È³çÇÏ¼¼¿ä »ï°¢ÇüÀÔ´Ï´Ù.");
+		System.out.println("ì•ˆë…•í•˜ì„¸ìš” ì‚¼ê°í˜•ì…ë‹ˆë‹¤.");
 	}
 }

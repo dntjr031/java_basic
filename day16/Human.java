@@ -30,7 +30,7 @@ class Teacher extends Human{
 	}
 	
 	public void work() {
-		System.out.println("°¡¸£Ä£´Ù");
+		System.out.println("ê°€ë¥´ì¹œë‹¤");
 	}
 }
 
@@ -46,6 +46,6 @@ class Programmer extends Human{
 	}
 	
 	public void work() {
-		System.out.println("ÇÁ·Î±×·¡¹ÖÇÑ´Ù");
+		System.out.println("í”„ë¡œê·¸ë˜ë°í•œë‹¤");
 	}
 }

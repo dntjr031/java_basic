@@ -1,7 +1,7 @@
 package com.day13;
 
 public class Triangle2 {
-	//1. ¸â¹öº¯¼ö
+	//1. ë©¤ë²„ë³€ìˆ˜
 	int w, h;
 
 	public Triangle2(int w, int h) {
@@ -10,9 +10,9 @@ public class Triangle2 {
 		this.h = h;
 	}
 
-	//2. »ı¼ºÀÚ
+	//2. ìƒì„±ì
 	
-	//3. ¸Ş¼­µå
+	//3. ë©”ì„œë“œ
 	public int area() {
 		return w * h / 2;
 		

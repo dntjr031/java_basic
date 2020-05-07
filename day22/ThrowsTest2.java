@@ -11,7 +11,7 @@ public class ThrowsTest2 {
 	
 	public static void method2(){
 		try {
-			throw new Exception("╟╜а╕╥н ©╧©э ╧ъ╩Щ╫це╢");
+			throw new Exception("Й╟∙Л═°К║° Л≤┬Л≥╦ К╟°Л┐²Л▀°М┌╢");
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
 			e.printStackTrace();

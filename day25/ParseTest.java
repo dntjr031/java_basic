@@ -11,7 +11,7 @@ public class ParseTest {
 		Date today = new Date();
 		
 		Scanner sc = new Scanner(System.in);
-		System.out.println("¿À´Ã ÀÌÀü ³¯Â¥¸¦ ÀÔ·Â(yyyy-mm-dd)");
+		System.out.println("ì˜¤ëŠ˜ ì´ì „ ë‚ ì§œë¥¼ ì…ë ¥(yyyy-mm-dd)");
 		String date = sc.nextLine();
 		
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
@@ -20,17 +20,17 @@ public class ParseTest {
 		try {
 			Date d = sdf.parse(date);
 			long gap = 0l;
-			String s = sdf.format(today); // ¿À´Ã ÀßÂ¥¿¡¼­ ½ÃºĞÃÊ »«°Í
+			String s = sdf.format(today); // ì˜¤ëŠ˜ ì˜ì§œì—ì„œ ì‹œë¶„ì´ˆ ëº€ê²ƒ
 			Date today2 = sdf.parse(s);
 			
-			if(today.getTime() < d.getTime()) { //¹Ì·¡ ³¯Â¥
+			if(today.getTime() < d.getTime()) { //ë¯¸ë˜ ë‚ ì§œ
 				gap = (d.getTime() - today2.getTime())/1000;
-			}else { // °ú°Å ³¯Â¥
+			}else { // ê³¼ê±° ë‚ ì§œ
 				gap = (today2.getTime() - d.getTime())/1000;
 			}
 			gap = gap/(24*60*60);
 			
-			System.out.println("\nµÎ ³¯Â¥ »çÀÌ °æ°úµÈ ÀÏ¼ö : " + gap + "ÀÏ");
+			System.out.println("\në‘ ë‚ ì§œ ì‚¬ì´ ê²½ê³¼ëœ ì¼ìˆ˜ : " + gap + "ì¼");
 		} catch (ParseException e) {
 			System.out.println(e.getMessage());
 			

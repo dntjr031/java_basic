@@ -4,15 +4,15 @@ public class PolymorArray {
 
 	public static void main(String[] args) {
 		Shape[] s = new Shape[4];
-		// shape ¹è¿­¿¡´Â ÀÚ½Ä °´Ã¼¸¦ ³Ö´Â´Ù
-		//=> ´ÙÇü¼º ÀÌ¿ë
+		// shape ë°°ì—´ì—ëŠ” ìì‹ ê°ì²´ë¥¼ ë„£ëŠ”ë‹¤
+		//=> ë‹¤í˜•ì„± ì´ìš©
 		s[0] = new Circle();
 		s[1] = new Triangle();
 		s[2] = new Triangle();
 		s[3] = new Circle();
 		
 		for (int i = 0; i < s.length; i++) {
-			s[i].draw(); //ÀÚ½ÄÀÇ ¿À¹ö¶óÀÌµù ¸Ş¼­µå È£Ãâ
+			s[i].draw(); //ìì‹ì˜ ì˜¤ë²„ë¼ì´ë”© ë©”ì„œë“œ í˜¸ì¶œ
 			s[i].delete();
 		}
 

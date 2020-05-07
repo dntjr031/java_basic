@@ -10,10 +10,10 @@ public class Unit {
 	public void move(int x, int y) {
 		this.x = x;
 		this.y = y;
-		System.out.println("°¢ À¯´ÖÀÌ ÀÌµ¿ÇÏ´Â ¸Ş¼­µå");
+		System.out.println("ê° ìœ ë‹›ì´ ì´ë™í•˜ëŠ” ë©”ì„œë“œ");
 	}
 	public void stop() {
-		System.out.println("°¢ À¯´ÖÀÌ ÇöÀç À§Ä¡¿¡ Á¤Áö");
+		System.out.println("ê° ìœ ë‹›ì´ í˜„ì¬ ìœ„ì¹˜ì— ì •ì§€");
 	}
 }
 
@@ -26,11 +26,11 @@ class Marine extends Unit{
 	public void move(int x, int y) {
 		this.x = x;
 		this.y = y;
-		System.out.println("º¸º´ÀÌ " + x + ", " + y + "À§Ä¡·Î ÀÌµ¿ÇÑ´Ù.");
+		System.out.println("ë³´ë³‘ì´ " + x + ", " + y + "ìœ„ì¹˜ë¡œ ì´ë™í•œë‹¤.");
 	}
 	
 	public void stimpack() {
-		System.out.println("½ºÆÀÆÑÀ» »ç¿ëÇÑ´Ù.");
+		System.out.println("ìŠ¤íŒ€íŒ©ì„ ì‚¬ìš©í•œë‹¤.");
 	}
 }
 
@@ -42,10 +42,10 @@ class Tank extends Unit{
 	public void move(int x, int y) {
 		this.x = x;
 		this.y = y;
-		System.out.println("ÅÊÅ©°¡ " + x + ", " + y + "À§Ä¡·Î ÀÌµ¿ÇÑ´Ù.");
+		System.out.println("íƒ±í¬ê°€ " + x + ", " + y + "ìœ„ì¹˜ë¡œ ì´ë™í•œë‹¤.");
 	}
 	public void changeMode() {
-		System.out.println("°ø°İ¸ğµå¸¦ º¯È¯ÇÑ´Ù.");
+		System.out.println("ê³µê²©ëª¨ë“œë¥¼ ë³€í™˜í•œë‹¤.");
 	}
 	
 }
@@ -59,13 +59,13 @@ class Dropship extends Unit{
 	public void move(int x, int y) {
 		this.x = x;
 		this.y = y;
-		System.out.println("¼ö¼Û¼±ÀÇ À§Ä¡¸¦ " + x + ", " + y + "·Î ÀÌµ¿ÇÑ´Ù.");
+		System.out.println("ìˆ˜ì†¡ì„ ì˜ ìœ„ì¹˜ë¥¼ " + x + ", " + y + "ë¡œ ì´ë™í•œë‹¤.");
 	}
 	public void load() {
-		System.out.println("¼±ÅÃµÈ ´ë»óÀ» ÅÂ¿î´Ù.");
+		System.out.println("ì„ íƒëœ ëŒ€ìƒì„ íƒœìš´ë‹¤.");
 	}
 	public void unLoad() {
-		System.out.println("¼±ÅÃµÈ ´ë»óÀ» ³»¸°´Ù.");
+		System.out.println("ì„ íƒëœ ëŒ€ìƒì„ ë‚´ë¦°ë‹¤.");
 	}
 	
 }

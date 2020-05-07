@@ -7,7 +7,7 @@ public class ProtectedTest {
 	public static void main(String[] args) {
 		Child ch = new Child();
 		ch.showInfo();
-		ch.addr = "³íÇöµ¿";
+		ch.addr = "ë…¼í˜„ë™";
 		ch.showInfo();
 
 	}

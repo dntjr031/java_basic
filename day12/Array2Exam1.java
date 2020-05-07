@@ -11,7 +11,7 @@ public class Array2Exam1 {
 		int[] store = new int[8];
 		
 		while(true) {
-			System.out.println("º¹±ÇÆÇ¸ÅÁ¡ ¹øÈ£<1~8>¿Í º¹±Ç ÆÇ¸Å·®À» ÀÔ·ÂÇÏ¼¼¿ä.<³¡³¾¶§´Â Q>");
+			System.out.println("ë³µê¶ŒíŒë§¤ì  ë²ˆí˜¸<1~8>ì™€ ë³µê¶Œ íŒë§¤ëŸ‰ì„ ì…ë ¥í•˜ì„¸ìš”.<ëë‚¼ë•ŒëŠ” Q>");
 			String str1 = sc.nextLine();
 			if(str1.equalsIgnoreCase("q")) break;
 			String str2 = sc.nextLine();
@@ -21,10 +21,10 @@ public class Array2Exam1 {
 			
 			store[num-1] += each;
 			
-			System.out.println("±×·ì¹øÈ£ : " + num + ", ÆÇ¸Å·® : " + store[num-1]);
+			System.out.println("ê·¸ë£¹ë²ˆí˜¸ : " + num + ", íŒë§¤ëŸ‰ : " + store[num-1]);
 		}
 		
-		System.out.println("Á¾·áµÇ¾ú½À´Ï´Ù.");
+		System.out.println("ì¢…ë£Œë˜ì—ˆìŠµë‹ˆë‹¤.");
 		
 		sc.close();
 

@@ -7,17 +7,17 @@ public class CalculateTest {
 	public static void main(String[] args) {
 		//[1]
 		int result = add(10, 50);
-		System.out.println("µÎ ¼öÀÇ ÇÕ : " + result);
+		System.out.println("ë‘ ìˆ˜ì˜ í•© : " + result);
 		
 		//[2]
 		int n1 = 7, n2 = 9;
 		int res = add(n1, n2);
-		System.out.println("\n" + n1 + "°ú " + n2 + "ÀÇ ÇÕ : " + res);
+		System.out.println("\n" + n1 + "ê³¼ " + n2 + "ì˜ í•© : " + res);
 		
 		//[3]
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.println("\nµÎ Á¤¼ö ÀÔ·Â!");
+		System.out.println("\në‘ ì •ìˆ˜ ì…ë ¥!");
 		int num1 = sc.nextInt();
 		int num2 = sc.nextInt();
 		
@@ -29,7 +29,7 @@ public class CalculateTest {
 		
 		//[1]
 		float f = minus(3.14f, 10.2f);
-		System.out.println("\nµÎ ½Ç¼öÀÇ Â÷ : " + f);
+		System.out.println("\në‘ ì‹¤ìˆ˜ì˜ ì°¨ : " + f);
 		
 		//[2]
 		float f1 = 3.14f, f2 = 10.2f;
@@ -37,7 +37,7 @@ public class CalculateTest {
 		System.out.println("\n" + f1 + "-" + f2 + "=" + f);
 		
 		//[3]
-		System.out.println("\nµÎ ½Ç¼ö ÀÔ·Â");
+		System.out.println("\në‘ ì‹¤ìˆ˜ ì…ë ¥");
 		float m1 = sc.nextFloat();
 		float m2 = sc.nextFloat();
 		f = minus(m1, m2);

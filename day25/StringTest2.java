@@ -8,7 +8,7 @@ public class StringTest2 {
 		String str3 = "Smile";
 		String str4 = str1.concat(str2).concat(str3); // String str4 = str1 + str2 + str3
 		// public String concat(String str)
-		//ÃÑ 3°³ÀÇ ¹®ÀÚ¿­À» ÇÏ³ª·Î ¹­¾îÁÜ ÀÌ¸¦ À§ÇØ¼­ Ãß°¡·Î »ý¼ºµÈ ÀÎ½ºÅÏ½ºÀÇ ¼ö°¡ 2°³
+		//ì´ 3ê°œì˜ ë¬¸ìžì—´ì„ í•˜ë‚˜ë¡œ ë¬¶ì–´ì¤Œ ì´ë¥¼ ìœ„í•´ì„œ ì¶”ê°€ë¡œ ìƒì„±ëœ ì¸ìŠ¤í„´ìŠ¤ì˜ ìˆ˜ê°€ 2ê°œ
 		/*
 		 StringBuilder sb = new StringBuilder(str1);
 		 sb.append(str2).append(str3);
@@ -19,9 +19,9 @@ public class StringTest2 {
 		//public int compareTo(String anotherString)
 		//=> this.charAt(k) - anotherString.charAt(k);
 		if(str1.compareTo(str3) < 0) {
-			System.out.println("str1ÀÌ ¾Õ¼±´Ù"); //str1ÀÌ ´õ ÀÛ´Ù
+			System.out.println("str1ì´ ì•žì„ ë‹¤"); //str1ì´ ë” ìž‘ë‹¤
 		}else {
-			System.out.println("str3ÀÌ ¾Õ¼±´Ù");
+			System.out.println("str3ì´ ì•žì„ ë‹¤");
 		}
 	}
 

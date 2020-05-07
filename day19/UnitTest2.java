@@ -9,7 +9,7 @@ public class UnitTest2 {
 		u[2] = new Dropship(11, 20);
 		u[3] = new Marine(11, 20);
 		
-		// ¿À¹ö¶óÀÌµù ¸Ş¼­µå È£Ãâ
+		// ì˜¤ë²„ë¼ì´ë”© ë©”ì„œë“œ í˜¸ì¶œ
 		for(Unit un : u) {
 			un.move(30, 100);
 		}
@@ -17,8 +17,8 @@ public class UnitTest2 {
 		for (int i = 0; i < u.length; i++) {
 			u[i].move(20, 50);
 		}
-		System.out.println("\n<<ÀÚ½Ä¸¸ÀÇ ¸Ş¼­µå>>");
-		//ÀÚ½Ä¸¸ÀÇ ¸Ş¼­µå È£Ãâ
+		System.out.println("\n<<ìì‹ë§Œì˜ ë©”ì„œë“œ>>");
+		//ìì‹ë§Œì˜ ë©”ì„œë“œ í˜¸ì¶œ
 		for(Unit un : u) {
 			if(un instanceof Marine) {
 				((Marine) un).stimpack();

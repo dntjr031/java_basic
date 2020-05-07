@@ -4,30 +4,30 @@ public class WhileTest2 {
 
 	public static void main(String[] args) {
 		/*
-		 * 	for(ΓΚ±β½Δ;Α¶°Η½Δ;Αυ°¨½Δ){
-		 * 		ΉέΊΉΈν·Ι;
+		 * 	for(μ΄κΈ°μ‹;μ΅°κ±΄μ‹;μ¦κ°μ‹){
+		 * 		λ°λ³µλª…λ Ή;
 		 * 	}
 		 * 
-		 * 	ΓΚ±β½Δ;
-		 * 	while(Α¶°Η½Δ){
-		 * 		ΉέΊΉΈν·Β;
+		 * 	μ΄κΈ°μ‹;
+		 * 	while(μ΅°κ±΄μ‹){
+		 * 		λ°λ³µλª…λ ¥;
 		 * 
-		 * 		Αυ°¨½Δ;
+		 * 		μ¦κ°μ‹;
 		 * 	}
 		 * 
 		 */
 		
 		for(int i = 0; i < 3; i++) {
-			System.out.println("for ΐΜΏλ : i=" + i);
+			System.out.println("for μ΄μ© : i=" + i);
 		}
 		
 		System.out.println();
 		
-		int k = 0; // ΓΚ±β½Δ
-		while(k < 3) { //Α¶°Η½Δ
-			System.out.println("[while ΐΜΏλ] k=" + k);
+		int k = 0; // μ΄κΈ°μ‹
+		while(k < 3) { //μ΅°κ±΄μ‹
+			System.out.println("[while μ΄μ©] k=" + k);
 			
-			k++; //Αυ°¨½Δ
+			k++; //μ¦κ°μ‹
 		}
 		
 

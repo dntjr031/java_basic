@@ -3,18 +3,18 @@ package com.day25;
 public class FinalizeTest {
 
 	public static void main(String[] args) {
-		MyName obj1 = new MyName("ÀÎ½ºÅÏ½º1");
-		MyName obj2 = new MyName("ÀÎ½ºÅÏ½º2");
+		MyName obj1 = new MyName("ì¸ìŠ¤í„´ìŠ¤1");
+		MyName obj2 = new MyName("ì¸ìŠ¤í„´ìŠ¤2");
 		
 		System.out.println(obj1);
 		System.out.println(obj2);
 		//obj1 = null;
 		//obj2 = null;
 		
-		obj1 = obj2; // ÀÎ½ºÅÏ½º1 ¼Ò¸ê ´ë»ó
-		obj2 = null; // ¼Ò¸ê x
-		obj1 = null; // ÀÎ½ºÅÏ½º 2 ¼Ò¸ê ´ë»ó
-		System.out.println("ÇÁ·Î±×·¥À» Á¾·áÇÕ´Ï´Ù.");
+		obj1 = obj2; // ì¸ìŠ¤í„´ìŠ¤1 ì†Œë©¸ ëŒ€ìƒ
+		obj2 = null; // ì†Œë©¸ x
+		obj1 = null; // ì¸ìŠ¤í„´ìŠ¤ 2 ì†Œë©¸ ëŒ€ìƒ
+		System.out.println("í”„ë¡œê·¸ë¨ì„ ì¢…ë£Œí•©ë‹ˆë‹¤.");
 		
 		System.gc();
 		System.runFinalization();
@@ -30,7 +30,7 @@ class MyName{
 
 	protected void finalize() throws Throwable {
 		super.finalize();
-		System.out.println(name + "ÀÌ ¼Ò¸êµÇ¾ú½À´Ï´Ù.");
+		System.out.println(name + "ì´ ì†Œë©¸ë˜ì—ˆìŠµë‹ˆë‹¤.");
 	}
 
 	public String toString() {

@@ -7,9 +7,9 @@ public class MathodExam4 {
 	public static String leapYear(int a) {
 		String result = "";
 		if(a % 400 == 0 || (a % 4 == 0 && a % 100 != 100)) {
-			result = "À±³â";
+			result = "ìœ¤ë…„";
 		}else {
-			result = "Æò³â";
+			result = "í‰ë…„";
 		}
 		return result;
 	}
@@ -17,9 +17,9 @@ public class MathodExam4 {
 	public static String oddEven(int i) {
 		String str = "";
 		if(i % 2 == 0) {
-			str = "Â¦¼ö";
+			str = "ì§ìˆ˜";
 		}else {
-			str = "È¦¼ö";
+			str = "í™€ìˆ˜";
 		}
 		return str;
 	}
@@ -29,11 +29,11 @@ public class MathodExam4 {
 		
 		String gender = "";
 		if(ch == '1' || ch == '3') {
-			gender = "³²ÀÚ";
+			gender = "ë‚¨ì";
 		}else if(ch == '2' || ch == '4') {
-			gender = "¿©ÀÚ";
+			gender = "ì—¬ì";
 		}else {
-			gender = "Àß¸øÀÔ·Â";
+			gender = "ì˜ëª»ì…ë ¥";
 		}
 		return gender;
 	}
@@ -43,19 +43,19 @@ public class MathodExam4 {
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);
-		System.out.println("[1]\n³âµµ¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+		System.out.println("[1]\në…„ë„ë¥¼ ì…ë ¥í•˜ì„¸ìš”");
 		int year = sc.nextInt();
 		
 		String str = leapYear(year);
-		System.out.println(year + "Àº " + str);
+		System.out.println(year + "ì€ " + str);
 		
-		System.out.println("[2]\nÁ¤¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+		System.out.println("[2]\nì •ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”");
 		int a = sc.nextInt();
 		
 		String result = oddEven(a);
-		System.out.println(a + "Àº" + result);
+		System.out.println(a + "ì€" + result);
 		
-		System.out.println("[3]\nÁÖ¹Î¹øÈ£ µŞÀÚ¸®¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+		System.out.println("[3]\nì£¼ë¯¼ë²ˆí˜¸ ë’·ìë¦¬ë¥¼ ì…ë ¥í•˜ì„¸ìš”");
 		sc.nextLine();
 		String b = sc.nextLine();
 		

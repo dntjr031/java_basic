@@ -20,8 +20,8 @@ public class FruitSeller {
 	}
 	
 	public void showSaleResult() {
-		System.out.println("³²Àº »ç°ú: " + numOfApple);
-		System.out.println("ÆÇ¸Å ¼öÀÍ: " + myMoney);
+		System.out.println("ë‚¨ì€ ì‚¬ê³¼: " + numOfApple);
+		System.out.println("íŒë§¤ ìˆ˜ìµ: " + myMoney);
 	}
 }
 
@@ -35,7 +35,7 @@ class FruitBuyer{
 	
 	public void buyApple(FruitSeller seller, int money) {
 		if(money > myMoney) {
-			System.out.println("µ·ÀÌ ºÎÁ·ÇÕ´Ï´Ù.");
+			System.out.println("ëˆì´ ë¶€ì¡±í•©ë‹ˆë‹¤.");
 			return;
 		}
 		int[] arr = seller.saleApple(money);
@@ -43,7 +43,7 @@ class FruitBuyer{
 		myMoney -= (money - arr[1]);
 	}
 	public void showBuyResult() {
-		System.out.println("ÇöÀç ÀÜ¾× : " + myMoney);
-		System.out.println("»ç°ú °³¼ö : " + numOfApple);
+		System.out.println("í˜„ì¬ ì”ì•¡ : " + myMoney);
+		System.out.println("ì‚¬ê³¼ ê°œìˆ˜ : " + numOfApple);
 	}
 }

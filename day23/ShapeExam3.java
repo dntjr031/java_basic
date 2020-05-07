@@ -7,28 +7,28 @@ public class ShapeExam3 {
 	static Scanner sc = new Scanner(System.in);
 	
 	public static void main(String[] args) {
-		System.out.println("3´Ü°è-----------------");
+		System.out.println("3ë‹¨ê³„-----------------");
 		ArrayList<Shape> sarr = new ArrayList<Shape>();
 		while(true) {
 			Shape s = null;
-			System.out.println("1. ¿ø, 2. »ç°¢Çü, 3. Á¾·á Áß ¼±ÅÃ");
+			System.out.println("1. ì›, 2. ì‚¬ê°í˜•, 3. ì¢…ë£Œ ì¤‘ ì„ íƒ");
 			int n = sc.nextInt();
 			switch(n) {
 				case 1:
-					System.out.println("¹İÁö¸§À» ÀÔ·ÂÇÏ¼¼¿ä");
+					System.out.println("ë°˜ì§€ë¦„ì„ ì…ë ¥í•˜ì„¸ìš”");
 					double d = sc.nextDouble();
 					s = new Circle(d);
 					sarr.add(s);
 					break;
 				case 2:
-					System.out.println("°¡·Î, ¼¼·Î¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+					System.out.println("ê°€ë¡œ, ì„¸ë¡œë¥¼ ì…ë ¥í•˜ì„¸ìš”");
 					double w = sc.nextDouble();
 					double d1 = sc.nextDouble();
 					s = new Rect(w, d1);
 					sarr.add(s);
 					break;
 				default:
-					System.out.println("Á¾·á");
+					System.out.println("ì¢…ë£Œ");
 					if(sarr.isEmpty()) {
 						return;
 					}else {

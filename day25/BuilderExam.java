@@ -12,19 +12,19 @@ public class BuilderExam {
 		//[2]
 		String str2 = "990107-1112222";
 		StringBuilder sb2 = new StringBuilder(str2);
-		System.out.println("\nº¯°æÀü " + sb2);
+		System.out.println("\në³€ê²½ì „ " + sb2);
 		sb2.deleteCharAt(str2.indexOf("-"));
-		System.out.println("º¯°æÈÄ "+ sb2 + "\n");
+		System.out.println("ë³€ê²½í›„ "+ sb2 + "\n");
 		
 		sb2 = new StringBuilder(str2);
-		System.out.println("º¯°æÀü " + sb2);
+		System.out.println("ë³€ê²½ì „ " + sb2);
 		for (int i = 0; i < sb2.length(); i++) {
 			if(sb2.charAt(i) == '-') {
 				sb2.deleteCharAt(i);
 				break;
 			}
 		}
-		System.out.println("º¯°æÈÄ " + sb2);
+		System.out.println("ë³€ê²½í›„ " + sb2);
 	}
 
 }

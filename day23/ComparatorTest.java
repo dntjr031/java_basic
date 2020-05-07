@@ -14,14 +14,14 @@ public class ComparatorTest {
 		tset.add("orange");
 		tset.add("apple");
 		
-		//±âº»Á¤·Ä ¼ø¼­´ë·Î Ã³¸® - À¯´ÏÄÚµå ¼ø
+		//ê¸°ë³¸ì •ë ¬ ìˆœì„œëŒ€ë¡œ ì²˜ë¦¬ - ìœ ë‹ˆì½”ë“œ ìˆœ
 		Iterator<String> ir = tset.iterator();
 		while(ir.hasNext()) {
 			System.out.println(ir.next());
 		}
 
 		System.out.println();
-		//»õ·Î¿î Á¤·Ä ¼ø¼­·Î Á¤·Ä - ¹®ÀÚ¿­ ±æÀÌ¼ø(ÀçÁ¤ÀÇ)
+		//ìƒˆë¡œìš´ ì •ë ¬ ìˆœì„œë¡œ ì •ë ¬ - ë¬¸ìì—´ ê¸¸ì´ìˆœ(ì¬ì •ì˜)
 		// public TreeSet(Comparator<? super E> comparator)
 		TreeSet<String> tset2 = new TreeSet<String>(new StrLenComparator());
 		

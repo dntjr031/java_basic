@@ -8,7 +8,7 @@ public class BookSalesTest {
 		
 		Scanner sc = new Scanner(System.in);
 		while(true) {
-			System.out.println("Ã¥ Á¦¸ñ, ¼ö·®, ´Ü°¡¸¦ ÀÔ·ÂÇÏ¼¼¿ä!");
+			System.out.println("ì±… ì œëª©, ìˆ˜ëŸ‰, ë‹¨ê°€ë¥¼ ì…ë ¥í•˜ì„¸ìš”!");
 			String title = sc.nextLine();
 			int quantity = sc.nextInt();
 			int price = sc.nextInt();
@@ -17,10 +17,10 @@ public class BookSalesTest {
 			obj.findSalesPrice();
 			obj.findTotal();
 			
-			System.out.println("ÆÇ¸Å±İ¾×=" + obj.getSalesPrice() + ", ´©Àû ÆÇ¸Å±İ¾×=" + 
+			System.out.println("íŒë§¤ê¸ˆì•¡=" + obj.getSalesPrice() + ", ëˆ„ì  íŒë§¤ê¸ˆì•¡=" + 
 					BookSales.getTotalSalesPrice() + "\n");
 			
-			System.out.println("±×¸¸ÇÏ·Á¸é Q");
+			System.out.println("ê·¸ë§Œí•˜ë ¤ë©´ Q");
 			sc.nextLine();
 			String quit = sc.nextLine();
 			if(quit.equalsIgnoreCase("Q")) break;

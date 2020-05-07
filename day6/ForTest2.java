@@ -6,11 +6,11 @@ public class ForTest2 {
 
 	public static void main(String[] args) {
 
-		//»ç¿ëÀÚ·ÎºÎÅÍ ¹İº¹ È½¼ö¸¦ ÀÔ·Â¹Ş¾Æ¼­ ±× È½¼ö¸¸Å­ hi javaÃâ·ÂÇÏ±â
+		//ì‚¬ìš©ìë¡œë¶€í„° ë°˜ë³µ íšŸìˆ˜ë¥¼ ì…ë ¥ë°›ì•„ì„œ ê·¸ íšŸìˆ˜ë§Œí¼ hi javaì¶œë ¥í•˜ê¸°
 		
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.println("¹İº¹ÇÏ°í ½ÍÀº È½¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+		System.out.println("ë°˜ë³µí•˜ê³  ì‹¶ì€ íšŸìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”");
 		int count = sc.nextInt();
 		
 		for(int i = 0; i < count; i++) {

@@ -8,7 +8,7 @@ public class NameCardExam {
 
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.println("ÀÌ¸§, È¸»çÁÖ¼Ò, Á÷±Ş, ÀüÈ­¹øÈ£ ÀÔ·Â");
+		System.out.println("ì´ë¦„, íšŒì‚¬ì£¼ì†Œ, ì§ê¸‰, ì „í™”ë²ˆí˜¸ ì…ë ¥");
 		String name = sc.nextLine();
 		String add = sc.nextLine();
 		String rank = sc.nextLine();

@@ -10,20 +10,20 @@ public class CuntinueExam1 {
 		
 		while(true) {
 			
-			System.out.println("µÎ °³ÀÇ Á¤¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä(ÇÇÁ¦¼ö Á¦¼ö ¼øÀ¸·Î ÀÔ·Â)");
-			System.out.println("<0 µÎ¹ø ÀÔ·Â½Ã Á¾·á>");
+			System.out.println("ë‘ ê°œì˜ ì •ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”(í”¼ì œìˆ˜ ì œìˆ˜ ìˆœìœ¼ë¡œ ì…ë ¥)");
+			System.out.println("<0 ë‘ë²ˆ ì…ë ¥ì‹œ ì¢…ë£Œ>");
 			int a = sc.nextInt();
 			int b = sc.nextInt();
 			
 			if(a == 0 && b == 0) break;
 			if(a == 0 || b == 0) {
-				System.out.println("ÇÇÁ¦¼ö ¶Ç´Â Á¦¼ö°¡ 0ÀÌ¹Ç·Î ¿¬»êÀ» »ı·«ÇÕ´Ï´Ù.");
+				System.out.println("í”¼ì œìˆ˜ ë˜ëŠ” ì œìˆ˜ê°€ 0ì´ë¯€ë¡œ ì—°ì‚°ì„ ìƒëµí•©ë‹ˆë‹¤.");
 				continue;
 			}
-			System.out.println("¸ò : " + a / b + ", ³ª¸ÓÁö : " + a % b);
+			System.out.println("ëª« : " + a / b + ", ë‚˜ë¨¸ì§€ : " + a % b);
 			
 		}
-		System.out.println("Á¾·áµÇ¾ú½À´Ï´Ù.");
+		System.out.println("ì¢…ë£Œë˜ì—ˆìŠµë‹ˆë‹¤.");
 		sc.close();
 
 	}

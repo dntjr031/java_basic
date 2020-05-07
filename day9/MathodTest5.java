@@ -2,12 +2,12 @@ package com.day9;
 
 public class MathodTest5 {
 	
-	public static int getSum(int num) { //¸Å°³º¯¼ö num
-		int sum = 0; //Áö¿ªº¯¼ö sum
+	public static int getSum(int num) { //ë§¤ê°œë³€ìˆ˜ num
+		int sum = 0; //ì§€ì—­ë³€ìˆ˜ sum
 		
-		//¸Å°³º¯¼öµµ Áö¿ªº¯¼öÀÇ ÀÏÁ¾ÀÌ´Ù
-		//¸Å°³º¯¼ö num°ú Áö¿ªº¯¼ö sumÀº getSum() ¸Ş¼­µå³»¿¡¼­ »ç¿ë°¡´ÉÇÏ°í
-		// ÇØ´ç ¸Å¼­µå¸¦ ¹ş¾î³ª¸é ¼Ò¸êµÈ´Ù.
+		//ë§¤ê°œë³€ìˆ˜ë„ ì§€ì—­ë³€ìˆ˜ì˜ ì¼ì¢…ì´ë‹¤
+		//ë§¤ê°œë³€ìˆ˜ numê³¼ ì§€ì—­ë³€ìˆ˜ sumì€ getSum() ë©”ì„œë“œë‚´ì—ì„œ ì‚¬ìš©ê°€ëŠ¥í•˜ê³ 
+		// í•´ë‹¹ ë§¤ì„œë“œë¥¼ ë²—ì–´ë‚˜ë©´ ì†Œë©¸ëœë‹¤.
 		
 		for(int i = 1; i <= num; i++) {
 			sum += i;
@@ -18,11 +18,11 @@ public class MathodTest5 {
 	public static void main(String[] args) {
 		
 		int sum = getSum(10);
-		System.out.println("1~10±îÁöÀÇ ÇÕ : " + sum);
+		System.out.println("1~10ê¹Œì§€ì˜ í•© : " + sum);
 		
 		int num = 100;
 		sum = getSum(num);
-		System.out.println("1~" + num +"±îÁöÀÇ ÇÕ : " + sum);
+		System.out.println("1~" + num +"ê¹Œì§€ì˜ í•© : " + sum);
 
 	}
 

@@ -11,9 +11,9 @@ public class SetTest {
 		hset.add("first");
 		hset.add("second");
 		hset.add("third");
-		hset.add("first"); //Áßº¹À¸·Î ÀÔ·Â X
+		hset.add("first"); //ì¤‘ë³µìœ¼ë¡œ ì…ë ¥ X
 		
-		System.out.println("setÀÇ ¿ä¼ÒÀÇ °³¼ö : " + hset.size());
+		System.out.println("setì˜ ìš”ì†Œì˜ ê°œìˆ˜ : " + hset.size());
 		
 		Iterator<String> iter = hset.iterator();
 		while(iter.hasNext()) {

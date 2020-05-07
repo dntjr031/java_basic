@@ -11,33 +11,33 @@ public class FruitSellerTest {
 		my.buyApple(f1, 4500);
 		my.buyApple(f2, 2000);
 		
-		System.out.println("<°úÀÏ ÆÇ¸ÅÀÚ1ÀÇ ÇöÀç»óÈ²>");
+		System.out.println("<ê³¼ì¼ íŒë§¤ì1ì˜ í˜„ì¬ìƒí™©>");
 		f1.showSaleResult();
-		System.out.println("<°úÀÏ ÆÇ¸ÅÀÚ2ÀÇ ÇöÀç»óÈ²>");
+		System.out.println("<ê³¼ì¼ íŒë§¤ì2ì˜ í˜„ì¬ìƒí™©>");
 		f2.showSaleResult();
-		System.out.println("<°úÀÏ ±¸¸ÅÀÚÀÇ ÇöÀç »óÈ²>");
+		System.out.println("<ê³¼ì¼ êµ¬ë§¤ìì˜ í˜„ì¬ ìƒí™©>");
 		my.showBuyResult();
 		
-		System.out.println("\n±¸¸ÅÀÚ°¡ °úÀÏÀå»ç2¿¡°Ô 4000¿ø ¸¸Å­ ±¸¸ÅÇÏ±â");
+		System.out.println("\nêµ¬ë§¤ìê°€ ê³¼ì¼ì¥ì‚¬2ì—ê²Œ 4000ì› ë§Œí¼ êµ¬ë§¤í•˜ê¸°");
 		my.buyApple(f2, 4000);
-		System.out.println("<°úÀÏ ÆÇ¸ÅÀÚ2ÀÇ ÇöÀç»óÈ²>");
+		System.out.println("<ê³¼ì¼ íŒë§¤ì2ì˜ í˜„ì¬ìƒí™©>");
 		f2.showSaleResult();
-		System.out.println("<°úÀÏ ±¸¸ÅÀÚÀÇ ÇöÀç »óÈ²>");
+		System.out.println("<ê³¼ì¼ êµ¬ë§¤ìì˜ í˜„ì¬ ìƒí™©>");
 		my.showBuyResult();
 		
-		//¹è¿­ ÀÌ¿ë
-		System.out.println("\n±¸¸ÅÀÚ°¡ °úÀÏÀå»ç2¿¡°Ô 3500¿ø ¸¸Å­ ±¸¸ÅÇÏ±â");
+		//ë°°ì—´ ì´ìš©
+		System.out.println("\nêµ¬ë§¤ìê°€ ê³¼ì¼ì¥ì‚¬2ì—ê²Œ 3500ì› ë§Œí¼ êµ¬ë§¤í•˜ê¸°");
 		my.buyApple(f2, 3500);
-		System.out.println("<°úÀÏ ÆÇ¸ÅÀÚ2ÀÇ ÇöÀç»óÈ²>");
+		System.out.println("<ê³¼ì¼ íŒë§¤ì2ì˜ í˜„ì¬ìƒí™©>");
 		f2.showSaleResult();
-		System.out.println("<°úÀÏ ±¸¸ÅÀÚÀÇ ÇöÀç »óÈ²>");
+		System.out.println("<ê³¼ì¼ êµ¬ë§¤ìì˜ í˜„ì¬ ìƒí™©>");
 		my.showBuyResult();
 		
-		System.out.println("\n±¸¸ÅÀÚ°¡ °úÀÏÀå»ç1¿¡°Ô 4000¿ø ¸¸Å­ ±¸¸ÅÇÏ±â");
+		System.out.println("\nêµ¬ë§¤ìê°€ ê³¼ì¼ì¥ì‚¬1ì—ê²Œ 4000ì› ë§Œí¼ êµ¬ë§¤í•˜ê¸°");
 		my.buyApple(f1, 4000);
-		System.out.println("<°úÀÏ ÆÇ¸ÅÀÚ1ÀÇ ÇöÀç»óÈ²>");
+		System.out.println("<ê³¼ì¼ íŒë§¤ì1ì˜ í˜„ì¬ìƒí™©>");
 		f1.showSaleResult();
-		System.out.println("<°úÀÏ ±¸¸ÅÀÚÀÇ ÇöÀç »óÈ²>");
+		System.out.println("<ê³¼ì¼ êµ¬ë§¤ìì˜ í˜„ì¬ ìƒí™©>");
 		my.showBuyResult();
 		
 	}
@@ -45,7 +45,7 @@ public class FruitSellerTest {
 }
 
 class FruitResult{
-	private int num, change; // »ç°ú °³¼ö, °Å½º¸§µ·
+	private int num, change; // ì‚¬ê³¼ ê°œìˆ˜, ê±°ìŠ¤ë¦„ëˆ
 	public FruitResult(int num, int change) {
 		this.num = num;
 		this.change = change;
@@ -88,8 +88,8 @@ class FruitSeller {
 	}
 	
 	public void showSaleResult() {
-		System.out.println("³²Àº »ç°ú: " + numOfApple);
-		System.out.println("ÆÇ¸Å ¼öÀÍ: " + myMoney);
+		System.out.println("ë‚¨ì€ ì‚¬ê³¼: " + numOfApple);
+		System.out.println("íŒë§¤ ìˆ˜ìµ: " + myMoney);
 	}
 }
 
@@ -103,7 +103,7 @@ class FruitBuyer{
 	
 	public void buyApple(FruitSeller seller, int money) {
 		if(money > myMoney) {
-			System.out.println("µ·ÀÌ ºÎÁ·ÇÕ´Ï´Ù.");
+			System.out.println("ëˆì´ ë¶€ì¡±í•©ë‹ˆë‹¤.");
 			return;
 		}
 		
@@ -113,8 +113,8 @@ class FruitBuyer{
 		
 	}
 	public void showBuyResult() {
-		System.out.println("ÇöÀç ÀÜ¾× : " + myMoney);
-		System.out.println("»ç°ú °³¼ö : " + numOfApple);
+		System.out.println("í˜„ì¬ ì”ì•¡ : " + myMoney);
+		System.out.println("ì‚¬ê³¼ ê°œìˆ˜ : " + numOfApple);
 	}
 }
 

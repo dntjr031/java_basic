@@ -1,12 +1,12 @@
 package com.day16;
 /*
-	»ó¼Ó - ºÎ¸ğÅ¬·¡½ºÀÇ ¸â¹ö¸¦ ±×´ë·Î ¹°·Á¹Ş¾Æ ÀÚ½Ä Å¬·¡½º¿¡¼­ Àç»ç¿ë ÇÏ´Â °Í
- 		ÀÚ½Ä Å¬·¡½ºµéÀÇ °øÅëÀûÀÎ ºÎºĞÀº ¹«¸ğ Å¬·¡½º¿¡¼­ °ü¸®ÇÏ°í, 
- 		ÀÚ½Ä Å¬·¡½º´Â ÀÚ½Å¿¡ Á¤ÀÇµÈ ¸â¹öµé¸¸ °ü¸®
+	ìƒì† - ë¶€ëª¨í´ë˜ìŠ¤ì˜ ë©¤ë²„ë¥¼ ê·¸ëŒ€ë¡œ ë¬¼ë ¤ë°›ì•„ ìì‹ í´ë˜ìŠ¤ì—ì„œ ì¬ì‚¬ìš© í•˜ëŠ” ê²ƒ
+ 		ìì‹ í´ë˜ìŠ¤ë“¤ì˜ ê³µí†µì ì¸ ë¶€ë¶„ì€ ë¬´ëª¨ í´ë˜ìŠ¤ì—ì„œ ê´€ë¦¬í•˜ê³ , 
+ 		ìì‹ í´ë˜ìŠ¤ëŠ” ìì‹ ì— ì •ì˜ëœ ë©¤ë²„ë“¤ë§Œ ê´€ë¦¬
 
-	extends Å°¿öµå »ç¿ë
+	extends í‚¤ì›Œë“œ ì‚¬ìš©
 	
-	class ÀÚ½Ä extends ºÎ¸ğ{
+	class ìì‹ extends ë¶€ëª¨{
 	
 	}
 	
@@ -19,33 +19,33 @@ class Parent{
 
 class Child extends Parent{
 	Child(){
-		name="ÀÚ½Ä";
+		name="ìì‹";
 		age=35;
 	}
 	
 	public void showInfo() {
-		System.out.println("ÀÌ¸§: " + name);
-		System.out.println("³ªÀÌ: " + age);
-		System.out.println("¹°·Á¹ŞÀº À¯»ê: " + money + "\n");
+		System.out.println("ì´ë¦„: " + name);
+		System.out.println("ë‚˜ì´: " + age);
+		System.out.println("ë¬¼ë ¤ë°›ì€ ìœ ì‚°: " + money + "\n");
 	}
 }
 
 class Doughter extends Parent{
 	Doughter(){
-		name = "µş";
+		name = "ë”¸";
 		age = 30;
 	}
 	
 	public void showInfo() {
-		System.out.println("ÀÌ¸§: " + name);
-		System.out.println("³ªÀÌ: " + age);
-		System.out.println("¹°·Á¹ŞÀº À¯»ê: " + money + "\n");
+		System.out.println("ì´ë¦„: " + name);
+		System.out.println("ë‚˜ì´: " + age);
+		System.out.println("ë¬¼ë ¤ë°›ì€ ìœ ì‚°: " + money + "\n");
 	}
 }
 
 class GrandChild extends Child{
 	public GrandChild() {
-		name = "¼ÕÀÚ";
+		name = "ì†ì";
 		age = 2;
 	}
 }

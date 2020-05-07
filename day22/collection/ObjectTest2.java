@@ -4,7 +4,7 @@ public class ObjectTest2 {
 
 	public static void main(String[] args) {
 
-		Person p = new Person("È«±æµ¿", 25);
+		Person p = new Person("í™ê¸¸ë™", 25);
 		System.out.println("p : " + p);
 		System.out.println("p.toString() : "+ p.toString());
 	}
@@ -25,8 +25,8 @@ class Person{
 	}
 	
 	public void showInfo() {
-		System.out.println("ÀÌ¸§:" + name);
-		System.out.println("³ªÀÌ:" + age);
+		System.out.println("ì´ë¦„:" + name);
+		System.out.println("ë‚˜ì´:" + age);
 	}
 	
 }

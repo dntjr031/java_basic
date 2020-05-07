@@ -3,26 +3,26 @@ package com.day19;
 public class CastingTest {
 
 	public static void main(String[] args) {
-		//±âº»ÇüÃ³·³ ÂüÁ¶Çü º¯¼ö¿¡¼­µµ Çüº¯È¯ÀÌ °¡´ÉÇÔ
-		//=> ´Ü, »ó¼Ó°ü°èÀÇ Å¬·¡½º »çÀÌ¿¡¼­¸¸ °¡´É
+		//ê¸°ë³¸í˜•ì²˜ëŸ¼ ì°¸ì¡°í˜• ë³€ìˆ˜ì—ì„œë„ í˜•ë³€í™˜ì´ ê°€ëŠ¥í•¨
+		//=> ë‹¨, ìƒì†ê´€ê³„ì˜ í´ë˜ìŠ¤ ì‚¬ì´ì—ì„œë§Œ ê°€ëŠ¥
 		
-		//[1] ÂüÁ¶Çü º¯¼öÀÇ ÀÚµ¿ Çüº¯È¯ = > ´ÙÇü¼º
-		//ºÎ¸ğÅ¸ÀÓ <- ÀÚ½Ä
+		//[1] ì°¸ì¡°í˜• ë³€ìˆ˜ì˜ ìë™ í˜•ë³€í™˜ = > ë‹¤í˜•ì„±
+		//ë¶€ëª¨íƒ€ì„ <- ìì‹
 		//Up-casting
-		Car c = new FireEngine(); //ÀÚµ¿ Çüº¯È¯
+		Car c = new FireEngine(); //ìë™ í˜•ë³€í™˜
 		c.drive();
-		//c.water(); => error, ÀÚ½Ä¸¸ÀÇ ¸Ş¼­µå È£Ãâ ºÒ°¡
+		//c.water(); => error, ìì‹ë§Œì˜ ë©”ì„œë“œ í˜¸ì¶œ ë¶ˆê°€
 		
-		//[2] ÂüÁ¶Çü º¯¼öÀÇ ¸í½ÃÀû Çüº¯È¯
-		//ÀÚ½ÄÅ¸ÀÔ <- ºÎ¸ğ
+		//[2] ì°¸ì¡°í˜• ë³€ìˆ˜ì˜ ëª…ì‹œì  í˜•ë³€í™˜
+		//ìì‹íƒ€ì… <- ë¶€ëª¨
 		//=> Down-casting
-		FireEngine f = (FireEngine)c; // ¸í½ÃÀû Çüº¯È¯, ºÎ¸ğ ÂüÁ¶º¯¼ö¸¦ ÀÚ½Ä Å¸ÀÔ¿¡ ´ëÀÔ
+		FireEngine f = (FireEngine)c; // ëª…ì‹œì  í˜•ë³€í™˜, ë¶€ëª¨ ì°¸ì¡°ë³€ìˆ˜ë¥¼ ìì‹ íƒ€ì…ì— ëŒ€ì…
 		f.drive();
-		f.water(); //´Ù¿î Ä³½ºÆÃÀ¸·Î ÀÚ½Ä¸¸ÀÇ ¸Ş¼­µåµµ È£Ãâ °¡´ÉÇØÁü
+		f.water(); //ë‹¤ìš´ ìºìŠ¤íŒ…ìœ¼ë¡œ ìì‹ë§Œì˜ ë©”ì„œë“œë„ í˜¸ì¶œ ê°€ëŠ¥í•´ì§
 		
 		((FireEngine)c).water();
 		
-		//FireEngine f = (FireEngine)new Car(); => ÄÄÆÄÀÏÀº µÇÁö¸¸ ·±Å¸ÀÓ ¿¡·¯( ClassCastException )
+		//FireEngine f = (FireEngine)new Car(); => ì»´íŒŒì¼ì€ ë˜ì§€ë§Œ ëŸ°íƒ€ì„ ì—ëŸ¬( ClassCastException )
 		
 		c= new Ambulance();
 		Ambulance am = (Ambulance)c;
@@ -30,18 +30,18 @@ public class CastingTest {
 		am.siren();
 		
 		/*
-		 instanceof ¿¬»êÀÚ
-		 - ÂüÁ¶º¯¼ö°¡ ÂüÁ¶ÇÏ°í ÀÖ´Â ÀÎ½ºÅÏ½ºÀÇ ½ÇÁ¦ Å¸ÀÔÀ» ¾Ë¾Æº¸±â À§ÇØ »ç¿ë
+		 instanceof ì—°ì‚°ì
+		 - ì°¸ì¡°ë³€ìˆ˜ê°€ ì°¸ì¡°í•˜ê³  ìˆëŠ” ì¸ìŠ¤í„´ìŠ¤ì˜ ì‹¤ì œ íƒ€ì…ì„ ì•Œì•„ë³´ê¸° ìœ„í•´ ì‚¬ìš©
 		 
-		 ÂüÁ¶º¯¼ö instanceof Å¸ÀÔ(Å¬·¡½º)
-		 => ÂüÁ¶º¯¼ö°¡ ÇØ´çÅ¸ÀÔÀÇ ÀÎ½ºÅÏ½º¸é true, ¾Æ´Ï¸é false¸¦ ¸®ÅÏ
-		 => Á¶°Ç¹®¿¡¼­ »ç¿ë
-		 ¿¹) c instanceof FireEngine
-		 => ÂüÁ¶º¯¼ö c°¡ FireEngineÀÇ ÀÎ½ºÅÏ½ºÀÎÁö Ã¼Å©
+		 ì°¸ì¡°ë³€ìˆ˜ instanceof íƒ€ì…(í´ë˜ìŠ¤)
+		 => ì°¸ì¡°ë³€ìˆ˜ê°€ í•´ë‹¹íƒ€ì…ì˜ ì¸ìŠ¤í„´ìŠ¤ë©´ true, ì•„ë‹ˆë©´ falseë¥¼ ë¦¬í„´
+		 => ì¡°ê±´ë¬¸ì—ì„œ ì‚¬ìš©
+		 ì˜ˆ) c instanceof FireEngine
+		 => ì°¸ì¡°ë³€ìˆ˜ cê°€ FireEngineì˜ ì¸ìŠ¤í„´ìŠ¤ì¸ì§€ ì²´í¬
 		 */
 		boolean bool = c instanceof FireEngine;
-		System.out.println("ÂüÁ¶º¯¼ö cÀÇ ½ÇÁ¦ ÀÎ½ºÅÏ½º°¡ FireEngineÀÎ°¡? " + bool);
-		System.out.println("ÂüÁ¶º¯¼ö cÀÇ ½ÇÁ¦ ÀÎ½ºÅÏ½º°¡ AmbulanceÀÎ°¡? " + (c instanceof Ambulance));
+		System.out.println("ì°¸ì¡°ë³€ìˆ˜ cì˜ ì‹¤ì œ ì¸ìŠ¤í„´ìŠ¤ê°€ FireEngineì¸ê°€? " + bool);
+		System.out.println("ì°¸ì¡°ë³€ìˆ˜ cì˜ ì‹¤ì œ ì¸ìŠ¤í„´ìŠ¤ê°€ Ambulanceì¸ê°€? " + (c instanceof Ambulance));
 		
 		if(c instanceof FireEngine) {
 			FireEngine f2 = (FireEngine)c;
@@ -51,19 +51,19 @@ public class CastingTest {
 			a2.siren();
 		}
 		/*
-		 ÀÚ½Ä instanceof ºÎ¸ğÅ¬·¡½º
+		 ìì‹ instanceof ë¶€ëª¨í´ë˜ìŠ¤
 		 => true
-		 ÀÚ½ÄÀº ºÎ¸ğÀÇ ÀÎ½ºÅÏ½ºÀÌ±âµµ ÇÏ´Ù
+		 ìì‹ì€ ë¶€ëª¨ì˜ ì¸ìŠ¤í„´ìŠ¤ì´ê¸°ë„ í•˜ë‹¤
 		 */
 		FireEngine f3 = new FireEngine();
 		if(f3 instanceof Object) {
-			System.out.println("f3Àº ObjaectÀÇ ÀÎ½ºÅÏ½ºÀÌ±âµµ ÇÏ´Ù");
+			System.out.println("f3ì€ Objaectì˜ ì¸ìŠ¤í„´ìŠ¤ì´ê¸°ë„ í•˜ë‹¤");
 		}
 		if(f3 instanceof Car) {
-			System.out.println("f3Àº CarÀÇ ÀÎ½ºÅÏ½ºÀÌ±âµµ ÇÏ´Ù");
+			System.out.println("f3ì€ Carì˜ ì¸ìŠ¤í„´ìŠ¤ì´ê¸°ë„ í•˜ë‹¤");
 		}
 		if(f3 instanceof FireEngine) {
-			System.out.println("f3Àº FireEngineÀÇ ÀÎ½ºÅÏ½ºÀÌ´Ù");
+			System.out.println("f3ì€ FireEngineì˜ ì¸ìŠ¤í„´ìŠ¤ì´ë‹¤");
 		}
 	}
 
@@ -72,17 +72,17 @@ public class CastingTest {
 class Car{
 	
 	void drive() {
-		System.out.println("Â÷¸¦ ¿îÀüÇÏ´Â ¸Ş¼­µå");
+		System.out.println("ì°¨ë¥¼ ìš´ì „í•˜ëŠ” ë©”ì„œë“œ");
 	}
 	void stop() {
-		System.out.println("Â÷¸¦ ¸ØÃä´Ï´Ù");
+		System.out.println("ì°¨ë¥¼ ë©ˆì¶¥ë‹ˆë‹¤");
 	}
 	
 }
 
 class FireEngine extends Car{
 	void drive() {
-		System.out.println("¼Ò¹æÂ÷¸¦ ¿îÀüÇÕ´Ï´Ù");
+		System.out.println("ì†Œë°©ì°¨ë¥¼ ìš´ì „í•©ë‹ˆë‹¤");
 	}
 	void water() {
 		System.out.println("water!");
@@ -91,7 +91,7 @@ class FireEngine extends Car{
 
 class Ambulance extends Car{
 	void drive() {
-		System.out.println("¿¥ºæ·±½º¸¦ ¿îÀüÇÕ´Ï´Ù");
+		System.out.println("ì— ë·¸ëŸ°ìŠ¤ë¥¼ ìš´ì „í•©ë‹ˆë‹¤");
 	}
 	void siren() {
 		System.out.println("siren!");

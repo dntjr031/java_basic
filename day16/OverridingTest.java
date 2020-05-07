@@ -1,7 +1,7 @@
 package com.day16;
 
 class Points {
-	//2Â÷¿ø Á¡ÀÇ ÁÂÇ¥
+	//2ì°¨ì› ì ì˜ ì¢Œí‘œ
 	protected int x, y;
 	
 	public String findLocation() {
@@ -11,10 +11,10 @@ class Points {
 }
 
 class Points3D extends Points{
-	//3Â÷¿ø Á¡ÀÇ ÁÂÇ¥
+	//3ì°¨ì› ì ì˜ ì¢Œí‘œ
 	private int z;
 	
-	//¿À¹ö¶óÀÌµù ¸Ş¼­µå - ºÎ¸ğ·ÎºÎÅÍ »ó¼Ó¹ŞÀº ¸Ş¼­µåÀÇ ³»¿ëÀ» º¯°æÇÏ´Â °Í, ¸Ş¼­µå ÀçÁ¤ÀÇ
+	//ì˜¤ë²„ë¼ì´ë”© ë©”ì„œë“œ - ë¶€ëª¨ë¡œë¶€í„° ìƒì†ë°›ì€ ë©”ì„œë“œì˜ ë‚´ìš©ì„ ë³€ê²½í•˜ëŠ” ê²ƒ, ë©”ì„œë“œ ì¬ì •ì˜
 	public String findLocation() {
 		String result = "x:" + x +", y:" + y + ", z:" + z;
 		return result;
@@ -27,11 +27,11 @@ public class OverridingTest {
 	public static void main(String[] args) {
 		Points po = new Points();
 		String str = po.findLocation();
-		System.out.println("2Â÷¿ø ÁÂÇ¥=" + str + "\n");
+		System.out.println("2ì°¨ì› ì¢Œí‘œ=" + str + "\n");
 		
 		Points3D p = new Points3D();
 		String r = p.findLocation();
-		System.out.println("3Â÷¿ø ÁÂÇ¥=" + r);
+		System.out.println("3ì°¨ì› ì¢Œí‘œ=" + r);
 
 	}
 

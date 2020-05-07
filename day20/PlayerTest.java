@@ -25,18 +25,18 @@ abstract class Player{
 		pause = false;
 		currentPos = 0;
 	}
-	abstract public void stop(); //Ãß»ó ¸Ş¼­µå
-	abstract void play(int pos); // Ãß»ó ¸Ş¼­µå
+	abstract public void stop(); //ì¶”ìƒ ë©”ì„œë“œ
+	abstract void play(int pos); // ì¶”ìƒ ë©”ì„œë“œ
 	
 	public void play() {
-		play(currentPos); // Ãß»ó¸Ş¼­µå È£Ãâ °¡´É
+		play(currentPos); // ì¶”ìƒë©”ì„œë“œ í˜¸ì¶œ ê°€ëŠ¥
 	}
 
 	public void paused() {
-		if(pause) { // ÀÏ½ÃÁ¤Áö »óÅÂÀÎ °æ¿ì
+		if(pause) { // ì¼ì‹œì •ì§€ ìƒíƒœì¸ ê²½ìš°
 			pause = false;
 			play(currentPos);
-		}else { // Àç»ı »óÅÂÀÎ °æ¿ì
+		}else { // ì¬ìƒ ìƒíƒœì¸ ê²½ìš°
 			pause = true;
 			stop();
 		}
@@ -46,25 +46,25 @@ abstract class Player{
 class CDPlayer extends Player{
 
 	public void stop() {
-		System.out.println("ÇöÀç À§Ä¡¿¡¼­ CD ÇÃ·¹ÀÌ¾îÀÇ Àç»ıÀ» ¸ØÃä´Ï´Ù.");
+		System.out.println("í˜„ì¬ ìœ„ì¹˜ì—ì„œ CD í”Œë ˆì´ì–´ì˜ ì¬ìƒì„ ë©ˆì¶¥ë‹ˆë‹¤.");
 	}
 	
 	void play(int pos) {
-		System.out.println(pos + "À§Ä¡¿¡¼­ CDÇÃ·¹ÀÌ¾î Àç»ıÀ» ½ÃÀÛÇÕ´Ï´Ù."); // Ãß»ó ¸Ş¼­µå ¿À¹ö¶óÀÌµù
+		System.out.println(pos + "ìœ„ì¹˜ì—ì„œ CDí”Œë ˆì´ì–´ ì¬ìƒì„ ì‹œì‘í•©ë‹ˆë‹¤."); // ì¶”ìƒ ë©”ì„œë“œ ì˜¤ë²„ë¼ì´ë”©
 	}
 	private int currentTrack;
 	
 	void nextTrack() {
 		currentTrack++;
-		System.out.println("nextTrack ÈÄ ÇöÀç Æ®·¢ : " + currentTrack);
+		System.out.println("nextTrack í›„ í˜„ì¬ íŠ¸ë™ : " + currentTrack);
 	}
 	void prevTrack() {
 		if(currentTrack > 1) {
 			currentTrack--;
 		}else {
-			System.out.println("´õ ÀÌ»ó ¾ÕÀ¸·Î °¥ ¼ö ¾ø½À´Ï´Ù.");
+			System.out.println("ë” ì´ìƒ ì•ìœ¼ë¡œ ê°ˆ ìˆ˜ ì—†ìŠµë‹ˆë‹¤.");
 		}
-		System.out.println("prevTrack ÈÄ ÇöÀç Æ®·¢ : " + currentTrack);
+		System.out.println("prevTrack í›„ í˜„ì¬ íŠ¸ë™ : " + currentTrack);
 	}
 }
 

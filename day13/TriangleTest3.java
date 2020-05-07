@@ -5,19 +5,19 @@ import java.util.Scanner;
 public class TriangleTest3 {
 
 	public static void main(String[] args) {
-		// 3. º°µµÀÇ Å¬·¡½º¿¡¼­ »ï°¢Çü ¸éÀû ±¸ÇÏ´Â ¸Ş¼­µå ¸¸µé¾î¼­ Ã³¸®
-		//(¸â¹öº¯¼ö ¾ø´Â Å¬·¡½º)
+		// 3. ë³„ë„ì˜ í´ë˜ìŠ¤ì—ì„œ ì‚¼ê°í˜• ë©´ì  êµ¬í•˜ëŠ” ë©”ì„œë“œ ë§Œë“¤ì–´ì„œ ì²˜ë¦¬
+		//(ë©¤ë²„ë³€ìˆ˜ ì—†ëŠ” í´ë˜ìŠ¤)
 		
 		Scanner sc = new Scanner(System.in);
-		System.out.println("»ï°¢ÇüÀÇ ¹Øº¯, ³ôÀÌ¸¦ ÀÔ·Â");
+		System.out.println("ì‚¼ê°í˜•ì˜ ë°‘ë³€, ë†’ì´ë¥¼ ì…ë ¥");
 		int w = sc.nextInt();
 		int h = sc.nextInt();
 		
-		// °´Ã¼ »ı¼ºÈÄ ÂüÁ¶º¯¼ö.¸Ş¼­µå() È£Ãâ
+		// ê°ì²´ ìƒì„±í›„ ì°¸ì¡°ë³€ìˆ˜.ë©”ì„œë“œ() í˜¸ì¶œ
 		Triangle tri = new Triangle();
 		
 		int area = tri.area(w, h);
-		System.out.println("³ĞÀÌ : " + area);
+		System.out.println("ë„“ì´ : " + area);
 		
 		sc.close();
 

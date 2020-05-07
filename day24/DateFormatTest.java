@@ -14,16 +14,16 @@ public class DateFormatTest {
 		SimpleDateFormat sdf1 = new SimpleDateFormat("yyyy-MM-dd");
 		SimpleDateFormat sdf2 = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 		SimpleDateFormat sdf3 = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS a");
-		SimpleDateFormat sdf4 = new SimpleDateFormat("yyyy-MM-dd E¿äÀÏ");
+		SimpleDateFormat sdf4 = new SimpleDateFormat("yyyy-MM-dd Eìš”ì¼");
 		
 		String str = sdf1.format(date);
-		System.out.println("³â¿ùÀÏ : " + str);
+		System.out.println("ë…„ì›”ì¼ : " + str);
 		str = sdf2.format(date);
-		System.out.println("³â¿ùÀÏ ½ÃºĞÃÊ : " + str);
+		System.out.println("ë…„ì›”ì¼ ì‹œë¶„ì´ˆ : " + str);
 		str = sdf3.format(date);
-		System.out.println("³â¿ùÀÏ ½ÃºĞÃÊ ¿ÀÀü/¿ÀÈÄ: " + str);
+		System.out.println("ë…„ì›”ì¼ ì‹œë¶„ì´ˆ ì˜¤ì „/ì˜¤í›„: " + str);
 		str = sdf4.format(date);
-		System.out.println("³â¿ùÀÏ ¿äÀÏ: " + str);
+		System.out.println("ë…„ì›”ì¼ ìš”ì¼: " + str);
 	}
 
 }

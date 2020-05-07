@@ -7,7 +7,7 @@ public class TimeExam {
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);
-		System.out.println("½Ã, ºÐ, ÃÊ¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+		System.out.println("ì‹œ, ë¶„, ì´ˆë¥¼ ìž…ë ¥í•˜ì„¸ìš”");
 		int h = sc.nextInt();
 		int m = sc.nextInt();
 		int s = sc.nextInt();
@@ -18,13 +18,13 @@ public class TimeExam {
 		
 		ti.print();
 		int sec = ti.toSec();
-		System.out.println("ÃÊ·Î È¯»êÇÏ¸é " + sec);
+		System.out.println("ì´ˆë¡œ í™˜ì‚°í•˜ë©´ " + sec);
 		ti2.print();
 		int sec2 = ti2.toSec();
-		System.out.println("ÃÊ·Î È¯»êÇÏ¸é " + sec2);
+		System.out.println("ì´ˆë¡œ í™˜ì‚°í•˜ë©´ " + sec2);
 		ti3.print();
 		int sec3 = ti3.toSec();
-		System.out.println("ÃÊ·Î È¯»êÇÏ¸é " + sec3);
+		System.out.println("ì´ˆë¡œ í™˜ì‚°í•˜ë©´ " + sec3);
 		
 		sc.close();
 

@@ -6,57 +6,57 @@ public class ArrayListTest {
 
 	public static void main(String[] args) {
 		/*
-		 ÄÃ·º¼Ç ÇÁ·¹ÀÓ¿öÅ©
-		 - µ¥ÀÌÅÍ ±×·ìÀ» ÀúÀåÇÏ´Â Å¬·¡½ºµéÀÇ Ç¥ÁØÈ­ÇÑ ¼³°è
-		 - ¸Ş¸ğ¸® Å©±â¸¦ µ¿ÀûÀ¸·Î È®ÀåÇÒ ¼ö ÀÖ´Ù.
-		 - ÀúÀå, °Ë»ö, »èÁ¦ µîÀÇ ¸Ş¼­µå Á¦°ø
+		 ì»¬ë ‰ì…˜ í”„ë ˆì„ì›Œí¬
+		 - ë°ì´í„° ê·¸ë£¹ì„ ì €ì¥í•˜ëŠ” í´ë˜ìŠ¤ë“¤ì˜ í‘œì¤€í™”í•œ ì„¤ê³„
+		 - ë©”ëª¨ë¦¬ í¬ê¸°ë¥¼ ë™ì ìœ¼ë¡œ í™•ì¥í•  ìˆ˜ ìˆë‹¤.
+		 - ì €ì¥, ê²€ìƒ‰, ì‚­ì œ ë“±ì˜ ë©”ì„œë“œ ì œê³µ
 		 
-		 ÄÃ·º¼Ç ÀÎÅÍÆäÀÌ½º 3Á¾·ù
+		 ì»¬ë ‰ì…˜ ì¸í„°í˜ì´ìŠ¤ 3ì¢…ë¥˜
 		 [1] List
-		 	- ¼ø¼­°¡ À¯ÁöµÇ°í Áßº¹µµ Çã¿ë
-		 	±¸Çö Å¬·¡½º - ArrayList, Vector µî
+		 	- ìˆœì„œê°€ ìœ ì§€ë˜ê³  ì¤‘ë³µë„ í—ˆìš©
+		 	êµ¬í˜„ í´ë˜ìŠ¤ - ArrayList, Vector ë“±
 		 [2] Set
-		 	- ¼ø¼­°¡ À¯ÁöµÇÁö ¾Ê°í Áßº¹µµ Çã¿ëµÇÁö ¾Ê´Â´Ù
-		 	±¸Çö Å¬·¡½º - HashSet
+		 	- ìˆœì„œê°€ ìœ ì§€ë˜ì§€ ì•Šê³  ì¤‘ë³µë„ í—ˆìš©ë˜ì§€ ì•ŠëŠ”ë‹¤
+		 	êµ¬í˜„ í´ë˜ìŠ¤ - HashSet
 		 [3] Map
-		 	- Å°, °ª(Key, value)½ÖÀ¸·Î ÀúÀåµÇ´Â µ¥ÀÌÅÍ ÁıÇÕ
-		 	- ¼ø¼­°¡ À¯ÁöµÇ°í, Å°´Â Áßº¹Çô¿ëÀÌ ¾ÈµÇÁö¸¸ °ªÀº Çã¿ëµÊ
-		 	±¸Çö Å¬·¡½º - HashMap, Hashtable, Properties
+		 	- í‚¤, ê°’(Key, value)ìŒìœ¼ë¡œ ì €ì¥ë˜ëŠ” ë°ì´í„° ì§‘í•©
+		 	- ìˆœì„œê°€ ìœ ì§€ë˜ê³ , í‚¤ëŠ” ì¤‘ë³µí˜€ìš©ì´ ì•ˆë˜ì§€ë§Œ ê°’ì€ í—ˆìš©ë¨
+		 	êµ¬í˜„ í´ë˜ìŠ¤ - HashMap, Hashtable, Properties
 		 */
 		
-		// 1. ÀúÀå
+		// 1. ì €ì¥
 		ArrayList<Integer> list = new ArrayList<Integer>(3);
 		list.add(new Integer(10));
-		// add(Object obj) <= ¸Å°³º¯¼ö¿¡ ObjectÀÇ ÀÚ½Ä°´Ã¼¸¦ ³Ö¾îÁØ´Ù.
-		list.add(new Integer(20)); // boxing - ±âº»ÇüÀ» ÂüÁ¶ÇüÀÎ WrapperÅ¬·¡½º·Î º¯È¯ÇÏ´Â °Í
-		list.add(35); // jdk5.0 ºÎÅÍ´Â ±âº»ÀÚ·áÇüÀ» ³ÖÀ» ¼ö ÀÖ°Ô µÊ
-		//=> AutoBoxing : ÀÚµ¿À¸·Î ±âº»ÇüÀ» ÂüÁ¶ÇüÀ¸·Î º¯È¯ÇØÁÜ
+		// add(Object obj) <= ë§¤ê°œë³€ìˆ˜ì— Objectì˜ ìì‹ê°ì²´ë¥¼ ë„£ì–´ì¤€ë‹¤.
+		list.add(new Integer(20)); // boxing - ê¸°ë³¸í˜•ì„ ì°¸ì¡°í˜•ì¸ Wrapperí´ë˜ìŠ¤ë¡œ ë³€í™˜í•˜ëŠ” ê²ƒ
+		list.add(35); // jdk5.0 ë¶€í„°ëŠ” ê¸°ë³¸ìë£Œí˜•ì„ ë„£ì„ ìˆ˜ ìˆê²Œ ë¨
+		//=> AutoBoxing : ìë™ìœ¼ë¡œ ê¸°ë³¸í˜•ì„ ì°¸ì¡°í˜•ìœ¼ë¡œ ë³€í™˜í•´ì¤Œ
 		
-		//2. °Ë»ö(µ¥ÀÌÅÍ ÀĞ¾î¿À±â)
+		//2. ê²€ìƒ‰(ë°ì´í„° ì½ì–´ì˜¤ê¸°)
 		for (int i = 0; i < list.size(); i++) {
 			Object o = list.get(i);
 			Integer n = (Integer)o; // downcasting
 			int k = n.intValue(); //public int intValue() / Returns the value of this Integer as an int.
 			// UnBoxing
-			System.out.println(i + "¹øÂ° ¿ä¼Ò : " + k);
+			System.out.println(i + "ë²ˆì§¸ ìš”ì†Œ : " + k);
 		}
 		
-		System.out.println("\nlistÀÇ ½ÇÁ¦ µ¥ÀÌÅÍ °³¼ö" + list.size());
+		System.out.println("\nlistì˜ ì‹¤ì œ ë°ì´í„° ê°œìˆ˜" + list.size());
 		/*
 		list.add(new Double(3.14));
 		list.add(4.56f);
-		list.add("java"); //=> ¸ğµç ÀÚ·áÇüÀ» ÀúÀåÇÒ ¼ö ÀÖ´Ù.
+		list.add("java"); //=> ëª¨ë“  ìë£Œí˜•ì„ ì €ì¥í•  ìˆ˜ ìˆë‹¤.
 		
 		Double d = (double)list.get(3);
-		System.out.println("3¹øÂ° ¿ä¼Ò : " + d);
+		System.out.println("3ë²ˆì§¸ ìš”ì†Œ : " + d);
 		
 		String s = (String)list.get(5); 
-		System.out.println("5¹øÂ° ¿ä¼Ò : " + s);
+		System.out.println("5ë²ˆì§¸ ìš”ì†Œ : " + s);
 		
-		//µ¥ÀÌÅÍ »èÁ¦
+		//ë°ì´í„° ì‚­ì œ
 		list.remove(3);
 		Float f = (Float)list.get(3);
-		System.out.println("»èÁ¦ ÈÄ 3¹øÂ° ¿À¼Ò : " + f);
+		System.out.println("ì‚­ì œ í›„ 3ë²ˆì§¸ ì˜¤ì†Œ : " + f);
 		*/
 	}
 

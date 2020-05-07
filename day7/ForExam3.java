@@ -4,7 +4,7 @@ public class ForExam3 {
 
 	public static void main(String[] args) {
 		
-		System.out.println("7ÀÇ ¹è¼öÀÌ°Å³ª 9ÀÇ ¹è¼ö");
+		System.out.println("7ì˜ ë°°ìˆ˜ì´ê±°ë‚˜ 9ì˜ ë°°ìˆ˜");
 		int count = 1;
 		for(int i = 1; i < 100; i++) {
 			
@@ -20,7 +20,7 @@ public class ForExam3 {
 			}
 		}//for
 		
-		System.out.println("\n\n °¡·Î·Î 5°³¾¿¸¸");
+		System.out.println("\n\n ê°€ë¡œë¡œ 5ê°œì”©ë§Œ");
 		count = 0;
 		for(int i = 1; i < 100; i++) {
 			
@@ -30,9 +30,9 @@ public class ForExam3 {
 				if(++count % 5 == 0) {
 					System.out.print("\n");
 					
-				} // ¾ÈÂÊif
+				} // ì•ˆìª½if
 					
-			} //¹Ù±ùif
+			} //ë°”ê¹¥if
 			
 		}//for
 

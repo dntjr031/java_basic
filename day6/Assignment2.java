@@ -6,16 +6,16 @@ public class Assignment2 {
 
 	public static void main(String[] args) throws IOException {
 		
-		System.out.println("0~9³ª ¾ËÆÄºª, ±×¿Ü ¹®ÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+		System.out.println("0~9ë‚˜ ì•ŒíŒŒë²³, ê·¸ì™¸ ë¬¸ìë¥¼ ì…ë ¥í•˜ì„¸ìš”");
 		int a = System.in.read();
 		
 		String result = "";
 		if(a >= 48 && a <= 57) {
-			result = "¼ıÀÚÀÔ´Ï´Ù.";
+			result = "ìˆ«ìì…ë‹ˆë‹¤.";
 		}else if((a >= 65 && a <= 90) || (a >= 97 && a <= 122)) {
-			result = "¾ËÆÄºª ¹®ÀÚÀÔ´Ï´Ù.";
+			result = "ì•ŒíŒŒë²³ ë¬¸ìì…ë‹ˆë‹¤.";
 		}else {
-			result = "±âÅ¸ ¹®ÀÚÀÔ´Ï´Ù.";
+			result = "ê¸°íƒ€ ë¬¸ìì…ë‹ˆë‹¤.";
 		}
 		System.out.println(result);
 		
@@ -24,13 +24,13 @@ public class Assignment2 {
 		char b = (char)a;
 		
 		if(Character.isDigit(b)) {
-			result = "¼ıÀÚÀÔ´Ï´Ù.";
+			result = "ìˆ«ìì…ë‹ˆë‹¤.";
 		}else if(Character.isLetter(b)) {
-			result = "¾ËÆÄºª ¹®ÀÚÀÔ´Ï´Ù.";
+			result = "ì•ŒíŒŒë²³ ë¬¸ìì…ë‹ˆë‹¤.";
 		}else {
-			result = "±âÅ¸ ¹®ÀÚÀÔ´Ï´Ù.";
+			result = "ê¸°íƒ€ ë¬¸ìì…ë‹ˆë‹¤.";
 		}
-		System.out.println("¸Ş¼­µåÈ°¿ë => " + result);
+		System.out.println("ë©”ì„œë“œí™œìš© => " + result);
 		
 	}
 

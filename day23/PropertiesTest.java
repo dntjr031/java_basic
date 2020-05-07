@@ -6,13 +6,13 @@ public class PropertiesTest {
 
 	public static void main(String[] args) {
 		/*
-		 Properties - HashMapÀÇ ±¸¹öÁ¯ÀÎ HashtableÀ» »ó¼ÓÇÑ Å¬·¡½º
-		 (key, value) => (String, String) À¸·Î ´Ü¼øÈ­ÇÑ ÇüÅÂ
-		 È¯°æ¼³Á¤µî¿¡ ÁÖ·Î »ç¿ë
-		 ÆÄÀÏ·ÎºÎÅÍ °ªÀ» ÀĞ¾î¼­ ÀúÀå °¡´É
+		 Properties - HashMapì˜ êµ¬ë²„ì ¼ì¸ Hashtableì„ ìƒì†í•œ í´ë˜ìŠ¤
+		 (key, value) => (String, String) ìœ¼ë¡œ ë‹¨ìˆœí™”í•œ í˜•íƒœ
+		 í™˜ê²½ì„¤ì •ë“±ì— ì£¼ë¡œ ì‚¬ìš©
+		 íŒŒì¼ë¡œë¶€í„° ê°’ì„ ì½ì–´ì„œ ì €ì¥ ê°€ëŠ¥
 		 */
 		Properties pro = new Properties();
-		// ÀúÀå
+		// ì €ì¥
 		pro.setProperty("timeout", "30");
 		pro.setProperty("language", "kr");
 		pro.setProperty("size", "10");
@@ -25,7 +25,7 @@ public class PropertiesTest {
 			System.out.println("key=" + key + ", value=" + value);
 		}
 		
-		//°ª º¯°æ
+		//ê°’ ë³€ê²½
 		pro.setProperty("size", "20");
 		
 		//public String getProperty(String key, String value)
@@ -33,7 +33,7 @@ public class PropertiesTest {
 		System.out.println("\ncapacity => " + value);
 		System.out.println("lang=> " + pro.getProperty("lang", "java"));
 		
-		System.out.println("\n¿ä¼ÒÀÇ °³¼ö : " + pro.size());
+		System.out.println("\nìš”ì†Œì˜ ê°œìˆ˜ : " + pro.size());
 	}
 
 }

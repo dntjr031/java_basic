@@ -10,35 +10,35 @@ public class PhoneInfoTest {
 		
 		int i = 0;
 		while (i < ph.length) {
-			PhoneBook.showMenu(); // ¸Þ´º¼±ÅÃ
+			PhoneBook.showMenu(); // ë©”ë‰´ì„ íƒ
 			int a = sc.nextInt();
 			sc.nextLine();
 			
 			if(a == 1) {
-				ph[i] = PhoneBook.inputData(); // µ¥ÀÌÅÍ ÀÔ·Â
-				System.out.println("µ¥ÀÌÅÍ ÀÔ·ÂÀÌ ¿Ï·áµÇ¾ú½À´Ï´Ù.");
+				ph[i] = PhoneBook.inputData(); // ë°ì´í„° ìž…ë ¥
+				System.out.println("ë°ì´í„° ìž…ë ¥ì´ ì™„ë£Œë˜ì—ˆìŠµë‹ˆë‹¤.");
 				i++;
 				continue;
 			}else if(a == 2) {
-				System.out.println("ÀüÃ¼ µ¥ÀÌÅÍ Á¶È¸¸¦ ½ÃÀÛÇÕ´Ï´Ù.");
+				System.out.println("ì „ì²´ ë°ì´í„° ì¡°íšŒë¥¼ ì‹œìž‘í•©ë‹ˆë‹¤.");
 				for (int j = 0; j < i; j++) {
 					ph[j].printInfo();
 				}
 				continue;
 			}else if(a == 3) {
-				System.out.println("µ¥ÀÌÅÍ °Ë»öÀ» ½ÃÀÛÇÕ´Ï´Ù.");
+				System.out.println("ë°ì´í„° ê²€ìƒ‰ì„ ì‹œìž‘í•©ë‹ˆë‹¤.");
 				int search = PhoneBook.search(ph, i);
 				if(search < 0) {
-					System.out.println("¾ø´Â µ¥ÀÌÅÍÀÔ´Ï´Ù.");
+					System.out.println("ì—†ëŠ” ë°ì´í„°ìž…ë‹ˆë‹¤.");
 					continue;
 				}
 				ph[search].printInfo();
 				continue;
 			}else if(a == 4) {
-				System.out.println("µ¥ÀÌÅÍ »èÁ¦¸¦ ½ÃÀÛÇÕ´Ï´Ù.");
+				System.out.println("ë°ì´í„° ì‚­ì œë¥¼ ì‹œìž‘í•©ë‹ˆë‹¤.");
 				int search = PhoneBook.search(ph, i);
 				if(search < 0) {
-					System.out.println("¾ø´Â µ¥ÀÌÅÍÀÔ´Ï´Ù.");
+					System.out.println("ì—†ëŠ” ë°ì´í„°ìž…ë‹ˆë‹¤.");
 					continue;
 				}
 				PhoneBook.delete(ph, search);
@@ -51,7 +51,7 @@ public class PhoneInfoTest {
 			
 		}
 		
-		System.out.println("Á¾·áµÇ¾ú½À´Ï´Ù.");
+		System.out.println("ì¢…ë£Œë˜ì—ˆìŠµë‹ˆë‹¤.");
 		
 		sc.close();
 
